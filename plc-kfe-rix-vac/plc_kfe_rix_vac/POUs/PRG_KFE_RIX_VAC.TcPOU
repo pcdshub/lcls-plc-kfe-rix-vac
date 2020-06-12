@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="PRG_KFE_RIX_VAC" Id="{7118719b-3077-4104-9acc-cffb49d6edd3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC
+VAR
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+// MKS275 Gauges
+
+fb_PC1K1_ZOS_GPI_1(PG=>); 
+fb_MR1K2_SWITCH_GPI_1(PG=>); 
+fb_TV1K1_PLEG_GPI_1(PG=>); 
+
+// MKS500 Gauges
+
+fb_PC1K1_ZOS_GCC_1(PG := fb_PC1K1_ZOS_GPI_1.PG);
+fb_MR1K2_SWITCH_GCC_1(PG := fb_MR1K2_SWITCH_GPI_1.PG);
+fb_TV1K1_PLEG_GCC_1(PG := fb_TV1K1_PLEG_GPI_1.PG);
+
+
+// VGC Valves
+
+fb_MR1K2_SWITCH_VGC_1(
+                         i_stUSG := fb_PC1K1_ZOS_GCC_1.IG, 
+                         i_stDSG := fb_MR1K2_SWITCH_GCC_1.IG, 
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode, 
+                         io_fbFFHWO := g_FastFaultOutput1); 
+fb_MR1K2_SWITCH_VGC_2( 
+                         i_stUSG := fb_MR1K2_SWITCH_GCC_1.IG, 
+                         i_stDSG := fb_TV1K1_PLEG_GCC_1.IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode, 
+                         io_fbFFHWO := g_FastFaultOutput1); 
+
+
+// PIP_Gamma Pumps
+
+fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GCC_1.PG);
+//fb_PC1K1_ZOS_PIP_2(i_stGauge := fb_PC1K1_ZOS_GCC_1.PG); 
+fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GCC_1.PG); 
+fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.PG); ]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_KFE_RIX_VAC">
+      <LineId Id="95" Count="2" />
+      <LineId Id="188" Count="0" />
+      <LineId Id="190" Count="0" />
+      <LineId Id="184" Count="0" />
+      <LineId Id="107" Count="2" />
+      <LineId Id="197" Count="0" />
+      <LineId Id="199" Count="0" />
+      <LineId Id="196" Count="0" />
+      <LineId Id="192" Count="0" />
+      <LineId Id="119" Count="2" />
+      <LineId Id="210" Count="0" />
+      <LineId Id="215" Count="0" />
+      <LineId Id="217" Count="6" />
+      <LineId Id="208" Count="0" />
+      <LineId Id="224" Count="7" />
+      <LineId Id="209" Count="0" />
+      <LineId Id="138" Count="2" />
+      <LineId Id="201" Count="0" />
+      <LineId Id="203" Count="0" />
+      <LineId Id="205" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

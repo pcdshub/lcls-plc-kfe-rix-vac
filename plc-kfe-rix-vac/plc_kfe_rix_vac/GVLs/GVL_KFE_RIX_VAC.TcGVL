@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <GVL Name="GVL_KFE_RIX_VAC" Id="{d38b3a8d-c2e8-4a67-9aeb-873e21370c76}">
+    <Declaration><![CDATA[VAR_GLOBAL
+
+// MKS275 Gauges
+
+{attribute 'pytmc' := ' pv: PC1K1:ZOS:GPI:1 '}
+fb_PC1K1_ZOS_GPI_1 : FB_MKS275;
+{attribute 'pytmc' := ' pv: MR1K2:SWITCH:GPI:1 '}
+fb_MR1K2_SWITCH_GPI_1 : FB_MKS275;
+{attribute 'pytmc' := ' pv: TV1K1:PLEG:GPI:1 '}
+fb_TV1K1_PLEG_GPI_1 : FB_MKS275;
+
+// MKS500 Gauges
+
+{attribute 'pytmc' := ' pv: PC1K1:ZOS:GCC:1 '}
+fb_PC1K1_ZOS_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: MR1K22:SWITCH:GCC:1 '}
+fb_MR1K2_SWITCH_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: TV1K1:PLEG:GCC:1 '}
+fb_TV1K1_PLEG_GCC_1 : FB_MKS500;
+
+
+// VGC Valves
+
+{attribute 'pytmc' := ' pv: MR1K2:SWITCH:VGC:1 '}
+fb_MR1K2_SWITCH_VGC_1 : FB_VGC;
+{attribute 'pytmc' := ' pv: MR1K2:SWITCH:VGC:2 '}
+fb_MR1K2_SWITCH_VGC_2 : FB_VGC;
+
+
+// PIP_Gamma Pumps
+
+{attribute 'pytmc' := ' pv: PC1K1:ZOS:PIP:1 '}
+fb_PC1K1_ZOS_PIP_1 : FB_PIP_GAMMA;
+//{attribute 'pytmc' := ' pv: PC1K1:ZOS:PIP:2 '}
+//fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: MR1K2:SWITCH:PIP:1 '}
+fb_MR1K2_SWITCH_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: TV1K1:PLEG:PIP:1 '}
+fb_TV1K1_PLEG_PIP_1 : FB_PIP_GAMMA;
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
