@@ -63,7 +63,9 @@ fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.PG); ]]></ST>
       <LineId Id="119" Count="2" />
       <LineId Id="210" Count="0" />
       <LineId Id="215" Count="0" />
-      <LineId Id="217" Count="6" />
+      <LineId Id="217" Count="2" />
+      <LineId Id="236" Count="0" />
+      <LineId Id="221" Count="2" />
       <LineId Id="208" Count="0" />
       <LineId Id="224" Count="7" />
       <LineId Id="209" Count="0" />
