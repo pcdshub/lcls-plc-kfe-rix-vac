@@ -16,7 +16,7 @@ fb_TV1K1_PLEG_GPI_1 : FB_MKS275;
 
 {attribute 'pytmc' := ' pv: PC1K1:ZOS:GCC:1 '}
 fb_PC1K1_ZOS_GCC_1 : FB_MKS500;
-{attribute 'pytmc' := ' pv: MR1K22:SWITCH:GCC:1 '}
+{attribute 'pytmc' := ' pv: MR1K2:SWITCH:GCC:1 '}
 fb_MR1K2_SWITCH_GCC_1 : FB_MKS500;
 {attribute 'pytmc' := ' pv: TV1K1:PLEG:GCC:1 '}
 fb_TV1K1_PLEG_GCC_1 : FB_MKS500;

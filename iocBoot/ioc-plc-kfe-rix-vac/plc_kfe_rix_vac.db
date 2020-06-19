@@ -990,7 +990,7 @@ record(bi, "PC1K1:ZOS:GCC:1:LOGGER_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "MR1K22:SWITCH:GCC:1:PRESS_RBV") {
+record(ai, "MR1K2:SWITCH:GCC:1:PRESS_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....H_GCC_1.IG.rPRESS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1005,7 +1005,7 @@ record(ai, "MR1K22:SWITCH:GCC:1:PRESS_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:AT_VAC_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:AT_VAC_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC...._GCC_1.IG.xAT_VAC")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1017,7 +1017,7 @@ record(bi, "MR1K22:SWITCH:GCC:1:AT_VAC_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:PRESS_OK_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:PRESS_OK_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....CC_1.IG.xPRESS_OK")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1029,7 +1029,7 @@ record(bi, "MR1K22:SWITCH:GCC:1:PRESS_OK_RBV") {
   info(archive, "VAL")
 }
 
-record(mbbi, "MR1K22:SWITCH:GCC:1:STATE_RBV") {
+record(mbbi, "MR1K2:SWITCH:GCC:1:STATE_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....H_GCC_1.IG.eState")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1055,7 +1055,7 @@ record(mbbi, "MR1K22:SWITCH:GCC:1:STATE_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:HV_SW_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:HV_SW_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....H_GCC_1.IG.xHV_SW")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1067,7 +1067,7 @@ record(bi, "MR1K22:SWITCH:GCC:1:HV_SW_RBV") {
   info(archive, "VAL")
 }
 
-record(bo, "MR1K22:SWITCH:GCC:1:HV_SW") {
+record(bo, "MR1K2:SWITCH:GCC:1:HV_SW") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....H_GCC_1.IG.xHV_SW")
   field(DTYP, "asynInt32")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xHV_SW=")
@@ -1077,7 +1077,7 @@ record(bo, "MR1K22:SWITCH:GCC:1:HV_SW") {
   info(archive, "VAL")
 }
 
-record(longin, "MR1K22:SWITCH:GCC:1:PRESS_AI_RBV") {
+record(longin, "MR1K2:SWITCH:GCC:1:PRESS_AI_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....C_1.IG.i_iPRESS_R")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1087,7 +1087,7 @@ record(longin, "MR1K22:SWITCH:GCC:1:PRESS_AI_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:HV_ON_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:HV_ON_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....GCC_1.IG.i_xHV_ON")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1099,7 +1099,7 @@ record(bi, "MR1K22:SWITCH:GCC:1:HV_ON_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:DISC_ACTIVE_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:DISC_ACTIVE_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....IG.i_xDisc_Active")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1111,7 +1111,7 @@ record(bi, "MR1K22:SWITCH:GCC:1:DISC_ACTIVE_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:HV_DIS_DO_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:HV_DIS_DO_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....CC_1.IG.q_xHV_DIS")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1123,7 +1123,7 @@ record(bi, "MR1K22:SWITCH:GCC:1:HV_DIS_DO_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "MR1K22:SWITCH:GCC:1:VAC_SP_RBV") {
+record(ai, "MR1K2:SWITCH:GCC:1:VAC_SP_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC...._GCC_1.IG.rVAC_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1138,7 +1138,7 @@ record(ai, "MR1K22:SWITCH:GCC:1:VAC_SP_RBV") {
   info(archive, "VAL")
 }
 
-record(ao, "MR1K22:SWITCH:GCC:1:VAC_SP") {
+record(ao, "MR1K2:SWITCH:GCC:1:VAC_SP") {
   field(DESC, "ads:GVL_KFE_RIX_VAC...._GCC_1.IG.rVAC_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rVAC_SP=")
@@ -1150,7 +1150,7 @@ record(ao, "MR1K22:SWITCH:GCC:1:VAC_SP") {
   info(archive, "VAL")
 }
 
-record(ai, "MR1K22:SWITCH:GCC:1:PRO_SP_RBV") {
+record(ai, "MR1K2:SWITCH:GCC:1:PRO_SP_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC...._GCC_1.IG.rPRO_SP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1165,7 +1165,7 @@ record(ai, "MR1K22:SWITCH:GCC:1:PRO_SP_RBV") {
   info(archive, "VAL")
 }
 
-record(ao, "MR1K22:SWITCH:GCC:1:PRO_SP") {
+record(ao, "MR1K2:SWITCH:GCC:1:PRO_SP") {
   field(DESC, "ads:GVL_KFE_RIX_VAC...._GCC_1.IG.rPRO_SP")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rPRO_SP=")
@@ -1177,7 +1177,7 @@ record(ao, "MR1K22:SWITCH:GCC:1:PRO_SP") {
   info(archive, "VAL")
 }
 
-record(ai, "MR1K22:SWITCH:GCC:1:SP_HYS_RBV") {
+record(ai, "MR1K2:SWITCH:GCC:1:SP_HYS_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC...._GCC_1.IG.rHYS_PR")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1192,7 +1192,7 @@ record(ai, "MR1K22:SWITCH:GCC:1:SP_HYS_RBV") {
   info(archive, "VAL")
 }
 
-record(ao, "MR1K22:SWITCH:GCC:1:SP_HYS") {
+record(ao, "MR1K2:SWITCH:GCC:1:SP_HYS") {
   field(DESC, "ads:GVL_KFE_RIX_VAC...._GCC_1.IG.rHYS_PR")
   field(DTYP, "asynFloat64")
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rHYS_PR=")
@@ -1204,7 +1204,7 @@ record(ao, "MR1K22:SWITCH:GCC:1:SP_HYS") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:ILK_OK_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:ILK_OK_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....H_GCC_1.IG.xILKOk")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -1216,7 +1216,7 @@ record(bi, "MR1K22:SWITCH:GCC:1:ILK_OK_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "MR1K22:SWITCH:GCC:1:LOGGER_RBV") {
+record(bi, "MR1K2:SWITCH:GCC:1:LOGGER_RBV") {
   field(DESC, "ads:GVL_KFE_RIX_VAC....TCH_GCC_1.IG.xLog")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
