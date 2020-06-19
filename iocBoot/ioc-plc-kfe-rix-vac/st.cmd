@@ -7,7 +7,7 @@ epicsEnvSet("ADS_IOC_TOP", "$(TOP)" )
 
 epicsEnvSet("IOCNAME", "ioc-plc-kfe-rix-vac" )
 epicsEnvSet("ENGINEER", "jjoshi" )
-epicsEnvSet("LOCATION", "PLC:plc_kfe_rix_vac" )
+epicsEnvSet("LOCATION", "PLC:KFE:RIX:VAC" )
 epicsEnvSet("IOCSH_PS1", "$(IOCNAME)> " )
 
 # Run common startup commands for linux soft IOC's
@@ -55,8 +55,8 @@ adsAsynPortDriverConfigure("$(ASYN_PORT)", "$(IPADDR)", "$(AMSID)", "$(AMS_PORT)
 cd "$(ADS_IOC_TOP)/db"
 
 
-dbLoadRecords("iocSoft.db", "IOC=PLC:plc_kfe_rix_vac")
-dbLoadRecords("save_restoreStatus.db", "P=PLC:plc_kfe_rix_vac:")
+dbLoadRecords("iocSoft.db", "IOC=PLC:KFE:RIX:VAC")
+dbLoadRecords("save_restoreStatus.db", "P=PLC:KFE:RIX:VAC:")
 
 cd "$(IOC_TOP)"
 
@@ -68,7 +68,7 @@ cd "$(IOC_TOP)"
 set_savefile_path( "$(IOC_DATA)/$(IOC)/autosave" )
 set_requestfile_path( "$(IOC_TOP)/autosave" )
 
-save_restoreSet_status_prefix( "PLC:plc_kfe_rix_vac:" )
+save_restoreSet_status_prefix( "PLC:KFE:RIX:VAC:" )
 save_restoreSet_IncompleteSetsOk( 1 )
 save_restoreSet_DatedBackupFiles( 1 )
 set_pass0_restoreFile( "info_positions.sav" )
