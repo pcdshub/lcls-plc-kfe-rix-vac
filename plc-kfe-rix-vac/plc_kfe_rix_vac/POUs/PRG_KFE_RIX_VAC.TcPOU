@@ -45,10 +45,10 @@ fb_MR1K2_SWITCH_VGC_2(
 
 // PIP_Gamma Pumps
 
-fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GCC_1.PG);
-//fb_PC1K1_ZOS_PIP_2(i_stGauge := fb_PC1K1_ZOS_GCC_1.PG); 
-fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GCC_1.PG); 
-fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.PG); ]]></ST>
+fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG);
+//fb_PC1K1_ZOS_PIP_2(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG); 
+fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GCC_1.IG); 
+fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.IG); ]]></ST>
     </Implementation>
     <LineIds Name="PRG_KFE_RIX_VAC">
       <LineId Id="95" Count="2" />
