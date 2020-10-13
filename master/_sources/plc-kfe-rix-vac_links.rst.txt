@@ -1,0 +1,42 @@
+
+Links
+-----
+
+.. csv-table::
+    :header: Owner A, Item A, Owner B, Item B
+    :align: center
+
+        InputDst, GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_2.i_iPRESS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3064), AI Standard Channel 2^Value
+        InputDst, GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_2.i_xSP_DI, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL1004), Channel 2^Input
+        OutputSrc, GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_2.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 2^Output
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 16 (EL3174-0002), AI Standard Channel 2^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xDisc_Active, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 19 (EL1124), Channel 4^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xHV_ON, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 19 (EL1124), Channel 3^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 17 (EL3174-0002), AI Standard Channel 1^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_iPRESS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3064), AI Standard Channel 3^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_xSP_DI, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL1004), Channel 3^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xClsLS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 14 (EL1004), Channel 2^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xOpnLS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 14 (EL1004), Channel 1^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xClsLS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 14 (EL1004), Channel 4^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xOpnLS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 14 (EL1004), Channel 3^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 16 (EL3174-0002), AI Standard Channel 1^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xDisc_Active, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 19 (EL1124), Channel 2^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xHV_ON, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 19 (EL1124), Channel 1^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 16 (EL3174-0002), AI Standard Channel 4^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3064), AI Standard Channel 1^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_xSP_DI, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL1004), Channel 1^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 16 (EL3174-0002), AI Standard Channel 3^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xDisc_Active, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 20 (EL1124), Channel 2^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xHV_ON, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 20 (EL1124), Channel 1^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 17 (EL3174-0002), AI Standard Channel 2^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_iPRESS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3064), AI Standard Channel 4^Value
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_xSP_DI, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL1004), Channel 4^Input
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 3^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 3^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.q_xOPN_DO, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 15 (EL2004), Channel 1^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.q_xOPN_DO, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 15 (EL2004), Channel 2^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 1^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 1^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 2^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 4^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL2202), Channel 1^Output
