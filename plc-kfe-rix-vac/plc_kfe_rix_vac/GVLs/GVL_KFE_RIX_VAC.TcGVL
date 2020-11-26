@@ -29,7 +29,6 @@ fb_MR1K2_SWITCH_VGC_1 : FB_VGC;
 {attribute 'pytmc' := ' pv: MR1K2:SWITCH:VGC:2 '}
 fb_MR1K2_SWITCH_VGC_2 : FB_VGC;
 
-
 // PIP_Gamma Pumps
 
 {attribute 'pytmc' := ' pv: PC1K1:ZOS:PIP:1 '}
