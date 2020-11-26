@@ -40,3 +40,9 @@ Links
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 2^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 4^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 9 (EL2202), Channel 1^Output
+        plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xClsLS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 36 (EL1004), Channel 1^Input
+        plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOpnLS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 36 (EL1004), Channel 2^Input
+        plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_A, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 34 (EL2202), Channel 1^Output
+        plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_B, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 34 (EL2202), Channel 2^Output
+        plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_C, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 35 (EL2202), Channel 1^Output
+        plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xOPN_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 35 (EL2202), Channel 2^Output

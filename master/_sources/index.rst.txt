@@ -19,6 +19,14 @@ lcls-plc-kfe-rix-vac
     plc-kfe-rix-vac_plc_kfe_rix_vac_epics
     plc-kfe-rix-vac_plc_kfe_rix_vac_source
 
+.. toctree::
+    :maxdepth: 2
+    :caption: plc_kfe_rix_vac_fs
+
+    plc-kfe-rix-vac_plc_kfe_rix_vac_fs_summary
+    plc-kfe-rix-vac_plc_kfe_rix_vac_fs_epics
+    plc-kfe-rix-vac_plc_kfe_rix_vac_fs_source
+
 
 
 Indices and tables

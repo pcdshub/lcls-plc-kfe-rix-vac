@@ -41,7 +41,6 @@ GVL_KFE_RIX_VAC
     {attribute 'pytmc' := ' pv: MR1K2:SWITCH:VGC:2 '}
     fb_MR1K2_SWITCH_VGC_2 : FB_VGC;
 
-
     // PIP_Gamma Pumps
 
     {attribute 'pytmc' := ' pv: PC1K1:ZOS:PIP:1 '}
@@ -67,7 +66,7 @@ GVL_Variables
 
     //Example implementation of the FFO
     {attribute 'pytmc' := '
-    	pv: PLC:KFE:VAC:K0:FF1
+    	pv: PLC:KFE:RIX:VAC:K0:FF1
     '}
     {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 1^Output'}
     g_FastFaultOutput1  :   FB_HardwareFFOutput;
