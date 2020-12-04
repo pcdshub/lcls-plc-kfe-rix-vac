@@ -23,6 +23,15 @@ GVL_KFE_RIX_VAC
     fb_MR1K2_SWITCH_GPI_1 : FB_MKS275;
     {attribute 'pytmc' := ' pv: TV1K1:PLEG:GPI:1 '}
     fb_TV1K1_PLEG_GPI_1 : FB_MKS275;
+    {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 119 (EL3174)^AI Standard Channel 2^Value'}
+    {attribute 'pytmc' := ' pv: SL1K2:EXIT:GPI:1 '}
+    fb_SL1K2_EXIT_GPI_1 : FB_MKS275;
+
+    //MKS275 EP Gauges
+    {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)^AI Standard Channel 2^Value'}
+    {attribute 'pytmc' := ' pv: ST1K2:PPS:GPI:1 '}
+    fb_ST1K2_PPS_GPI_1 : FB_MKS275;
+
 
     // MKS500 Gauges
 
@@ -33,6 +42,19 @@ GVL_KFE_RIX_VAC
     {attribute 'pytmc' := ' pv: TV1K1:PLEG:GCC:1 '}
     fb_TV1K1_PLEG_GCC_1 : FB_MKS500;
 
+    {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 119 (EL3174)^AI Standard Channel 1^Value;
+    								 .i_xHV_ON	    :=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 123 (EL1124)^Channel 1^Input;
+    								 .i_xDisc_Active:=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 123 (EL1124)^Channel 2^Input;								 
+    								 .q_xHV_DIS		:= 	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 118 (EL2624)^Channel 1^Output	'}
+    {attribute 'pytmc' := ' pv: SL1K2:EXIT:GCC:1 '}
+    fb_SL1K2_EXIT_GCC_1 : FB_MKS500;
+
+
+    //MKS500 EP Gauges
+    {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)^AI Standard Channel 1^Value;	
+    							 .q_xHV_DIS		:= 	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S2-DRL-01 (EP2624-0002)^Channel 1^Output	'}
+    {attribute 'pytmc' := ' pv: ST1K2:PPS:GCC:1 '}
+    fb_ST1K2_PPS_GCC_1 : FB_MKS500;
 
     // VGC Valves
 
@@ -40,6 +62,19 @@ GVL_KFE_RIX_VAC
     fb_MR1K2_SWITCH_VGC_1 : FB_VGC;
     {attribute 'pytmc' := ' pv: MR1K2:SWITCH:VGC:2 '}
     fb_MR1K2_SWITCH_VGC_2 : FB_VGC;
+
+    {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 120 (EL1004)^Channel 1^Input;
+    								 .i_xClsLS	:=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 120 (EL1004)^Channel 2^Input;
+    								.q_xOPN_DO	:=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 121 (EL2004)^Channel 1^Output'}
+    {attribute 'pytmc' := ' pv: SL1K2:EXIT:VGC:1 '}
+    fb_SL1K2_EXIT_VGC_1 : FB_VGC;
+
+    // VGC EP Valves
+    {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 1^Input;
+    								 .i_xClsLS	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 1^Input;
+    								.q_xOPN_DO	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 2^Input'}
+    {attribute 'pytmc' := ' pv: ST1K2:PPS:VGC:1 '}
+    fb_ST1K2_PPS_VGC_1 : FB_VGC;
 
     // PIP_Gamma Pumps
 
@@ -51,6 +86,17 @@ GVL_KFE_RIX_VAC
     fb_MR1K2_SWITCH_PIP_1 : FB_PIP_GAMMA;
     {attribute 'pytmc' := ' pv: TV1K1:PLEG:PIP:1 '}
     fb_TV1K1_PLEG_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^B950_233_R02 (E3) (EL3064)^AI Standard Channel 1^Value;
+    								 .i_xSP_DI		:=  TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^B950_233_R02 (E4) (EL1004)^Channel 1^Input;
+    								 .q_xHVEna_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^B950_233_R02 (E2) (EL2794)^Channel 1^Output'}
+    {attribute 'pytmc' := ' pv: ST1K2:PPS:PIP:1 '}
+    fb_ST1K2_PPS_PIP_1 : FB_PIP_GAMMA;
+
+    {attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL3064)^AI Standard Channel 1^Value;
+    								 .i_xSP_DI		:=  TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL1004)^Channel 1^Input;
+    								 .q_xHVEna_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL2794)^Channel 1^Output'}
+    {attribute 'pytmc' := ' pv: SL1K2:EXIT:PIP:1 '}
+    fb_SL1K2_EXIT_PIP_1 : FB_PIP_GAMMA;
 
     END_VAR
 
@@ -108,13 +154,16 @@ PRG_KFE_RIX_VAC
     fb_PC1K1_ZOS_GPI_1(PG=>); 
     fb_MR1K2_SWITCH_GPI_1(PG=>); 
     fb_TV1K1_PLEG_GPI_1(PG=>); 
+    fb_SL1K2_EXIT_GPI_1(PG=>);
+    fb_ST1K2_PPS_GPI_1(PG=>);
 
     // MKS500 Gauges
 
     fb_PC1K1_ZOS_GCC_1(PG := fb_PC1K1_ZOS_GPI_1.PG);
     fb_MR1K2_SWITCH_GCC_1(PG := fb_MR1K2_SWITCH_GPI_1.PG);
     fb_TV1K1_PLEG_GCC_1(PG := fb_TV1K1_PLEG_GPI_1.PG);
-
+    fb_SL1K2_EXIT_GCC_1(PG := fb_SL1K2_EXIT_GPI_1.PG);
+    fb_ST1K2_PPS_GCC_1(PG := fb_ST1K2_PPS_GPI_1.PG);
 
     // VGC Valves
 
@@ -136,14 +185,35 @@ PRG_KFE_RIX_VAC
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode, 
                              io_fbFFHWO := g_FastFaultOutput1); 
+    						 
+    fb_SL1K2_EXIT_VGC_1(
+                             i_stUSG := fb_Tv1K1_PLEG_GCC_1.IG, 
+                             i_stDSG := fb_SL1K2_EXIT_GCC_1.IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode, 
+                             io_fbFFHWO := g_FastFaultOutput1);						 
 
+    fb_ST1K2_PPS_VGC_1(
+    	                     i_stUSG := fb_SL1K2_EXIT_GCC_1.IG, 
+                             i_stDSG := fb_ST1K2_PPS_GCC_1.IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode, 
+                             io_fbFFHWO := g_FastFaultOutput1); 
 
     // PIP_Gamma Pumps
 
     fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG);
     //fb_PC1K1_ZOS_PIP_2(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG); 
     fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GCC_1.IG); 
-    fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.IG);
+    fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.IG); 
+    fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GCC_1.IG);
+    fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GCC_1.IG);
 
     END_PROGRAM
 

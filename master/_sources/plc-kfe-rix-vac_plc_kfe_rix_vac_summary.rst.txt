@@ -24,7 +24,7 @@ Settings
 Pragmas
 -------
 
-Total pragmas found: 14
+Total pragmas found: 30
 Total linter errors: 0
 
 
@@ -72,18 +72,18 @@ Constants
 
         Constants.bFPUSupport, BOOL, 7651704 (8)
         Constants.bLittleEndian, BOOL, 7651688 (8)
-        Constants.bMulticoreSupport, BOOL, 14905312 (8)
+        Constants.bMulticoreSupport, BOOL, 15650528 (8)
         Constants.bSimulationMode, BOOL, 7651696 (8)
-        Constants.CompilerVersion, VERSION, 14905152 (64)
-        Constants.CompilerVersionNumeric, DWORD, 14905280 (32)
+        Constants.CompilerVersion, VERSION, 15650368 (64)
+        Constants.CompilerVersionNumeric, DWORD, 15650496 (32)
         Constants.gc_GaugeValidState, INT, 7513856 (16)
         Constants.gc_GaugeValidState, INT, 7515200 (16)
-        Constants.gc_iSizeOfGGOArray, INT, 3368688 (16)
         Constants.gc_iSizeOfGGOArray, INT, 7515184 (16)
-        Constants.nPackMode, UINT, 14905232 (16)
-        Constants.nRegisterSize, WORD, 14905216 (16)
-        Constants.RuntimeVersion, VERSION, 14905088 (64)
-        Constants.RuntimeVersionNumeric, DWORD, 14905248 (32)
+        Constants.gc_iSizeOfGGOArray, INT, 3368688 (16)
+        Constants.nPackMode, UINT, 15650448 (16)
+        Constants.nRegisterSize, WORD, 15650432 (16)
+        Constants.RuntimeVersion, VERSION, 15650304 (64)
+        Constants.RuntimeVersionNumeric, DWORD, 15650464 (32)
 
 .. raw:: html
 
@@ -138,53 +138,83 @@ GVL_KFE_RIX_VAC
 .. raw:: html
 
    <details>
-       <summary>41 Symbols</summary>
+       <summary>71 Symbols</summary>
 
 .. csv-table::
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1, FB_MKS500, 7988736 (85312)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_iPRESS_R, INT, 8073712 (16)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xDisc_Active, BOOL, 8073744 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xHV_ON, BOOL, 8073736 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.q_xHV_DIS, BOOL, 8073728 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1, FB_MKS500, 8156544 (85312)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_iPRESS_R, INT, 8241520 (16)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xDisc_Active, BOOL, 8241552 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xHV_ON, BOOL, 8241544 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.q_xHV_DIS, BOOL, 8241536 (8)
         GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1, FB_MKS275, 7735616 (83904)
         GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.i_iPRESS_R, INT, 7819328 (16)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1, FB_PIP_Gamma, 8478464 (87680)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_iPRESS, INT, 8564464 (16)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_xSP_DI, BOOL, 8564480 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.q_xHVEna_DO, BOOL, 8564448 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1, FB_VGC, 8159360 (115712)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xClsLS, BOOL, 8274984 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xOpnLS, BOOL, 8274976 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.q_xOPN_DO, BOOL, 8274992 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2, FB_VGC, 8275072 (115712)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xClsLS, BOOL, 8390696 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xOpnLS, BOOL, 8390688 (8)
-        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.q_xOPN_DO, BOOL, 8390704 (8)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1, FB_MKS500, 7903424 (85312)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_iPRESS_R, INT, 7988400 (16)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xDisc_Active, BOOL, 7988432 (8)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xHV_ON, BOOL, 7988424 (8)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS, BOOL, 7988416 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1, FB_PIP_Gamma, 9048320 (87680)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_iPRESS, INT, 9134320 (16)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_xSP_DI, BOOL, 9134336 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.q_xHVEna_DO, BOOL, 9134304 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1, FB_VGC, 8497792 (115712)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xClsLS, BOOL, 8613416 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xOpnLS, BOOL, 8613408 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.q_xOPN_DO, BOOL, 8613424 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2, FB_VGC, 8613504 (115712)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xClsLS, BOOL, 8729128 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xOpnLS, BOOL, 8729120 (8)
+        GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.q_xOPN_DO, BOOL, 8729136 (8)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1, FB_MKS500, 8071232 (85312)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_iPRESS_R, INT, 8156208 (16)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xDisc_Active, BOOL, 8156240 (8)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xHV_ON, BOOL, 8156232 (8)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS, BOOL, 8156224 (8)
         GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1, FB_MKS275, 7651712 (83904)
         GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.i_iPRESS_R, INT, 7735424 (16)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1, FB_PIP_Gamma, 8390784 (87680)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS, INT, 8476784 (16)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_xSP_DI, BOOL, 8476800 (8)
-        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.q_xHVEna_DO, BOOL, 8476768 (8)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1, FB_MKS500, 8074048 (85312)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_iPRESS_R, INT, 8159024 (16)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xDisc_Active, BOOL, 8159056 (8)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xHV_ON, BOOL, 8159048 (8)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.q_xHV_DIS, BOOL, 8159040 (8)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1, FB_PIP_Gamma, 8960640 (87680)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS, INT, 9046640 (16)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_xSP_DI, BOOL, 9046656 (8)
+        GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.q_xHVEna_DO, BOOL, 9046624 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1, FB_MKS500, 8327168 (85312)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.i_iPRESS_R, INT, 8412144 (16)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.i_xDisc_Active, BOOL, 8412176 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.i_xHV_ON, BOOL, 8412168 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.q_xHV_DIS, BOOL, 8412160 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1, FB_MKS275, 7903424 (83904)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.i_iPRESS_R, INT, 7987136 (16)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1, FB_PIP_Gamma, 9311360 (87680)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.i_iPRESS, INT, 9397360 (16)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.i_xSP_DI, BOOL, 9397376 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.q_xHVEna_DO, BOOL, 9397344 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1, FB_VGC, 8729216 (115712)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.i_xClsLS, BOOL, 8844840 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.i_xOpnLS, BOOL, 8844832 (8)
+        GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.q_xOPN_DO, BOOL, 8844848 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1, FB_MKS500, 8412480 (85312)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.i_iPRESS_R, INT, 8497456 (16)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.i_xDisc_Active, BOOL, 8497488 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.i_xHV_ON, BOOL, 8497480 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.q_xHV_DIS, BOOL, 8497472 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1, FB_MKS275, 7987328 (83904)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1.i_iPRESS_R, INT, 8071040 (16)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1, FB_PIP_Gamma, 9223680 (87680)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.i_iPRESS, INT, 9309680 (16)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.i_xSP_DI, BOOL, 9309696 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.q_xHVEna_DO, BOOL, 9309664 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1, FB_VGC, 8844928 (115712)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.i_xClsLS, BOOL, 8960552 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.i_xOpnLS, BOOL, 8960544 (8)
+        GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.q_xOPN_DO, BOOL, 8960560 (8)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1, FB_MKS500, 8241856 (85312)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_iPRESS_R, INT, 8326832 (16)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xDisc_Active, BOOL, 8326864 (8)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xHV_ON, BOOL, 8326856 (8)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.q_xHV_DIS, BOOL, 8326848 (8)
         GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1, FB_MKS275, 7819520 (83904)
         GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.i_iPRESS_R, INT, 7903232 (16)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1, FB_PIP_Gamma, 8566144 (87680)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_iPRESS, INT, 8652144 (16)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_xSP_DI, BOOL, 8652160 (8)
-        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO, BOOL, 8652128 (8)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1, FB_PIP_Gamma, 9136000 (87680)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_iPRESS, INT, 9222000 (16)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_xSP_DI, BOOL, 9222016 (8)
+        GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO, BOOL, 9221984 (8)
 
 .. raw:: html
 
@@ -272,9 +302,9 @@ GVL_Variables
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        GVL_Variables.fbLogHandler, FB_LogHandler, 9119232 (5785856)
-        GVL_Variables.g_FastFaultOutput1, FB_HardwareFFOutput, 8653824 (465408)
-        GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut, BOOL, 8653912 (8)
+        GVL_Variables.fbLogHandler, FB_LogHandler, 9864448 (5785856)
+        GVL_Variables.g_FastFaultOutput1, FB_HardwareFFOutput, 9399040 (465408)
+        GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut, BOOL, 9399128 (8)
         GVL_Variables.xSystemOverrideMode, BOOL, 7515320 (8)
 
 
@@ -405,8 +435,8 @@ Global_Variables
         Global_Variables.EMPTY_GUID_STRUCT, GUID, 3361696 (128)
         Global_Variables.EMPTY_ROUTE_ENTRY, ST_AmsRouteEntry, 3222208 (1184)
         Global_Variables.eWatchdogConfig, E_WATCHDOG_TIME_CONFIG, 3158480 (16)
-        Global_Variables.fbGetCurTaskIdx, GETCURTASKINDEX, 7515744 (128)
         Global_Variables.fbGetCurTaskIdx, GETCURTASKINDEX, 7515040 (128)
+        Global_Variables.fbGetCurTaskIdx, GETCURTASKINDEX, 7515744 (128)
         Global_Variables.FLOATREC_EXP_IS_INF, INT, 3223568 (16)
         Global_Variables.FLOATREC_EXP_IS_NAN, INT, 3223552 (16)
         Global_Variables.FLOATREC_MAX_DIGITS, INT, 3223584 (16)
@@ -435,8 +465,8 @@ Global_Variables
         Global_Variables.FORMAT_DECASC_CODES, BYTE, 3224448 (80)
         Global_Variables.FORMAT_HEXASC_CODES, BYTE, 3224192 (256)
         Global_Variables.FORMAT_MAX_ARGS, INT, 3223536 (16)
-        Global_Variables.g_DummyVG, ST_VG, 7515328 (416)
         Global_Variables.g_DummyVG, ST_VG, 7513984 (1056)
+        Global_Variables.g_DummyVG, ST_VG, 7515328 (416)
         Global_Variables.g_iSizeOfGGOArray, INT, 7513872 (16)
         Global_Variables.g_iSizeOfGGOArray, INT, 7515216 (16)
         Global_Variables.g_stSystem, ST_System, 7513888 (88)
@@ -667,7 +697,7 @@ TC_EVENTS
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        TC_EVENTS.LCLSGeneralEventClass, LCLSGeneralEventClass, 14954240 (960)
+        TC_EVENTS.LCLSGeneralEventClass, LCLSGeneralEventClass, 15699456 (960)
 
 
 TC_EVENT_CLASSES
@@ -677,12 +707,12 @@ TC_EVENT_CLASSES
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        TC_EVENT_CLASSES.LCLSGeneralEventClass, GUID, 14924160 (128)
-        TC_EVENT_CLASSES.TcGeneralAdsEventClass, GUID, 14923648 (128)
-        TC_EVENT_CLASSES.TcRouterEventClass, GUID, 14923776 (128)
-        TC_EVENT_CLASSES.TcRTimeEventClass, GUID, 14923904 (128)
-        TC_EVENT_CLASSES.TcSystemEventClass, GUID, 14923520 (128)
-        TC_EVENT_CLASSES.Win32EventClass, GUID, 14924032 (128)
+        TC_EVENT_CLASSES.LCLSGeneralEventClass, GUID, 15669376 (128)
+        TC_EVENT_CLASSES.TcGeneralAdsEventClass, GUID, 15668864 (128)
+        TC_EVENT_CLASSES.TcRouterEventClass, GUID, 15668992 (128)
+        TC_EVENT_CLASSES.TcRTimeEventClass, GUID, 15669120 (128)
+        TC_EVENT_CLASSES.TcSystemEventClass, GUID, 15668736 (128)
+        TC_EVENT_CLASSES.Win32EventClass, GUID, 15669248 (128)
 
 
 TwinCAT_LicenseInfoVarList
@@ -692,7 +722,7 @@ TwinCAT_LicenseInfoVarList
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        TwinCAT_LicenseInfoVarList._LicenseInfo, PlcLicenseInfo, 14905344 (1024)
+        TwinCAT_LicenseInfoVarList._LicenseInfo, PlcLicenseInfo, 15650560 (1024)
 
 
 TwinCAT_SystemInfoVarList
@@ -702,10 +732,10 @@ TwinCAT_SystemInfoVarList
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        TwinCAT_SystemInfoVarList.__PlcTask, _Implicit_Task_Info, 14909504 (704)
-        TwinCAT_SystemInfoVarList._AppInfo, PlcAppSystemInfo, 14906368 (2048)
-        TwinCAT_SystemInfoVarList._TaskInfo, PlcTaskSystemInfo, 14908416 (1024)
-        TwinCAT_SystemInfoVarList._TaskOid_PlcTask, OTCID, 14909472 (32)
-        TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask, OTCID, 14909440 (32)
+        TwinCAT_SystemInfoVarList.__PlcTask, _Implicit_Task_Info, 15654720 (704)
+        TwinCAT_SystemInfoVarList._AppInfo, PlcAppSystemInfo, 15651584 (2048)
+        TwinCAT_SystemInfoVarList._TaskInfo, PlcTaskSystemInfo, 15653632 (1024)
+        TwinCAT_SystemInfoVarList._TaskOid_PlcTask, OTCID, 15654688 (32)
+        TwinCAT_SystemInfoVarList._TaskPouOid_PlcTask, OTCID, 15654656 (32)
 
 
