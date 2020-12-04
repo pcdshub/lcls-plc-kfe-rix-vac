@@ -63,6 +63,12 @@
 				<Text><![CDATA[Opn_Timeout]]></Text>
 				<Enum>9</Enum>
 			</EnumInfo>
+			<Hides>
+				<Hide GUID="{A29211B1-6C3E-47F1-98AC-BF5B05952542}"/>
+				<Hide GUID="{31740A42-79DD-4C42-9A4C-2D54C982E68C}"/>
+				<Hide GUID="{5A11526D-6243-4219-A069-B05E12AE7309}"/>
+				<Hide GUID="{D69DF715-F6B2-4ED6-B4EE-37D4848C5CB5}"/>
+			</Hides>
 		</DataType>
 	</DataTypes>
 	<Project GUID="{99092E7C-220C-4278-A653-5D30D5B1ECF0}" Name="plc_kfe_rix_vac_fs" PrjFilePath="..\..\plc_kfe_rix_vac_fs\plc_kfe_rix_vac_fs.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac_fs\plc_kfe_rix_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
@@ -92,6 +98,15 @@
 				</Var>
 				<Var>
 					<Name>GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xTrigger</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO</Name>
+					<Comment><![CDATA[VETO Devices]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -198,6 +213,9 @@
 	</Project>
 	<Mappings>
 		<OwnerA Name="plc_kfe_rix_vac_fs Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_FFO (EL2202)">
+				<Link VarA="PlcTask Outputs^GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut" VarB="Channel 2^Output" AutoLink="true" Size="1"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 34 (EL2202)">
 				<Link VarA="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_A" VarB="Channel 1^Output" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_B" VarB="Channel 2^Output" Size="1"/>

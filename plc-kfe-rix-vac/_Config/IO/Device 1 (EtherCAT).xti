@@ -30,9 +30,15 @@
 		<Image Id="1" AddrType="9" ImageType="3">
 			<Name>Image</Name>
 		</Image>
+		<Image Id="2" AddrType="10" ImageType="3">
+			<Name>Image-2</Name>
+		</Image>
 		<Box File="Term 1 (EK1200).xti" Id="1">
 			<EtherCAT PortABoxInfo="#x00ffffff"/>
 		</Box>
-		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="2" MaxSwitchFrames="120"/>
+		<Box File="B950_100H1_WALL (EK1100).xti" Id="117">
+			<EtherCAT PortABoxInfo="#x01000025"/>
+		</Box>
+		<EtherCAT EnableVirtualSwitch="true" MaxSwitchPorts="4" MaxSwitchFrames="160"/>
 	</Device>
 </TcSmItem>
