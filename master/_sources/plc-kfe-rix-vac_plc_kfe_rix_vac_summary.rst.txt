@@ -24,7 +24,7 @@ Settings
 Pragmas
 -------
 
-Total pragmas found: 30
+Total pragmas found: 32
 Total linter errors: 0
 
 
@@ -76,10 +76,10 @@ Constants
         Constants.bSimulationMode, BOOL, 7651696 (8)
         Constants.CompilerVersion, VERSION, 15650368 (64)
         Constants.CompilerVersionNumeric, DWORD, 15650496 (32)
-        Constants.gc_GaugeValidState, INT, 7513856 (16)
         Constants.gc_GaugeValidState, INT, 7515200 (16)
-        Constants.gc_iSizeOfGGOArray, INT, 7515184 (16)
+        Constants.gc_GaugeValidState, INT, 7513856 (16)
         Constants.gc_iSizeOfGGOArray, INT, 3368688 (16)
+        Constants.gc_iSizeOfGGOArray, INT, 7515184 (16)
         Constants.nPackMode, UINT, 15650448 (16)
         Constants.nRegisterSize, WORD, 15650432 (16)
         Constants.RuntimeVersion, VERSION, 15650304 (64)
@@ -138,7 +138,7 @@ GVL_KFE_RIX_VAC
 .. raw:: html
 
    <details>
-       <summary>71 Symbols</summary>
+       <summary>85 Symbols</summary>
 
 .. csv-table::
     :header: Symbol, Type, Offset/Size
@@ -215,6 +215,20 @@ GVL_KFE_RIX_VAC
         GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_iPRESS, INT, 9222000 (16)
         GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_xSP_DI, BOOL, 9222016 (8)
         GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO, BOOL, 9221984 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface, FB_VFS_Interface, 19117952 (84864)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_eVFS_State, E_VGC, 19202768 (16)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xMPS_OK, BOOL, 19202760 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xTrigger, BOOL, 19202736 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK, BOOL, 19202416 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Closed, BOOL, 19202752 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Open, BOOL, 19202744 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.iq_stValve.xCLS_SW, BOOL, 19201736 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW, BOOL, 19202704 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW, BOOL, 19202696 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode, BOOL, 19202720 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen, BOOL, 19202728 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK, BOOL, 19202688 (8)
+        GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset, BOOL, 19202712 (8)
 
 .. raw:: html
 
@@ -465,12 +479,12 @@ Global_Variables
         Global_Variables.FORMAT_DECASC_CODES, BYTE, 3224448 (80)
         Global_Variables.FORMAT_HEXASC_CODES, BYTE, 3224192 (256)
         Global_Variables.FORMAT_MAX_ARGS, INT, 3223536 (16)
-        Global_Variables.g_DummyVG, ST_VG, 7513984 (1056)
         Global_Variables.g_DummyVG, ST_VG, 7515328 (416)
-        Global_Variables.g_iSizeOfGGOArray, INT, 7513872 (16)
+        Global_Variables.g_DummyVG, ST_VG, 7513984 (1056)
         Global_Variables.g_iSizeOfGGOArray, INT, 7515216 (16)
-        Global_Variables.g_stSystem, ST_System, 7513888 (88)
+        Global_Variables.g_iSizeOfGGOArray, INT, 7513872 (16)
         Global_Variables.g_stSystem, ST_System, 7515232 (88)
+        Global_Variables.g_stSystem, ST_System, 7513888 (88)
         Global_Variables.GLOBAL_DCF77_PULSE_SPLIT, TIME, 3160192 (32)
         Global_Variables.GLOBAL_DCF77_SEQUENCE_CHECK, BOOL, 3160072 (8)
         Global_Variables.GLOBAL_FORMAT_HASH_PREFIX_TYPE, E_HashPrefixTypes, 3160160 (16)
@@ -678,6 +692,16 @@ PMPS_GVL
 
    </details>
    <br />
+
+
+PRG_KFE_RIX_VAC
+^^^^^^^^^^^^^^^
+
+.. csv-table::
+    :header: Symbol, Type, Offset/Size
+    :align: center
+
+        PRG_KFE_RIX_VAC.vfs_dummy_gauge, ST_VG, 19060160 (1056)
 
 
 ParameterList

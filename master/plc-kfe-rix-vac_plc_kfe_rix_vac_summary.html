@@ -113,6 +113,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#lcls-general">LCLS_General</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lcls-vacuum">LCLS_Vacuum</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pmps-gvl">PMPS_GVL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prg-kfe-rix-vac">PRG_KFE_RIX_VAC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#parameterlist">ParameterList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tc-events">TC_EVENTS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tc-event-classes">TC_EVENT_CLASSES</a></li>
@@ -234,7 +235,7 @@
 </div>
 <div class="section" id="pragmas">
 <span id="plc-kfe-rix-vac-pragmas"></span><h1>Pragmas<a class="headerlink" href="#pragmas" title="Permalink to this headline">¶</a></h1>
-<p>Total pragmas found: 30
+<p>Total pragmas found: 32
 Total linter errors: 0</p>
 </div>
 <div class="section" id="libraries">
@@ -355,19 +356,19 @@ Total linter errors: 0</p>
 </tr>
 <tr class="row-even"><td><p>Constants.gc_GaugeValidState</p></td>
 <td><p>INT</p></td>
-<td><p>7513856 (16)</p></td>
+<td><p>7515200 (16)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Constants.gc_GaugeValidState</p></td>
 <td><p>INT</p></td>
-<td><p>7515200 (16)</p></td>
+<td><p>7513856 (16)</p></td>
 </tr>
 <tr class="row-even"><td><p>Constants.gc_iSizeOfGGOArray</p></td>
 <td><p>INT</p></td>
-<td><p>7515184 (16)</p></td>
+<td><p>3368688 (16)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Constants.gc_iSizeOfGGOArray</p></td>
 <td><p>INT</p></td>
-<td><p>3368688 (16)</p></td>
+<td><p>7515184 (16)</p></td>
 </tr>
 <tr class="row-even"><td><p>Constants.nPackMode</p></td>
 <td><p>UINT</p></td>
@@ -484,7 +485,7 @@ Total linter errors: 0</p>
 <div class="section" id="gvl-kfe-rix-vac">
 <h2>GVL_KFE_RIX_VAC<a class="headerlink" href="#gvl-kfe-rix-vac" title="Permalink to this headline">¶</a></h2>
 <details>
-    <summary>71 Symbols</summary><table class="docutils align-center">
+    <summary>85 Symbols</summary><table class="docutils align-center">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -780,6 +781,62 @@ Total linter errors: 0</p>
 <tr class="row-even"><td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO</p></td>
 <td><p>BOOL</p></td>
 <td><p>9221984 (8)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface</p></td>
+<td><p>FB_VFS_Interface</p></td>
+<td><p>19117952 (84864)</p></td>
+</tr>
+<tr class="row-even"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_eVFS_State</p></td>
+<td><p>E_VGC</p></td>
+<td><p>19202768 (16)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xMPS_OK</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202760 (8)</p></td>
+</tr>
+<tr class="row-even"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xTrigger</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202736 (8)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202416 (8)</p></td>
+</tr>
+<tr class="row-even"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Closed</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202752 (8)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Open</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202744 (8)</p></td>
+</tr>
+<tr class="row-even"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.iq_stValve.xCLS_SW</p></td>
+<td><p>BOOL</p></td>
+<td><p>19201736 (8)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202704 (8)</p></td>
+</tr>
+<tr class="row-even"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202696 (8)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202720 (8)</p></td>
+</tr>
+<tr class="row-even"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202728 (8)</p></td>
+</tr>
+<tr class="row-odd"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202688 (8)</p></td>
+</tr>
+<tr class="row-even"><td><p>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset</p></td>
+<td><p>BOOL</p></td>
+<td><p>19202712 (8)</p></td>
 </tr>
 </tbody>
 </table>
@@ -1581,27 +1638,27 @@ Total linter errors: 0</p>
 </tr>
 <tr class="row-even"><td><p>Global_Variables.g_DummyVG</p></td>
 <td><p>ST_VG</p></td>
-<td><p>7513984 (1056)</p></td>
+<td><p>7515328 (416)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Global_Variables.g_DummyVG</p></td>
 <td><p>ST_VG</p></td>
-<td><p>7515328 (416)</p></td>
+<td><p>7513984 (1056)</p></td>
 </tr>
 <tr class="row-even"><td><p>Global_Variables.g_iSizeOfGGOArray</p></td>
 <td><p>INT</p></td>
-<td><p>7513872 (16)</p></td>
+<td><p>7515216 (16)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Global_Variables.g_iSizeOfGGOArray</p></td>
 <td><p>INT</p></td>
-<td><p>7515216 (16)</p></td>
+<td><p>7513872 (16)</p></td>
 </tr>
 <tr class="row-even"><td><p>Global_Variables.g_stSystem</p></td>
 <td><p>ST_System</p></td>
-<td><p>7513888 (88)</p></td>
+<td><p>7515232 (88)</p></td>
 </tr>
 <tr class="row-odd"><td><p>Global_Variables.g_stSystem</p></td>
 <td><p>ST_System</p></td>
-<td><p>7515232 (88)</p></td>
+<td><p>7513888 (88)</p></td>
 </tr>
 <tr class="row-even"><td><p>Global_Variables.GLOBAL_DCF77_PULSE_SPLIT</p></td>
 <td><p>TIME</p></td>
@@ -2267,6 +2324,28 @@ Total linter errors: 0</p>
 </table>
 </details>
 <br /></div>
+<div class="section" id="prg-kfe-rix-vac">
+<h2>PRG_KFE_RIX_VAC<a class="headerlink" href="#prg-kfe-rix-vac" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbol</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Offset/Size</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PRG_KFE_RIX_VAC.vfs_dummy_gauge</p></td>
+<td><p>ST_VG</p></td>
+<td><p>19060160 (1056)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="parameterlist">
 <h2>ParameterList<a class="headerlink" href="#parameterlist" title="Permalink to this headline">¶</a></h2>
 <table class="docutils align-center">

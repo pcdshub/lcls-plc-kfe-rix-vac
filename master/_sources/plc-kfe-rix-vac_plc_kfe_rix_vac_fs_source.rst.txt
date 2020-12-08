@@ -14,9 +14,7 @@ GVL_RIX_VAC_FS_DEVICES
 ::
 
     VAR_GLOBAL
-    	{attribute 'pytmc' := '
-    		pv: TV1K2:VFS:1
-    	'}
+    	
     	fb_TV1K2_VFS_1 : FB_VFS;
     END_VAR
 
@@ -28,7 +26,7 @@ GVL_RIX_VAC_FSV_PMPS
 
     VAR_GLOBAL
     	{attribute 'pytmc' := '
-        	pv: PLC:KFE:RIX:VAC:K0:FFO:02
+        	pv: PLC:KFE:RIX:VAC:K2:FFO:02
         '}
         {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output'}
         g_FastFaultOutput2  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
