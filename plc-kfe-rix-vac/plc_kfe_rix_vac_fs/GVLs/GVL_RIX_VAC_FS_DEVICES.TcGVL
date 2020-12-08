@@ -2,9 +2,7 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
   <GVL Name="GVL_RIX_VAC_FS_DEVICES" Id="{55a8b26e-0e5a-4711-b225-ef73b87db565}">
     <Declaration><![CDATA[VAR_GLOBAL
-	{attribute 'pytmc' := '
-		pv: TV1K2:VFS:1
-	'}
+	
 	fb_TV1K2_VFS_1 : FB_VFS;
 END_VAR]]></Declaration>
   </GVL>

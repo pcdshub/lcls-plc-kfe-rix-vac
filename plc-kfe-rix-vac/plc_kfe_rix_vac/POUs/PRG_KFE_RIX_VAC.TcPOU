@@ -3,7 +3,7 @@
   <POU Name="PRG_KFE_RIX_VAC" Id="{7118719b-3077-4104-9acc-cffb49d6edd3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC
 VAR
-
+vfs_dummy_gauge : ST_VG;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -11,18 +11,26 @@ END_VAR
 // MKS275 Gauges
 
 fb_PC1K1_ZOS_GPI_1(PG=>); 
+fb_PC1K1_ZOS_GPI_1.M_SetBits(30518);
 fb_MR1K2_SWITCH_GPI_1(PG=>); 
-fb_TV1K1_PLEG_GPI_1(PG=>); 
+fb_MR1K2_SWITCH_GPI_1.M_SetBits(30518);
+fb_TV1K1_PLEG_GPI_1(PG=>);
+fb_TV1K1_PLEG_GPI_1.M_SetBits(30518);
 fb_SL1K2_EXIT_GPI_1(PG=>);
+fb_SL1K2_EXIT_GPI_1.M_SetBits(30518);
 fb_ST1K2_PPS_GPI_1(PG=>);
 
 // MKS500 Gauges
 
-fb_PC1K1_ZOS_GCC_1(PG := fb_PC1K1_ZOS_GPI_1.PG);
+fb_PC1K1_ZOS_GCC_1(PG := fb_PC1K1_ZOS_GPI_1.PG, bEP := FALSE);
+fb_PC1K1_ZOS_GCC_1.M_SetBits(30518);
 fb_MR1K2_SWITCH_GCC_1(PG := fb_MR1K2_SWITCH_GPI_1.PG);
+fb_MR1K2_SWITCH_GCC_1.M_SetBits(30518);
 fb_TV1K1_PLEG_GCC_1(PG := fb_TV1K1_PLEG_GPI_1.PG);
+fb_TV1K1_PLEG_GCC_1.M_SetBits(30518);
 fb_SL1K2_EXIT_GCC_1(PG := fb_SL1K2_EXIT_GPI_1.PG);
-fb_ST1K2_PPS_GCC_1(PG := fb_ST1K2_PPS_GPI_1.PG);
+fb_SL1K2_EXIT_GCC_1.M_SetBits(30518);
+fb_ST1K2_PPS_GCC_1(PG := fb_ST1K2_PPS_GPI_1.PG, bEP := TRUE);
 
 // VGC Valves
 
@@ -72,19 +80,34 @@ fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG);
 fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GCC_1.IG); 
 fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.IG); 
 fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GCC_1.IG);
-fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GCC_1.IG);]]></ST>
+fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GCC_1.IG);
+
+
+//Fast shutter Valve Interface
+vfs_dummy_gauge.xPRESS_OK := TRUE;
+vfs_dummy_gauge.rPRESS := 0.0000001;
+TV1K2_VFS_Interface(IG:= vfs_dummy_gauge, iq_stValve=> , i_xVAC_FAULT_OK=> );]]></ST>
     </Implementation>
     <LineIds Name="PRG_KFE_RIX_VAC">
       <LineId Id="95" Count="2" />
       <LineId Id="188" Count="0" />
+      <LineId Id="284" Count="0" />
       <LineId Id="190" Count="0" />
+      <LineId Id="285" Count="0" />
       <LineId Id="184" Count="0" />
-      <LineId Id="241" Count="1" />
+      <LineId Id="286" Count="0" />
+      <LineId Id="241" Count="0" />
+      <LineId Id="287" Count="0" />
+      <LineId Id="242" Count="0" />
       <LineId Id="107" Count="2" />
       <LineId Id="197" Count="0" />
+      <LineId Id="280" Count="0" />
       <LineId Id="199" Count="0" />
+      <LineId Id="281" Count="0" />
       <LineId Id="196" Count="0" />
+      <LineId Id="282" Count="0" />
       <LineId Id="192" Count="0" />
+      <LineId Id="283" Count="0" />
       <LineId Id="247" Count="0" />
       <LineId Id="119" Count="2" />
       <LineId Id="210" Count="0" />
@@ -107,6 +130,10 @@ fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GCC_1.IG);]]></ST>
       <LineId Id="205" Count="0" />
       <LineId Id="5" Count="0" />
       <LineId Id="267" Count="1" />
+      <LineId Id="274" Count="1" />
+      <LineId Id="273" Count="0" />
+      <LineId Id="278" Count="1" />
+      <LineId Id="277" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
