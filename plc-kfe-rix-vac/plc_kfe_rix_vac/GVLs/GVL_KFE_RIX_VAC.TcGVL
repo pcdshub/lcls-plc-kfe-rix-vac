@@ -103,6 +103,15 @@ fb_SL1K2_EXIT_PIP_1 : FB_PIP_GAMMA;
 								 .q_xVetoValveClosed := TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed	'}	
 TV1K2_VFS_Interface : FB_VFS_Interface; 
 
+
+//Interface for KFE Valve - SP1K1-MONO-VGC-2
+{attribute 'pytmc' :=' pv: PC1K1:ZOS:GCC:1:ILK'}
+	st_RIX_ILK			:	ST_EXT_ILK;
+	
+	{attribute 'TcLinkTo' := 	'.q_xILK_OK_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EL2794)^Channel 1^Output '}
+	
+	fb_RIX_ILK			:	FB_EXT_ILK;
+
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

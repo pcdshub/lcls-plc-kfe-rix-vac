@@ -3,11 +3,23 @@
   <GVL Name="GVL_Variables" Id="{4e0ea985-29d8-4132-9223-f15e8fa1fe3d}">
     <Declaration><![CDATA[VAR_GLOBAL
 
-xSystemOverrideMode : BOOL; (* Global system override for the prototype section*)
+{attribute 'pytmc' := 'pv: RIX:FEE:VAC:OVRDON;
+	field: ZNAM Override OFF; 	
+     field: ONAM Override ON;
+ 	 io: io;	
+'}
+xSystemOverrideMode1 : BOOL; (* Global system override for the prototype section*)
+
+{attribute 'pytmc' := 'pv: RIX:HUT:VAC:OVRDON;
+	field: ZNAM Override OFF; 	
+     field: ONAM Override ON;
+ 	 io: io;	
+'}
+xSystemOverrideMode2 : BOOL; (* Global system override for the prototype section*)
 
 //Example implementation of the FFO
 {attribute 'pytmc' := '
-	pv: PLC:KFE:RIX:VAC:K0:FF1
+	pv: PLC:KFE:RIX:VAC:K2:FF1
 '}
 {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 1^Output'}
 g_FastFaultOutput1  :   FB_HardwareFFOutput;

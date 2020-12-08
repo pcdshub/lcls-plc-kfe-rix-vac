@@ -41,7 +41,7 @@ fb_MR1K2_SWITCH_VGC_1(
                          i_xEPS_OK := TRUE, 
                          i_xPMPS_OK := TRUE, 
                          i_xExt_OK := TRUE, 
-                         i_xOverrideMode := xSystemOverrideMode, 
+                         i_xOverrideMode := xSystemOverrideMode1, 
                          io_fbFFHWO := g_FastFaultOutput1); 
 fb_MR1K2_SWITCH_VGC_2( 
                          i_stUSG := fb_MR1K2_SWITCH_GCC_1.IG, 
@@ -50,7 +50,7 @@ fb_MR1K2_SWITCH_VGC_2(
                          i_xEPS_OK := TRUE, 
                          i_xPMPS_OK := TRUE, 
                          i_xExt_OK := TRUE, 
-                         i_xOverrideMode := xSystemOverrideMode, 
+                         i_xOverrideMode := xSystemOverrideMode1, 
                          io_fbFFHWO := g_FastFaultOutput1); 
 						 
 fb_SL1K2_EXIT_VGC_1(
@@ -60,7 +60,7 @@ fb_SL1K2_EXIT_VGC_1(
                          i_xEPS_OK := TRUE, 
                          i_xPMPS_OK := TRUE, 
                          i_xExt_OK := TRUE, 
-                         i_xOverrideMode := xSystemOverrideMode, 
+                         i_xOverrideMode := xSystemOverrideMode1, 
                          io_fbFFHWO := g_FastFaultOutput1);						 
 
 fb_ST1K2_PPS_VGC_1(
@@ -70,7 +70,7 @@ fb_ST1K2_PPS_VGC_1(
                          i_xEPS_OK := TRUE, 
                          i_xPMPS_OK := TRUE, 
                          i_xExt_OK := TRUE, 
-                         i_xOverrideMode := xSystemOverrideMode, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
                          io_fbFFHWO := g_FastFaultOutput1); 
 
 // PIP_Gamma Pumps
@@ -86,7 +86,16 @@ fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GCC_1.IG);
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;
 vfs_dummy_gauge.rPRESS := 0.0000001;
-TV1K2_VFS_Interface(IG:= vfs_dummy_gauge, iq_stValve=> , i_xVAC_FAULT_OK=> );]]></ST>
+TV1K2_VFS_Interface(IG:= vfs_dummy_gauge, iq_stValve=> , i_xVAC_FAULT_OK=> );
+
+
+//Interface for KFE VAC SP1K1-ZOS-VGC-2
+// Update interlock signals for RIX
+fb_RIX_ILK(
+	VG	:=	fb_PC1K1_ZOS_GCC_1.IG,
+	ILK	:=	st_RIX_ILK
+);
+]]></ST>
     </Implementation>
     <LineIds Name="PRG_KFE_RIX_VAC">
       <LineId Id="95" Count="2" />
@@ -134,6 +143,14 @@ TV1K2_VFS_Interface(IG:= vfs_dummy_gauge, iq_stValve=> , i_xVAC_FAULT_OK=> );]]>
       <LineId Id="273" Count="0" />
       <LineId Id="278" Count="1" />
       <LineId Id="277" Count="0" />
+      <LineId Id="289" Count="1" />
+      <LineId Id="288" Count="0" />
+      <LineId Id="293" Count="0" />
+      <LineId Id="295" Count="0" />
+      <LineId Id="298" Count="0" />
+      <LineId Id="297" Count="0" />
+      <LineId Id="292" Count="0" />
+      <LineId Id="291" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

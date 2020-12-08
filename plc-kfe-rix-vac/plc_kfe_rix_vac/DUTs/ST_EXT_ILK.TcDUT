@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <DUT Name="ST_EXT_ILK" Id="{4e18d180-42bc-46c7-9da7-a502c2c90017}">
+    <Declaration><![CDATA[TYPE ST_EXT_ILK :
+STRUCT
+	{attribute 'pytmc' := '
+    pv: HV_SW;
+	io: io;
+    '}
+	xIlk_sw: BOOL:=True; // EPICS control for switching the interlock on or off. 
+	{attribute 'pytmc' := '
+    pv: ILK_DO;
+	io: i;
+    '}
+	q_xILK_OK_DO: BOOL; // Readout of the external interlock's ouput value
+	{attribute 'pytmc' := '
+    pv: ILK_OK;
+	io: i;
+    '}
+	xIlkOK	:	BOOL := FALSE; // Interlock Bit
+	{attribute 'pytmc' := '
+    pv: PRO_SP;
+	io: io;
+    '}		
+	rPRO_SP: REAL	:= 1e-6; // Pressure below which the HV signal may turn on
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>

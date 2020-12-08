@@ -193,12 +193,12 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xOpnLS</Name>
-					<Comment><![CDATA[IO]]></Comment>
+					<Name>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xClsLS</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xClsLS</Name>
+					<Name>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -229,20 +229,20 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_xSP_DI</Name>
-					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_iPRESS</Name>
 					<Type>INT</Type>
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_xSP_DI</Name>
 					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
@@ -372,6 +372,11 @@
 				</Var>
 				<Var>
 					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_RIX_ILK.q_xILK_OK_DO</Name>
+					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -545,6 +550,20 @@
 			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 20 (EL1124)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xDisc_Active" VarB="Channel 2^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xHV_ON" VarB="Channel 1^Input" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance">
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_eVFS_State" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xMPS_OK" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xMPS_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xTrigger" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xTrigger" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVAC_FAULT_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Closed" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Open" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Open" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
