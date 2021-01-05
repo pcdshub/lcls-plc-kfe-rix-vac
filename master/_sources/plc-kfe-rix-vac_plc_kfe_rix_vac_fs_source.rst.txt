@@ -47,6 +47,8 @@ MAIN
     END_VAR
     PRG_KFE_RIX_VAC_FS();
 
+    g_FastFaultOutput2.Execute();
+
     END_PROGRAM
 
 

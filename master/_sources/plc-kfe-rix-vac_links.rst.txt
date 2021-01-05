@@ -51,6 +51,9 @@ Links
         plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 17 (EL3174-0002), AI Standard Channel 2^Value
         plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_iPRESS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3064), AI Standard Channel 4^Value
         plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.i_xSP_DI, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL1004), Channel 4^Input
+        plc_kfe_rix_vac Instance, PlcTask Inputs^MAIN.fbArbiterIO.i_stCurrentBP, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, IO Inputs^CurrentBP
+        plc_kfe_rix_vac Instance, PlcTask Inputs^MAIN.fbArbiterIO.xTxPDO_state, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, SYNC Inputs^TxPDO state
+        plc_kfe_rix_vac Instance, PlcTask Inputs^MAIN.fbArbiterIO.xTxPDO_toggle, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, SYNC Inputs^TxPDO toggle
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode
@@ -63,6 +66,7 @@ Links
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.q_xOPN_DO, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 15 (EL2004), Channel 2^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 1^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 1^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_RIX_ILK.q_xILK_OK_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EL2794), Channel 1^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.q_xHV_DIS, TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 118 (EL2624), Channel 1^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL2794), Channel 1^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.q_xOPN_DO, TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 121 (EL2004), Channel 1^Output
@@ -72,6 +76,7 @@ Links
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 2^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 4^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_FFO (EL2202), Channel 1^Output
+        plc_kfe_rix_vac Instance, PlcTask Outputs^MAIN.fbArbiterIO.q_stRequestedBP, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, IO Outputs^RequestedBP
         plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xClsLS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 36 (EL1004), Channel 1^Input
         plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOpnLS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 36 (EL1004), Channel 2^Input
         plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_FFO (EL2202), Channel 2^Output

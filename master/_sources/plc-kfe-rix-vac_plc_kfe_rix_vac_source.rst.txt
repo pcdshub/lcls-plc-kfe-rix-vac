@@ -186,6 +186,11 @@ GVL_Variables
     {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 1^Output'}
     g_FastFaultOutput1  :   FB_HardwareFFOutput;
 
+    {attribute 'pytmc' := '
+    	pv: PLC:KFE:RIX:VAC:ARB
+    '}
+    fbArbiter : FB_Arbiter(1);
+
     fbLogHandler : FB_loghandler;
 
     END_VAR
@@ -229,9 +234,17 @@ MAIN
 
     PROGRAM MAIN
     VAR
+    fbArbiterIO: FB_SubSysToArbiter_IO;	
     END_VAR
     PRG_KFE_RIX_VAC();
     fbLogHandler();
+
+    fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN],
+    	Arbiter:= fbArbiter,
+    	fbFFHWO:= g_FastFaultOutput1);
+
+    g_FastFaultOutput1.bAutoReset := TRUE;
+    g_FastFaultOutput1.Execute(i_xVeto := PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN]);
 
     END_PROGRAM
 
@@ -272,8 +285,8 @@ PRG_KFE_RIX_VAC
     // VGC Valves
 
     fb_MR1K2_SWITCH_VGC_1(
-                             i_stUSG := fb_PC1K1_ZOS_GCC_1.IG, 
-                             i_stDSG := fb_MR1K2_SWITCH_GCC_1.IG, 
+                             i_stUSG := fb_PC1K1_ZOS_PIP_1.q_IG, 
+                             i_stDSG := fb_MR1K2_SWITCH_PIP_1.q_IG, 
                              i_xDis_DPIlk := FALSE, 
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
@@ -281,8 +294,8 @@ PRG_KFE_RIX_VAC
                              i_xOverrideMode := xSystemOverrideMode1, 
                              io_fbFFHWO := g_FastFaultOutput1); 
     fb_MR1K2_SWITCH_VGC_2( 
-                             i_stUSG := fb_MR1K2_SWITCH_GCC_1.IG, 
-                             i_stDSG := fb_TV1K1_PLEG_GCC_1.IG,
+                             i_stUSG := fb_MR1K2_SWITCH_PIP_1.q_IG, 
+                             i_stDSG := fb_TV1K1_PLEG_PIP_1.q_IG,
                              i_xDis_DPIlk := FALSE, 
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
@@ -291,8 +304,8 @@ PRG_KFE_RIX_VAC
                              io_fbFFHWO := g_FastFaultOutput1); 
     						 
     fb_SL1K2_EXIT_VGC_1(
-                             i_stUSG := fb_Tv1K1_PLEG_GCC_1.IG, 
-                             i_stDSG := fb_SL1K2_EXIT_GCC_1.IG,
+                             i_stUSG := fb_TV1K1_PLEG_PIP_1.q_IG, 
+                             i_stDSG := fb_SL1K2_EXIT_PIP_1.q_IG,
                              i_xDis_DPIlk := FALSE, 
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
@@ -301,8 +314,8 @@ PRG_KFE_RIX_VAC
                              io_fbFFHWO := g_FastFaultOutput1);						 
 
     fb_ST1K2_PPS_VGC_1(
-    	                     i_stUSG := fb_SL1K2_EXIT_GCC_1.IG, 
-                             i_stDSG := fb_ST1K2_PPS_GCC_1.IG,
+    	                     i_stUSG := fb_SL1K2_EXIT_PIP_1.q_IG, 
+                             i_stDSG := fb_ST1K2_PPS_PIP_1.q_IG,
                              i_xDis_DPIlk := FALSE, 
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
@@ -312,12 +325,12 @@ PRG_KFE_RIX_VAC
 
     // PIP_Gamma Pumps
 
-    fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG);
+    fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GPI_1.PG);
     //fb_PC1K1_ZOS_PIP_2(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG); 
-    fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GCC_1.IG); 
-    fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GCC_1.IG); 
-    fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GCC_1.IG);
-    fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GCC_1.IG);
+    fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GPI_1.PG); 
+    fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GPI_1.PG); 
+    fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GPI_1.PG);
+    fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GPI_1.PG);
 
 
     //Fast shutter Valve Interface
