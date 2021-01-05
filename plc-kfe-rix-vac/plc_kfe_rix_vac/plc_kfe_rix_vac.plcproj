@@ -83,7 +83,7 @@
       <Resolution>LCLS Vacuum, 1.2.4 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, 0.5.0 (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 0.17.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>

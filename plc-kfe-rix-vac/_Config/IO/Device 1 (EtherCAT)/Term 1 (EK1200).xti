@@ -34,7 +34,7 @@
 		<Box File="PMPS_FFO (EL2202).xti" Id="9">
 			<EtherCAT PortABoxInfo="#x01000008"/>
 		</Box>
-		<Box File="Term 10 (EL6695).xti" Id="10">
+		<Box File="PMPS_PRE.xti" Id="10">
 			<EtherCAT PortABoxInfo="#x01000009"/>
 		</Box>
 		<Box File="Term 32 (EK1122).xti" Id="32">

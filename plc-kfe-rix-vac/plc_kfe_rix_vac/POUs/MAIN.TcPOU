@@ -3,15 +3,33 @@
   <POU Name="MAIN" Id="{150c95ec-0456-4d2a-9418-59da97b7d368}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+fbArbiterIO: FB_SubSysToArbiter_IO;	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[PRG_KFE_RIX_VAC();
-fbLogHandler();]]></ST>
+fbLogHandler();
+
+fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN],
+	Arbiter:= fbArbiter,
+	fbFFHWO:= g_FastFaultOutput1);
+
+g_FastFaultOutput1.bAutoReset := TRUE;
+g_FastFaultOutput1.Execute(i_xVeto := PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN]);
+ 
+]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
       <LineId Id="6" Count="0" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="25" Count="0" />
+      <LineId Id="27" Count="1" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="10" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

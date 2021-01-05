@@ -24,6 +24,11 @@ xSystemOverrideMode2 : BOOL; (* Global system override for the prototype section
 {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 1^Output'}
 g_FastFaultOutput1  :   FB_HardwareFFOutput;
 
+{attribute 'pytmc' := '
+	pv: PLC:KFE:RIX:VAC:ARB
+'}
+fbArbiter : FB_Arbiter(1);
+
 fbLogHandler : FB_loghandler;
 
 END_VAR]]></Declaration>
