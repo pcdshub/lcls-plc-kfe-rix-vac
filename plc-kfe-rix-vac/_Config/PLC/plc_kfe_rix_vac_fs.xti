@@ -207,7 +207,7 @@
 				</Var>
 			</Vars>
 			<TaskPouOids>
-				<TaskPouOid Prio="21" OTCID="#x08502041"/>
+				<TaskPouOid Prio="19" OTCID="#x08502041"/>
 			</TaskPouOids>
 		</Instance>
 	</Project>
