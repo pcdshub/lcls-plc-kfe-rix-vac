@@ -3,7 +3,7 @@ Data Types
 ----------
 
 
-     
+      
 LCLS_General.FB_Listener
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -983,12 +983,20 @@ LCLS_Vacuum.FB_MKS275
         | io: input
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).PG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):PRESS_AI_RBV
@@ -1161,12 +1169,20 @@ LCLS_Vacuum.FB_MKS500
         | io: input
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).IG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):PRESS_AI_RBV
@@ -1383,16 +1399,10 @@ LCLS_Vacuum.FB_PIP_Gamma
         | io: output
 
 
-    * - $(PREFIX):ILK_DEVICE
-      - waveform
-      - $(SYMBOL).stPump.sIlkDeviceName
-      - | io: output
-
-
     * - $(PREFIX):ILK_DEVICE_RBV
       - waveform
       - $(SYMBOL).stPump.sIlkDeviceName
-      - | io: output
+      - | io: input
 
 
     * - $(PREFIX):ILK_OK_RBV
@@ -1432,6 +1442,22 @@ LCLS_Vacuum.FB_PIP_Gamma
       - $(SYMBOL).stPump.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON
+      - bo
+      - $(SYMBOL).stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON_RBV
+      - bi
+      - $(SYMBOL).stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
         | io: output
 
 
@@ -1598,12 +1624,20 @@ LCLS_Vacuum.FB_VFS_Interface
       - | io: input
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).iq_stValve.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):MPS_FAULT_OK_RBV
@@ -1712,6 +1746,12 @@ LCLS_Vacuum.FB_VFS_Interface
       - | field: ONAM FAULT OK
         | field: ZNAM FAULT
         | io: input
+
+
+    * - $(PREFIX):VETO_DEVICE_RBV
+      - waveform
+      - $(SYMBOL).iq_stValve.sVetoDeviceName
+      - | io: input
 
 
  
@@ -1944,12 +1984,20 @@ LCLS_Vacuum.FB_VGC
       - | io: input
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).iq_stValve.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):MPS_FAULT_OK
@@ -1970,13 +2018,13 @@ LCLS_Vacuum.FB_VGC
 
     * - $(PREFIX):MPS_OK
       - bo
-      - $(SYMBOL).i_xPMPS_OK
+      - $(SYMBOL).xPMPS_OK
       - | io: output
 
 
     * - $(PREFIX):MPS_OK_RBV
       - bi
-      - $(SYMBOL).i_xPMPS_OK
+      - $(SYMBOL).xPMPS_OK
       - | io: output
 
 
@@ -2065,156 +2113,6 @@ LCLS_Vacuum.FB_VGC
 
 
               
-LCLS_Vacuum.LCLSVacuumSerialDriverLib.L2SI_Vacuum_Library.ST_VG
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. list-table::
-    :header-rows: 1
-    :align: center
-
-    * - Record
-      - Type
-      - Description
-      - Pragma
-    * - $(PREFIX):AT_VAC_RBV
-      - bi
-      - $(SYMBOL).xAT_VAC
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - $(PREFIX):DISC_ACTIVE_RBV
-      - bi
-      - $(SYMBOL).i_xDisc_Active
-      - | field: ONAM DISC ACTIVE
-        | field: ZNAM NO DISC
-        | io: input
-
-
-    * - $(PREFIX):HV_DIS_DO_RBV
-      - bi
-      - $(SYMBOL).q_xHV_DIS
-      - | field: ONAM TRUE
-        | field: ZNAM FALSE
-        | io: input
-
-
-    * - $(PREFIX):HV_ON_RBV
-      - bi
-      - $(SYMBOL).i_xHV_ON
-      - | io: input
-
-
-    * - $(PREFIX):HV_SW
-      - bo
-      - $(SYMBOL).xHV_SW
-      - | field: ONAM ON
-        | field: ZNAM OFF
-        | io: output
-
-
-    * - $(PREFIX):HV_SW_RBV
-      - bi
-      - $(SYMBOL).xHV_SW
-      - | field: ONAM ON
-        | field: ZNAM OFF
-        | io: output
-
-
-    * - $(PREFIX):ILK_OK_RBV
-      - bi
-      - $(SYMBOL).xILKOk
-      - | field: ONAM OK
-        | field: ZNAM NOT OK
-        | io: input
-
-
-    * - $(PREFIX):PRESS_AI_RBV
-      - longin
-      - $(SYMBOL).i_iPRESS_R
-      - | io: input
-
-
-    * - $(PREFIX):PRESS_OK_RBV
-      - bi
-      - $(SYMBOL).xPRESS_OK
-      - | field: ONAM ON
-        | field: ZNAM OFF
-        | io: input
-
-
-    * - $(PREFIX):PRESS_RBV
-      - ai
-      - $(SYMBOL).rPRESS
-      - | field: EGU "TORR"
-        | field: HOPR 1000
-        | field: LOPR 0
-        | field: PREC 2
-        | io: input
-
-
-    * - $(PREFIX):PRO_SP
-      - ao
-      - $(SYMBOL).rPRO_SP
-      - | field: EGU "TORR"
-        | field: HOPR 1000
-        | field: LOPR 0
-        | field: PREC 2
-        | io: output
-
-
-    * - $(PREFIX):PRO_SP_RBV
-      - ai
-      - $(SYMBOL).rPRO_SP
-      - | field: EGU "TORR"
-        | field: HOPR 1000
-        | field: LOPR 0
-        | field: PREC 2
-        | io: output
-
-
-    * - $(PREFIX):SP_HYS
-      - ao
-      - $(SYMBOL).rHYS_PR
-      - | field: EGU "TORR"
-        | field: HOPR 1000
-        | field: LOPR 0
-        | field: PREC 2
-        | io: output
-
-
-    * - $(PREFIX):SP_HYS_RBV
-      - ai
-      - $(SYMBOL).rHYS_PR
-      - | field: EGU "TORR"
-        | field: HOPR 1000
-        | field: LOPR 0
-        | field: PREC 2
-        | io: output
-
-
-    * - $(PREFIX):VAC_SP
-      - ao
-      - $(SYMBOL).rVAC_SP
-      - | field: EGU "TORR"
-        | field: HOPR 1000
-        | field: LOPR 0
-        | field: PREC 2
-        | io: output
-
-
-    * - $(PREFIX):VAC_SP_RBV
-      - ai
-      - $(SYMBOL).rVAC_SP
-      - | field: EGU "TORR"
-        | field: HOPR 1000
-        | field: LOPR 0
-        | field: PREC 2
-        | io: output
-
-
- 
 LCLS_Vacuum.ST_PIP
 ^^^^^^^^^^^^^^^^^^
 
@@ -2324,16 +2222,10 @@ LCLS_Vacuum.ST_PIP
         | io: output
 
 
-    * - $(PREFIX):ILK_DEVICE
-      - waveform
-      - $(SYMBOL).sIlkDeviceName
-      - | io: output
-
-
     * - $(PREFIX):ILK_DEVICE_RBV
       - waveform
       - $(SYMBOL).sIlkDeviceName
-      - | io: output
+      - | io: input
 
 
     * - $(PREFIX):ILK_OK_RBV
@@ -2373,6 +2265,22 @@ LCLS_Vacuum.ST_PIP
       - $(SYMBOL).xLog
       - | field: ONAM ON
         | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON
+      - bo
+      - $(SYMBOL).xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON_RBV
+      - bi
+      - $(SYMBOL).xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
         | io: output
 
 
@@ -2509,12 +2417,20 @@ LCLS_Vacuum.ST_ValveBase
         | io: output
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):OPN_DI_RBV
@@ -2715,12 +2631,20 @@ LCLS_Vacuum.ST_VFS
       - | io: input
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):OPN_DI_RBV
@@ -2823,6 +2747,12 @@ LCLS_Vacuum.ST_VFS
         | io: input
 
 
+    * - $(PREFIX):VETO_DEVICE_RBV
+      - waveform
+      - $(SYMBOL).sVetoDeviceName
+      - | io: input
+
+
  
 LCLS_Vacuum.ST_VG
 ^^^^^^^^^^^^^^^^^
@@ -2889,12 +2819,20 @@ LCLS_Vacuum.ST_VG
         | io: input
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):PRESS_AI_RBV
@@ -3195,12 +3133,20 @@ LCLS_Vacuum.ST_VGC
       - | io: input
 
 
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - $(PREFIX):LOGGER_RBV
       - bi
       - $(SYMBOL).xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - $(PREFIX):OPN_DI_RBV
@@ -3287,7 +3233,7 @@ LCLS_Vacuum.ST_VGC
         | io: input
 
 
-     
+      
 PMPS.FB_Arbiter
 ^^^^^^^^^^^^^^^
 
@@ -12512,12 +12458,20 @@ Database Records
         | io: input
 
 
+    * - MR1K2:SWITCH:GCC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - MR1K2:SWITCH:GCC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - MR1K2:SWITCH:GCC:1:PRESS_AI_RBV
@@ -12678,12 +12632,20 @@ Database Records
         | io: input
 
 
+    * - MR1K2:SWITCH:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - MR1K2:SWITCH:GPI:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.PG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - MR1K2:SWITCH:GPI:1:PRESS_AI_RBV
@@ -12888,16 +12850,10 @@ Database Records
         | io: output
 
 
-    * - MR1K2:SWITCH:PIP:1:ILK_DEVICE
-      - waveform
-      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.sIlkDeviceName
-      - | io: output
-
-
     * - MR1K2:SWITCH:PIP:1:ILK_DEVICE_RBV
       - waveform
       - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.sIlkDeviceName
-      - | io: output
+      - | io: input
 
 
     * - MR1K2:SWITCH:PIP:1:ILK_OK_RBV
@@ -12937,6 +12893,22 @@ Database Records
       - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
+        | io: output
+
+
+    * - MR1K2:SWITCH:PIP:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - MR1K2:SWITCH:PIP:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
         | io: output
 
 
@@ -13207,12 +13179,20 @@ Database Records
       - | io: input
 
 
+    * - MR1K2:SWITCH:VGC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - MR1K2:SWITCH:VGC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.iq_stValve.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - MR1K2:SWITCH:VGC:1:MPS_FAULT_OK
@@ -13233,13 +13213,13 @@ Database Records
 
     * - MR1K2:SWITCH:VGC:1:MPS_OK
       - bo
-      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.xPMPS_OK
       - | io: output
 
 
     * - MR1K2:SWITCH:VGC:1:MPS_OK_RBV
       - bi
-      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.xPMPS_OK
       - | io: output
 
 
@@ -13545,12 +13525,20 @@ Database Records
       - | io: input
 
 
+    * - MR1K2:SWITCH:VGC:2:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - MR1K2:SWITCH:VGC:2:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.iq_stValve.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - MR1K2:SWITCH:VGC:2:MPS_FAULT_OK
@@ -13571,13 +13559,13 @@ Database Records
 
     * - MR1K2:SWITCH:VGC:2:MPS_OK
       - bo
-      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.xPMPS_OK
       - | io: output
 
 
     * - MR1K2:SWITCH:VGC:2:MPS_OK_RBV
       - bi
-      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.xPMPS_OK
       - | io: output
 
 
@@ -13755,12 +13743,20 @@ Database Records
         | io: input
 
 
+    * - PC1K1:ZOS:GCC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - PC1K1:ZOS:GCC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - PC1K1:ZOS:GCC:1:PRESS_AI_RBV
@@ -13921,12 +13917,20 @@ Database Records
         | io: input
 
 
+    * - PC1K1:ZOS:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - PC1K1:ZOS:GPI:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.PG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - PC1K1:ZOS:GPI:1:PRESS_AI_RBV
@@ -14131,16 +14135,10 @@ Database Records
         | io: output
 
 
-    * - PC1K1:ZOS:PIP:1:ILK_DEVICE
-      - waveform
-      - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.sIlkDeviceName
-      - | io: output
-
-
     * - PC1K1:ZOS:PIP:1:ILK_DEVICE_RBV
       - waveform
       - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.sIlkDeviceName
-      - | io: output
+      - | io: input
 
 
     * - PC1K1:ZOS:PIP:1:ILK_OK_RBV
@@ -14180,6 +14178,22 @@ Database Records
       - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
+        | io: output
+
+
+    * - PC1K1:ZOS:PIP:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - PC1K1:ZOS:PIP:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
         | io: output
 
 
@@ -21284,12 +21298,20 @@ Database Records
         | io: input
 
 
+    * - SL1K2:EXIT:GCC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - SL1K2:EXIT:GCC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - SL1K2:EXIT:GCC:1:PRESS_AI_RBV
@@ -21450,12 +21472,20 @@ Database Records
         | io: input
 
 
+    * - SL1K2:EXIT:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - SL1K2:EXIT:GPI:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.PG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - SL1K2:EXIT:GPI:1:PRESS_AI_RBV
@@ -21660,16 +21690,10 @@ Database Records
         | io: output
 
 
-    * - SL1K2:EXIT:PIP:1:ILK_DEVICE
-      - waveform
-      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.sIlkDeviceName
-      - | io: output
-
-
     * - SL1K2:EXIT:PIP:1:ILK_DEVICE_RBV
       - waveform
       - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.sIlkDeviceName
-      - | io: output
+      - | io: input
 
 
     * - SL1K2:EXIT:PIP:1:ILK_OK_RBV
@@ -21709,6 +21733,22 @@ Database Records
       - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
+        | io: output
+
+
+    * - SL1K2:EXIT:PIP:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SL1K2:EXIT:PIP:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
         | io: output
 
 
@@ -21979,12 +22019,20 @@ Database Records
       - | io: input
 
 
+    * - SL1K2:EXIT:VGC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - SL1K2:EXIT:VGC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.iq_stValve.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - SL1K2:EXIT:VGC:1:MPS_FAULT_OK
@@ -22005,13 +22053,13 @@ Database Records
 
     * - SL1K2:EXIT:VGC:1:MPS_OK
       - bo
-      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.xPMPS_OK
       - | io: output
 
 
     * - SL1K2:EXIT:VGC:1:MPS_OK_RBV
       - bi
-      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.xPMPS_OK
       - | io: output
 
 
@@ -22153,12 +22201,20 @@ Database Records
         | io: input
 
 
+    * - ST1K2:PPS:GCC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - ST1K2:PPS:GCC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - ST1K2:PPS:GCC:1:PRESS_AI_RBV
@@ -22319,12 +22375,20 @@ Database Records
         | io: input
 
 
+    * - ST1K2:PPS:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - ST1K2:PPS:GPI:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1.PG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - ST1K2:PPS:GPI:1:PRESS_AI_RBV
@@ -22529,16 +22593,10 @@ Database Records
         | io: output
 
 
-    * - ST1K2:PPS:PIP:1:ILK_DEVICE
-      - waveform
-      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.sIlkDeviceName
-      - | io: output
-
-
     * - ST1K2:PPS:PIP:1:ILK_DEVICE_RBV
       - waveform
       - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.sIlkDeviceName
-      - | io: output
+      - | io: input
 
 
     * - ST1K2:PPS:PIP:1:ILK_OK_RBV
@@ -22578,6 +22636,22 @@ Database Records
       - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
+        | io: output
+
+
+    * - ST1K2:PPS:PIP:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - ST1K2:PPS:PIP:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
         | io: output
 
 
@@ -22848,12 +22922,20 @@ Database Records
       - | io: input
 
 
+    * - ST1K2:PPS:VGC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - ST1K2:PPS:VGC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.iq_stValve.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - ST1K2:PPS:VGC:1:MPS_FAULT_OK
@@ -22874,13 +22956,13 @@ Database Records
 
     * - ST1K2:PPS:VGC:1:MPS_OK
       - bo
-      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.xPMPS_OK
       - | io: output
 
 
     * - ST1K2:PPS:VGC:1:MPS_OK_RBV
       - bi
-      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.i_xPMPS_OK
+      - GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.xPMPS_OK
       - | io: output
 
 
@@ -23022,12 +23104,20 @@ Database Records
         | io: input
 
 
+    * - TV1K1:PLEG:GCC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - TV1K1:PLEG:GCC:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - TV1K1:PLEG:GCC:1:PRESS_AI_RBV
@@ -23188,12 +23278,20 @@ Database Records
         | io: input
 
 
+    * - TV1K1:PLEG:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - TV1K1:PLEG:GPI:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.PG.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - TV1K1:PLEG:GPI:1:PRESS_AI_RBV
@@ -23398,16 +23496,10 @@ Database Records
         | io: output
 
 
-    * - TV1K1:PLEG:PIP:1:ILK_DEVICE
-      - waveform
-      - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.sIlkDeviceName
-      - | io: output
-
-
     * - TV1K1:PLEG:PIP:1:ILK_DEVICE_RBV
       - waveform
       - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.sIlkDeviceName
-      - | io: output
+      - | io: input
 
 
     * - TV1K1:PLEG:PIP:1:ILK_OK_RBV
@@ -23447,6 +23539,22 @@ Database Records
       - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
+        | io: output
+
+
+    * - TV1K1:PLEG:PIP:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - TV1K1:PLEG:PIP:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
         | io: output
 
 
@@ -23601,12 +23709,20 @@ Database Records
       - | io: input
 
 
+    * - TV1K2:VFS:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
     * - TV1K2:VFS:1:LOGGER_RBV
       - bi
       - GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.iq_stValve.xLog
       - | field: ONAM ON
         | field: ZNAM OFF
-        | io: input
+        | io: output
 
 
     * - TV1K2:VFS:1:MPS_FAULT_OK_RBV
@@ -23715,6 +23831,12 @@ Database Records
       - | field: ONAM FAULT OK
         | field: ZNAM FAULT
         | io: input
+
+
+    * - TV1K2:VFS:1:VETO_DEVICE_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.iq_stValve.sVetoDeviceName
+      - | io: input
 
 
 

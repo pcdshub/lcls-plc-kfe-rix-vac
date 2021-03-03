@@ -60,6 +60,8 @@ Links
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveClosed, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveOpenDO, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 3^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 3^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.q_xOPN_DO, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 15 (EL2004), Channel 1^Output
