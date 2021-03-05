@@ -51,14 +51,20 @@
 		<Box File="Term 59 (EL2794).xti" Id="59">
 			<EtherCAT PortABoxInfo="#x0100003a"/>
 		</Box>
-		<Box File="Term 60 (EL3064).xti" Id="60">
+		<Box File="Term 91 (EL3174-0002).xti" Id="91">
 			<EtherCAT PortABoxInfo="#x0100003b"/>
 		</Box>
-		<Box File="Term 61 (EL1004).xti" Id="61">
-			<EtherCAT PortABoxInfo="#x0100003c"/>
+		<Box File="Term 92 (EL9505).xti" Id="92">
+			<EtherCAT PortABoxInfo="#x0100005b"/>
+		</Box>
+		<Box File="Term 93 (EL1124).xti" Id="93">
+			<EtherCAT PortABoxInfo="#x0100005c"/>
+		</Box>
+		<Box File="Term 94 (EL1124).xti" Id="94">
+			<EtherCAT PortABoxInfo="#x0100005d"/>
 		</Box>
 		<Box File="Term 62 (EK1122).xti" Id="62">
-			<EtherCAT PortABoxInfo="#x0100003d"/>
+			<EtherCAT PortABoxInfo="#x0100005e"/>
 		</Box>
 	</Box>
 </TcSmItem>

@@ -13,11 +13,11 @@
 		<Box File="Term 65 (EL2794).xti" Id="65">
 			<EtherCAT PortABoxInfo="#x01000040"/>
 		</Box>
-		<Box File="Term 66 (EK1521-0010).xti" Id="66">
+		<Box File="Term 98 (EK1122).xti" Id="98">
 			<EtherCAT PortABoxInfo="#x01000041"/>
 		</Box>
 		<Box File="Term 67 (EL9410).xti" Id="67">
-			<EtherCAT PortABoxInfo="#x02000042"/>
+			<EtherCAT PortABoxInfo="#x02000062"/>
 		</Box>
 		<Box File="Term 68 (EL3064).xti" Id="68">
 			<EtherCAT PortABoxInfo="#x01000043"/>
