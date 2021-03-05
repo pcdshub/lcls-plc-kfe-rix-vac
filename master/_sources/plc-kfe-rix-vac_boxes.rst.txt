@@ -2796,219 +2796,6 @@ PDO Channel 4 (Index #x1603, Flags #x0011, SyncMan 0)
    </details>
 
 
-Term 60 (EL3064)
-^^^^^^^^^^^^^^^^
-
-
-.. raw:: html
-
-   <details>
-        <summary>EtherCAT (8 PDOs)</summary>
-
-.. csv-table:: Basic Settings
-    :header: Name, Data
-    :align: center
-
-    Name, Term 60 (EL3064)
-    ID, 60
-        BootStrapData, 0010f400f410f400
-        SyncMan, 001080002600010001000000800080008000001026010000
-        SyncMan, 801080002200010002000000800080008000801022010000
-        SyncMan, 001100000400000003000000000000000000001104000000
-        SyncMan, 801110002000010004000000000000001000801120010000
-        Fmmu, 0000000000000000801100010100000002000000000000000000000000000000
-        Fmmu, 00000000000000000d0800010100000003000000000000000000000000000000
-        CoeProfile, 19665801
-        CoeProfile, 19665801
-        CoeProfile, 19665801
-        CoeProfile, 19665801
-
-
-
-PDO AI Standard Channel 1 (Index #x1a00, Flags #x0010, SyncMan 3)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Status__Underrange", "Underrange event active", , "#x6000", "BIT"
-        "Status__Overrange", "Overrange event active", , "#x6000", "BIT"
-        "Status__Limit 1", "Bit0: Value smaller/equal Limit1 Bit1: Value bigger/equal Limit1", , "#x6000", "BIT2"
-        "Status__Limit 2", "Bit0: Value smaller/equal Limit2 Bit1: Value bigger/equal Limit2", , "#x6000", "BIT2"
-        "Status__Error", "Bit set when Over- or Underrange", , "#x6000", "BIT"
-        "Status__", "", , "", "ARRAY [0..0] OF BIT"
-        "Status__", "", , "", "ARRAY [0..5] OF BIT"
-        "Status__TxPDO State", "TRUE when this TxPDO is not valid", , "#x6000", "BIT"
-        "Status__TxPDO Toggle", "Bit toggles everytime when new value available", , "#x6000", "BIT"
-        "Value", "", , "#x6000", "INT"
-
-
-
-PDO AI Compact Channel 1 (Index #x1a01, Flags #x0010, SyncMan )
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Value", "", , "#x6000", "INT"
-
-
-
-PDO AI Standard Channel 2 (Index #x1a02, Flags #x0010, SyncMan 3)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Status__Underrange", "Underrange event active", , "#x6010", "BIT"
-        "Status__Overrange", "Overrange event active", , "#x6010", "BIT"
-        "Status__Limit 1", "Bit0: Value smaller/equal Limit1 Bit1: Value bigger/equal Limit1", , "#x6010", "BIT2"
-        "Status__Limit 2", "Bit0: Value smaller/equal Limit2 Bit1: Value bigger/equal Limit2", , "#x6010", "BIT2"
-        "Status__Error", "Bit set when Over- or Underrange", , "#x6010", "BIT"
-        "Status__", "", , "", "ARRAY [0..0] OF BIT"
-        "Status__", "", , "", "ARRAY [0..5] OF BIT"
-        "Status__TxPDO State", "TRUE when this TxPDO is not valid", , "#x6010", "BIT"
-        "Status__TxPDO Toggle", "Bit toggles everytime when new value available", , "#x6010", "BIT"
-        "Value", "", , "#x6010", "INT"
-
-
-
-PDO AI Compact Channel 2 (Index #x1a03, Flags #x0010, SyncMan )
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Value", "", , "#x6010", "INT"
-
-
-
-PDO AI Standard Channel 3 (Index #x1a04, Flags #x0010, SyncMan 3)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Status__Underrange", "Underrange event active", , "#x6020", "BIT"
-        "Status__Overrange", "Overrange event active", , "#x6020", "BIT"
-        "Status__Limit 1", "Bit0: Value smaller/equal Limit1 Bit1: Value bigger/equal Limit1", , "#x6020", "BIT2"
-        "Status__Limit 2", "Bit0: Value smaller/equal Limit2 Bit1: Value bigger/equal Limit2", , "#x6020", "BIT2"
-        "Status__Error", "Bit set when Over- or Underrange", , "#x6020", "BIT"
-        "Status__", "", , "", "ARRAY [0..0] OF BIT"
-        "Status__", "", , "", "ARRAY [0..5] OF BIT"
-        "Status__TxPDO State", "TRUE when this TxPDO is not valid", , "#x6020", "BIT"
-        "Status__TxPDO Toggle", "Bit toggles everytime when new value available", , "#x6020", "BIT"
-        "Value", "", , "#x6020", "INT"
-
-
-
-PDO AI Compact Channel 3 (Index #x1a05, Flags #x0010, SyncMan )
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Value", "", , "#x6020", "INT"
-
-
-
-PDO AI Standard Channel 4 (Index #x1a06, Flags #x0010, SyncMan 3)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Status__Underrange", "Underrange event active", , "#x6030", "BIT"
-        "Status__Overrange", "Overrange event active", , "#x6030", "BIT"
-        "Status__Limit 1", "Bit0: Value smaller/equal Limit1 Bit1: Value bigger/equal Limit1", , "#x6030", "BIT2"
-        "Status__Limit 2", "Bit0: Value smaller/equal Limit2 Bit1: Value bigger/equal Limit2", , "#x6030", "BIT2"
-        "Status__Error", "Bit set when Over- or Underrange", , "#x6030", "BIT"
-        "Status__", "", , "", "ARRAY [0..0] OF BIT"
-        "Status__", "", , "", "ARRAY [0..5] OF BIT"
-        "Status__TxPDO State", "TRUE when this TxPDO is not valid", , "#x6030", "BIT"
-        "Status__TxPDO Toggle", "Bit toggles everytime when new value available", , "#x6030", "BIT"
-        "Value", "", , "#x6030", "INT"
-
-
-
-PDO AI Compact Channel 4 (Index #x1a07, Flags #x0010, SyncMan )
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Value", "", , "#x6030", "INT"
-
-
-.. raw:: html
-
-   </details>
-
-
-Term 61 (EL1004)
-^^^^^^^^^^^^^^^^
-
-
-.. raw:: html
-
-   <details>
-        <summary>EtherCAT (4 PDOs)</summary>
-
-.. csv-table:: Basic Settings
-    :header: Name, Data
-    :align: center
-
-    Name, Term 61 (EL1004)
-    ID, 61
-        SyncMan, 001001000000010004000000000000000100001000010000
-        Fmmu, 0000000000000000001000010100000002000000000000000000000000000000
-
-
-
-PDO Channel 1 (Index #x1a00, Flags #x0011, SyncMan 0)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Input", "", , "#x6000", "BIT"
-
-
-
-PDO Channel 2 (Index #x1a01, Flags #x0011, SyncMan 0)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Input", "", , "#x6010", "BIT"
-
-
-
-PDO Channel 3 (Index #x1a02, Flags #x0011, SyncMan 0)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Input", "", , "#x6020", "BIT"
-
-
-
-PDO Channel 4 (Index #x1a03, Flags #x0011, SyncMan 0)
-
-.. csv-table::
-    :header: Name, Comment, BitLen, Index, Type
-    :align: center
-
-        "Input", "", , "#x6030", "BIT"
-
-
-.. raw:: html
-
-   </details>
-
-
 Term 62 (EK1122)
 ^^^^^^^^^^^^^^^^
 
@@ -3214,28 +3001,6 @@ PDO Channel 4 (Index #x1603, Flags #x0011, SyncMan 0)
     :align: center
 
         "Output", "", , "#x7030", "BIT"
-
-
-.. raw:: html
-
-   </details>
-
-
-Term 66 (EK1521-0010)
-^^^^^^^^^^^^^^^^^^^^^
-
-
-.. raw:: html
-
-   <details>
-        <summary>EtherCAT</summary>
-
-.. csv-table:: Basic Settings
-    :header: Name, Data
-    :align: center
-
-    Name, Term 66 (EK1521-0010)
-    ID, 66
 
 
 .. raw:: html
@@ -4072,6 +3837,344 @@ Term 70 (EL9011)
 
     Name, Term 70 (EL9011)
     ID, 80
+
+
+.. raw:: html
+
+   </details>
+
+
+Term 91 (EL3174-0002)
+^^^^^^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT (8 PDOs)</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Term 91 (EL3174-0002)
+    ID, 91
+        BootStrapData, 0010f400f410f400
+        SyncMan, 001080002600010001000000800080008000001026010000
+        SyncMan, 801080002200010002000000800080008000801022010000
+        SyncMan, 001100000400000003000000000000000000001104000000
+        SyncMan, 801110002000010004000000000000001000801120010000
+        Fmmu, 0000000000000000801100010100000002000000000000000000000000000000
+        Fmmu, 00000000000000000d0800010100000003000000000000000000000000000000
+        CoeProfile, 19665801
+        CoeProfile, 19665801
+        CoeProfile, 19665801
+        CoeProfile, 19665801
+
+
+
+PDO AI Standard Channel 1 (Index #x1a00, Flags #x0010, SyncMan 3)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Status__Underrange", "Bit set when upper value limit exceeded", , "#x6000", "BIT"
+        "Status__Overrange", "Bit set when lower value limit exceeded", , "#x6000", "BIT"
+        "Status__Limit 1", "Bit0: Value greater than Limit1 Bit1: Value smaller than Limit1", , "#x6000", "BIT2"
+        "Status__Limit 2", "Bit0: Value greater than Limit2 Bit1: Value smaller than Limit2", , "#x6000", "BIT2"
+        "Status__Error", "Bit set when Over- or Underrange", , "#x6000", "BIT"
+        "Status__", "", , "", "ARRAY [0..0] OF BIT"
+        "Status__", "", , "", "ARRAY [0..4] OF BIT"
+        "Status__Sync error", "", , "#x6000", "BIT"
+        "Status__TxPDO State", "", , "#x6000", "BIT"
+        "Status__TxPDO Toggle", "", , "#x6000", "BIT"
+        "Value", "", , "#x6000", "INT"
+
+
+
+PDO AI Compact Channel 1 (Index #x1a01, Flags #x0010, SyncMan )
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Value", "", , "#x6000", "INT"
+
+
+
+PDO AI Standard Channel 2 (Index #x1a02, Flags #x0010, SyncMan 3)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Status__Underrange", "Bit set when upper value limit exceeded", , "#x6010", "BIT"
+        "Status__Overrange", "Bit set when lower value limit exceeded", , "#x6010", "BIT"
+        "Status__Limit 1", "Bit0: Value greater than Limit1 Bit1: Value smaller than Limit1", , "#x6010", "BIT2"
+        "Status__Limit 2", "Bit0: Value greater than Limit2 Bit1: Value smaller than Limit2", , "#x6010", "BIT2"
+        "Status__Error", "Bit set when Over- or Underrange", , "#x6010", "BIT"
+        "Status__", "", , "", "ARRAY [0..0] OF BIT"
+        "Status__", "", , "", "ARRAY [0..4] OF BIT"
+        "Status__Sync error", "", , "#x6010", "BIT"
+        "Status__TxPDO State", "", , "#x6010", "BIT"
+        "Status__TxPDO Toggle", "", , "#x6010", "BIT"
+        "Value", "", , "#x6010", "INT"
+
+
+
+PDO AI Compact Channel 2 (Index #x1a03, Flags #x0010, SyncMan )
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Value", "", , "#x6010", "INT"
+
+
+
+PDO AI Standard Channel 3 (Index #x1a04, Flags #x0010, SyncMan 3)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Status__Underrange", "Bit set when upper value limit exceeded", , "#x6020", "BIT"
+        "Status__Overrange", "Bit set when lower value limit exceeded", , "#x6020", "BIT"
+        "Status__Limit 1", "Bit0: Value greater than Limit1 Bit1: Value smaller than Limit1", , "#x6020", "BIT2"
+        "Status__Limit 2", "Bit0: Value greater than Limit2 Bit1: Value smaller than Limit2", , "#x6020", "BIT2"
+        "Status__Error", "Bit set when Over- or Underrange", , "#x6020", "BIT"
+        "Status__", "", , "", "ARRAY [0..0] OF BIT"
+        "Status__", "", , "", "ARRAY [0..4] OF BIT"
+        "Status__Sync error", "", , "#x6020", "BIT"
+        "Status__TxPDO State", "", , "#x6020", "BIT"
+        "Status__TxPDO Toggle", "", , "#x6020", "BIT"
+        "Value", "", , "#x6020", "INT"
+
+
+
+PDO AI Compact Channel 3 (Index #x1a05, Flags #x0010, SyncMan )
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Value", "", , "#x6020", "INT"
+
+
+
+PDO AI Standard Channel 4 (Index #x1a06, Flags #x0010, SyncMan 3)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Status__Underrange", "Bit set when upper value limit exceeded", , "#x6030", "BIT"
+        "Status__Overrange", "Bit set when lower value limit exceeded", , "#x6030", "BIT"
+        "Status__Limit 1", "Bit0: Value greater than Limit1 Bit1: Value smaller than Limit1", , "#x6030", "BIT2"
+        "Status__Limit 2", "Bit0: Value greater than Limit2 Bit1: Value smaller than Limit2", , "#x6030", "BIT2"
+        "Status__Error", "Bit set when Over- or Underrange", , "#x6030", "BIT"
+        "Status__", "", , "", "ARRAY [0..0] OF BIT"
+        "Status__", "", , "", "ARRAY [0..4] OF BIT"
+        "Status__Sync error", "", , "#x6030", "BIT"
+        "Status__TxPDO State", "", , "#x6030", "BIT"
+        "Status__TxPDO Toggle", "", , "#x6030", "BIT"
+        "Value", "", , "#x6030", "INT"
+
+
+
+PDO AI Compact Channel 4 (Index #x1a07, Flags #x0010, SyncMan )
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Value", "", , "#x6030", "INT"
+
+
+.. raw:: html
+
+   </details>
+
+
+Term 92 (EL9505)
+^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT (1 PDOs)</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Term 92 (EL9505)
+    ID, 92
+        SyncMan, 001001000000010004000000000000000000001000000000
+        Fmmu, 0000000000000000001000010100000002000000000000000000000000000000
+
+
+
+PDO Status Uo (Index #x1a00, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Power OK", "", , "#x6000", "BIT"
+        "Overload", "", , "#x6000", "BIT"
+
+
+.. raw:: html
+
+   </details>
+
+
+Term 93 (EL1124)
+^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT (4 PDOs)</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Term 93 (EL1124)
+    ID, 93
+        SyncMan, 001001000000010004000000000000000100001000010000
+        Fmmu, 0000000000000000001000010100000002000000000000000000000000000000
+
+
+
+PDO Channel 1 (Index #x1a00, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6000", "BIT"
+
+
+
+PDO Channel 2 (Index #x1a01, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6010", "BIT"
+
+
+
+PDO Channel 3 (Index #x1a02, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6020", "BIT"
+
+
+
+PDO Channel 4 (Index #x1a03, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6030", "BIT"
+
+
+.. raw:: html
+
+   </details>
+
+
+Term 94 (EL1124)
+^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT (4 PDOs)</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Term 94 (EL1124)
+    ID, 94
+        SyncMan, 001001000000010004000000000000000100001000010000
+        Fmmu, 0000000000000000001000010100000002000000000000000000000000000000
+
+
+
+PDO Channel 1 (Index #x1a00, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6000", "BIT"
+
+
+
+PDO Channel 2 (Index #x1a01, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6010", "BIT"
+
+
+
+PDO Channel 3 (Index #x1a02, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6020", "BIT"
+
+
+
+PDO Channel 4 (Index #x1a03, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Input", "", , "#x6030", "BIT"
+
+
+.. raw:: html
+
+   </details>
+
+
+Term 98 (EK1122)
+^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Term 98 (EK1122)
+    ID, 98
 
 
 .. raw:: html
