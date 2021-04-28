@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.4" ClassName="CNestedPlcProjDef">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.12" ClassName="CNestedPlcProjDef">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -71,7 +71,7 @@
 			</Hides>
 		</DataType>
 	</DataTypes>
-	<Project GUID="{99092E7C-220C-4278-A653-5D30D5B1ECF0}" Name="plc_kfe_rix_vac_fs" PrjFilePath="..\..\plc_kfe_rix_vac_fs\plc_kfe_rix_vac_fs.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac_fs\plc_kfe_rix_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+	<Project Disabled="true" GUID="{99092E7C-220C-4278-A653-5D30D5B1ECF0}" Name="plc_kfe_rix_vac_fs" PrjFilePath="..\..\plc_kfe_rix_vac_fs\plc_kfe_rix_vac_fs.plcproj" TmcFilePath="..\..\plc_kfe_rix_vac_fs\plc_kfe_rix_vac_fs.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
 		<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="plc_kfe_rix_vac_fs\plc_kfe_rix_vac_fs.tmc">
 			<Name>plc_kfe_rix_vac_fs Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
@@ -138,7 +138,7 @@
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
-			<Vars VarGrpType="2">
+			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
 				<Var>
 					<Name>GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
@@ -191,7 +191,7 @@
 					<Type GUID="{1A089C83-D087-4456-8A74-523FB3B2F19B}" Namespace="LCLS_Vacuum">E_VGC</Type>
 				</Var>
 			</Vars>
-			<Vars VarGrpType="8">
+			<Vars VarGrpType="8" AreaNo="4">
 				<Name>PlcTask Retains</Name>
 				<Var>
 					<Name>PMPS_GVL.SuccessfulPreemption</Name>
@@ -206,8 +206,14 @@
 					<InOut>7</InOut>
 				</Var>
 			</Vars>
+			<Contexts>
+				<Context>
+					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask</Name>
+				</Context>
+			</Contexts>
 			<TaskPouOids>
-				<TaskPouOid Prio="19" OTCID="#x08502041"/>
+				<TaskPouOid Prio="0" OTCID="#x08502041"/>
 			</TaskPouOids>
 		</Instance>
 	</Project>

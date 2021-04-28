@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <GVL Name="GVL_RIX_VAC_FS_DEVICES" Id="{b251e2e8-873d-4faa-a1de-43c2ad57d4d0}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	
+	fb_TV1K2_VFS_1 : FB_VFS;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <GVL Name="GVL_RIX_VAC_FSV_PMPS" Id="{ed2ee3c9-b45b-4b97-b27e-aec2da38456b}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	{attribute 'pytmc' := '
+    	pv: PLC:KFE:RIX:VAC:K2:FFO:02
+    '}
+    {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output'}
+    g_FastFaultOutput2  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

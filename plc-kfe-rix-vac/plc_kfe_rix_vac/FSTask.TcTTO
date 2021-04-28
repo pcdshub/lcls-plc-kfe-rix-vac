@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <Task Name="FSTask" Id="{e6e9f323-6bae-40f6-ae33-29430b4da938}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>1000</CycleTime>
+    <Priority>19</Priority>
+    <PouCall>
+      <Name>PRG_KFE_RIX_VAC_FS</Name>
+    </PouCall>
+    <TaskFBGuid>{acfe7e84-37bc-4cd9-836f-a3680ce82080}</TaskFBGuid>
+    <Fb_init>{380a6665-182b-4d40-94d1-c02550029daf}</Fb_init>
+    <Fb_exit>{18f65c84-d3b4-445a-bc24-1ca603fc1a7d}</Fb_exit>
+    <CycleUpdate>{0850da1c-fb2d-441a-b2b1-07d609935d60}</CycleUpdate>
+    <PostCycleUpdate>{e6cfef03-654c-4524-856b-02376c6e61b9}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

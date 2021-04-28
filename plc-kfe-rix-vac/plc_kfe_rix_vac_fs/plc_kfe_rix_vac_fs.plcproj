@@ -68,6 +68,14 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
+    <PlaceholderResolution Include="LCLS Vacuum">
+      <Resolution>LCLS Vacuum, 1.5.0 (SLAC - LCLS)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="PMPS">
+      <Resolution>PMPS, 0.17.0 (SLAC - LCLS)</Resolution>
+    </PlaceholderResolution>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="plc_kfe_rix_vac_fs.tmc">
       <SubType>Content</SubType>
     </None>

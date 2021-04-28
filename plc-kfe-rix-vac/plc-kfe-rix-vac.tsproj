@@ -12,8 +12,8 @@
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="4" Priority="19" CycleTime="10000" AmsPort="351" AdtTasks="true">
-					<Name>PlcTask1</Name>
+				<Task Id="5" Priority="19" CycleTime="10000" AmsPort="352" AdtTasks="true">
+					<Name>FSTask</Name>
 				</Task>
 			</Tasks>
 		</System>
@@ -27,9 +27,10 @@
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500821000403}" Id="#x02030040"/>
-		<MappingInfo Identifier="{00000000-2001-0850-0020-500830000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{00000000-2041-0850-4020-500810000403}" Id="#x02030020"/>
-		<MappingInfo Identifier="{08502001-0010-0304-0020-500810000403}" Id="#x02030030" Watchdog="00000000000000000000000000000000"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500810000403}" Id="#x02030020"/>
+		<MappingInfo Identifier="{00000000-2002-0850-0120-500830000403}" Id="#x02030010"/>
+		<MappingInfo Identifier="{00000000-2002-0850-0120-500851000403}" Id="#x02030040"/>
+		<MappingInfo Identifier="{08502001-2002-0850-0020-500801205008}" Id="#x02030050" Watchdog="28000000040000000400000004000000"/>
+		<MappingInfo Identifier="{08502002-0010-0304-0020-500810000403}" Id="#x02030030" Watchdog="00000000000000000000000000000000"/>
 	</Mappings>
 </TcSmProject>

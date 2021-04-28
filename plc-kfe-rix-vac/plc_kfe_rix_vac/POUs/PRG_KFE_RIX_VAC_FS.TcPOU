@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="PRG_KFE_RIX_VAC_FS" Id="{4a8c2d36-37b0-4436-8b46-6263bf0245fa}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC_FS
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//Fast Shutter Valve
+
+fb_TV1K2_VFS_1(
+	i_xPMPS_OK:= TRUE, 
+	i_xExt_OK:= TRUE, 
+	i_sDevName:= 'TV1K2:VFS:1',
+	io_fbFFHWO:= g_FastFaultOutput2
+);
+(*FastFaultOuput*)	
+g_FastFaultOutput2.Execute(bAutoReset:= TRUE);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

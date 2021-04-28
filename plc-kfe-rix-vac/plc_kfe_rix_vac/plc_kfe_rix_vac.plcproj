@@ -21,7 +21,18 @@
     <Compile Include="DUTs\ST_EXT_ILK.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FSTask.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GVLs\GVL_KFE_RIX_VAC.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="GVLs\GVL_RIX_VAC_FSV_PMPS.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="GVLs\GVL_RIX_VAC_FS_DEVICES.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
@@ -39,6 +50,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_KFE_RIX_VAC.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\PRG_KFE_RIX_VAC_FS.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -84,6 +98,9 @@
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
       <Resolution>PMPS, 0.17.0 (SLAC - LCLS)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="TcUnit">
+      <Resolution>TcUnit, 1.0.0.0 (www.tcunit.org)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
   <ItemGroup>
