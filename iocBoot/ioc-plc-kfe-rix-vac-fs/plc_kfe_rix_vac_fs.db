@@ -60,14 +60,17 @@ record(longin, "$(PREFIX)LCLSGeneral:LogMessageCount_RBV") {
   info(archive, "VAL")
 }
 
-record(longin, "$(PREFIX)RequestedBP:Transmission_RBV") {
+record(ai, "$(PREFIX)RequestedBP:Transmission_RBV") {
   field(DESC, "PMPS_GVL.stRequestedBeamParameters.nTran")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
-  field(DTYP, "asynInt32")
+  field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stRequestedBeamParameters.nTran?")
-  field(EGU, "%")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
   info(archive, "monitor 1: VAL")
 }
 
@@ -79,19 +82,6 @@ record(longin, "$(PREFIX)RequestedBP:Rate_RBV") {
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stRequestedBeamParameters.nRate?")
   field(EGU, "Hz")
-  info(archive, "monitor 1: VAL")
-}
-
-record(ai, "$(PREFIX)RequestedBP:PulseEnergy_RBV") {
-  field(DESC, "This beam parameter is non-op for now.")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stRequestedBeamParameters.fPP_mJ?")
-  field(PREC, "3")
-  field(EGU, "mJ")
-  info(autosaveFields_pass0, "PREC")
   info(archive, "monitor 1: VAL")
 }
 
@@ -107,14 +97,14 @@ record(longin, "$(PREFIX)RequestedBP:PhotonEnergyRanges_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(waveform, "$(PREFIX)RequestedBP:ST_RBV") {
-  # PMPS_GVL.stRequestedBeamParameters.aStoppers
-  field(DESC, "PMPS_GVL.stRequested...ameters.aStoppers")
+record(waveform, "$(PREFIX)RequestedBP:Veto_RBV") {
+  # PMPS_GVL.stRequestedBeamParameters.aVetoDevices
+  field(DESC, "PMPS_GVL.stRequested...ters.aVetoDevices")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stRequestedBeamParameters.aStoppers?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stRequestedBeamParameters.aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -145,14 +135,17 @@ record(longin, "$(PREFIX)RequestedBP:Cohort_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(longin, "$(PREFIX)CurrentBP:Transmission_RBV") {
+record(ai, "$(PREFIX)CurrentBP:Transmission_RBV") {
   field(DESC, "PMPS_GVL.stCurrentBeamParameters.nTran")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
-  field(DTYP, "asynInt32")
+  field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stCurrentBeamParameters.nTran?")
-  field(EGU, "%")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
   info(archive, "monitor 1: VAL")
 }
 
@@ -164,19 +157,6 @@ record(longin, "$(PREFIX)CurrentBP:Rate_RBV") {
   field(DTYP, "asynInt32")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stCurrentBeamParameters.nRate?")
   field(EGU, "Hz")
-  info(archive, "monitor 1: VAL")
-}
-
-record(ai, "$(PREFIX)CurrentBP:PulseEnergy_RBV") {
-  field(DESC, "This beam parameter is non-op for now.")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stCurrentBeamParameters.fPP_mJ?")
-  field(PREC, "3")
-  field(EGU, "mJ")
-  info(autosaveFields_pass0, "PREC")
   info(archive, "monitor 1: VAL")
 }
 
@@ -192,14 +172,14 @@ record(longin, "$(PREFIX)CurrentBP:PhotonEnergyRanges_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(waveform, "$(PREFIX)CurrentBP:ST_RBV") {
-  # PMPS_GVL.stCurrentBeamParameters.aStoppers
-  field(DESC, "PMPS_GVL.stCurrentBe...ameters.aStoppers")
+record(waveform, "$(PREFIX)CurrentBP:Veto_RBV") {
+  # PMPS_GVL.stCurrentBeamParameters.aVetoDevices
+  field(DESC, "PMPS_GVL.stCurrentBe...ters.aVetoDevices")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stCurrentBeamParameters.aStoppers?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.stCurrentBeamParameters.aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -238,20 +218,23 @@ record(waveform, "$(PREFIX)eVRangeCnst_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.g_areVBoundaries?")
   field(FTVL, "FLOAT")
   field(EGU, "eV")
-  field(NELM, "16")
+  field(NELM, "32")
   field(MPST, "On Change")
   field(APST, "On Change")
   info(archive, "monitor 1: VAL")
 }
 
-record(longin, "$(PREFIX)FullBeamCnst:Transmission_RBV") {
+record(ai, "$(PREFIX)FullBeamCnst:Transmission_RBV") {
   field(DESC, "Full beam constant")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
-  field(DTYP, "asynInt32")
+  field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstFullBeam.nTran?")
-  field(EGU, "%")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
   info(archive, "monitor 1: VAL")
 }
 
@@ -266,19 +249,6 @@ record(longin, "$(PREFIX)FullBeamCnst:Rate_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(ai, "$(PREFIX)FullBeamCnst:PulseEnergy_RBV") {
-  field(DESC, "This beam parameter is non-op for now.")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstFullBeam.fPP_mJ?")
-  field(PREC, "3")
-  field(EGU, "mJ")
-  info(autosaveFields_pass0, "PREC")
-  info(archive, "monitor 1: VAL")
-}
-
 record(longin, "$(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV") {
   field(DESC, "Full beam constant")
   field(SCAN, "I/O Intr")
@@ -290,13 +260,13 @@ record(longin, "$(PREFIX)FullBeamCnst:PhotonEnergyRanges_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(waveform, "$(PREFIX)FullBeamCnst:ST_RBV") {
+record(waveform, "$(PREFIX)FullBeamCnst:Veto_RBV") {
   field(DESC, "Full beam constant")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstFullBeam.aStoppers?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstFullBeam.aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -326,14 +296,17 @@ record(longin, "$(PREFIX)FullBeamCnst:Cohort_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(longin, "$(PREFIX)0RateBeamCnst:Transmission_RBV") {
+record(ai, "$(PREFIX)0RateBeamCnst:Transmission_RBV") {
   field(DESC, "0-rate beam constant")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
-  field(DTYP, "asynInt32")
+  field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cst0RateBeam.nTran?")
-  field(EGU, "%")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
   info(archive, "monitor 1: VAL")
 }
 
@@ -348,19 +321,6 @@ record(longin, "$(PREFIX)0RateBeamCnst:Rate_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(ai, "$(PREFIX)0RateBeamCnst:PulseEnergy_RBV") {
-  field(DESC, "This beam parameter is non-op for now.")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cst0RateBeam.fPP_mJ?")
-  field(PREC, "3")
-  field(EGU, "mJ")
-  info(autosaveFields_pass0, "PREC")
-  info(archive, "monitor 1: VAL")
-}
-
 record(longin, "$(PREFIX)0RateBeamCnst:PhotonEnergyRanges_RBV") {
   field(DESC, "0-rate beam constant")
   field(SCAN, "I/O Intr")
@@ -372,13 +332,13 @@ record(longin, "$(PREFIX)0RateBeamCnst:PhotonEnergyRanges_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(waveform, "$(PREFIX)0RateBeamCnst:ST_RBV") {
+record(waveform, "$(PREFIX)0RateBeamCnst:Veto_RBV") {
   field(DESC, "0-rate beam constant")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cst0RateBeam.aStoppers?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cst0RateBeam.aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -408,14 +368,17 @@ record(longin, "$(PREFIX)0RateBeamCnst:Cohort_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(longin, "$(PREFIX)SafeBeamCnst:Transmission_RBV") {
+record(ai, "$(PREFIX)SafeBeamCnst:Transmission_RBV") {
   field(DESC, "Safe beam constant")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
-  field(DTYP, "asynInt32")
+  field(DTYP, "asynFloat64")
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstSafeBeam.nTran?")
-  field(EGU, "%")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
   info(archive, "monitor 1: VAL")
 }
 
@@ -430,19 +393,6 @@ record(longin, "$(PREFIX)SafeBeamCnst:Rate_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(ai, "$(PREFIX)SafeBeamCnst:PulseEnergy_RBV") {
-  field(DESC, "This beam parameter is non-op for now.")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstSafeBeam.fPP_mJ?")
-  field(PREC, "3")
-  field(EGU, "mJ")
-  info(autosaveFields_pass0, "PREC")
-  info(archive, "monitor 1: VAL")
-}
-
 record(longin, "$(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV") {
   field(DESC, "Safe beam constant")
   field(SCAN, "I/O Intr")
@@ -454,13 +404,13 @@ record(longin, "$(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV") {
   info(archive, "monitor 1: VAL")
 }
 
-record(waveform, "$(PREFIX)SafeBeamCnst:ST_RBV") {
+record(waveform, "$(PREFIX)SafeBeamCnst:Veto_RBV") {
   field(DESC, "Safe beam constant")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstSafeBeam.aStoppers?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.cstSafeBeam.aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -512,7 +462,7 @@ record(waveform, "$(PREFIX)L:eVRangeCnst_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.g_areVBoundariesL?")
   field(FTVL, "FLOAT")
   field(EGU, "eV")
-  field(NELM, "16")
+  field(NELM, "32")
   field(MPST, "On Change")
   field(APST, "On Change")
   info(archive, "monitor 1: VAL")
@@ -527,7 +477,7 @@ record(waveform, "$(PREFIX)K:eVRangeCnst_RBV") {
   field(INP, "@asyn($(PORT),0,1)ADSPORT=852/POLL_RATE=1/PMPS_GVL.g_areVBoundariesK?")
   field(FTVL, "FLOAT")
   field(EGU, "eV")
-  field(NELM, "16")
+  field(NELM, "32")
   field(MPST, "On Change")
   field(APST, "On Change")
   info(archive, "monitor 1: VAL")
