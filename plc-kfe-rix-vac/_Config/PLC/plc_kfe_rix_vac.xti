@@ -868,6 +868,18 @@
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.q_xHVEna_DO" VarB="Channel 1^Output" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO" VarB="Channel 4^Output" Size="1"/>
 			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 34 (EL2202)">
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_A" VarB="Channel 1^Output" Size="1"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_B" VarB="Channel 2^Output" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 35 (EL2202)">
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_C" VarB="Channel 1^Output" Size="1"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xOPN_DO" VarB="Channel 2^Output" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 36 (EL1004)">
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xClsLS" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOpnLS" VarB="Channel 2^Input" Size="1"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3064)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.i_iPRESS" VarB="AI Standard Channel 3^Value"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS" VarB="AI Standard Channel 1^Value"/>
@@ -943,21 +955,35 @@
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xDisc_Active" VarB="Channel 2^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xHV_ON" VarB="Channel 1^Input" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance">
-				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_eVFS_State" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xMPS_OK" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xMPS_OK" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xTrigger" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xTrigger" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVAC_FAULT_OK" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Closed" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Closed" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Open" VarB="PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Open" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveClosed" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed" AutoLink="true"/>
-				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveOpenDO" VarB="PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO" AutoLink="true"/>
+			<OwnerB Name="TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance">
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveClosed" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO" VarB="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveOpenDO" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State" VarB="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_eVFS_State" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xMPS_OK" VarB="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xMPS_OK" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xTrigger" VarB="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xTrigger" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVAC_FAULT_OK" VarB="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Closed" VarB="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Closed" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Open" VarB="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Open" AutoLink="true" PeerAutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_eVFS_State" VarB="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xMPS_OK" VarB="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xMPS_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xTrigger" VarB="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xTrigger" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK" VarB="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVAC_FAULT_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Closed" VarB="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Open" VarB="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Open" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveClosed" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveOpenDO" VarB="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO" AutoLink="true"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

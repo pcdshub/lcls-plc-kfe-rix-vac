@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.12">
-	<Project ProjectGUID="{A76770E1-FA93-44DF-9CF6-84EEBF521977}" TargetNetId="172.21.140.69.1.1" ShowHideConfigurations="#x106">
+	<Project ProjectGUID="{A76770E1-FA93-44DF-9CF6-84EEBF521977}" TargetNetId="172.21.140.69.1.1" RelativeTargetNetId="true" RelativeIpAddresses="true" ShowHideConfigurations="#x106">
 		<System>
 			<Licenses CacheOrCheckLicensesOnStartup="true">
 				<Target>
