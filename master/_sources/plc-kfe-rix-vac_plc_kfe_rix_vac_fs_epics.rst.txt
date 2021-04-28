@@ -6004,6 +6004,13 @@ PMPS.ST_BeamParams
         | io: input
 
 
+    * - $(PREFIX):PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | field: EGU mJ
+        | io: input
+
+
     * - $(PREFIX):Rate_RBV
       - longin
       - $(SYMBOL).nRate
@@ -6011,24 +6018,22 @@ PMPS.ST_BeamParams
         | io: input
 
 
+    * - $(PREFIX):ST_RBV
+      - waveform
+      - $(SYMBOL).aStoppers
+      - | io: input
+
+
     * - $(PREFIX):Transmission_RBV
-      - ai
+      - longin
       - $(SYMBOL).nTran
-      - | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
+      - | field: EGU %
         | io: input
 
 
     * - $(PREFIX):Valid_RBV
       - bi
       - $(SYMBOL).xValid
-      - | io: input
-
-
-    * - $(PREFIX):Veto_RBV
-      - waveform
-      - $(SYMBOL).aVetoDevices
       - | io: input
 
 
@@ -6363,6 +6368,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)0RateBeamCnst:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
     * - $(PREFIX)0RateBeamCnst:Rate_RBV
       - longin
       - 0-rate beam constant
@@ -6371,25 +6384,23 @@ Database Records
         | io: input
 
 
-    * - $(PREFIX)0RateBeamCnst:Transmission_RBV
-      - ai
+    * - $(PREFIX)0RateBeamCnst:ST_RBV
+      - waveform
       - 0-rate beam constant
       - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)0RateBeamCnst:Transmission_RBV
+      - longin
+      - 0-rate beam constant
+      - | archive: 1s monitor
+        | field: EGU %
         | io: input
 
 
     * - $(PREFIX)0RateBeamCnst:Valid_RBV
       - bi
-      - 0-rate beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)0RateBeamCnst:Veto_RBV
-      - waveform
       - 0-rate beam constant
       - | archive: 1s monitor
         | io: input
@@ -6416,6 +6427,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)CurrentBP:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
     * - $(PREFIX)CurrentBP:Rate_RBV
       - longin
       - PMPS_GVL.stCurrentBeamParameters.nRate
@@ -6424,26 +6443,24 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)CurrentBP:ST_RBV
+      - waveform
+      - PMPS_GVL.stCurrentBeamParameters.aStoppers
+      - | archive: 1s monitor
+        | io: input
+
+
     * - $(PREFIX)CurrentBP:Transmission_RBV
-      - ai
+      - longin
       - PMPS_GVL.stCurrentBeamParameters.nTran
       - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
+        | field: EGU %
         | io: input
 
 
     * - $(PREFIX)CurrentBP:Valid_RBV
       - bi
       - PMPS_GVL.stCurrentBeamParameters.xValid
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)CurrentBP:Veto_RBV
-      - waveform
-      - PMPS_GVL.stCurrentBeamParameters.aVetoDevices
       - | archive: 1s monitor
         | io: input
 
@@ -6479,6 +6496,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)FullBeamCnst:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
     * - $(PREFIX)FullBeamCnst:Rate_RBV
       - longin
       - Full beam constant
@@ -6487,25 +6512,23 @@ Database Records
         | io: input
 
 
-    * - $(PREFIX)FullBeamCnst:Transmission_RBV
-      - ai
+    * - $(PREFIX)FullBeamCnst:ST_RBV
+      - waveform
       - Full beam constant
       - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)FullBeamCnst:Transmission_RBV
+      - longin
+      - Full beam constant
+      - | archive: 1s monitor
+        | field: EGU %
         | io: input
 
 
     * - $(PREFIX)FullBeamCnst:Valid_RBV
       - bi
-      - Full beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)FullBeamCnst:Veto_RBV
-      - waveform
       - Full beam constant
       - | archive: 1s monitor
         | io: input
@@ -6578,6 +6601,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)RequestedBP:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
     * - $(PREFIX)RequestedBP:Rate_RBV
       - longin
       - PMPS_GVL.stRequestedBeamParameters.nRate
@@ -6586,26 +6617,24 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)RequestedBP:ST_RBV
+      - waveform
+      - PMPS_GVL.stRequestedBeamParameters.aStoppers
+      - | archive: 1s monitor
+        | io: input
+
+
     * - $(PREFIX)RequestedBP:Transmission_RBV
-      - ai
+      - longin
       - PMPS_GVL.stRequestedBeamParameters.nTran
       - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
+        | field: EGU %
         | io: input
 
 
     * - $(PREFIX)RequestedBP:Valid_RBV
       - bi
       - PMPS_GVL.stRequestedBeamParameters.xValid
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)RequestedBP:Veto_RBV
-      - waveform
-      - PMPS_GVL.stRequestedBeamParameters.aVetoDevices
       - | archive: 1s monitor
         | io: input
 
@@ -6625,6 +6654,14 @@ Database Records
         | io: input
 
 
+    * - $(PREFIX)SafeBeamCnst:PulseEnergy_RBV
+      - ai
+      - This beam parameter is non-op for now.
+      - | archive: 1s monitor
+        | field: EGU mJ
+        | io: input
+
+
     * - $(PREFIX)SafeBeamCnst:Rate_RBV
       - longin
       - Safe beam constant
@@ -6633,25 +6670,23 @@ Database Records
         | io: input
 
 
-    * - $(PREFIX)SafeBeamCnst:Transmission_RBV
-      - ai
+    * - $(PREFIX)SafeBeamCnst:ST_RBV
+      - waveform
       - Safe beam constant
       - | archive: 1s monitor
-        | field: HOPR 1
-        | field: LOPR 0
-        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX)SafeBeamCnst:Transmission_RBV
+      - longin
+      - Safe beam constant
+      - | archive: 1s monitor
+        | field: EGU %
         | io: input
 
 
     * - $(PREFIX)SafeBeamCnst:Valid_RBV
       - bi
-      - Safe beam constant
-      - | archive: 1s monitor
-        | io: input
-
-
-    * - $(PREFIX)SafeBeamCnst:Veto_RBV
-      - waveform
       - Safe beam constant
       - | archive: 1s monitor
         | io: input

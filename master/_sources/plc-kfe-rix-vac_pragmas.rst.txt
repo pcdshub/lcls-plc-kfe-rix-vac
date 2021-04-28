@@ -6,7 +6,7 @@ Pragmas
     :header: PLC Name, Total Pragmas, Errors
     :align: center
 
-    :ref:`plc_kfe_rix_vac <plc_kfe_rix_vac_overview_pragmas>`, 41, 0
+    :ref:`plc_kfe_rix_vac <plc_kfe_rix_vac_overview_pragmas>`, 43, 0
     :ref:`plc_kfe_rix_vac_fs <plc_kfe_rix_vac_fs_overview_pragmas>`, 2, 0
 
 
@@ -16,7 +16,7 @@ Pragmas
 plc_kfe_rix_vac
 ^^^^^^^^^^^^^^^
 
-Total pragmas found: 41
+Total pragmas found: 43
 Total linter errors: 0
 
 

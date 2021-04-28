@@ -130,20 +130,20 @@ GVL_KFE_RIX_VAC
     fb_SL1K2_EXIT_PIP_1 : FB_PIP_GAMMA;
 
     {attribute 'pytmc' := '		pv: TV1K2:VFS:1	'}
-    	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK;	
-      							      .q_xOPN_SW			:=  TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW;	
-      							 .q_xCLS_SW			:=  TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW;	
-    							 .q_xVAC_FAULT_Reset:= 	TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset;	
-    							 .q_xOverrideMode	:= 	TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode;
-    								 .q_xOverrideOpen	:= TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen;
-    								 .i_xTrigger		:=	TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xTrigger;
-    								 .i_xVFS_Open		:= TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Open;
-    								 .i_xVFS_Closed		:=	TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Closed;	
-    							 .i_xVAC_FAULT_OK	:=  TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVAC_FAULT_OK;	
-    							 .i_xMPS_OK			:=  TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xMPS_OK;	
-    							 .i_eVFS_State		:=	TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State;
-    								 .q_xVetoValveOpenDO := TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO;
-    								 .q_xVetoValveClosed := TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance^PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed	'}	
+    	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK;	
+      							      .q_xOPN_SW			:=  TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW;	
+      							 .q_xCLS_SW			:=  TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW;	
+    							 .q_xVAC_FAULT_Reset:= 	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset;	
+    							 .q_xOverrideMode	:= 	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode;
+    								 .q_xOverrideOpen	:= TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen;
+    								 .i_xTrigger		:=	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xTrigger;
+    								 .i_xVFS_Open		:= TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Open;
+    								 .i_xVFS_Closed		:=	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Closed;	
+    							 .i_xVAC_FAULT_OK	:=  TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVAC_FAULT_OK;	
+    							 .i_xMPS_OK			:=  TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xMPS_OK;	
+    							 .i_eVFS_State		:=	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State;
+    								 .q_xVetoValveOpenDO := TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO;
+    								 .q_xVetoValveClosed := TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed	'}	
     TV1K2_VFS_Interface : FB_VFS_Interface; 
 
 
@@ -155,6 +155,31 @@ GVL_KFE_RIX_VAC
     	
     	fb_RIX_ILK			:	FB_EXT_ILK;
 
+    END_VAR
+
+
+GVL_RIX_VAC_FS_DEVICES
+^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+    VAR_GLOBAL
+    	
+    	fb_TV1K2_VFS_1 : FB_VFS;
+    END_VAR
+
+
+GVL_RIX_VAC_FSV_PMPS
+^^^^^^^^^^^^^^^^^^^^
+
+::
+
+    VAR_GLOBAL
+    	{attribute 'pytmc' := '
+        	pv: PLC:KFE:RIX:VAC:K2:FFO:02
+        '}
+        {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output'}
+        g_FastFaultOutput2  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
     END_VAR
 
 
@@ -345,6 +370,28 @@ PRG_KFE_RIX_VAC
     	VG	:=	fb_PC1K1_ZOS_GCC_1.IG,
     	ILK	:=	st_RIX_ILK
     );
+
+    END_PROGRAM
+
+
+PRG_KFE_RIX_VAC_FS
+^^^^^^^^^^^^^^^^^^
+
+::
+
+    PROGRAM PRG_KFE_RIX_VAC_FS
+    VAR
+    END_VAR
+    //Fast Shutter Valve
+
+    fb_TV1K2_VFS_1(
+    	i_xPMPS_OK:= TRUE, 
+    	i_xExt_OK:= TRUE, 
+    	i_sDevName:= 'TV1K2:VFS:1',
+    	io_fbFFHWO:= g_FastFaultOutput2
+    );
+    (*FastFaultOuput*)	
+    g_FastFaultOutput2.Execute(bAutoReset:= TRUE);
 
     END_PROGRAM
 

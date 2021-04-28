@@ -9,6 +9,13 @@ Links
         InputDst, GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_2.i_iPRESS, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3064), AI Standard Channel 2^Value
         InputDst, GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_2.i_xSP_DI, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL1004), Channel 2^Input
         OutputSrc, GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_2.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 2^Output
+        plc_kfe_rix_vac Instance, FSTask Outputs^GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_FFO (EL2202), Channel 2^Output
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_eVFS_State, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xMPS_OK, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xMPS_OK
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xTrigger, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xTrigger
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVAC_FAULT_OK
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Closed, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Closed
+        plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVFS_Open, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xVFS_Open
         plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_iPRESS_R, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 16 (EL3174-0002), AI Standard Channel 2^Value
         plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xDisc_Active, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 19 (EL1124), Channel 4^Input
         plc_kfe_rix_vac Instance, PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xHV_ON, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 19 (EL1124), Channel 3^Input
@@ -48,6 +55,14 @@ Links
         plc_kfe_rix_vac Instance, PlcTask Inputs^MAIN.fbArbiterIO.i_stCurrentBP, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, IO Inputs^CurrentBP
         plc_kfe_rix_vac Instance, PlcTask Inputs^MAIN.fbArbiterIO.xTxPDO_state, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, SYNC Inputs^TxPDO state
         plc_kfe_rix_vac Instance, PlcTask Inputs^MAIN.fbArbiterIO.xTxPDO_toggle, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, SYNC Inputs^TxPDO toggle
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xCLS_SW, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xCLS_SW
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOPN_SW, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOPN_SW
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideMode, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideMode
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xOverrideOpen, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOverrideOpen
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xPRESS_OK, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVAC_FAULT_Reset, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVAC_FAULT_Reset
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveClosed, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed
+        plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.q_xVetoValveOpenDO, TIPC^plc_kfe_rix_vac_fs^plc_kfe_rix_vac_fs Instance, PlcTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.q_xHV_DIS, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624), Channel 3^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL2794), Channel 3^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.q_xOPN_DO, TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 15 (EL2004), Channel 1^Output
