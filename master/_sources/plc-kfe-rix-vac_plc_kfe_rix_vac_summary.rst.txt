@@ -279,8 +279,8 @@ GVL_Param_TcUnit
         GVL_Param_TcUnit.LogExtendedResults, BOOL, 3366936 (8)
         GVL_Param_TcUnit.MaxNumberOfAsserts, UINT, 3366912 (16)
         GVL_Param_TcUnit.MaxNumberOfAssertsForEachTestSuite, UINT, 7532464 (16)
-        GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite, UINT, 3366896 (16)
         GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite, UINT, 7532448 (16)
+        GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite, UINT, 3366896 (16)
         GVL_Param_TcUnit.MaxNumberOfTestSuites, UINT, 7524880 (16)
         GVL_Param_TcUnit.MaxNumberOfTestSuites, UINT, 3366880 (16)
         GVL_Param_TcUnit.xUnitBufferSize, UDINT, 7532896 (32)
@@ -374,16 +374,16 @@ GVL_TcUnit
         GVL_TcUnit.CurrentTestNameBeingCalled, STRING(255), 629361984 (2048)
         GVL_TcUnit.CurrentTestSuiteBeingCalled, POINTER TO FB_TestSuite, 3367456 (32)
         GVL_TcUnit.CurrentTestSuiteBeingCalled, POINTER TO FB_TestSuite, 629361952 (32)
-        GVL_TcUnit.IgnoreCurrentTest, BOOL, 3366928 (8)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 629364032 (8)
+        GVL_TcUnit.IgnoreCurrentTest, BOOL, 3366928 (8)
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 629364048 (16)
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 3369536 (16)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 3366944 (512)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 7535008 (621826944)
         GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 629364064 (32000)
         GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 3369568 (16000)
-        GVL_TcUnit.TestSuiteIsRegistered, BOOL, 7534992 (8)
         GVL_TcUnit.TestSuiteIsRegistered, BOOL, 3362904 (8)
+        GVL_TcUnit.TestSuiteIsRegistered, BOOL, 7534992 (8)
 
 .. raw:: html
 
