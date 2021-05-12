@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
   <POU Name="PRG_KFE_RIX_VAC" Id="{7118719b-3077-4104-9acc-cffb49d6edd3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC
 VAR
@@ -19,6 +19,15 @@ fb_TV1K1_PLEG_GPI_1.M_SetBits(30518);
 fb_SL1K2_EXIT_GPI_1(PG=>);
 fb_SL1K2_EXIT_GPI_1.M_SetBits(30518);
 fb_ST1K2_PPS_GPI_1(PG=>);
+fb_MR2K2_FLAT_GPI_1(PG=>);
+fb_MR2K2_FLAT_GPI_1.M_SetBits(30518);
+fb_MR3K2_KBH_GPI_1(PG=>);
+fb_MR3K2_KBH_GPI_1.M_SetBits(30518);
+fb_MR4K2_KBV_GPI_1(PG=>);
+fb_MR4K2_KBV_GPI_1.M_SetBits(30518);
+fb_TM2K2_K2B_GPI_1(PG=>);
+fb_TM2K2_K2B_GPI_1.M_SetBits(30518);
+
 
 // MKS500 Gauges
 
@@ -31,6 +40,26 @@ fb_TV1K1_PLEG_GCC_1.M_SetBits(30518);
 fb_SL1K2_EXIT_GCC_1(PG := fb_SL1K2_EXIT_GPI_1.PG);
 fb_SL1K2_EXIT_GCC_1.M_SetBits(30518);
 fb_ST1K2_PPS_GCC_1(PG := fb_ST1K2_PPS_GPI_1.PG, bEP := TRUE);
+fb_MR2K2_FLAT_GCC_1(PG := fb_MR2K2_FLAT_GPI_1.PG);
+fb_MR2K2_FLAT_GCC_1.M_SetBits(30518);
+fb_IM2K2_PPM_GCC_1(PG := fb_MR3K2_KBH_GPI_1.PG);
+fb_IM2K2_PPM_GCC_1.M_SetBits(30518);
+fb_MR3K2_KBH_GCC_1(PG := fb_MR3K2_KBH_GPI_1.PG);
+fb_MR3K2_KBH_GCC_1.M_SetBits(30518);
+fb_IM3K2_PPM_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG);
+fb_IM3K2_PPM_GCC_1.M_SetBits(30518);
+fb_MR4K2_KBV_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG);
+fb_MR4K2_KBV_GCC_1.M_SetBits(30518);
+fb_IM4K2_PPM_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG);
+fb_IM4K2_PPM_GCC_1.M_SetBits(30518);
+fb_IM5K2_PPM_GCC_1(PG := fb_TM2K2_K2B_GPI_1.PG);
+fb_IM5K2_PPM_GCC_1.M_SetBits(30518);
+fb_TM2K2_K2B_GCC_1(PG := fb_TM2K2_K2B_GPI_1.PG);
+fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
+fb_IM6K2_PPM_GCC_1(PG := fb_TM2K2_K2B_GPI_1.PG, bEP := TRUE);
+
+//MKS422
+
 
 // VGC Valves
 
@@ -72,6 +101,77 @@ fb_ST1K2_PPS_VGC_1(
                          i_xExt_OK := TRUE, 
                          i_xOverrideMode := xSystemOverrideMode2, 
                          io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter); 
+						 
+fb_MR2K2_FLAT_VGC_1( 
+                         i_stUSG := fb_ST1K2_PPS_PIP_1.q_IG, 
+                         i_stDSG := fb_MR2K2_FLAT_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);	
+						 
+fb_MR2K2_FLAT_VGC_2( 
+                         i_stUSG := fb_MR2K2_FLAT_PIP_1.q_IG, 
+                         i_stDSG := fb_IM2K2_PPM_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+						 
+fb_MR3K2_KBH_VGC_1( 
+                         i_stUSG := fb_IM2K2_PPM_PIP_1.q_IG, 
+                         i_stDSG := fb_MR3K2_KBH_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);		
+
+fb_MR3K2_KBH_VGC_2( 
+                         i_stUSG := fb_MR3K2_KBH_PIP_1.q_IG, 
+                         i_stDSG := fb_IM3K2_PPM_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);	
+
+fb_MR4K2_KBV_VGC_1( 
+                         i_stUSG := fb_IM3K2_PPM_PIP_1.q_IG, 
+                         i_stDSG := fb_MR4K2_KBV_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+
+fb_MR4K2_KBV_VGC_2( 
+                         i_stUSG := fb_MR4K2_KBV_PIP_1.q_IG, 
+                         i_stDSG := fb_IM4K2_PPM_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+	
+fb_LI3K2_K2B_VWC_1( 
+                         i_stUSG := fb_PA1K2_PIP_1.q_IG, 
+                         i_stDSG := fb_ST3K2_TERM_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode2, 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);			 
+					 
 
 // PIP_Gamma Pumps
 
@@ -81,7 +181,13 @@ fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GPI_1.PG);
 fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GPI_1.PG); 
 fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GPI_1.PG);
 fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GPI_1.PG);
-
+fb_MR2K2_FLAT_PIP_1(i_stGauge := fb_MR2K2_FLAT_GPI_1.PG);
+fb_MR3K2_KBH_PIP_1(i_stGauge := fb_MR3K2_KBH_GPI_1.PG);
+fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GPI_1.PG);
+fb_TV4K2_PIP_1(i_stGauge := fb_TM2K2_K2B_GPI_1.PG);
+fb_IM5K2_PPM_PIP_1(i_stGauge := fb_TM2K2_K2B_GPI_1.PG);
+fb_PA1K2_PIP_1(i_stGauge := fb_TM2K2_K2B_GPI_1.PG);
+fb_ST3K2_TERM_PIP_1(i_stGauge := fb_TM2K2_K2B_GPI_1.PG);
 
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;
@@ -97,60 +203,5 @@ fb_RIX_ILK(
 );
 ]]></ST>
     </Implementation>
-    <LineIds Name="PRG_KFE_RIX_VAC">
-      <LineId Id="95" Count="2" />
-      <LineId Id="188" Count="0" />
-      <LineId Id="284" Count="0" />
-      <LineId Id="190" Count="0" />
-      <LineId Id="285" Count="0" />
-      <LineId Id="184" Count="0" />
-      <LineId Id="286" Count="0" />
-      <LineId Id="241" Count="0" />
-      <LineId Id="287" Count="0" />
-      <LineId Id="242" Count="0" />
-      <LineId Id="107" Count="2" />
-      <LineId Id="197" Count="0" />
-      <LineId Id="280" Count="0" />
-      <LineId Id="199" Count="0" />
-      <LineId Id="281" Count="0" />
-      <LineId Id="196" Count="0" />
-      <LineId Id="282" Count="0" />
-      <LineId Id="192" Count="0" />
-      <LineId Id="283" Count="0" />
-      <LineId Id="247" Count="0" />
-      <LineId Id="119" Count="2" />
-      <LineId Id="210" Count="0" />
-      <LineId Id="215" Count="0" />
-      <LineId Id="217" Count="2" />
-      <LineId Id="236" Count="0" />
-      <LineId Id="221" Count="2" />
-      <LineId Id="208" Count="0" />
-      <LineId Id="224" Count="7" />
-      <LineId Id="248" Count="1" />
-      <LineId Id="251" Count="6" />
-      <LineId Id="250" Count="0" />
-      <LineId Id="258" Count="0" />
-      <LineId Id="209" Count="0" />
-      <LineId Id="260" Count="6" />
-      <LineId Id="259" Count="0" />
-      <LineId Id="138" Count="2" />
-      <LineId Id="201" Count="0" />
-      <LineId Id="203" Count="0" />
-      <LineId Id="205" Count="0" />
-      <LineId Id="5" Count="0" />
-      <LineId Id="267" Count="1" />
-      <LineId Id="274" Count="1" />
-      <LineId Id="273" Count="0" />
-      <LineId Id="278" Count="1" />
-      <LineId Id="277" Count="0" />
-      <LineId Id="289" Count="1" />
-      <LineId Id="288" Count="0" />
-      <LineId Id="293" Count="0" />
-      <LineId Id="295" Count="0" />
-      <LineId Id="298" Count="0" />
-      <LineId Id="297" Count="0" />
-      <LineId Id="292" Count="0" />
-      <LineId Id="291" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
