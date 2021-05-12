@@ -1323,15 +1323,15 @@
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.q_xHVEna_DO" VarB="Channel 1^Output" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.q_xHVEna_DO" VarB="Channel 4^Output" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 34 (EL2202)">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^B940-008-K0S15-PNL-03 FS^Term 34 (EL2202)">
 				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_A" VarB="Channel 1^Output" Size="1"/>
 				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_B" VarB="Channel 2^Output" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 35 (EL2202)">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^B940-008-K0S15-PNL-03 FS^Term 35 (EL2202)">
 				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_C" VarB="Channel 1^Output" Size="1"/>
 				<Link VarA="FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xOPN_DO" VarB="Channel 2^Output" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^Term 33 (EK1100)^Term 36 (EL1004)">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 32 (EK1122)^B940-008-K0S15-PNL-03 FS^Term 36 (EL1004)">
 				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xClsLS" VarB="Channel 1^Input" Size="1"/>
 				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOpnLS" VarB="Channel 2^Input" Size="1"/>
 			</OwnerB>
@@ -1375,38 +1375,38 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL1004)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.i_xSP_DI" VarB="Channel 1^Input" AutoLink="true" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 13 (EL2624)">
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^B940-008-K0S15-PNL-03 EK1100^Term 13 (EL2624)">
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.q_xHV_DIS" VarB="Channel 3^Output" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS" VarB="Channel 1^Output" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.q_xHV_DIS" VarB="Channel 2^Output" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 14 (EL1004)">
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^B940-008-K0S15-PNL-03 EK1100^Term 14 (EL1004)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xClsLS" VarB="Channel 2^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xOpnLS" VarB="Channel 1^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xClsLS" VarB="Channel 4^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.i_xOpnLS" VarB="Channel 3^Input" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 15 (EL2004)">
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^B940-008-K0S15-PNL-03 EK1100^Term 15 (EL2004)">
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.q_xOPN_DO" VarB="Channel 1^Output" Size="1"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_2.q_xOPN_DO" VarB="Channel 2^Output" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 16 (EL3174-0002)">
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^B940-008-K0S15-PNL-03 EK1100^Term 16 (EL3174-0002)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_iPRESS_R" VarB="AI Standard Channel 2^Value"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_iPRESS_R" VarB="AI Standard Channel 1^Value"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.i_iPRESS_R" VarB="AI Standard Channel 4^Value"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_iPRESS_R" VarB="AI Standard Channel 3^Value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 17 (EL3174-0002)">
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^B940-008-K0S15-PNL-03 EK1100^Term 17 (EL3174-0002)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.i_iPRESS_R" VarB="AI Standard Channel 1^Value"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.i_iPRESS_R" VarB="AI Standard Channel 2^Value"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 19 (EL1124)">
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^B940-008-K0S15-PNL-03 EK1100^Term 19 (EL1124)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xDisc_Active" VarB="Channel 4^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.i_xHV_ON" VarB="Channel 3^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xDisc_Active" VarB="Channel 2^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.i_xHV_ON" VarB="Channel 1^Input" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 5 (EtherCAT)^Term 12 (EK1100)^Term 20 (EL1124)">
+			<OwnerB Name="TIID^Device 5 (EtherCAT)^B940-008-K0S15-PNL-03 EK1100^Term 20 (EL1124)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xDisc_Active" VarB="Channel 2^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.i_xHV_ON" VarB="Channel 1^Input" Size="1"/>
 			</OwnerB>
