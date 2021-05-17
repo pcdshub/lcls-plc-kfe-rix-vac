@@ -741,22 +741,22 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_1.i_xOpnLS" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6010" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_1.i_xClsLS" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6020" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_2.i_xOpnLS" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6030" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_2.i_xClsLS" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -769,12 +769,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>000f01004400010003000000000000000000000f44090000</SyncMan>
 					<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_1.q_xOPN_DO" Index="#x7000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7010" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_2.q_xOPN_DO" Index="#x7010" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -807,17 +807,17 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>000f01004400010003000000000000000000000f44090000</SyncMan>
 					<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.q_xHV_DIS" Index="#x7000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7010" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.q_xHV_DIS" Index="#x7010" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 3" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7020" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.q_xHV_DIS" Index="#x7020" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -851,22 +851,22 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.i_xHV_ON" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6010" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.i_xDisc_Active" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6020" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.i_xHV_ON" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6030" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.i_xDisc_Active" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -879,12 +879,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.i_xHV_ON" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6010" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.i_xDisc_Active" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -952,7 +952,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
 							<Type>BIT</Type>
 						</Entry>
-						<Entry Name="Value" Index="#x6000" Sub="#x11">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.i_iPRESS_R" Index="#x6000" Sub="#x11">
 							<Type>INT</Type>
 						</Entry>
 					</Pdo>
@@ -1001,7 +1001,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
 							<Type>BIT</Type>
 						</Entry>
-						<Entry Name="Value" Index="#x6010" Sub="#x11">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.i_iPRESS_R" Index="#x6010" Sub="#x11">
 							<Type>INT</Type>
 						</Entry>
 					</Pdo>
@@ -1050,7 +1050,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
 							<Type>BIT</Type>
 						</Entry>
-						<Entry Name="Value" Index="#x6020" Sub="#x11">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.i_iPRESS_R" Index="#x6020" Sub="#x11">
 							<Type>INT</Type>
 						</Entry>
 					</Pdo>
@@ -1099,7 +1099,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
 							<Type>BIT</Type>
 						</Entry>
-						<Entry Name="Value" Index="#x6030" Sub="#x11">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GPI_1.i_iPRESS_R" Index="#x6030" Sub="#x11">
 							<Type>INT</Type>
 						</Entry>
 					</Pdo>
