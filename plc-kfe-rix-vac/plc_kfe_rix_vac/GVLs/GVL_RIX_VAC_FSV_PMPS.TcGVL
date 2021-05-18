@@ -6,7 +6,7 @@
     	pv: PLC:KFE:RIX:VAC:K2:FFO:02
     '}
     {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output'}
-    g_FastFaultOutput2  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
+    g_FastFaultOutput2  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1K2_PPS
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
