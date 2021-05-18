@@ -1557,10 +1557,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="102" BoxType="9099" BoxFlags="#x00000020">
+			<Box Id="95" BoxType="9099" BoxFlags="#x00000020">
 				<Name>EL3174_05_11</Name>
 				<ImageId>1004</ImageId>
-				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174 4Ch. Ana. Input +/-10V Diff., +/-20mA SingleEnded, 16 Bit" Desc="EL3174" PortABoxInfo="#x01000065">
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00110002" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174-0002 4Ch. Ana. Input +/-10V, +/-20mA 16 Bit, Isolated Channels" Desc="EL3174-0002" PortABoxInfo="#x01000065">
 					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 					<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
