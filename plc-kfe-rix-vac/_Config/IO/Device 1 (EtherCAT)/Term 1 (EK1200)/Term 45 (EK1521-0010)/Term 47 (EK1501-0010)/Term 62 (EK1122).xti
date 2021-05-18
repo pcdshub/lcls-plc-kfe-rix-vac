@@ -1342,12 +1342,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xOpnLS" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6010" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xClsLS" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -1370,7 +1370,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>000f01004400010003000000000000000000000f44090000</SyncMan>
 					<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.q_xOPN_DO" Index="#x7000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -1447,20 +1447,48 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="95" BoxType="9099">
-				<Name>EL9185_05_05</Name>
+			<Box Id="103" BoxType="9099">
+				<Name>EL9184_05_05</Name>
 				<ImageId>1003</ImageId>
-				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23e13050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9185 Potential Connection, 4 x 24-230V" Desc="EL9185" PortABoxInfo="#x0100005a"/>
+				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23e03050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9184 Potential Connection, 8 x 24V, 8 x Ground" Desc="EL9184" PortABoxInfo="#x0100005a"/>
 			</Box>
 			<Box Id="99" BoxType="9099">
 				<Name>EL9070_05_06</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x236e3050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9070 Shield terminal" Desc="EL9070" PortABoxInfo="#x0100005a"/>
 			</Box>
+			<Box Id="97" BoxType="9099">
+				<Name>EL2624_05_07</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0a403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2624 4Ch. Relay Output, NO (125V AC / 30V DC)" Desc="EL2624" PortABoxInfo="#x0100005a">
+					<SyncMan>000f01004400010003000000000000000000000f44090000</SyncMan>
+					<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.q_xHV_DIS" Index="#x7010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.q_xHV_DIS" Index="#x7020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="0">
+						<Entry Name="Output" Index="#x7030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+				</EtherCAT>
+			</Box>
 			<Box Id="96" BoxType="9099">
-				<Name>EL9505_05_07</Name>
+				<Name>EL9505_05_08</Name>
 				<ImageId>1003</ImageId>
-				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25213052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9505 Power supply terminal 5V" Desc="EL9505" PortABoxInfo="#x0100005a">
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25213052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9505 Power supply terminal 5V" Desc="EL9505" PortABoxInfo="#x01000061">
 					<SyncMan>001001000000010004000000000000000000001000000000</SyncMan>
 					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 					<Pdo Name="Status Uo" Index="#x1a00" Flags="#x0011" SyncMan="0">
@@ -1473,38 +1501,10 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="97" BoxType="9099">
-				<Name>EL2624_05_08</Name>
-				<ImageId>1002</ImageId>
-				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0a403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2624 4Ch. Relay Output, NO (125V AC / 30V DC)" Desc="EL2624" PortABoxInfo="#x01000060">
-					<SyncMan>000f01004400010003000000000000000000000f44090000</SyncMan>
-					<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
-					<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7000" Sub="#x01">
-							<Type>BIT</Type>
-						</Entry>
-					</Pdo>
-					<Pdo Name="Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7010" Sub="#x01">
-							<Type>BIT</Type>
-						</Entry>
-					</Pdo>
-					<Pdo Name="Channel 3" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7020" Sub="#x01">
-							<Type>BIT</Type>
-						</Entry>
-					</Pdo>
-					<Pdo Name="Channel 4" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="0">
-						<Entry Name="Output" Index="#x7030" Sub="#x01">
-							<Type>BIT</Type>
-						</Entry>
-					</Pdo>
-				</EtherCAT>
-			</Box>
 			<Box Id="100" BoxType="9099">
 				<Name>EL1124_05_09</Name>
 				<ImageId>7</ImageId>
-				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x01000061">
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x01000060">
 					<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
@@ -1518,12 +1518,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6020" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.i_xHV_ON" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6030" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.i_xDisc_Active" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -1536,12 +1536,12 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6000" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.i_xHV_ON" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
 					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
-						<Entry Name="Input" Index="#x6010" Sub="#x01">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.i_xDisc_Active" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
 						</Entry>
 					</Pdo>
@@ -1658,7 +1658,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
 							<Type>BIT</Type>
 						</Entry>
-						<Entry Name="Value" Index="#x6010" Sub="#x11">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.i_iPRESS_R" Index="#x6010" Sub="#x11">
 							<Type>INT</Type>
 						</Entry>
 					</Pdo>
@@ -1707,7 +1707,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
 							<Type>BIT</Type>
 						</Entry>
-						<Entry Name="Value" Index="#x6020" Sub="#x11">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.i_iPRESS_R" Index="#x6020" Sub="#x11">
 							<Type>INT</Type>
 						</Entry>
 					</Pdo>
@@ -1756,7 +1756,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
 							<Type>BIT</Type>
 						</Entry>
-						<Entry Name="Value" Index="#x6030" Sub="#x11">
+						<Entry Name="GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GPI_1.i_iPRESS_R" Index="#x6030" Sub="#x11">
 							<Type>INT</Type>
 						</Entry>
 					</Pdo>
