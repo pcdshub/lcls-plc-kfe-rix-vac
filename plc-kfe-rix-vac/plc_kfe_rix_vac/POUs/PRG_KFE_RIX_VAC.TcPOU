@@ -56,14 +56,14 @@ fb_MR4K2_KBV_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG, bEP := False);
 fb_MR4K2_KBV_GCC_1.M_SetBits(30518);
 fb_IM4K2_PPM_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG, bEP := False);
 fb_IM4K2_PPM_GCC_1.M_SetBits(30518);
-fb_IM5K2_PPM_GCC_1(PG := bm_dummy_gauge.PG, bEP := False);
+fb_IM5K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_IM5K2_PPM_GCC_1.M_SetBits(30518);
-fb_TM2K2_K2B_GCC_1(PG := bm_dummy_gauge.PG, bEP := False);
+fb_TM2K2_K2B_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
-fb_IM6K2_PPM_GCC_1(PG := bm_dummy_gauge.PG, bEP := TRUE);
+fb_IM6K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := TRUE);
 
 //MKS422
-fb_TV4K2_GFS_1(PG := bm_dummy_gauge.PG); 
+fb_TV4K2_GFS_1(PG := bm_dummy_gauge); 
 
 // VGC Valves
 
