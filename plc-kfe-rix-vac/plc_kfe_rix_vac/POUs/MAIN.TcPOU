@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{150c95ec-0456-4d2a-9418-59da97b7d368}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -10,26 +10,14 @@ END_VAR
       <ST><![CDATA[PRG_KFE_RIX_VAC();
 fbLogHandler();
 
-fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN],
+fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN],
 	Arbiter:= fbArbiter,
 	fbFFHWO:= g_FastFaultOutput1);
 
 g_FastFaultOutput1.bAutoReset := TRUE;
-g_FastFaultOutput1.Execute(i_xVeto := PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN]);
+g_FastFaultOutput1.Execute(i_xVeto := PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN]);
  
 ]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="2" Count="0" />
-      <LineId Id="6" Count="0" />
-      <LineId Id="26" Count="0" />
-      <LineId Id="25" Count="0" />
-      <LineId Id="27" Count="1" />
-      <LineId Id="30" Count="0" />
-      <LineId Id="15" Count="0" />
-      <LineId Id="11" Count="0" />
-      <LineId Id="20" Count="0" />
-      <LineId Id="10" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>

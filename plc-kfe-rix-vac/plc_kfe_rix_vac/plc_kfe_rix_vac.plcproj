@@ -94,10 +94,10 @@
   </ItemGroup>
   <ItemGroup>
     <PlaceholderResolution Include="LCLS Vacuum">
-      <Resolution>LCLS Vacuum, 1.4.2 (SLAC - LCLS)</Resolution>
+      <Resolution>LCLS Vacuum, 1.6.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="PMPS">
-      <Resolution>PMPS, 0.17.0 (SLAC - LCLS)</Resolution>
+      <Resolution>PMPS, 2.0.0 (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="TcUnit">
       <Resolution>TcUnit, 1.0.0.0 (www.tcunit.org)</Resolution>

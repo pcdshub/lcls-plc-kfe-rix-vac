@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.4" ClassName="CFlbTermDef" SubType="9099">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CFlbTermDef" SubType="9099">
 	<DataTypes>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
 			<BitSize>12</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -35,7 +35,7 @@
 	<Box Id="75" BoxType="9099" BoxFlags="#x00000020">
 		<Name>__FILENAME__</Name>
 		<ImageId>1000</ImageId>
-		<EtherCAT SlaveType="3" AdsServerAddress="ac155c48024c1504" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" EoeType="1" FoeType="1" VendorId="#x00000002" ProductCode="#x1a273052" RevisionNo="#x00050000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="2000" GenerateOwnNetId="true" CheckRevisionNoType="3" PortPhys="51" DcTimeLoopControlOnly="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6695 EtherCAT Bridge terminal (Primary)" Desc="EL6695">
+		<EtherCAT SlaveType="3" AdsServerAddress="00000000024c1704" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" EoeType="1" FoeType="1" VendorId="#x00000002" ProductCode="#x1a273052" RevisionNo="#x00050000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="2000" GenerateOwnNetId="true" CheckRevisionNoType="3" PortPhys="51" DcTimeLoopControlOnly="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6695 EtherCAT Bridge terminal (Primary)" Desc="EL6695">
 			<SyncMan>0010000426000100010000008000da050004001026010000</SyncMan>
 			<SyncMan>0016000422000100020000008000da050004001622010000</SyncMan>
 			<SyncMan>001c00006400000003000000000000000000001c64010000</SyncMan>
@@ -55,20 +55,26 @@
 				</Entry>
 				<Entry Name="TxPDO toggle" Index="#x1801" Sub="#x09">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles when new data from other side received]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles when new data from other side received]]>
+					</Comment>
 				</Entry>
 				<Entry Name="TxPDO state" Index="#x1801" Sub="#x07">
 					<Type>BIT</Type>
-					<Comment><![CDATA[0: Other side is in OP state
->0: Error]]></Comment>
+					<Comment>
+						<![CDATA[0: Other side is in OP state
+>0: Error]]>
+					</Comment>
 				</Entry>
 				<Entry>
 					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 				</Entry>
 				<Entry Name="External device not connected" Index="#x10f4" Sub="#x10">
 					<Type>BIT</Type>
-					<Comment><![CDATA[0: External device connected
-1: External device not connected]]></Comment>
+					<Comment>
+						<![CDATA[0: External device connected
+1: External device not connected]]>
+					</Comment>
 				</Entry>
 			</Pdo>
 			<Pdo Name="SYNC Inputs" Index="#x1a02" Flags="#x0010">
@@ -76,30 +82,40 @@
 				<ExcludePdo>#x1a03</ExcludePdo>
 				<Entry Name="Sync Mode" Index="#x10f4" Sub="#x02">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[0: no Syncronisation
+					<Comment>
+						<![CDATA[0: no Syncronisation
 1: Secondary side is Sync Master
-2: Primary side is Sync Master]]></Comment>
+2: Primary side is Sync Master]]>
+					</Comment>
 				</Entry>
 				<Entry>
 					<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
 				</Entry>
 				<Entry Name="TxPDO toggle" Index="#x1802" Sub="#x09">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles when new data from other side received]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles when new data from other side received]]>
+					</Comment>
 				</Entry>
 				<Entry Name="TxPDO state" Index="#x1802" Sub="#x07">
 					<Type>BIT</Type>
-					<Comment><![CDATA[0: Other side is in OP state
->0: Error]]></Comment>
+					<Comment>
+						<![CDATA[0: Other side is in OP state
+>0: Error]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Timestamp update toggle" Index="#x10f4" Sub="#x0f">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles when new timestamp data available]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles when new timestamp data available]]>
+					</Comment>
 				</Entry>
 				<Entry Name="External device not connected" Index="#x10f4" Sub="#x10">
 					<Type>BIT</Type>
-					<Comment><![CDATA[0: External device connected
-1: External device not connected]]></Comment>
+					<Comment>
+						<![CDATA[0: External device connected
+1: External device not connected]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Internal time stamp" Index="#x10f4" Sub="#x11">
 					<Type>ULINT</Type>
@@ -116,30 +132,40 @@
 				<ExcludePdo>#x1a02</ExcludePdo>
 				<Entry Name="Sync Mode" Index="#x10f4" Sub="#x02">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[0: no Syncronisation
+					<Comment>
+						<![CDATA[0: no Syncronisation
 1: Secondary side is Sync Master
-2: Primary side is Sync Master]]></Comment>
+2: Primary side is Sync Master]]>
+					</Comment>
 				</Entry>
 				<Entry>
 					<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
 				</Entry>
 				<Entry Name="TxPDO toggle" Index="#x1803" Sub="#x09">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles when new data from other side received]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles when new data from other side received]]>
+					</Comment>
 				</Entry>
 				<Entry Name="TxPDO state" Index="#x1803" Sub="#x07">
 					<Type>BIT</Type>
-					<Comment><![CDATA[0: Other side is in OP state
->0: Error]]></Comment>
+					<Comment>
+						<![CDATA[0: Other side is in OP state
+>0: Error]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Timestamp update toggle" Index="#x10f4" Sub="#x0f">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles when new timestamp data available]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles when new timestamp data available]]>
+					</Comment>
 				</Entry>
 				<Entry Name="External device not connected" Index="#x10f4" Sub="#x10">
 					<Type>BIT</Type>
-					<Comment><![CDATA[0: External device connected
-1: External device not connected]]></Comment>
+					<Comment>
+						<![CDATA[0: External device connected
+1: External device not connected]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Internal time stamp" Index="#x10f4" Sub="#x11">
 					<Type>UDINT</Type>

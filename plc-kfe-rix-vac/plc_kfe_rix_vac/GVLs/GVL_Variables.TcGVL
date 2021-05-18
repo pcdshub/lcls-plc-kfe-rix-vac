@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_Variables" Id="{4e0ea985-29d8-4132-9223-f15e8fa1fe3d}">
     <Declaration><![CDATA[VAR_GLOBAL
 
@@ -22,7 +22,7 @@ xSystemOverrideMode2 : BOOL; (* Global system override for the prototype section
 	pv: PLC:KFE:RIX:VAC:K2:FFO:01
 '}
 {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 1^Output'}
-g_FastFaultOutput1  :   FB_HardwareFFOutput;
+g_FastFaultOutput1  :   FB_HardwareFFOutput:= (i_sNetID:='172.21.42.126.1.1');
 
 {attribute 'pytmc' := '
 	pv: PLC:KFE:RIX:VAC:ARB

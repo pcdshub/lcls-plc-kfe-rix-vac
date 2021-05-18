@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.12" ClassName="CFlbTermDef" SubType="9099">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CFlbTermDef" SubType="9099">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
@@ -45,11 +45,11 @@
 		<Box File="K2S2-DRL-01 (EP2624-0002).xti" Id="112">
 			<EtherCAT PortABoxInfo="#x0100006f"/>
 		</Box>
-		<Box Id="22" BoxType="9099">
+		<Box BoxType="9099" Id="22">
 			<Name>EK1100_03_00</Name>
 			<ImageId>1001</ImageId>
 			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x01000070"/>
-			<Box Id="27" BoxType="9099">
+			<Box BoxType="9099" Id="27">
 				<Name>EL1004_03_01</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x03ec3052" RevisionNo="#x00130000" RepeatSupport="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1004 4Ch. Dig. Input 24V, 3ms" Desc="EL1004" PortABoxInfo="#x01000016">
@@ -77,7 +77,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="30" BoxType="9099">
+			<Box BoxType="9099" Id="30">
 				<Name>EL2004_03_02</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07d43052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2004 4Ch. Dig. Output 24V, 0.5A" Desc="EL2004" PortABoxInfo="#x0100001b">
@@ -105,7 +105,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="28" BoxType="9099">
+			<Box BoxType="9099" Id="28">
 				<Name>EL1004_03_03</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x03ec3052" RevisionNo="#x00130000" RepeatSupport="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1004 4Ch. Dig. Input 24V, 3ms" Desc="EL1004" PortABoxInfo="#x0100001e">
@@ -133,7 +133,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="31" BoxType="9099">
+			<Box BoxType="9099" Id="31">
 				<Name>EL2004_03_04</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07d43052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2004 4Ch. Dig. Output 24V, 0.5A" Desc="EL2004" PortABoxInfo="#x0100001c">
@@ -161,7 +161,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="29" BoxType="9099">
+			<Box BoxType="9099" Id="29">
 				<Name>EL1004_03_05</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x03ec3052" RevisionNo="#x00130000" RepeatSupport="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1004 4Ch. Dig. Input 24V, 3ms" Desc="EL1004" PortABoxInfo="#x0100001f">
@@ -189,17 +189,17 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="39" BoxType="9099">
+			<Box BoxType="9099" Id="39">
 				<Name>EL9184_03_06</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23e03050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9184 Potential Connection, 8 x 24V, 8 x Ground" Desc="EL9184" PortABoxInfo="#x0100001d"/>
 			</Box>
-			<Box Id="40" BoxType="9099">
+			<Box BoxType="9099" Id="40">
 				<Name>EL9070_03_07</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x236e3050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9070 Shield terminal" Desc="EL9070" PortABoxInfo="#x0100001d"/>
 			</Box>
-			<Box Id="41" BoxType="9099">
+			<Box BoxType="9099" Id="41">
 				<Name>EL2624_03_08</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0a403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2624 4Ch. Relay Output, NO (125V AC / 30V DC)" Desc="EL2624" PortABoxInfo="#x0100001d">
@@ -227,7 +227,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="42" BoxType="9099">
+			<Box BoxType="9099" Id="42">
 				<Name>EL9505_03_09</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25213052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9505 Power supply terminal 5V" Desc="EL9505" PortABoxInfo="#x01000029">
@@ -243,7 +243,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="43" BoxType="9099">
+			<Box BoxType="9099" Id="43">
 				<Name>EL1124_03_10</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x0100002a">
@@ -271,7 +271,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="44" BoxType="9099">
+			<Box BoxType="9099" Id="44">
 				<Name>EL1124_03_11</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x0100002b">
@@ -299,7 +299,7 @@
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="46" BoxType="9099" BoxFlags="#x00000020">
+			<Box BoxType="9099" BoxFlags="#x00000020" Id="46">
 				<Name>EL3174_03_12</Name>
 				<ImageId>1004</ImageId>
 				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174 4Ch. Ana. Input +/-10V Diff., +/-20mA SingleEnded, 16 Bit" Desc="EL3174" PortABoxInfo="#x0100002c">
@@ -316,25 +316,35 @@
 						<ExcludePdo>#x1a01</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -365,25 +375,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a03</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -414,25 +434,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a05</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -463,25 +493,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a07</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -514,7 +554,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<CoeProfile ProfileNo="19665801"/>
 				</EtherCAT>
 			</Box>
-			<Box Id="60" BoxType="9099" BoxFlags="#x00000020">
+			<Box BoxType="9099" BoxFlags="#x00000020" Id="60">
 				<Name>EL3174_03_13</Name>
 				<ImageId>1004</ImageId>
 				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174 4Ch. Ana. Input +/-10V Diff., +/-20mA SingleEnded, 16 Bit" Desc="EL3174" PortABoxInfo="#x0100002e">
@@ -531,25 +571,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a01</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -580,25 +630,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a03</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -629,25 +689,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a05</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -678,25 +748,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a07</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -730,11 +810,11 @@ Bit1: Value smaller than Limit2]]></Comment>
 				</EtherCAT>
 			</Box>
 		</Box>
-		<Box Id="23" BoxType="9099">
+		<Box BoxType="9099" Id="23">
 			<Name>EK1100_04_00</Name>
 			<ImageId>1001</ImageId>
 			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x02000016"/>
-			<Box Id="61" BoxType="9099">
+			<Box BoxType="9099" Id="61">
 				<Name>EL1004_04_01</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x03ec3052" RevisionNo="#x00130000" RepeatSupport="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1004 4Ch. Dig. Input 24V, 3ms" Desc="EL1004" PortABoxInfo="#x01000017">
@@ -762,7 +842,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="66" BoxType="9099">
+			<Box BoxType="9099" Id="66">
 				<Name>EL2004_04_02</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07d43052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2004 4Ch. Dig. Output 24V, 0.5A" Desc="EL2004" PortABoxInfo="#x0100003d">
@@ -790,17 +870,17 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="78" BoxType="9099">
+			<Box BoxType="9099" Id="78">
 				<Name>EL9184_04_03</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23e03050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9184 Potential Connection, 8 x 24V, 8 x Ground" Desc="EL9184" PortABoxInfo="#x01000042"/>
 			</Box>
-			<Box Id="79" BoxType="9099">
+			<Box BoxType="9099" Id="79">
 				<Name>EL9070_04_04</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x236e3050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9070 Shield terminal" Desc="EL9070" PortABoxInfo="#x01000042"/>
 			</Box>
-			<Box Id="81" BoxType="9099">
+			<Box BoxType="9099" Id="81">
 				<Name>EL2624_04_05</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0a403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2624 4Ch. Relay Output, NO (125V AC / 30V DC)" Desc="EL2624" PortABoxInfo="#x01000042">
@@ -828,7 +908,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="82" BoxType="9099">
+			<Box BoxType="9099" Id="82">
 				<Name>EL9505_04_06</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25213052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9505 Power supply terminal 5V" Desc="EL9505" PortABoxInfo="#x01000051">
@@ -844,7 +924,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="83" BoxType="9099">
+			<Box BoxType="9099" Id="83">
 				<Name>EL1124_04_07</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x01000052">
@@ -872,7 +952,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="84" BoxType="9099">
+			<Box BoxType="9099" Id="84">
 				<Name>EL1124_04_08</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x01000053">
@@ -900,7 +980,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="85" BoxType="9099" BoxFlags="#x00000020">
+			<Box BoxType="9099" BoxFlags="#x00000020" Id="85">
 				<Name>EL3174_04_09</Name>
 				<ImageId>1004</ImageId>
 				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174 4Ch. Ana. Input +/-10V Diff., +/-20mA SingleEnded, 16 Bit" Desc="EL3174" PortABoxInfo="#x01000054">
@@ -917,25 +997,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a01</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -966,25 +1056,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a03</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1015,25 +1115,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a05</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1064,25 +1174,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a07</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1115,7 +1235,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<CoeProfile ProfileNo="19665801"/>
 				</EtherCAT>
 			</Box>
-			<Box Id="86" BoxType="9099" BoxFlags="#x00000020">
+			<Box BoxType="9099" BoxFlags="#x00000020" Id="86">
 				<Name>EL3174_04_10</Name>
 				<ImageId>1004</ImageId>
 				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174 4Ch. Ana. Input +/-10V Diff., +/-20mA SingleEnded, 16 Bit" Desc="EL3174" PortABoxInfo="#x01000055">
@@ -1132,25 +1252,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a01</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1181,25 +1311,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a03</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1230,25 +1370,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a05</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1279,25 +1429,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a07</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1331,11 +1491,11 @@ Bit1: Value smaller than Limit2]]></Comment>
 				</EtherCAT>
 			</Box>
 		</Box>
-		<Box Id="25" BoxType="9099">
+		<Box BoxType="9099" Id="25">
 			<Name>EK1100_05_00</Name>
 			<ImageId>1001</ImageId>
 			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x02000017"/>
-			<Box Id="87" BoxType="9099">
+			<Box BoxType="9099" Id="87">
 				<Name>EL1004_05_01</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x03ec3052" RevisionNo="#x00130000" RepeatSupport="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1004 4Ch. Dig. Input 24V, 3ms" Desc="EL1004" PortABoxInfo="#x01000019">
@@ -1363,7 +1523,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="88" BoxType="9099">
+			<Box BoxType="9099" Id="88">
 				<Name>EL2004_05_02</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07d43052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2004 4Ch. Dig. Output 24V, 0.5A" Desc="EL2004" PortABoxInfo="#x01000057">
@@ -1391,7 +1551,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="89" BoxType="9099">
+			<Box BoxType="9099" Id="89">
 				<Name>EL1004_05_03</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x03ec3052" RevisionNo="#x00130000" RepeatSupport="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1004 4Ch. Dig. Input 24V, 3ms" Desc="EL1004" PortABoxInfo="#x01000058">
@@ -1419,7 +1579,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="90" BoxType="9099">
+			<Box BoxType="9099" Id="90">
 				<Name>EL2004_05_04</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07d43052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2004 4Ch. Dig. Output 24V, 0.5A" Desc="EL2004" PortABoxInfo="#x01000059">
@@ -1447,17 +1607,17 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="103" BoxType="9099">
+			<Box BoxType="9099" Id="103">
 				<Name>EL9184_05_05</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23e03050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9184 Potential Connection, 8 x 24V, 8 x Ground" Desc="EL9184" PortABoxInfo="#x0100005a"/>
 			</Box>
-			<Box Id="99" BoxType="9099">
+			<Box BoxType="9099" Id="99">
 				<Name>EL9070_05_06</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x236e3050" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9070 Shield terminal" Desc="EL9070" PortABoxInfo="#x0100005a"/>
 			</Box>
-			<Box Id="97" BoxType="9099">
+			<Box BoxType="9099" Id="97">
 				<Name>EL2624_05_07</Name>
 				<ImageId>1002</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0a403052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2624 4Ch. Relay Output, NO (125V AC / 30V DC)" Desc="EL2624" PortABoxInfo="#x0100005a">
@@ -1485,7 +1645,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="96" BoxType="9099">
+			<Box BoxType="9099" Id="96">
 				<Name>EL9505_05_08</Name>
 				<ImageId>1003</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25213052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9505 Power supply terminal 5V" Desc="EL9505" PortABoxInfo="#x01000061">
@@ -1501,7 +1661,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="100" BoxType="9099">
+			<Box BoxType="9099" Id="100">
 				<Name>EL1124_05_09</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x01000060">
@@ -1529,7 +1689,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="101" BoxType="9099">
+			<Box BoxType="9099" Id="101">
 				<Name>EL1124_05_10</Name>
 				<ImageId>7</ImageId>
 				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124" PortABoxInfo="#x01000064">
@@ -1557,7 +1717,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 					</Pdo>
 				</EtherCAT>
 			</Box>
-			<Box Id="95" BoxType="9099" BoxFlags="#x00000020">
+			<Box BoxType="9099" BoxFlags="#x00000020" Id="95">
 				<Name>EL3174_05_11</Name>
 				<ImageId>1004</ImageId>
 				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c663052" RevisionNo="#x00110002" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3174-0002 4Ch. Ana. Input +/-10V, +/-20mA 16 Bit, Isolated Channels" Desc="EL3174-0002" PortABoxInfo="#x01000065">
@@ -1574,25 +1734,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a01</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1623,25 +1793,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a03</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1672,25 +1852,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a05</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1721,25 +1911,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 						<ExcludePdo>#x1a07</ExcludePdo>
 						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when upper value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when upper value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when lower value limit exceeded]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when lower value limit exceeded]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
 							<Type>BIT2</Type>
-							<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+							<Comment>
+								<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
 							<Type>BIT</Type>
-							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+							<Comment>
+								<![CDATA[Bit set when Over- or Underrange]]>
+							</Comment>
 						</Entry>
 						<Entry Name="Status__">
 							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1773,7 +1973,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 				</EtherCAT>
 			</Box>
 		</Box>
-		<Box Id="24" BoxType="9099" BoxFlags="#x00000020">
+		<Box BoxType="9099" BoxFlags="#x00000020" Id="24">
 			<Name>EP3174_06_01</Name>
 			<ImageId>1005</ImageId>
 			<EtherCAT SlaveType="2" PdiType="#x0605" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c664052" RevisionNo="#x00170002" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable" Desc="EP3174-0002" PortABoxInfo="#x02000019">
@@ -1791,25 +1991,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<ExcludePdo>#x1a01</ExcludePdo>
 					<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Underrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Underrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Overrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Overrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						<Comment>
+							<![CDATA[Bit set when Over- or Underrange]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__">
 						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1840,25 +2050,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<ExcludePdo>#x1a03</ExcludePdo>
 					<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Underrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Underrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Overrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Overrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						<Comment>
+							<![CDATA[Bit set when Over- or Underrange]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__">
 						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1889,25 +2109,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<ExcludePdo>#x1a05</ExcludePdo>
 					<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Underrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Underrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Overrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Overrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						<Comment>
+							<![CDATA[Bit set when Over- or Underrange]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__">
 						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1938,25 +2168,35 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<ExcludePdo>#x1a07</ExcludePdo>
 					<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Underrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Underrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Overrange event active]]></Comment>
+						<Comment>
+							<![CDATA[Overrange event active]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit1
-Bit1: Value smaller than Limit1]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
 						<Type>BIT2</Type>
-						<Comment><![CDATA[Bit0: Value greater than Limit2
-Bit1: Value smaller than Limit2]]></Comment>
+						<Comment>
+							<![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
 						<Type>BIT</Type>
-						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						<Comment>
+							<![CDATA[Bit set when Over- or Underrange]]>
+						</Comment>
 					</Entry>
 					<Entry Name="Status__">
 						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -1989,7 +2229,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 				<CoeProfile ProfileNo="19665801" DisplayName="Analog Input"/>
 			</EtherCAT>
 		</Box>
-		<Box Id="26" BoxType="9099">
+		<Box BoxType="9099" Id="26">
 			<Name>EP2624_06_02</Name>
 			<ImageId>1006</ImageId>
 			<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0a404052" RevisionNo="#x00130002" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)" Desc="EP2624-0002" PortABoxInfo="#x01000018">
