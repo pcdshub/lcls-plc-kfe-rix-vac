@@ -363,10 +363,6 @@
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>FSTask Outputs</Name>
 				<Var>
-					<Name>GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_xClose_A</Name>
 					<Type>BOOL</Type>
 				</Var>
@@ -411,6 +407,10 @@
 					<Name>GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State</Name>
 					<Comment><![CDATA[Interface]]></Comment>
 					<Type GUID="{1A089C83-D087-4456-8A74-523FB3B2F19B}" Namespace="LCLS_Vacuum">E_VGC</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="8" AreaNo="4">
@@ -463,6 +463,21 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ input Pressure // Link to analog Input]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GPI_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ input Pressure // Link to analog Input]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GPI_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ input Pressure // Link to analog Input]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GPI_1.i_iPRESS_R</Name>
 					<Comment><![CDATA[ input Pressure // Link to analog Input]]></Comment>
 					<Type>INT</Type>
 				</Var>
@@ -532,6 +547,126 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.i_iPRESS_R</Name>
 					<Comment><![CDATA[ Controls and I/Os]]></Comment>
 					<Type>INT</Type>
@@ -545,6 +680,26 @@
 					<Name>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.i_xDisc_Active</Name>
 					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
 					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.i_xHV_ON</Name>
+					<Comment><![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.i_xDisc_Active</Name>
+					<Comment><![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.i_iPRESS_R</Name>
+					<Comment><![CDATA[ Controls and I/Os]]></Comment>
+					<Type>INT</Type>
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_VGC_1.i_xOpnLS</Name>
@@ -571,6 +726,69 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_1.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_1.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_2.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_2.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_VGC_1.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_VGC_1.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_VGC_2.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_VGC_2.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_1.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_1.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_2.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_2.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xClsLS</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -628,6 +846,105 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_PA1K2_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_PA1K2_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.i_xSP_DI</Name>
+					<Comment><![CDATA[ NO contact //function of relay set on the QPC to HV output state]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.TV1K2_VFS_Interface.i_xVAC_FAULT_OK</Name>
 					<Comment><![CDATA[Valve Vacuum OK, is set to False when there is Vacuum Fault]]></Comment>
 					<Type>BOOL</Type>
@@ -663,6 +980,10 @@
 					<Type GUID="{5FC92061-002A-45B0-B954-CD8F28B5CE49}">ST_BeamParams_IO</Type>
 				</Var>
 				<Var>
+					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS</Name>
 					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
 					<Type>BOOL</Type>
@@ -683,8 +1004,58 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.q_xHV_DIS</Name>
 					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.q_xHV_DIS</Name>
+					<Comment><![CDATA[ Disable Gauge High Voltage when True // 'TcLinkTo' (EL2794) ^Output]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -697,6 +1068,34 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_1.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_VGC_2.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_VGC_1.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_VGC_2.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_1.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_VGC_2.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.q_xOPN_DO</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -725,6 +1124,61 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_PA1K2_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.q_xHVEna_DO</Name>
+					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.q_xHVEna_DO</Name>
 					<Comment><![CDATA[ Enable High Voltage when TRUE]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
@@ -773,10 +1227,6 @@
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_RIX_ILK.q_xILK_OK_DO</Name>
 					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>

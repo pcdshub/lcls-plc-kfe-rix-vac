@@ -14,6 +14,13 @@ fb_TV1K1_PLEG_GPI_1 : FB_MKS275;
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 119 (EL3174)^AI Standard Channel 2^Value'}
 {attribute 'pytmc' := ' pv: SL1K2:EXIT:GPI:1 '}
 fb_SL1K2_EXIT_GPI_1 : FB_MKS275;
+{attribute 'pytmc' := ' pv: MR2K2:FLAT:GPI:1 '}
+fb_MR2K2_FLAT_GPI_1 : FB_MKS275;
+{attribute 'pytmc' := ' pv: MR3K2:KBH:GPI:1 '}
+fb_MR3K2_KBH_GPI_1 : FB_MKS275;
+{attribute 'pytmc' := ' pv: MR4K2:KBV:GPI:1 '}
+fb_MR4K2_KBV_GPI_1 : FB_MKS275;
+
 
 //MKS275 EP Gauges
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)^AI Standard Channel 2^Value'}
@@ -36,6 +43,22 @@ fb_TV1K1_PLEG_GCC_1 : FB_MKS500;
 								 .q_xHV_DIS		:= 	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 118 (EL2624)^Channel 1^Output	'}
 {attribute 'pytmc' := ' pv: SL1K2:EXIT:GCC:1 '}
 fb_SL1K2_EXIT_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: MR2K2:FLAT:GCC:1 '}
+fb_MR2K2_FLAT_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: IM2K2:PPM:GCC:1 '}
+fb_IM2K2_PPM_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: MR3K2:KBH:GCC:1 '}
+fb_MR3K2_KBH_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: IM3K2:PPM:GCC:1 '}
+fb_IM3K2_PPM_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: MR4K2:KBV:GCC:1 '}
+fb_MR4K2_KBV_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: IM4K2:PPM:GCC:1 '}
+fb_IM4K2_PPM_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: IM5K2:PPM:GCC:1 '}
+fb_IM5K2_PPM_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: TM2K2:K2B:GCC:1 '}
+fb_TM2K2_K2B_GCC_1 : FB_MKS500;
 
 
 //MKS500 EP Gauges
@@ -43,6 +66,14 @@ fb_SL1K2_EXIT_GCC_1 : FB_MKS500;
 							 .q_xHV_DIS		:= 	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S2-DRL-01 (EP2624-0002)^Channel 1^Output	'}
 {attribute 'pytmc' := ' pv: ST1K2:PPS:GCC:1 '}
 fb_ST1K2_PPS_GCC_1 : FB_MKS500;
+{attribute 'pytmc' := ' pv: IM6K2:PPM:GCC:1 '}
+fb_IM6K2_PPM_GCC_1 : FB_MKS500;
+
+
+// MKS422
+{attribute 'pytmc' := ' pv: TV4K2:GFC:1 '}
+fb_TV4K2_GFS_1 : FB_MKS422;
+
 
 // VGC Valves
 
@@ -56,6 +87,21 @@ fb_MR1K2_SWITCH_VGC_2 : FB_VGC;
 								.q_xOPN_DO	:=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 121 (EL2004)^Channel 1^Output'}
 {attribute 'pytmc' := ' pv: SL1K2:EXIT:VGC:1 '}
 fb_SL1K2_EXIT_VGC_1 : FB_VGC;
+{attribute 'pytmc' := ' pv: MR2K2:FLAT:VGC:1 '}
+fb_MR2K2_FLAT_VGC_1 : FB_VGC;
+{attribute 'pytmc' := ' pv: MR2K2:FLAT:VGC:2 '}
+fb_MR2K2_FLAT_VGC_2 : FB_VGC;
+{attribute 'pytmc' := ' pv: MR3K2:KBH:VGC:1 '}
+fb_MR3K2_KBH_VGC_1 : FB_VGC;
+{attribute 'pytmc' := ' pv: MR3K2:KBH:VGC:2 '}
+fb_MR3K2_KBH_VGC_2 : FB_VGC;
+{attribute 'pytmc' := ' pv: MR4K2:KBV:VGC:1 '}
+fb_MR4K2_KBV_VGC_1 : FB_VGC;
+{attribute 'pytmc' := ' pv: MR4K2:KBV:VGC:2 '}
+fb_MR4K2_KBV_VGC_2 : FB_VGC;
+{attribute 'pytmc' := ' pv: LI3K2:K2B:VWC:1 '}
+fb_LI3K2_K2B_VWC_1 : FB_VGC;
+
 
 // VGC EP Valves
 {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 1^Input;
@@ -85,6 +131,33 @@ fb_ST1K2_PPS_PIP_1 : FB_PIP_GAMMA;
 								 .q_xHVEna_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL2794)^Channel 1^Output'}
 {attribute 'pytmc' := ' pv: SL1K2:EXIT:PIP:1 '}
 fb_SL1K2_EXIT_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: MR2K2:FLAT:PIP:1 '}
+fb_MR2K2_FLAT_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: MR3K2:KBH:PIP:1 '}
+fb_MR3K2_KBH_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: MR4K2:KBV:PIP:1 '}
+fb_MR4K2_KBV_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: TV4K2:PIP:1 '}
+fb_TV4K2_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: IM5K2:PPM:PIP:1 '}
+fb_IM5K2_PPM_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: PA1K2:PIP:1 '}
+fb_PA1K2_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
+fb_ST3K2_TERM_PIP_1 : FB_PIP_GAMMA;
+
+
+//SIP PIP NexTORR Pumps
+{attribute 'pytmc' := ' pv: IM2K2:PPM:PIP:1 '}
+fb_IM2K2_PPM_PIP_1 : FB_PIP_GAMMA;     //FB_PIP_SIP
+{attribute 'pytmc' := ' pv: IM3K2:PPM:PIP:1 '}
+fb_IM3K2_PPM_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: IM4K2:PPM:PIP:1 '}
+fb_IM4K2_PPM_PIP_1 : FB_PIP_GAMMA;
+{attribute 'pytmc' := ' pv: LI2K2:K2A:PIP:1 '}
+fb_LI2K2_K2A_PIP_1 : FB_PIP_GAMMA;
+
+//VFS
 
 {attribute 'pytmc' := '		pv: TV1K2:VFS:1	'}
 	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK;	
