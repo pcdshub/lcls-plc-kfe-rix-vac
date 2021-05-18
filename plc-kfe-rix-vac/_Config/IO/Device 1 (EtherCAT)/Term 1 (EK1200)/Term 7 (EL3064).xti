@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.4" ClassName="CFlbTermDef" SubType="9099">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CFlbTermDef" SubType="9099">
 	<DataTypes>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
 			<BitSize>1</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -11,7 +11,7 @@
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
 			<BitSize>6</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -38,25 +38,35 @@
 				<ExcludePdo>#x1a01</ExcludePdo>
 				<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Underrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Underrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Overrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Overrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit1
-Bit1: Value bigger/equal Limit1]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit1
+Bit1: Value bigger/equal Limit1]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit2
-Bit1: Value bigger/equal Limit2]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit2
+Bit1: Value bigger/equal Limit2]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					<Comment>
+						<![CDATA[Bit set when Over- or Underrange]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__">
 					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -66,11 +76,15 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
 					<Type>BIT</Type>
-					<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
+					<Comment>
+						<![CDATA[TRUE when this TxPDO is not valid]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles everytime when new value available]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles everytime when new value available]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Value" Index="#x6000" Sub="#x11" Flags="#x00020000">
 					<Type>INT</Type>
@@ -86,25 +100,35 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				<ExcludePdo>#x1a03</ExcludePdo>
 				<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Underrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Underrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Overrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Overrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit1
-Bit1: Value bigger/equal Limit1]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit1
+Bit1: Value bigger/equal Limit1]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit2
-Bit1: Value bigger/equal Limit2]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit2
+Bit1: Value bigger/equal Limit2]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					<Comment>
+						<![CDATA[Bit set when Over- or Underrange]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__">
 					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -114,11 +138,15 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
 					<Type>BIT</Type>
-					<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
+					<Comment>
+						<![CDATA[TRUE when this TxPDO is not valid]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles everytime when new value available]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles everytime when new value available]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Value" Index="#x6010" Sub="#x11" Flags="#x00020000">
 					<Type>INT</Type>
@@ -134,25 +162,35 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				<ExcludePdo>#x1a05</ExcludePdo>
 				<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Underrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Underrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Overrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Overrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit1
-Bit1: Value bigger/equal Limit1]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit1
+Bit1: Value bigger/equal Limit1]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit2
-Bit1: Value bigger/equal Limit2]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit2
+Bit1: Value bigger/equal Limit2]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					<Comment>
+						<![CDATA[Bit set when Over- or Underrange]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__">
 					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -162,11 +200,15 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
 					<Type>BIT</Type>
-					<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
+					<Comment>
+						<![CDATA[TRUE when this TxPDO is not valid]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles everytime when new value available]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles everytime when new value available]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Value" Index="#x6020" Sub="#x11" Flags="#x00020000">
 					<Type>INT</Type>
@@ -182,25 +224,35 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				<ExcludePdo>#x1a07</ExcludePdo>
 				<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Underrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Underrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Overrange event active]]></Comment>
+					<Comment>
+						<![CDATA[Overrange event active]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit1
-Bit1: Value bigger/equal Limit1]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit1
+Bit1: Value bigger/equal Limit1]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
 					<Type>BIT2</Type>
-					<Comment><![CDATA[Bit0: Value smaller/equal Limit2
-Bit1: Value bigger/equal Limit2]]></Comment>
+					<Comment>
+						<![CDATA[Bit0: Value smaller/equal Limit2
+Bit1: Value bigger/equal Limit2]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					<Comment>
+						<![CDATA[Bit set when Over- or Underrange]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__">
 					<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
@@ -210,11 +262,15 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
 					<Type>BIT</Type>
-					<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
+					<Comment>
+						<![CDATA[TRUE when this TxPDO is not valid]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
 					<Type>BIT</Type>
-					<Comment><![CDATA[Bit toggles everytime when new value available]]></Comment>
+					<Comment>
+						<![CDATA[Bit toggles everytime when new value available]]>
+					</Comment>
 				</Entry>
 				<Entry Name="Value" Index="#x6030" Sub="#x11" Flags="#x00020000">
 					<Type>INT</Type>
