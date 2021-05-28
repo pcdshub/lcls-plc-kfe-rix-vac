@@ -149,13 +149,13 @@ fb_ST3K2_TERM_PIP_1 : FB_PIP_GAMMA;
 
 //SIP PIP NexTORR Pumps
 {attribute 'pytmc' := ' pv: IM2K2:PPM:PIP:1 '}
-fb_IM2K2_PPM_PIP_1 : FB_PIP_GAMMA;     //FB_PIP_SIP
+fb_IM2K2_PPM_PIP_1 : FB_PIP_SIP;
 {attribute 'pytmc' := ' pv: IM3K2:PPM:PIP:1 '}
-fb_IM3K2_PPM_PIP_1 : FB_PIP_GAMMA;
+fb_IM3K2_PPM_PIP_1 : FB_PIP_SIP;
 {attribute 'pytmc' := ' pv: IM4K2:PPM:PIP:1 '}
-fb_IM4K2_PPM_PIP_1 : FB_PIP_GAMMA;
+fb_IM4K2_PPM_PIP_1 : FB_PIP_SIP;
 {attribute 'pytmc' := ' pv: LI2K2:K2A:PIP:1 '}
-fb_LI2K2_K2A_PIP_1 : FB_PIP_GAMMA;
+fb_LI2K2_K2A_PIP_1 : FB_PIP_SIP;
 
 //VFS
 
