@@ -57,6 +57,13 @@ GVL_KFE_RIX_VAC
     {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 119 (EL3174)^AI Standard Channel 2^Value'}
     {attribute 'pytmc' := ' pv: SL1K2:EXIT:GPI:1 '}
     fb_SL1K2_EXIT_GPI_1 : FB_MKS275;
+    {attribute 'pytmc' := ' pv: MR2K2:FLAT:GPI:1 '}
+    fb_MR2K2_FLAT_GPI_1 : FB_MKS275;
+    {attribute 'pytmc' := ' pv: MR3K2:KBH:GPI:1 '}
+    fb_MR3K2_KBH_GPI_1 : FB_MKS275;
+    {attribute 'pytmc' := ' pv: MR4K2:KBV:GPI:1 '}
+    fb_MR4K2_KBV_GPI_1 : FB_MKS275;
+
 
     //MKS275 EP Gauges
     {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)^AI Standard Channel 2^Value'}
@@ -79,6 +86,22 @@ GVL_KFE_RIX_VAC
     								 .q_xHV_DIS		:= 	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 118 (EL2624)^Channel 1^Output	'}
     {attribute 'pytmc' := ' pv: SL1K2:EXIT:GCC:1 '}
     fb_SL1K2_EXIT_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: MR2K2:FLAT:GCC:1 '}
+    fb_MR2K2_FLAT_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: IM2K2:PPM:GCC:1 '}
+    fb_IM2K2_PPM_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: MR3K2:KBH:GCC:1 '}
+    fb_MR3K2_KBH_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: IM3K2:PPM:GCC:1 '}
+    fb_IM3K2_PPM_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: MR4K2:KBV:GCC:1 '}
+    fb_MR4K2_KBV_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: IM4K2:PPM:GCC:1 '}
+    fb_IM4K2_PPM_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: IM5K2:PPM:GCC:1 '}
+    fb_IM5K2_PPM_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: TM2K2:K2B:GCC:1 '}
+    fb_TM2K2_K2B_GCC_1 : FB_MKS500;
 
 
     //MKS500 EP Gauges
@@ -86,6 +109,14 @@ GVL_KFE_RIX_VAC
     							 .q_xHV_DIS		:= 	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S2-DRL-01 (EP2624-0002)^Channel 1^Output	'}
     {attribute 'pytmc' := ' pv: ST1K2:PPS:GCC:1 '}
     fb_ST1K2_PPS_GCC_1 : FB_MKS500;
+    {attribute 'pytmc' := ' pv: IM6K2:PPM:GCC:1 '}
+    fb_IM6K2_PPM_GCC_1 : FB_MKS500;
+
+
+    // MKS422
+    {attribute 'pytmc' := ' pv: TV4K2:GFC:1 '}
+    fb_TV4K2_GFS_1 : FB_MKS422;
+
 
     // VGC Valves
 
@@ -99,6 +130,21 @@ GVL_KFE_RIX_VAC
     								.q_xOPN_DO	:=	TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 121 (EL2004)^Channel 1^Output'}
     {attribute 'pytmc' := ' pv: SL1K2:EXIT:VGC:1 '}
     fb_SL1K2_EXIT_VGC_1 : FB_VGC;
+    {attribute 'pytmc' := ' pv: MR2K2:FLAT:VGC:1 '}
+    fb_MR2K2_FLAT_VGC_1 : FB_VGC;
+    {attribute 'pytmc' := ' pv: MR2K2:FLAT:VGC:2 '}
+    fb_MR2K2_FLAT_VGC_2 : FB_VGC;
+    {attribute 'pytmc' := ' pv: MR3K2:KBH:VGC:1 '}
+    fb_MR3K2_KBH_VGC_1 : FB_VGC;
+    {attribute 'pytmc' := ' pv: MR3K2:KBH:VGC:2 '}
+    fb_MR3K2_KBH_VGC_2 : FB_VGC;
+    {attribute 'pytmc' := ' pv: MR4K2:KBV:VGC:1 '}
+    fb_MR4K2_KBV_VGC_1 : FB_VGC;
+    {attribute 'pytmc' := ' pv: MR4K2:KBV:VGC:2 '}
+    fb_MR4K2_KBV_VGC_2 : FB_VGC;
+    {attribute 'pytmc' := ' pv: LI3K2:K2B:VWC:1 '}
+    fb_LI3K2_K2B_VWC_1 : FB_VGC;
+
 
     // VGC EP Valves
     {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 1^Input;
@@ -128,6 +174,33 @@ GVL_KFE_RIX_VAC
     								 .q_xHVEna_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL2794)^Channel 1^Output'}
     {attribute 'pytmc' := ' pv: SL1K2:EXIT:PIP:1 '}
     fb_SL1K2_EXIT_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'pytmc' := ' pv: MR2K2:FLAT:PIP:1 '}
+    fb_MR2K2_FLAT_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'pytmc' := ' pv: MR3K2:KBH:PIP:1 '}
+    fb_MR3K2_KBH_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'pytmc' := ' pv: MR4K2:KBV:PIP:1 '}
+    fb_MR4K2_KBV_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'pytmc' := ' pv: TV4K2:PIP:1 '}
+    fb_TV4K2_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'pytmc' := ' pv: IM5K2:PPM:PIP:1 '}
+    fb_IM5K2_PPM_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'pytmc' := ' pv: PA1K2:PIP:1 '}
+    fb_PA1K2_PIP_1 : FB_PIP_GAMMA;
+    {attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
+    fb_ST3K2_TERM_PIP_1 : FB_PIP_GAMMA;
+
+
+    //SIP PIP NexTORR Pumps
+    {attribute 'pytmc' := ' pv: IM2K2:PPM:PIP:1 '}
+    fb_IM2K2_PPM_PIP_1 : FB_PIP_SIP;
+    {attribute 'pytmc' := ' pv: IM3K2:PPM:PIP:1 '}
+    fb_IM3K2_PPM_PIP_1 : FB_PIP_SIP;
+    {attribute 'pytmc' := ' pv: IM4K2:PPM:PIP:1 '}
+    fb_IM4K2_PPM_PIP_1 : FB_PIP_SIP;
+    {attribute 'pytmc' := ' pv: LI2K2:K2A:PIP:1 '}
+    fb_LI2K2_K2A_PIP_1 : FB_PIP_SIP;
+
+    //VFS
 
     {attribute 'pytmc' := '		pv: TV1K2:VFS:1	'}
     	{attribute 'TcLinkTo' := 	'.q_xPress_OK		:= 	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK;	
@@ -179,7 +252,7 @@ GVL_RIX_VAC_FSV_PMPS
         	pv: PLC:KFE:RIX:VAC:K2:FFO:02
         '}
         {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output'}
-        g_FastFaultOutput2  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
+        g_FastFaultOutput2  :	FB_HardwareFFOutput:= (i_sNetID:='172.21.42.126.1.1');	//FFO for Fast Shutter Valves upstream of ST1K2_PPS
     END_VAR
 
 
@@ -209,7 +282,7 @@ GVL_Variables
     	pv: PLC:KFE:RIX:VAC:K2:FFO:01
     '}
     {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 1^Output'}
-    g_FastFaultOutput1  :   FB_HardwareFFOutput;
+    g_FastFaultOutput1  :   FB_HardwareFFOutput:= (i_sNetID:='172.21.42.126.1.1');
 
     {attribute 'pytmc' := '
     	pv: PLC:KFE:RIX:VAC:ARB
@@ -264,12 +337,15 @@ MAIN
     PRG_KFE_RIX_VAC();
     fbLogHandler();
 
-    fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN],
+    fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN],
     	Arbiter:= fbArbiter,
     	fbFFHWO:= g_FastFaultOutput1);
 
     g_FastFaultOutput1.bAutoReset := TRUE;
-    g_FastFaultOutput1.Execute(i_xVeto := PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aStoppers[PMPS.K_Stopper.MR1K1_IN]);
+    g_FastFaultOutput1.Execute(i_xVeto := PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN]);
+
+    // Temporary copy 
+    g_FastFaultOutput2.Execute(i_xVeto := PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN]);
 
     END_PROGRAM
 
@@ -282,6 +358,7 @@ PRG_KFE_RIX_VAC
     PROGRAM PRG_KFE_RIX_VAC
     VAR
     vfs_dummy_gauge : ST_VG;
+    bm_dummy_gauge : ST_VG;
     END_VAR
     // MKS275 Gauges
 
@@ -294,18 +371,50 @@ PRG_KFE_RIX_VAC
     fb_SL1K2_EXIT_GPI_1(PG=>);
     fb_SL1K2_EXIT_GPI_1.M_SetBits(30518);
     fb_ST1K2_PPS_GPI_1(PG=>);
+    fb_MR2K2_FLAT_GPI_1(PG=>);
+    fb_MR2K2_FLAT_GPI_1.M_SetBits(30518);
+    fb_MR3K2_KBH_GPI_1(PG=>);
+    fb_MR3K2_KBH_GPI_1.M_SetBits(30518);
+    fb_MR4K2_KBV_GPI_1(PG=>);
+    fb_MR4K2_KBV_GPI_1.M_SetBits(30518);
+
+    //beamline dummy gauge
+    bm_dummy_gauge.xPRESS_OK := TRUE;
+    bm_dummy_gauge.xAT_VAC := TRUE;
+    bm_dummy_gauge.eState := ValidLo;
+    bm_dummy_gauge.rPRESS := 1e-4;
 
     // MKS500 Gauges
 
     fb_PC1K1_ZOS_GCC_1(PG := fb_PC1K1_ZOS_GPI_1.PG, bEP := FALSE);
     fb_PC1K1_ZOS_GCC_1.M_SetBits(30518);
-    fb_MR1K2_SWITCH_GCC_1(PG := fb_MR1K2_SWITCH_GPI_1.PG);
+    fb_MR1K2_SWITCH_GCC_1(PG := fb_MR1K2_SWITCH_GPI_1.PG, bEP := FALSE);
     fb_MR1K2_SWITCH_GCC_1.M_SetBits(30518);
-    fb_TV1K1_PLEG_GCC_1(PG := fb_TV1K1_PLEG_GPI_1.PG);
+    fb_TV1K1_PLEG_GCC_1(PG := fb_TV1K1_PLEG_GPI_1.PG, bEP := TRUE);
     fb_TV1K1_PLEG_GCC_1.M_SetBits(30518);
-    fb_SL1K2_EXIT_GCC_1(PG := fb_SL1K2_EXIT_GPI_1.PG);
+    fb_SL1K2_EXIT_GCC_1(PG := fb_SL1K2_EXIT_GPI_1.PG, bEP := FALSE);
     fb_SL1K2_EXIT_GCC_1.M_SetBits(30518);
     fb_ST1K2_PPS_GCC_1(PG := fb_ST1K2_PPS_GPI_1.PG, bEP := TRUE);
+    fb_MR2K2_FLAT_GCC_1(PG := fb_MR2K2_FLAT_GPI_1.PG, bEP := FALSE);
+    fb_MR2K2_FLAT_GCC_1.M_SetBits(30518);
+    fb_IM2K2_PPM_GCC_1(PG := fb_MR3K2_KBH_GPI_1.PG, bEP := FALSE);
+    fb_IM2K2_PPM_GCC_1.M_SetBits(30518);
+    fb_MR3K2_KBH_GCC_1(PG := fb_MR3K2_KBH_GPI_1.PG, bEP := False);
+    fb_MR3K2_KBH_GCC_1.M_SetBits(30518);
+    fb_IM3K2_PPM_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG, bEP := False);
+    fb_IM3K2_PPM_GCC_1.M_SetBits(30518);
+    fb_MR4K2_KBV_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG, bEP := False);
+    fb_MR4K2_KBV_GCC_1.M_SetBits(30518);
+    fb_IM4K2_PPM_GCC_1(PG := fb_MR4K2_KBV_GPI_1.PG, bEP := False);
+    fb_IM4K2_PPM_GCC_1.M_SetBits(30518);
+    fb_IM5K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := False);
+    fb_IM5K2_PPM_GCC_1.M_SetBits(30518);
+    fb_TM2K2_K2B_GCC_1(PG := bm_dummy_gauge, bEP := False);
+    fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
+    fb_IM6K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := TRUE);
+
+    //MKS422
+    fb_TV4K2_GFS_1(PG := bm_dummy_gauge); 
 
     // VGC Valves
 
@@ -345,23 +454,106 @@ PRG_KFE_RIX_VAC
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
-                             i_xOverrideMode := xSystemOverrideMode2, 
+                             i_xOverrideMode := xSystemOverrideMode1, 
                              io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter); 
+    						 
+    fb_MR2K2_FLAT_VGC_1( 
+                             i_stUSG := fb_ST1K2_PPS_PIP_1.q_IG, 
+                             i_stDSG := fb_MR2K2_FLAT_PIP_1.q_IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode2, 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);	
+    						 
+    fb_MR2K2_FLAT_VGC_2( 
+                             i_stUSG := fb_MR2K2_FLAT_PIP_1.q_IG, 
+                             i_stDSG := fb_IM2K2_PPM_PIP_1.q_IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode2, 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+    						 
+    fb_MR3K2_KBH_VGC_1( 
+                             i_stUSG := fb_IM2K2_PPM_PIP_1.q_IG, 
+                             i_stDSG := fb_MR3K2_KBH_PIP_1.q_IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode2, 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);		
+
+    fb_MR3K2_KBH_VGC_2( 
+                             i_stUSG := fb_MR3K2_KBH_PIP_1.q_IG, 
+                             i_stDSG := fb_IM3K2_PPM_PIP_1.q_IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode2, 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);	
+
+    fb_MR4K2_KBV_VGC_1( 
+                             i_stUSG := fb_IM3K2_PPM_PIP_1.q_IG, 
+                             i_stDSG := fb_MR4K2_KBV_PIP_1.q_IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode2, 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+
+    fb_MR4K2_KBV_VGC_2( 
+                             i_stUSG := fb_MR4K2_KBV_PIP_1.q_IG, 
+                             i_stDSG := fb_IM4K2_PPM_PIP_1.q_IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode2, 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+    	
+    fb_LI3K2_K2B_VWC_1( 
+                             //i_stUSG := fb_PA1K2_PIP_1.q_IG, 
+                             //i_stDSG := fb_ST3K2_TERM_PIP_1.q_IG,
+                             i_xDis_DPIlk := FALSE, 
+                             i_xEPS_OK := TRUE, 
+                             i_xPMPS_OK := TRUE, 
+                             i_xExt_OK := TRUE, 
+                             i_xOverrideMode := xSystemOverrideMode2, 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);			 
+    					 
 
     // PIP_Gamma Pumps
 
-    fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GPI_1.PG);
-    //fb_PC1K1_ZOS_PIP_2(i_stGauge := fb_PC1K1_ZOS_GCC_1.IG); 
-    fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GPI_1.PG); 
-    fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GPI_1.PG); 
-    fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GPI_1.PG);
-    fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GPI_1.PG);
+    fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1); 
+    fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1); 
+    fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1); 
+    fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);
+    fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);
+    fb_MR2K2_FLAT_PIP_1(i_stGauge := fb_MR2K2_FLAT_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode2);
+    fb_MR3K2_KBH_PIP_1(i_stGauge := fb_MR3K2_KBH_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode2);
+    fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode2);
+    fb_TV4K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+    fb_IM5K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+    fb_PA1K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+    fb_ST3K2_TERM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
+    //SIP Pumps
+    fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+    fb_IM3K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+    fb_IM4K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+    fb_LI2K2_K2A_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
     //Fast shutter Valve Interface
     vfs_dummy_gauge.xPRESS_OK := TRUE;
     vfs_dummy_gauge.rPRESS := 0.0000001;
     TV1K2_VFS_Interface(IG:= vfs_dummy_gauge, iq_stValve=> , i_xVAC_FAULT_OK=> );
+    //TV1K2_VFS_Interface(IG:= fb_TV4K2_GFS_1.IG);
 
 
     //Interface for KFE VAC SP1K1-ZOS-VGC-2

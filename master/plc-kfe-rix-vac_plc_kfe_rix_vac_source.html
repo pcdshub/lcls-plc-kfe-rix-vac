@@ -13,6 +13,8 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -29,6 +31,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -246,6 +249,13 @@
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>    <span class="s1">&#39;.i_iPRESS_R    := TIID^Device 1 (EtherCAT)^B950_100H1_WALL (EK1100)^Term 119 (EL3174)^AI Standard Channel 2^Value&#39;</span><span class="p">}</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: SL1K2:EXIT:GPI:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_SL1K2_EXIT_GPI_1</span> <span class="p">:</span> <span class="n">FB_MKS275</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR2K2:FLAT:GPI:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR2K2_FLAT_GPI_1</span> <span class="p">:</span> <span class="n">FB_MKS275</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR3K2:KBH:GPI:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR3K2_KBH_GPI_1</span> <span class="p">:</span> <span class="n">FB_MKS275</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR4K2:KBV:GPI:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR4K2_KBV_GPI_1</span> <span class="p">:</span> <span class="n">FB_MKS275</span><span class="p">;</span>
+
 
 <span class="o">//</span><span class="n">MKS275</span> <span class="n">EP</span> <span class="n">Gauges</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>    <span class="s1">&#39;.i_iPRESS_R    := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)^AI Standard Channel 2^Value&#39;</span><span class="p">}</span>
@@ -268,6 +278,22 @@
                                                              <span class="o">.</span><span class="n">q_xHV_DIS</span>             <span class="o">:=</span>      <span class="n">TIID</span><span class="o">^</span><span class="n">Device</span> <span class="mi">1</span> <span class="p">(</span><span class="n">EtherCAT</span><span class="p">)</span><span class="o">^</span><span class="n">B950_100H1_WALL</span> <span class="p">(</span><span class="n">EK1100</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">118</span> <span class="p">(</span><span class="n">EL2624</span><span class="p">)</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span>    <span class="s1">&#39;}</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: SL1K2:EXIT:GCC:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_SL1K2_EXIT_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR2K2:FLAT:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR2K2_FLAT_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM2K2:PPM:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM2K2_PPM_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR3K2:KBH:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR3K2_KBH_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM3K2:PPM:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM3K2_PPM_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR4K2:KBV:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR4K2_KBV_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM4K2:PPM:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM4K2_PPM_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM5K2:PPM:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM5K2_PPM_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: TM2K2:K2B:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_TM2K2_K2B_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
 
 
 <span class="o">//</span><span class="n">MKS500</span> <span class="n">EP</span> <span class="n">Gauges</span>
@@ -275,6 +301,14 @@
                                                      <span class="o">.</span><span class="n">q_xHV_DIS</span>             <span class="o">:=</span>      <span class="n">TIID</span><span class="o">^</span><span class="n">Device</span> <span class="mi">1</span> <span class="p">(</span><span class="n">EtherCAT</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">1</span> <span class="p">(</span><span class="n">EK1200</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">45</span> <span class="p">(</span><span class="n">EK1521</span><span class="o">-</span><span class="mi">0010</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">47</span> <span class="p">(</span><span class="n">EK1501</span><span class="o">-</span><span class="mi">0010</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">62</span> <span class="p">(</span><span class="n">EK1122</span><span class="p">)</span><span class="o">^</span><span class="n">K2S2</span><span class="o">-</span><span class="n">DRL</span><span class="o">-</span><span class="mi">01</span> <span class="p">(</span><span class="n">EP2624</span><span class="o">-</span><span class="mi">0002</span><span class="p">)</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span>        <span class="s1">&#39;}</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: ST1K2:PPS:GCC:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_ST1K2_PPS_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM6K2:PPM:GCC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM6K2_PPM_GCC_1</span> <span class="p">:</span> <span class="n">FB_MKS500</span><span class="p">;</span>
+
+
+<span class="o">//</span> <span class="n">MKS422</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: TV4K2:GFC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_TV4K2_GFS_1</span> <span class="p">:</span> <span class="n">FB_MKS422</span><span class="p">;</span>
+
 
 <span class="o">//</span> <span class="n">VGC</span> <span class="n">Valves</span>
 
@@ -288,6 +322,21 @@
                                                             <span class="o">.</span><span class="n">q_xOPN_DO</span>      <span class="o">:=</span>      <span class="n">TIID</span><span class="o">^</span><span class="n">Device</span> <span class="mi">1</span> <span class="p">(</span><span class="n">EtherCAT</span><span class="p">)</span><span class="o">^</span><span class="n">B950_100H1_WALL</span> <span class="p">(</span><span class="n">EK1100</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">121</span> <span class="p">(</span><span class="n">EL2004</span><span class="p">)</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span><span class="s1">&#39;}</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: SL1K2:EXIT:VGC:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_SL1K2_EXIT_VGC_1</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR2K2:FLAT:VGC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR2K2_FLAT_VGC_1</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR2K2:FLAT:VGC:2 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR2K2_FLAT_VGC_2</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR3K2:KBH:VGC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR3K2_KBH_VGC_1</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR3K2:KBH:VGC:2 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR3K2_KBH_VGC_2</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR4K2:KBV:VGC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR4K2_KBV_VGC_1</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR4K2:KBV:VGC:2 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR4K2_KBV_VGC_2</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: LI3K2:K2B:VWC:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_LI3K2_K2B_VWC_1</span> <span class="p">:</span> <span class="n">FB_VGC</span><span class="p">;</span>
+
 
 <span class="o">//</span> <span class="n">VGC</span> <span class="n">EP</span> <span class="n">Valves</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>    <span class="s1">&#39;.i_xOpnLS      :=      TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 1^Input;</span>
@@ -317,6 +366,33 @@
                                                              <span class="o">.</span><span class="n">q_xHVEna_DO</span>   <span class="o">:=</span> <span class="n">TIID</span><span class="o">^</span><span class="n">Device</span> <span class="mi">1</span> <span class="p">(</span><span class="n">EtherCAT</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">1</span> <span class="p">(</span><span class="n">EK1200</span><span class="p">)</span><span class="o">^</span><span class="n">Term</span> <span class="mi">6</span> <span class="p">(</span><span class="n">EL2794</span><span class="p">)</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Output</span><span class="s1">&#39;}</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: SL1K2:EXIT:PIP:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_SL1K2_EXIT_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR2K2:FLAT:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR2K2_FLAT_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR3K2:KBH:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR3K2_KBH_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: MR4K2:KBV:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_MR4K2_KBV_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: TV4K2:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_TV4K2_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM5K2:PPM:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM5K2_PPM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: PA1K2:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_PA1K2_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: ST3K2:TERM:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_ST3K2_TERM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
+
+
+<span class="o">//</span><span class="n">SIP</span> <span class="n">PIP</span> <span class="n">NexTORR</span> <span class="n">Pumps</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM2K2:PPM:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM2K2_PPM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_SIP</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM3K2:PPM:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM3K2_PPM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_SIP</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM4K2:PPM:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_IM4K2_PPM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_SIP</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: LI2K2:K2A:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_LI2K2_K2A_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_SIP</span><span class="p">;</span>
+
+<span class="o">//</span><span class="n">VFS</span>
 
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;             pv: TV1K2:VFS:1 &#39;</span><span class="p">}</span>
     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>        <span class="s1">&#39;.q_xPress_OK           :=      TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xPress_OK;</span>
@@ -364,7 +440,7 @@
             <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">VAC</span><span class="p">:</span><span class="n">K2</span><span class="p">:</span><span class="n">FFO</span><span class="p">:</span><span class="mi">02</span>
     <span class="s1">&#39;}</span>
     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output&#39;</span><span class="p">}</span>
-    <span class="n">g_FastFaultOutput2</span>  <span class="p">:</span>   <span class="n">FB_HardwareFFOutput</span><span class="p">;</span>    <span class="o">//</span><span class="n">FFO</span> <span class="k">for</span> <span class="n">Fast</span> <span class="n">Shutter</span> <span class="n">Valves</span> <span class="n">upstream</span> <span class="n">of</span> <span class="n">ST1L0_XTES</span>
+    <span class="n">g_FastFaultOutput2</span>  <span class="p">:</span>   <span class="n">FB_HardwareFFOutput</span><span class="o">:=</span> <span class="p">(</span><span class="n">i_sNetID</span><span class="o">:=</span><span class="s1">&#39;172.21.42.126.1.1&#39;</span><span class="p">);</span>  <span class="o">//</span><span class="n">FFO</span> <span class="k">for</span> <span class="n">Fast</span> <span class="n">Shutter</span> <span class="n">Valves</span> <span class="n">upstream</span> <span class="n">of</span> <span class="n">ST1K2_PPS</span>
 <span class="n">END_VAR</span>
 </pre></div>
 </div>
@@ -392,7 +468,7 @@
     <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">VAC</span><span class="p">:</span><span class="n">K2</span><span class="p">:</span><span class="n">FFO</span><span class="p">:</span><span class="mi">01</span>
 <span class="s1">&#39;}</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 1^Output&#39;</span><span class="p">}</span>
-<span class="n">g_FastFaultOutput1</span>  <span class="p">:</span>   <span class="n">FB_HardwareFFOutput</span><span class="p">;</span>
+<span class="n">g_FastFaultOutput1</span>  <span class="p">:</span>   <span class="n">FB_HardwareFFOutput</span><span class="o">:=</span> <span class="p">(</span><span class="n">i_sNetID</span><span class="o">:=</span><span class="s1">&#39;172.21.42.126.1.1&#39;</span><span class="p">);</span>
 
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
     <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">VAC</span><span class="p">:</span><span class="n">ARB</span>
@@ -442,12 +518,15 @@
 <span class="n">PRG_KFE_RIX_VAC</span><span class="p">();</span>
 <span class="n">fbLogHandler</span><span class="p">();</span>
 
-<span class="n">fbArbiterIO</span><span class="p">(</span><span class="n">i_bVeto</span><span class="o">:=</span>  <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aStoppers</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_OUT</span><span class="p">]</span> <span class="n">AND</span> <span class="n">NOT</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aStoppers</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_IN</span><span class="p">],</span>
+<span class="n">fbArbiterIO</span><span class="p">(</span><span class="n">i_bVeto</span><span class="o">:=</span>  <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_OUT</span><span class="p">]</span> <span class="n">AND</span> <span class="n">NOT</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_IN</span><span class="p">],</span>
     <span class="n">Arbiter</span><span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">,</span>
     <span class="n">fbFFHWO</span><span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">);</span>
 
 <span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">bAutoReset</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
-<span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">i_xVeto</span> <span class="o">:=</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aStoppers</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_OUT</span><span class="p">]</span> <span class="n">AND</span> <span class="n">NOT</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aStoppers</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_IN</span><span class="p">]);</span>
+<span class="n">g_FastFaultOutput1</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">i_xVeto</span> <span class="o">:=</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_OUT</span><span class="p">]</span> <span class="n">AND</span> <span class="n">NOT</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_IN</span><span class="p">]);</span>
+
+<span class="o">//</span> <span class="n">Temporary</span> <span class="n">copy</span>
+<span class="n">g_FastFaultOutput2</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">i_xVeto</span> <span class="o">:=</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_OUT</span><span class="p">]</span> <span class="n">AND</span> <span class="n">NOT</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_IN</span><span class="p">]);</span>
 
 <span class="n">END_PROGRAM</span>
 </pre></div>
@@ -458,6 +537,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROGRAM</span> <span class="n">PRG_KFE_RIX_VAC</span>
 <span class="n">VAR</span>
 <span class="n">vfs_dummy_gauge</span> <span class="p">:</span> <span class="n">ST_VG</span><span class="p">;</span>
+<span class="n">bm_dummy_gauge</span> <span class="p">:</span> <span class="n">ST_VG</span><span class="p">;</span>
 <span class="n">END_VAR</span>
 <span class="o">//</span> <span class="n">MKS275</span> <span class="n">Gauges</span>
 
@@ -470,18 +550,50 @@
 <span class="n">fb_SL1K2_EXIT_GPI_1</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
 <span class="n">fb_SL1K2_EXIT_GPI_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
 <span class="n">fb_ST1K2_PPS_GPI_1</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
+<span class="n">fb_MR2K2_FLAT_GPI_1</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
+<span class="n">fb_MR2K2_FLAT_GPI_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_MR3K2_KBH_GPI_1</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
+<span class="n">fb_MR3K2_KBH_GPI_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_MR4K2_KBV_GPI_1</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
+<span class="n">fb_MR4K2_KBV_GPI_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+
+<span class="o">//</span><span class="n">beamline</span> <span class="n">dummy</span> <span class="n">gauge</span>
+<span class="n">bm_dummy_gauge</span><span class="o">.</span><span class="n">xPRESS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="n">bm_dummy_gauge</span><span class="o">.</span><span class="n">xAT_VAC</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="n">bm_dummy_gauge</span><span class="o">.</span><span class="n">eState</span> <span class="o">:=</span> <span class="n">ValidLo</span><span class="p">;</span>
+<span class="n">bm_dummy_gauge</span><span class="o">.</span><span class="n">rPRESS</span> <span class="o">:=</span> <span class="mf">1e-4</span><span class="p">;</span>
 
 <span class="o">//</span> <span class="n">MKS500</span> <span class="n">Gauges</span>
 
 <span class="n">fb_PC1K1_ZOS_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_PC1K1_ZOS_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">);</span>
 <span class="n">fb_PC1K1_ZOS_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
-<span class="n">fb_MR1K2_SWITCH_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR1K2_SWITCH_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
+<span class="n">fb_MR1K2_SWITCH_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR1K2_SWITCH_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">);</span>
 <span class="n">fb_MR1K2_SWITCH_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
-<span class="n">fb_TV1K1_PLEG_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_TV1K1_PLEG_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
+<span class="n">fb_TV1K1_PLEG_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_TV1K1_PLEG_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
 <span class="n">fb_TV1K1_PLEG_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
-<span class="n">fb_SL1K2_EXIT_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_SL1K2_EXIT_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
+<span class="n">fb_SL1K2_EXIT_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_SL1K2_EXIT_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">);</span>
 <span class="n">fb_SL1K2_EXIT_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
 <span class="n">fb_ST1K2_PPS_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_ST1K2_PPS_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
+<span class="n">fb_MR2K2_FLAT_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR2K2_FLAT_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">);</span>
+<span class="n">fb_MR2K2_FLAT_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_IM2K2_PPM_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR3K2_KBH_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">);</span>
+<span class="n">fb_IM2K2_PPM_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_MR3K2_KBH_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR3K2_KBH_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="kc">False</span><span class="p">);</span>
+<span class="n">fb_MR3K2_KBH_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_IM3K2_PPM_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR4K2_KBV_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="kc">False</span><span class="p">);</span>
+<span class="n">fb_IM3K2_PPM_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_MR4K2_KBV_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR4K2_KBV_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="kc">False</span><span class="p">);</span>
+<span class="n">fb_MR4K2_KBV_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_IM4K2_PPM_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">fb_MR4K2_KBV_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="kc">False</span><span class="p">);</span>
+<span class="n">fb_IM4K2_PPM_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_IM5K2_PPM_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="kc">False</span><span class="p">);</span>
+<span class="n">fb_IM5K2_PPM_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_TM2K2_K2B_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="kc">False</span><span class="p">);</span>
+<span class="n">fb_TM2K2_K2B_GCC_1</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">fb_IM6K2_PPM_GCC_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">bEP</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
+
+<span class="o">//</span><span class="n">MKS422</span>
+<span class="n">fb_TV4K2_GFS_1</span><span class="p">(</span><span class="n">PG</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">);</span>
 
 <span class="o">//</span> <span class="n">VGC</span> <span class="n">Valves</span>
 
@@ -521,23 +633,106 @@
                          <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
                          <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
                          <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
-                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">,</span>
                          <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
+<span class="n">fb_MR2K2_FLAT_VGC_1</span><span class="p">(</span>
+                         <span class="n">i_stUSG</span> <span class="o">:=</span> <span class="n">fb_ST1K2_PPS_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_stDSG</span> <span class="o">:=</span> <span class="n">fb_MR2K2_FLAT_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
+                         <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
+<span class="n">fb_MR2K2_FLAT_VGC_2</span><span class="p">(</span>
+                         <span class="n">i_stUSG</span> <span class="o">:=</span> <span class="n">fb_MR2K2_FLAT_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_stDSG</span> <span class="o">:=</span> <span class="n">fb_IM2K2_PPM_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
+                         <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
+<span class="n">fb_MR3K2_KBH_VGC_1</span><span class="p">(</span>
+                         <span class="n">i_stUSG</span> <span class="o">:=</span> <span class="n">fb_IM2K2_PPM_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_stDSG</span> <span class="o">:=</span> <span class="n">fb_MR3K2_KBH_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
+                         <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
+<span class="n">fb_MR3K2_KBH_VGC_2</span><span class="p">(</span>
+                         <span class="n">i_stUSG</span> <span class="o">:=</span> <span class="n">fb_MR3K2_KBH_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_stDSG</span> <span class="o">:=</span> <span class="n">fb_IM3K2_PPM_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
+                         <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
+<span class="n">fb_MR4K2_KBV_VGC_1</span><span class="p">(</span>
+                         <span class="n">i_stUSG</span> <span class="o">:=</span> <span class="n">fb_IM3K2_PPM_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_stDSG</span> <span class="o">:=</span> <span class="n">fb_MR4K2_KBV_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
+                         <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
+<span class="n">fb_MR4K2_KBV_VGC_2</span><span class="p">(</span>
+                         <span class="n">i_stUSG</span> <span class="o">:=</span> <span class="n">fb_MR4K2_KBV_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_stDSG</span> <span class="o">:=</span> <span class="n">fb_IM4K2_PPM_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
+                         <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
+<span class="n">fb_LI3K2_K2B_VWC_1</span><span class="p">(</span>
+                         <span class="o">//</span><span class="n">i_stUSG</span> <span class="o">:=</span> <span class="n">fb_PA1K2_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="o">//</span><span class="n">i_stDSG</span> <span class="o">:=</span> <span class="n">fb_ST3K2_TERM_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+                         <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
+                         <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">,</span>
+                         <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter</span><span class="p">);</span>
+
 
 <span class="o">//</span> <span class="n">PIP_Gamma</span> <span class="n">Pumps</span>
 
-<span class="n">fb_PC1K1_ZOS_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_PC1K1_ZOS_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
-<span class="o">//</span><span class="n">fb_PC1K1_ZOS_PIP_2</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_PC1K1_ZOS_GCC_1</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
-<span class="n">fb_MR1K2_SWITCH_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_MR1K2_SWITCH_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
-<span class="n">fb_TV1K1_PLEG_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_TV1K1_PLEG_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
-<span class="n">fb_SL1K2_EXIT_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_SL1K2_EXIT_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
-<span class="n">fb_ST1K2_PPS_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_ST1K2_PPS_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">);</span>
+<span class="n">fb_PC1K1_ZOS_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_PC1K1_ZOS_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">);</span>
+<span class="n">fb_MR1K2_SWITCH_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_MR1K2_SWITCH_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">);</span>
+<span class="n">fb_TV1K1_PLEG_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_TV1K1_PLEG_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">);</span>
+<span class="n">fb_SL1K2_EXIT_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_SL1K2_EXIT_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">);</span>
+<span class="n">fb_ST1K2_PPS_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_ST1K2_PPS_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">);</span>
+<span class="n">fb_MR2K2_FLAT_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_MR2K2_FLAT_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_MR3K2_KBH_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_MR3K2_KBH_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_MR4K2_KBV_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">fb_MR4K2_KBV_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_TV4K2_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_IM5K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_PA1K2_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_ST3K2_TERM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 
+<span class="o">//</span><span class="n">SIP</span> <span class="n">Pumps</span>
+<span class="n">fb_IM2K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_IM3K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_IM4K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_LI2K2_K2A_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 
 <span class="o">//</span><span class="n">Fast</span> <span class="n">shutter</span> <span class="n">Valve</span> <span class="n">Interface</span>
 <span class="n">vfs_dummy_gauge</span><span class="o">.</span><span class="n">xPRESS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
 <span class="n">vfs_dummy_gauge</span><span class="o">.</span><span class="n">rPRESS</span> <span class="o">:=</span> <span class="mf">0.0000001</span><span class="p">;</span>
 <span class="n">TV1K2_VFS_Interface</span><span class="p">(</span><span class="n">IG</span><span class="o">:=</span> <span class="n">vfs_dummy_gauge</span><span class="p">,</span> <span class="n">iq_stValve</span><span class="o">=&gt;</span> <span class="p">,</span> <span class="n">i_xVAC_FAULT_OK</span><span class="o">=&gt;</span> <span class="p">);</span>
+<span class="o">//</span><span class="n">TV1K2_VFS_Interface</span><span class="p">(</span><span class="n">IG</span><span class="o">:=</span> <span class="n">fb_TV4K2_GFS_1</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
 
 
 <span class="o">//</span><span class="n">Interface</span> <span class="k">for</span> <span class="n">KFE</span> <span class="n">VAC</span> <span class="n">SP1K1</span><span class="o">-</span><span class="n">ZOS</span><span class="o">-</span><span class="n">VGC</span><span class="o">-</span><span class="mi">2</span>
