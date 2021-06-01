@@ -193,10 +193,10 @@ fb_PA1K2_PIP_1(i_stGauge := fb_TM2K2_K2B_GCC_1.IG, i_xOverrideMode := xSystemOve
 fb_ST3K2_TERM_PIP_1(i_stGauge := fb_IM6K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
 
 //SIP Pumps
-//fb_IM2K2_PPM_PIP_1
-//fb_IM3K2_PPM_PIP_1
-//fb_IM4K2_PPM_PIP_1
-//fb_LI2K2_K2A_PIP_1
+fb_IM2K2_PPM_PIP_1(i_stGauge := fb_IM2K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
+fb_IM3K2_PPM_PIP_1(i_stGauge := fb_IM3K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
+fb_IM4K2_PPM_PIP_1(i_stGauge := fb_TV4K2_GFS_1.IG, i_xOverrideMode := xSystemOverrideMode2);
+fb_LI2K2_K2A_PIP_1(i_stGauge := fb_IM5K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
 
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;
@@ -213,5 +213,9 @@ fb_RIX_ILK(
 );
 ]]></ST>
     </Implementation>
+    <LineIds Name="PRG_KFE_RIX_VAC">
+      <LineId Id="3" Count="202" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
