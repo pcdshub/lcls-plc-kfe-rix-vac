@@ -183,20 +183,20 @@ fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GPI_1.PG, i_xOverrideMode := xSyste
 fb_MR1K2_SWITCH_PIP_1(i_stGauge := fb_MR1K2_SWITCH_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1); 
 fb_TV1K1_PLEG_PIP_1(i_stGauge := fb_TV1K1_PLEG_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1); 
 fb_SL1K2_EXIT_PIP_1(i_stGauge := fb_SL1K2_EXIT_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);
-fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode1);
-fb_MR2K2_FLAT_PIP_1(i_stGauge := fb_MR2K2_FLAT_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_MR3K2_KBH_PIP_1(i_stGauge := fb_MR3K2_KBH_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_TV4K2_PIP_1(i_stGauge := fb_IM4K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_IM5K2_PPM_PIP_1(i_stGauge := fb_IM5K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_PA1K2_PIP_1(i_stGauge := fb_TM2K2_K2B_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_ST3K2_TERM_PIP_1(i_stGauge := fb_IM6K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
+fb_ST1K2_PPS_PIP_1(i_stGauge := fb_ST1K2_PPS_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);
+fb_MR2K2_FLAT_PIP_1(i_stGauge := fb_MR2K2_FLAT_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode2);
+fb_MR3K2_KBH_PIP_1(i_stGauge := fb_MR3K2_KBH_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode2);
+fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode2);
+fb_TV4K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_IM5K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_PA1K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_ST3K2_TERM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
 //SIP Pumps
-fb_IM2K2_PPM_PIP_1(i_stGauge := fb_IM2K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_IM3K2_PPM_PIP_1(i_stGauge := fb_IM3K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_IM4K2_PPM_PIP_1(i_stGauge := fb_TV4K2_GFS_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_LI2K2_K2A_PIP_1(i_stGauge := fb_IM5K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
+fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_IM3K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_IM4K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_LI2K2_K2A_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;
