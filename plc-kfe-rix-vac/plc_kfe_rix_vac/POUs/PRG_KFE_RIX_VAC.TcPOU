@@ -190,7 +190,7 @@ fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GCC_1.IG, i_xOverrideMode := xSyste
 fb_TV4K2_PIP_1(i_stGauge := fb_IM4K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM5K2_PPM_PIP_1(i_stGauge := fb_IM5K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
 fb_PA1K2_PIP_1(i_stGauge := fb_TM2K2_K2B_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
-fb_ST3K2_TERM_PIP_1(i_stGauge := fb_IM6K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
+//fb_ST3K2_TERM_PIP_1(i_stGauge := fb_IM6K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
 
 //SIP Pumps
 fb_IM2K2_PPM_PIP_1(i_stGauge := fb_IM2K2_PPM_GCC_1.IG, i_xOverrideMode := xSystemOverrideMode2);
