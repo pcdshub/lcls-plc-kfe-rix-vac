@@ -285,9 +285,14 @@ GVL_Variables
     g_FastFaultOutput1  :   FB_HardwareFFOutput:= (i_sNetID:='172.21.42.126.1.1');
 
     {attribute 'pytmc' := '
-    	pv: PLC:KFE:RIX:VAC:ARB
+    	pv: PLC:KFE:RIX:VAC:ARB:01
     '}
-    fbArbiter : FB_Arbiter(1);
+    fbArbiter1 : FB_Arbiter(1);
+    {attribute 'pytmc' := '
+    	pv: PLC:KFE:RIX:VAC:ARB:02
+    '}
+    fbArbiter2 : FB_Arbiter(2);
+
 
     fbLogHandler : FB_loghandler;
 
@@ -333,13 +338,14 @@ MAIN
     PROGRAM MAIN
     VAR
     fbArbiterIO: FB_SubSysToArbiter_IO;	
-    ff2_ff1_link_vac: FB_FastFault := (i_xAutoReset := TRUE, i_DevName := 'FF2 to FF1 Link', i_Desc := 'This is virtual FF2 fault', i_TypeCode := 16#9999);
+    fb_vetoArbiter: FB_VetoArbiter; 
+    ff2_ff1_link_vac: FB_FastFault := (i_xAutoReset := TRUE, i_DevName := 'FF2 to FF1 Link', i_Desc := 'This is virtual FF2 fault, Please check the faulting device below', i_TypeCode := 16#9999);
     END_VAR
     PRG_KFE_RIX_VAC();
     fbLogHandler();
 
     fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN],
-    	Arbiter:= fbArbiter,
+    	Arbiter:= fbArbiter1,
     	fbFFHWO:= g_FastFaultOutput1);
 
     g_FastFaultOutput1.bAutoReset := TRUE;
@@ -350,6 +356,12 @@ MAIN
     g_FastFaultOutput2.Execute(i_xVeto := (PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] 
                                           AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN])
                                            OR PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.ST1K2]);
+
+    fb_vetoArbiter(bVeto:= PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.ST1K2], 
+                    HigherAuthority := fbArbiter1,
+    				LowerAuthority := fbArbiter2,
+                    FFO := g_FastFaultOutput2);
+     
     									   
     ff2_ff1_link_vac(
     	io_fbFFHWO := g_FastFaultOutput1,
@@ -434,7 +446,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode1, 
-                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter);  
+                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1);  
     fb_MR1K2_SWITCH_VGC_2( 
                              i_stUSG := fb_MR1K2_SWITCH_PIP_1.q_IG, 
                              i_stDSG := fb_TV1K1_PLEG_PIP_1.q_IG,
@@ -443,7 +455,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode1, 
-                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter); 
+                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1); 
     						 
     fb_SL1K2_EXIT_VGC_1(
                              i_stUSG := fb_TV1K1_PLEG_PIP_1.q_IG, 
@@ -453,7 +465,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode1, 
-                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter);						 
+                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1);						 
 
     fb_ST1K2_PPS_VGC_1(
     	                     i_stUSG := fb_SL1K2_EXIT_PIP_1.q_IG, 
@@ -463,7 +475,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode1, 
-                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter); 
+                             io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1); 
     						 
     fb_MR2K2_FLAT_VGC_1( 
                              i_stUSG := fb_ST1K2_PPS_PIP_1.q_IG, 
@@ -473,7 +485,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode2, 
-                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);	
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);	
     						 
     fb_MR2K2_FLAT_VGC_2( 
                              i_stUSG := fb_MR2K2_FLAT_PIP_1.q_IG, 
@@ -483,7 +495,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode2, 
-                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
     						 
     fb_MR3K2_KBH_VGC_1( 
                              i_stUSG := fb_IM2K2_PPM_PIP_1.q_IG, 
@@ -493,7 +505,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode2, 
-                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);		
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);		
 
     fb_MR3K2_KBH_VGC_2( 
                              i_stUSG := fb_MR3K2_KBH_PIP_1.q_IG, 
@@ -503,7 +515,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode2, 
-                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);	
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);	
 
     fb_MR4K2_KBV_VGC_1( 
                              i_stUSG := fb_IM3K2_PPM_PIP_1.q_IG, 
@@ -513,7 +525,7 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode2, 
-                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
 
     fb_MR4K2_KBV_VGC_2( 
                              i_stUSG := fb_MR4K2_KBV_PIP_1.q_IG, 
@@ -523,17 +535,18 @@ PRG_KFE_RIX_VAC
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode2, 
-                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
     	
     fb_LI3K2_K2B_VWC_1( 
                              //i_stUSG := fb_PA1K2_PIP_1.q_IG, 
                              //i_stDSG := fb_ST3K2_TERM_PIP_1.q_IG,
                              i_xDis_DPIlk := FALSE, 
+    						 i_xIsAperture := TRUE,
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
                              i_xExt_OK := TRUE, 
                              i_xOverrideMode := xSystemOverrideMode2, 
-                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter);			 
+                             io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);			 
     					 
 
     // PIP_Gamma Pumps
