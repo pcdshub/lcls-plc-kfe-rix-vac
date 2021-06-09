@@ -7,7 +7,7 @@
 			<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 			<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 			<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
-				<Entry Name="Input" Index="#x6000" Sub="#x01">
+				<Entry Name="GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xTrigger" Index="#x6000" Sub="#x01">
 					<Type>BIT</Type>
 				</Entry>
 			</Pdo>

@@ -174,7 +174,7 @@ fb_LI2K2_K2A_PIP_1 : FB_PIP_SIP;
 							 .i_eVFS_State		:=	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State;
 								 .q_xVetoValveOpenDO := TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO;
 								 .q_xVetoValveClosed := TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed	'}	
-TV1K2_VFS_Interface : FB_VFS_Interface; 
+fb_TV1K2_VFS_Interface : FB_VFS_Interface; 
 
 
 //Interface for KFE Valve - SP1K1-MONO-VGC-2

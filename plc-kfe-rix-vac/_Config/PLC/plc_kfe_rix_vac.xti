@@ -1519,6 +1519,15 @@
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S2-DRL-01 (EP2624-0002)">
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.q_xHV_DIS" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
 			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 68 (EL3064)">
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.i_iPRESS_R" VarB="AI Standard Channel 1^Value"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 70 (EL2794)">
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.q_xHV_DIS" VarB="Channel 1^Output" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 72 (EL1124)">
+				<Link VarA="FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xTrigger" VarB="Channel 1^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xTrigger" Size="1"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 91 (EL3174-0002)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.i_iPRESS" VarB="AI Standard Channel 1^GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.i_iPRESS"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.i_iPRESS" VarB="AI Standard Channel 2^GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.i_iPRESS"/>
