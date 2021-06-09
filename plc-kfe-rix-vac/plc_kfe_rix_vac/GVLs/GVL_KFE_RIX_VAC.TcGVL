@@ -71,7 +71,7 @@ fb_IM6K2_PPM_GCC_1 : FB_MKS500;
 
 
 // MKS422
-{attribute 'pytmc' := ' pv: TV4K2:GFC:1 '}
+{attribute 'pytmc' := ' pv: TV4K2:GFS:1 '}
 fb_TV4K2_GFS_1 : FB_MKS422;
 
 
