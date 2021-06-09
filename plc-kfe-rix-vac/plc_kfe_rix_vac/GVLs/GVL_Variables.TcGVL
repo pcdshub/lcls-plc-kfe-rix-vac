@@ -25,9 +25,14 @@ xSystemOverrideMode2 : BOOL; (* Global system override for the prototype section
 g_FastFaultOutput1  :   FB_HardwareFFOutput:= (i_sNetID:='172.21.42.126.1.1');
 
 {attribute 'pytmc' := '
-	pv: PLC:KFE:RIX:VAC:ARB
+	pv: PLC:KFE:RIX:VAC:ARB:01
 '}
-fbArbiter : FB_Arbiter(1);
+fbArbiter1 : FB_Arbiter(1);
+{attribute 'pytmc' := '
+	pv: PLC:KFE:RIX:VAC:ARB:02
+'}
+fbArbiter2 : FB_Arbiter(2);
+
 
 fbLogHandler : FB_loghandler;
 
