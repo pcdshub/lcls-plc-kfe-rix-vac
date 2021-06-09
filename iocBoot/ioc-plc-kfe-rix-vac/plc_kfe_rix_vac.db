@@ -46177,13 +46177,13 @@ record(bi, "PLC:KFE:RIX:VAC:K2:FFO:01:OK_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46191,13 +46191,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46205,13 +46205,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46219,13 +46219,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46233,13 +46233,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46247,13 +46247,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46261,13 +46261,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46275,13 +46275,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46289,13 +46289,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46303,13 +46303,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46317,13 +46317,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46331,13 +46331,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46345,13 +46345,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46359,13 +46359,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46373,13 +46373,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46387,13 +46387,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46401,13 +46401,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46415,13 +46415,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46429,13 +46429,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46443,13 +46443,13 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:Transmission_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -46457,453 +46457,453 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:Rate_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:PhotonEnergyRanges_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -46911,13 +46911,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -46925,13 +46925,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -46939,13 +46939,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -46953,13 +46953,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -46967,13 +46967,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -46981,13 +46981,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -46995,13 +46995,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47009,13 +47009,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47023,13 +47023,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47037,13 +47037,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47051,13 +47051,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47065,13 +47065,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47079,13 +47079,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47093,13 +47093,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47107,13 +47107,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47121,13 +47121,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47135,13 +47135,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47149,13 +47149,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47163,13 +47163,13 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:Veto_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -47177,1153 +47177,1153 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:Valid_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].nCohortInt?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].nId?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:ID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:ID_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].nId?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].nId?")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Live_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:Live_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].LiveInTable?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].LiveInTable?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:001:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[1].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[1].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:002:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:002:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[2].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[2].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:003:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:003:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[3].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[3].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:004:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:004:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[4].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[4].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:005:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:005:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[5].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[5].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:006:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:006:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[6].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[6].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:007:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:007:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[7].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[7].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:008:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:008:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[8].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[8].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:009:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:009:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[9].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[9].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:010:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:010:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[10].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[10].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:011:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:011:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[11].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[11].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:012:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:012:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[12].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[12].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:013:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:013:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[13].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[13].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:014:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:014:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[14].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[14].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:015:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:015:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[15].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[15].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:016:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:016:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[16].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[16].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:017:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:017:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[17].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[17].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:018:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:018:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[18].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[18].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:019:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:019:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[19].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[19].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:AP:Entry:020:Device_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:AP:Entry:020:Device_RBV") {
   field(DESC, "Assertion Pool")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.fbBPAssertionPool.epicsDataPool[20].sDevName?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.fbBPAssertionPool.epicsDataPool[20].sDevName?")
   field(FTVL, "CHAR")
   field(NELM, "80")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:ArbiterID_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:ArbiterID_RBV") {
   field(DESC, "Arbiter ID for elev. req.")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.nArbiterID?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.nArbiterID?")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:CohortCounter_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:CohortCounter_RBV") {
   field(DESC, "Intrnl cohort counter")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.nActiveCohort?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.nActiveCohort?")
   info(archive, "VAL")
 }
 
-record(ai, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:Transmission_RBV") {
+record(ai, "PLC:KFE:RIX:VAC:ARB:01:ArbitratedBP:Transmission_RBV") {
   field(DESC, "Arbitrated BP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynFloat64")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.q_stBeamParams.nTran?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.q_stBeamParams.nTran?")
   field(PREC, "2")
   field(HOPR, "1")
   field(LOPR, "0")
@@ -48331,35 +48331,35 @@ record(ai, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:Transmission_RBV") {
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:Rate_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:ArbitratedBP:Rate_RBV") {
   field(DESC, "Arbitrated BP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.q_stBeamParams.nRate?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.q_stBeamParams.nRate?")
   field(EGU, "Hz")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:PhotonEnergyRanges_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:ArbitratedBP:PhotonEnergyRanges_RBV") {
   field(DESC, "Arbitrated BP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.q_stBeamParams.neVRange?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.q_stBeamParams.neVRange?")
   field(EGU, "eV")
   info(archive, "VAL")
 }
 
-record(waveform, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:Veto_RBV") {
+record(waveform, "PLC:KFE:RIX:VAC:ARB:01:ArbitratedBP:Veto_RBV") {
   field(DESC, "Arbitrated BP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt8ArrayIn")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.q_stBeamParams.aVetoDevices?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.q_stBeamParams.aVetoDevices?")
   field(FTVL, "CHAR")
   field(NELM, "16")
   field(MPST, "On Change")
@@ -48367,25 +48367,2237 @@ record(waveform, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:Veto_RBV") {
   info(archive, "VAL")
 }
 
-record(bi, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:Valid_RBV") {
+record(bi, "PLC:KFE:RIX:VAC:ARB:01:ArbitratedBP:Valid_RBV") {
   field(DESC, "Arbitrated BP")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.q_stBeamParams.xValid?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.q_stBeamParams.xValid?")
   field(ZNAM, "FALSE")
   field(ONAM, "TRUE")
   info(archive, "VAL")
 }
 
-record(longin, "PLC:KFE:RIX:VAC:ARB:ArbitratedBP:Cohort_RBV") {
+record(longin, "PLC:KFE:RIX:VAC:ARB:01:ArbitratedBP:Cohort_RBV") {
   field(DESC, "Cohort inc on each arb cycle")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
   field(TSE, "-2")
   field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter.q_stBeamParams.nCohortInt?")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter1.q_stBeamParams.nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:Transmission_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:Rate_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:PhotonEnergyRanges_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:Veto_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:Valid_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].nCohortInt?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].nId?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:ID_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].nId?")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:Live_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].LiveInTable?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:001:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[1].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:002:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[2].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:003:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[3].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:004:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[4].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:005:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[5].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:006:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[6].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:007:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[7].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:008:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[8].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:009:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[9].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:010:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[10].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:011:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[11].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:012:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[12].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:013:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[13].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:014:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[14].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:015:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[15].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:016:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[16].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:017:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[17].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:018:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[18].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:019:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[19].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:AP:Entry:020:Device_RBV") {
+  field(DESC, "Assertion Pool")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.fbBPAssertionPool.epicsDataPool[20].sDevName?")
+  field(FTVL, "CHAR")
+  field(NELM, "80")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:ArbiterID_RBV") {
+  field(DESC, "Arbiter ID for elev. req.")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.nArbiterID?")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:CohortCounter_RBV") {
+  field(DESC, "Intrnl cohort counter")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.nActiveCohort?")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:VAC:ARB:02:ArbitratedBP:Transmission_RBV") {
+  field(DESC, "Arbitrated BP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.q_stBeamParams.nTran?")
+  field(PREC, "2")
+  field(HOPR, "1")
+  field(LOPR, "0")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:ArbitratedBP:Rate_RBV") {
+  field(DESC, "Arbitrated BP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.q_stBeamParams.nRate?")
+  field(EGU, "Hz")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:ArbitratedBP:PhotonEnergyRanges_RBV") {
+  field(DESC, "Arbitrated BP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.q_stBeamParams.neVRange?")
+  field(EGU, "eV")
+  info(archive, "VAL")
+}
+
+record(waveform, "PLC:KFE:RIX:VAC:ARB:02:ArbitratedBP:Veto_RBV") {
+  field(DESC, "Arbitrated BP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.q_stBeamParams.aVetoDevices?")
+  field(FTVL, "CHAR")
+  field(NELM, "16")
+  field(MPST, "On Change")
+  field(APST, "On Change")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:VAC:ARB:02:ArbitratedBP:Valid_RBV") {
+  field(DESC, "Arbitrated BP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.q_stBeamParams.xValid?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(longin, "PLC:KFE:RIX:VAC:ARB:02:ArbitratedBP:Cohort_RBV") {
+  field(DESC, "Cohort inc on each arb cycle")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.fbArbiter2.q_stBeamParams.nCohortInt?")
   info(archive, "VAL")
 }
 
