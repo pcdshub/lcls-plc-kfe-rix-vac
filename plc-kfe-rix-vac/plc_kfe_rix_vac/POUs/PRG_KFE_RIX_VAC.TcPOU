@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
   <POU Name="PRG_KFE_RIX_VAC" Id="{7118719b-3077-4104-9acc-cffb49d6edd3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC
 VAR
@@ -202,7 +202,7 @@ fb_LI2K2_K2A_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverri
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;
 vfs_dummy_gauge.rPRESS := 0.0000001;
-fb_TV1K2_VFS_Interface(IG:=fb_TV4K2_GFS_1, iq_stValve=> , i_xVAC_FAULT_OK=> );
+fb_TV1K2_VFS_Interface(IG:=fb_TV4K2_GFS_1.IG, iq_stValve=> , i_xVAC_FAULT_OK=> );
 //TV1K2_VFS_Interface(IG:= fb_TV4K2_GFS_1.IG);
 
 
@@ -214,5 +214,9 @@ fb_RIX_ILK(
 );
 ]]></ST>
     </Implementation>
+    <LineIds Name="PRG_KFE_RIX_VAC">
+      <LineId Id="3" Count="203" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
