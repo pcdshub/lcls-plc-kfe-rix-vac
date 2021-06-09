@@ -4783,7 +4783,7 @@ PDO Channel 1 (Index #x1a00, Flags #x0011, SyncMan 0)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "Input", "", , "#x6000", "BIT"
+        "GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xTrigger", "", , "#x6000", "BIT"
 
 
 

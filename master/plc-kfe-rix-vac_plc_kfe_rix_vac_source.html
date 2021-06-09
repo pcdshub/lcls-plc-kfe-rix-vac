@@ -306,7 +306,7 @@
 
 
 <span class="o">//</span> <span class="n">MKS422</span>
-<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: TV4K2:GFC:1 &#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: TV4K2:GFS:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_TV4K2_GFS_1</span> <span class="p">:</span> <span class="n">FB_MKS422</span><span class="p">;</span>
 
 
@@ -409,7 +409,7 @@
                                                      <span class="o">.</span><span class="n">i_eVFS_State</span>          <span class="o">:=</span>      <span class="n">TIPC</span><span class="o">^</span><span class="n">plc_kfe_rix_vac</span><span class="o">^</span><span class="n">plc_kfe_rix_vac</span> <span class="n">Instance</span><span class="o">^</span><span class="n">FSTask</span> <span class="n">Outputs</span><span class="o">^</span><span class="n">GVL_RIX_VAC_FS_DEVICES</span><span class="o">.</span><span class="n">fb_TV1K2_VFS_1</span><span class="o">.</span><span class="n">q_eVFS_State</span><span class="p">;</span>
                                                              <span class="o">.</span><span class="n">q_xVetoValveOpenDO</span> <span class="o">:=</span> <span class="n">TIPC</span><span class="o">^</span><span class="n">plc_kfe_rix_vac</span><span class="o">^</span><span class="n">plc_kfe_rix_vac</span> <span class="n">Instance</span><span class="o">^</span><span class="n">FSTask</span> <span class="n">Inputs</span><span class="o">^</span><span class="n">GVL_RIX_VAC_FS_DEVICES</span><span class="o">.</span><span class="n">fb_TV1K2_VFS_1</span><span class="o">.</span><span class="n">i_xVetoValveOpenDO</span><span class="p">;</span>
                                                              <span class="o">.</span><span class="n">q_xVetoValveClosed</span> <span class="o">:=</span> <span class="n">TIPC</span><span class="o">^</span><span class="n">plc_kfe_rix_vac</span><span class="o">^</span><span class="n">plc_kfe_rix_vac</span> <span class="n">Instance</span><span class="o">^</span><span class="n">FSTask</span> <span class="n">Inputs</span><span class="o">^</span><span class="n">GVL_RIX_VAC_FS_DEVICES</span><span class="o">.</span><span class="n">fb_TV1K2_VFS_1</span><span class="o">.</span><span class="n">i_xVetoValveClosed</span>    <span class="s1">&#39;}</span>
-<span class="n">TV1K2_VFS_Interface</span> <span class="p">:</span> <span class="n">FB_VFS_Interface</span><span class="p">;</span>
+<span class="n">fb_TV1K2_VFS_Interface</span> <span class="p">:</span> <span class="n">FB_VFS_Interface</span><span class="p">;</span>
 
 
 <span class="o">//</span><span class="n">Interface</span> <span class="k">for</span> <span class="n">KFE</span> <span class="n">Valve</span> <span class="o">-</span> <span class="n">SP1K1</span><span class="o">-</span><span class="n">MONO</span><span class="o">-</span><span class="n">VGC</span><span class="o">-</span><span class="mi">2</span>
@@ -427,7 +427,6 @@
 <div class="section" id="gvl-rix-vac-fs-devices">
 <h2>GVL_RIX_VAC_FS_DEVICES<a class="headerlink" href="#gvl-rix-vac-fs-devices" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VAR_GLOBAL</span>
-
     <span class="n">fb_TV1K2_VFS_1</span> <span class="p">:</span> <span class="n">FB_VFS</span><span class="p">;</span>
 <span class="n">END_VAR</span>
 </pre></div>
@@ -632,7 +631,7 @@
                          <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
                          <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
                          <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
-                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">fb_TV1K2_VFS_Interface</span><span class="o">.</span><span class="n">i_xVAC_FAULT_OK</span><span class="p">,</span>
                          <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">,</span>
                          <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter1</span><span class="p">);</span>
 
@@ -642,7 +641,7 @@
                          <span class="n">i_xDis_DPIlk</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">,</span>
                          <span class="n">i_xEPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
                          <span class="n">i_xPMPS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
-                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span>
+                         <span class="n">i_xExt_OK</span> <span class="o">:=</span> <span class="n">fb_TV1K2_VFS_Interface</span><span class="o">.</span><span class="n">i_xVAC_FAULT_OK</span><span class="p">,</span>
                          <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">,</span>
                          <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">,</span> <span class="n">fbArbiter</span> <span class="o">:=</span> <span class="n">fbArbiter1</span><span class="p">);</span>
 
@@ -752,7 +751,7 @@
 <span class="o">//</span><span class="n">Fast</span> <span class="n">shutter</span> <span class="n">Valve</span> <span class="n">Interface</span>
 <span class="n">vfs_dummy_gauge</span><span class="o">.</span><span class="n">xPRESS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
 <span class="n">vfs_dummy_gauge</span><span class="o">.</span><span class="n">rPRESS</span> <span class="o">:=</span> <span class="mf">0.0000001</span><span class="p">;</span>
-<span class="n">TV1K2_VFS_Interface</span><span class="p">(</span><span class="n">IG</span><span class="o">:=</span> <span class="n">vfs_dummy_gauge</span><span class="p">,</span> <span class="n">iq_stValve</span><span class="o">=&gt;</span> <span class="p">,</span> <span class="n">i_xVAC_FAULT_OK</span><span class="o">=&gt;</span> <span class="p">);</span>
+<span class="n">fb_TV1K2_VFS_Interface</span><span class="p">(</span><span class="n">IG</span><span class="o">:=</span><span class="n">fb_TV4K2_GFS_1</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span> <span class="n">iq_stValve</span><span class="o">=&gt;</span> <span class="p">,</span> <span class="n">i_xVAC_FAULT_OK</span><span class="o">=&gt;</span> <span class="p">);</span>
 <span class="o">//</span><span class="n">TV1K2_VFS_Interface</span><span class="p">(</span><span class="n">IG</span><span class="o">:=</span> <span class="n">fb_TV4K2_GFS_1</span><span class="o">.</span><span class="n">IG</span><span class="p">);</span>
 
 

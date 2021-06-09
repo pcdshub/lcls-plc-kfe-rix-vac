@@ -114,7 +114,7 @@ GVL_KFE_RIX_VAC
 
 
     // MKS422
-    {attribute 'pytmc' := ' pv: TV4K2:GFC:1 '}
+    {attribute 'pytmc' := ' pv: TV4K2:GFS:1 '}
     fb_TV4K2_GFS_1 : FB_MKS422;
 
 
@@ -217,7 +217,7 @@ GVL_KFE_RIX_VAC
     							 .i_eVFS_State		:=	TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Outputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.q_eVFS_State;
     								 .q_xVetoValveOpenDO := TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveOpenDO;
     								 .q_xVetoValveClosed := TIPC^plc_kfe_rix_vac^plc_kfe_rix_vac Instance^FSTask Inputs^GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xVetoValveClosed	'}	
-    TV1K2_VFS_Interface : FB_VFS_Interface; 
+    fb_TV1K2_VFS_Interface : FB_VFS_Interface; 
 
 
     //Interface for KFE Valve - SP1K1-MONO-VGC-2
@@ -236,8 +236,7 @@ GVL_RIX_VAC_FS_DEVICES
 
 ::
 
-    VAR_GLOBAL
-    	
+    VAR_GLOBAL	
     	fb_TV1K2_VFS_1 : FB_VFS;
     END_VAR
 
@@ -453,7 +452,7 @@ PRG_KFE_RIX_VAC
                              i_xDis_DPIlk := FALSE, 
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
-                             i_xExt_OK := TRUE, 
+                             i_xExt_OK := fb_TV1K2_VFS_Interface.i_xVAC_FAULT_OK, 
                              i_xOverrideMode := xSystemOverrideMode1, 
                              io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1); 
     						 
@@ -463,7 +462,7 @@ PRG_KFE_RIX_VAC
                              i_xDis_DPIlk := FALSE, 
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
-                             i_xExt_OK := TRUE, 
+                             i_xExt_OK := fb_TV1K2_VFS_Interface.i_xVAC_FAULT_OK, 
                              i_xOverrideMode := xSystemOverrideMode1, 
                              io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1);						 
 
@@ -573,7 +572,7 @@ PRG_KFE_RIX_VAC
     //Fast shutter Valve Interface
     vfs_dummy_gauge.xPRESS_OK := TRUE;
     vfs_dummy_gauge.rPRESS := 0.0000001;
-    TV1K2_VFS_Interface(IG:= vfs_dummy_gauge, iq_stValve=> , i_xVAC_FAULT_OK=> );
+    fb_TV1K2_VFS_Interface(IG:=fb_TV4K2_GFS_1.IG, iq_stValve=> , i_xVAC_FAULT_OK=> );
     //TV1K2_VFS_Interface(IG:= fb_TV4K2_GFS_1.IG);
 
 
