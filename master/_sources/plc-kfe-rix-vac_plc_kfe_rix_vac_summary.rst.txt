@@ -37,7 +37,7 @@ Libraries
     :align: center
 
         LCLS General, SLAC, Unset, Unset
-        LCLS Vacuum, SLAC - LCLS, Unset, 1.6.0
+        LCLS Vacuum, SLAC - LCLS, Unset, 0.0.0
         PMPS, SLAC - LCLS, Unset, 2.0.0
         Tc2_Standard, Beckhoff Automation GmbH, Unset, Unset
         Tc2_System, Beckhoff Automation GmbH, Unset, Unset
@@ -506,14 +506,14 @@ GVL_TcUnit
         GVL_TcUnit.CurrentTestSuiteBeingCalled, POINTER TO FB_TestSuite, 629366176 (32)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 3366928 (8)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 629368256 (8)
-        GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 629368272 (16)
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 3369536 (16)
+        GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 629368272 (16)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 3366944 (512)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 7539232 (621826944)
         GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 3369568 (16000)
         GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 629368288 (32000)
-        GVL_TcUnit.TestSuiteIsRegistered, BOOL, 3362904 (8)
         GVL_TcUnit.TestSuiteIsRegistered, BOOL, 7539216 (8)
+        GVL_TcUnit.TestSuiteIsRegistered, BOOL, 3362904 (8)
 
 .. raw:: html
 
@@ -821,12 +821,13 @@ Global_Version
 .. raw:: html
 
    <details>
-       <summary>15 Symbols</summary>
+       <summary>16 Symbols</summary>
 
 .. csv-table::
     :header: Symbol, Type, Offset/Size
     :align: center
 
+        Global_Version.stLibVersion_LCLS_Vacuum, ST_LibVersion, 655198464 (288)
         Global_Version.stLibVersion_Tc2_DataExchange, ST_LibVersion, 637721440 (288)
         Global_Version.stLibVersion_Tc2_EtherCAT, ST_LibVersion, 3154880 (288)
         Global_Version.stLibVersion_Tc2_IoFunctions, ST_LibVersion, 3362976 (288)
