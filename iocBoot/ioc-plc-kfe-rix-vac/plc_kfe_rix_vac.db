@@ -13587,16 +13587,6 @@ record(bi, "PLC:KFE:RIX:FIM:COMBO:ILK_RBV") {
   info(archive, "VAL")
 }
 
-record(bo, "PLC:KFE:RIX:FIM:COMBO:ILK") {
-  field(DESC, "PRG_RIX_INTF.FB_FIM_ILK")
-  field(DTYP, "asynInt32")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/PRG_RIX_INTF.FB_FIM_ILK=")
-  field(ZNAM, "FALSE")
-  field(ONAM, "TRUE")
-  info(autosaveFields_pass0, "VAL")
-  info(archive, "VAL")
-}
-
 record(longin, "$(PREFIX)LCLSGeneral:LogPort_RBV") {
   field(DESC, "The log host UDP port")
   field(SCAN, "I/O Intr")
