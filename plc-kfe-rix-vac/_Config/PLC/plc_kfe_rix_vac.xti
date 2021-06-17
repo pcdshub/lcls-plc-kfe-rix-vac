@@ -991,8 +991,22 @@
 			<Vars VarGrpType="2" ContextId="1" AreaNo="17">
 				<Name>PlcTask Outputs</Name>
 				<Var>
+					<Name>PRG_RIX_INTF.FB_FIM_ILK</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>MAIN.fbArbiterIO.q_stRequestedBP</Name>
 					<Type GUID="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}">ST_BeamParams_IO</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RIX_INTF.FB_MR3K2_FIM_ILK.q_xILK_OK_DO</Name>
+					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RIX_INTF.FB_MR4K2_FIM_ILK.q_xILK_OK_DO</Name>
+					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
+					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS</Name>
@@ -1242,20 +1256,6 @@
 				</Var>
 				<Var>
 					<Name>GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>PRG_RIX_INTF.FB_FIM_ILK</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_RIX_INTF.FB_MR3K2_FIM_ILK.q_xILK_OK_DO</Name>
-					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_RIX_INTF.FB_MR4K2_FIM_ILK.q_xILK_OK_DO</Name>
-					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
 			</Vars>
