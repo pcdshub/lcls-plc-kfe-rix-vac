@@ -27,7 +27,7 @@
 				<SyncMan>000f01004400010003000000000000000000000f44090000</SyncMan>
 				<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
 				<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
-					<Entry Name="Output" Index="#x7000" Sub="#x01">
+					<Entry Name="PRG_RIX_INTF.FB_FIM_ILK" Index="#x7000" Sub="#x01">
 						<Type>BIT</Type>
 					</Entry>
 				</Pdo>

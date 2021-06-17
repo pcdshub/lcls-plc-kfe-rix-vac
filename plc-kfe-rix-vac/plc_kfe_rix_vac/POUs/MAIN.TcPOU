@@ -11,7 +11,7 @@ END_VAR
     <Implementation>
       <ST><![CDATA[PRG_KFE_RIX_VAC();
 fbLogHandler();
-PRG_ADS_INTF();
+PRG_RIX_INTF();
 
 fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN],
 	Arbiter:= fbArbiter1,
@@ -39,9 +39,7 @@ ff2_ff1_link_vac(
 ]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
-      <LineId Id="3" Count="1" />
-      <LineId Id="35" Count="0" />
-      <LineId Id="5" Count="23" />
+      <LineId Id="36" Count="26" />
       <LineId Id="2" Count="0" />
     </LineIds>
   </POU>

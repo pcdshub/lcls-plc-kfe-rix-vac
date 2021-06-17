@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
-  <GVL Name="GVL_ADS_INTF" Id="{0a70a95d-d899-4d85-b505-d428da9aa702}">
+  <GVL Name="GVL_RIX_INTF" Id="{0a70a95d-d899-4d85-b505-d428da9aa702}">
     <Declaration><![CDATA[VAR_GLOBAL
 	ads_watch_dog : FB_ADS_WATCHDOG;
+	FB_MR3K2_FIM_ILK : FB_EXT_ILK;
+	ST_MR3K2_FIM_ILK : ST_EXT_ILK := (rPRO_SP := 8e-9);
+	FB_MR4K2_FIM_ILK : FB_EXT_ILK;
+	ST_MR4K2_FIM_ILK : ST_EXT_ILK := (rPRO_SP := 8e-9);
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

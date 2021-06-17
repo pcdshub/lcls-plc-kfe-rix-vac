@@ -24,7 +24,7 @@
     <Compile Include="FSTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GVLs\GVL_ADS_INTF.TcGVL">
+    <Compile Include="GVLs\GVL_RIX_INTF.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
@@ -53,7 +53,7 @@
     <Compile Include="POUs\FB_EXT_ILK.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\PRG_ADS_INTF.TcPOU">
+    <Compile Include="POUs\PRG_RIX_INTF.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_KFE_RIX_VAC.TcPOU">
