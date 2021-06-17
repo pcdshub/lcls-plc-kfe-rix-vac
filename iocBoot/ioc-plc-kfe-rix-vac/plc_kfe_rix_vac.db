@@ -13575,6 +13575,28 @@ record(longin, "$(PREFIX)AccumulatedFastFaults_RBV") {
   info(archive, "VAL")
 }
 
+record(bi, "PLC:KFE:RIX:FIM:COMBO:ILK_RBV") {
+  field(DESC, "PRG_RIX_INTF.FB_FIM_ILK")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/PRG_RIX_INTF.FB_FIM_ILK?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bo, "PLC:KFE:RIX:FIM:COMBO:ILK") {
+  field(DESC, "PRG_RIX_INTF.FB_FIM_ILK")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/PRG_RIX_INTF.FB_FIM_ILK=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
 record(longin, "$(PREFIX)LCLSGeneral:LogPort_RBV") {
   field(DESC, "The log host UDP port")
   field(SCAN, "I/O Intr")
@@ -14057,6 +14079,164 @@ record(bo, "RIX:FEE:VAC:OVRDON") {
   field(ZNAM, "Override OFF")
   field(ONAM, "Override ON")
   info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "RIX:HUT:VAC:OVRDON_RBV") {
+  field(DESC, "GVL_Variables.xSystemOverrideMode2")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.xSystemOverrideMode2?")
+  field(ZNAM, "Override OFF")
+  field(ONAM, "Override ON")
+  info(archive, "VAL")
+}
+
+record(bo, "RIX:HUT:VAC:OVRDON") {
+  field(DESC, "GVL_Variables.xSystemOverrideMode2")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Variables.xSystemOverrideMode2=")
+  field(ZNAM, "Override OFF")
+  field(ONAM, "Override ON")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:FIM:MR3K2:ILK:HV_SW_RBV") {
+  field(DESC, "GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlk_sw")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlk_sw?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bo, "PLC:KFE:RIX:FIM:MR3K2:ILK:HV_SW") {
+  field(DESC, "GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlk_sw")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlk_sw=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:FIM:MR3K2:ILK:ILK_DO_RBV") {
+  # GVL_RIX_INTF.ST_MR3K2_FIM_ILK.q_xILK_OK_DO
+  field(DESC, "GVL_RIX_INTF.ST_MR3K..._ILK.q_xILK_OK_DO")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR3K2_FIM_ILK.q_xILK_OK_DO?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:FIM:MR3K2:ILK:ILK_OK_RBV") {
+  field(DESC, "GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlkOK")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlkOK?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:FIM:MR3K2:ILK:PRO_SP_RBV") {
+  field(DESC, "GVL_RIX_INTF.ST_MR3K2_FIM_ILK.rPRO_SP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR3K2_FIM_ILK.rPRO_SP?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ao, "PLC:KFE:RIX:FIM:MR3K2:ILK:PRO_SP") {
+  field(DESC, "GVL_RIX_INTF.ST_MR3K2_FIM_ILK.rPRO_SP")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_RIX_INTF.ST_MR3K2_FIM_ILK.rPRO_SP=")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:FIM:MR4K2:ILK:HV_SW_RBV") {
+  field(DESC, "GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlk_sw")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlk_sw?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bo, "PLC:KFE:RIX:FIM:MR4K2:ILK:HV_SW") {
+  field(DESC, "GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlk_sw")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlk_sw=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "VAL")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:FIM:MR4K2:ILK:ILK_DO_RBV") {
+  # GVL_RIX_INTF.ST_MR4K2_FIM_ILK.q_xILK_OK_DO
+  field(DESC, "GVL_RIX_INTF.ST_MR4K..._ILK.q_xILK_OK_DO")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR4K2_FIM_ILK.q_xILK_OK_DO?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(bi, "PLC:KFE:RIX:FIM:MR4K2:ILK:ILK_OK_RBV") {
+  field(DESC, "GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlkOK")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlkOK?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(archive, "VAL")
+}
+
+record(ai, "PLC:KFE:RIX:FIM:MR4K2:ILK:PRO_SP_RBV") {
+  field(DESC, "GVL_RIX_INTF.ST_MR4K2_FIM_ILK.rPRO_SP")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_RIX_INTF.ST_MR4K2_FIM_ILK.rPRO_SP?")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC")
+  info(archive, "VAL")
+}
+
+record(ao, "PLC:KFE:RIX:FIM:MR4K2:ILK:PRO_SP") {
+  field(DESC, "GVL_RIX_INTF.ST_MR4K2_FIM_ILK.rPRO_SP")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_RIX_INTF.ST_MR4K2_FIM_ILK.rPRO_SP=")
+  field(PREC, "3")
+  info(autosaveFields_pass0, "PREC VAL")
   info(archive, "VAL")
 }
 
@@ -32610,28 +32790,6 @@ record(ao, "PC1K1:ZOS:GCC:1:ILK:PRO_SP") {
   field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_KFE_RIX_VAC.st_RIX_ILK.rPRO_SP=")
   field(PREC, "3")
   info(autosaveFields_pass0, "PREC VAL")
-  info(archive, "VAL")
-}
-
-record(bi, "RIX:HUT:VAC:OVRDON_RBV") {
-  field(DESC, "GVL_Variables.xSystemOverrideMode2")
-  field(SCAN, "I/O Intr")
-  field(PINI, "1")
-  field(TSE, "-2")
-  field(DTYP, "asynInt32")
-  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_Variables.xSystemOverrideMode2?")
-  field(ZNAM, "Override OFF")
-  field(ONAM, "Override ON")
-  info(archive, "VAL")
-}
-
-record(bo, "RIX:HUT:VAC:OVRDON") {
-  field(DESC, "GVL_Variables.xSystemOverrideMode2")
-  field(DTYP, "asynInt32")
-  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Variables.xSystemOverrideMode2=")
-  field(ZNAM, "Override OFF")
-  field(ONAM, "Override ON")
-  info(autosaveFields_pass0, "VAL")
   info(archive, "VAL")
 }
 
