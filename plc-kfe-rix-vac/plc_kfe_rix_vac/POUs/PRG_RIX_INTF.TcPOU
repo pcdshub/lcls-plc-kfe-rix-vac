@@ -3,7 +3,9 @@
   <POU Name="PRG_RIX_INTF" Id="{32fc03a0-ba61-472e-aa53-eabdb188c9c7}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_RIX_INTF
 VAR
-	
+{attribute 'pytmc' := '
+    	pv: PLC:KFE:RIX:FIM:COMBO:ILK
+'}
 FB_FIM_ILK	AT%Q*	:	BOOL;
 END_VAR
 ]]></Declaration>
