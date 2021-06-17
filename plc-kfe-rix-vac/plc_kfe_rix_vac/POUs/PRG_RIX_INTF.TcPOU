@@ -5,6 +5,7 @@
 VAR
 {attribute 'pytmc' := '
     	pv: PLC:KFE:RIX:FIM:COMBO:ILK
+		io: i;
 '}
 FB_FIM_ILK	AT%Q*	:	BOOL;
 END_VAR
