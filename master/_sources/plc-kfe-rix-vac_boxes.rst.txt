@@ -6725,6 +6725,28 @@ PDO Channel 4 (Index #x1a03, Flags #x0011, SyncMan 0)
    </details>
 
 
+Term 102 (EL9184)
+^^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Term 102 (EL9184)
+    ID, 102
+
+
+.. raw:: html
+
+   </details>
+
+
 EL9184_05_05
 ^^^^^^^^^^^^
 
@@ -6740,6 +6762,110 @@ EL9184_05_05
 
     Name, EL9184_05_05
     ID, 103
+
+
+.. raw:: html
+
+   </details>
+
+
+Term 104 (EL2008)
+^^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT (8 PDOs)</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Term 104 (EL2008)
+    ID, 104
+        SyncMan, 000f01004400010003000000000000000000000f44090000
+        Fmmu, 0000000000000000000f00020100000001000000000000000000000000000000
+
+
+
+PDO Channel 1 (Index #x1600, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "PRG_RIX_INTF.FB_FIM_ILK", "", , "#x7000", "BIT"
+
+
+
+PDO Channel 2 (Index #x1601, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Output", "", , "#x7010", "BIT"
+
+
+
+PDO Channel 3 (Index #x1602, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Output", "", , "#x7020", "BIT"
+
+
+
+PDO Channel 4 (Index #x1603, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Output", "", , "#x7030", "BIT"
+
+
+
+PDO Channel 5 (Index #x1604, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Output", "", , "#x7040", "BIT"
+
+
+
+PDO Channel 6 (Index #x1605, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Output", "", , "#x7050", "BIT"
+
+
+
+PDO Channel 7 (Index #x1606, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Output", "", , "#x7060", "BIT"
+
+
+
+PDO Channel 8 (Index #x1607, Flags #x0011, SyncMan 0)
+
+.. csv-table::
+    :header: Name, Comment, BitLen, Index, Type
+    :align: center
+
+        "Output", "", , "#x7070", "BIT"
 
 
 .. raw:: html

@@ -109,6 +109,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#gvls">GVLs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-kfe-rix-vac">GVL_KFE_RIX_VAC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gvl-rix-intf">GVL_RIX_INTF</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-rix-vac-fs-devices">GVL_RIX_VAC_FS_DEVICES</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-rix-vac-fsv-pmps">GVL_RIX_VAC_FSV_PMPS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gvl-variables">GVL_Variables</a></li>
@@ -119,6 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#main">MAIN</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prg-kfe-rix-vac">PRG_KFE_RIX_VAC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prg-kfe-rix-vac-fs">PRG_KFE_RIX_VAC_FS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prg-rix-intf">PRG_RIX_INTF</a></li>
 </ul>
 </li>
 </ul>
@@ -424,6 +426,26 @@
 </pre></div>
 </div>
 </div>
+<div class="section" id="gvl-rix-intf">
+<h2>GVL_RIX_INTF<a class="headerlink" href="#gvl-rix-intf" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VAR_GLOBAL</span>
+    <span class="n">ads_watch_dog</span> <span class="p">:</span> <span class="n">FB_ADS_WATCHDOG</span><span class="p">;</span>
+
+
+    <span class="n">FB_MR3K2_FIM_ILK</span> <span class="p">:</span> <span class="n">FB_EXT_ILK</span><span class="p">;</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+            <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">FIM</span><span class="p">:</span><span class="n">MR3K2</span><span class="p">:</span><span class="n">ILK</span>
+    <span class="s1">&#39;}</span>
+    <span class="n">ST_MR3K2_FIM_ILK</span> <span class="p">:</span> <span class="n">ST_EXT_ILK</span> <span class="o">:=</span> <span class="p">(</span><span class="n">rPRO_SP</span> <span class="o">:=</span> <span class="mf">8e-9</span><span class="p">);</span>
+    <span class="n">FB_MR4K2_FIM_ILK</span> <span class="p">:</span> <span class="n">FB_EXT_ILK</span><span class="p">;</span>
+    <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+            <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">FIM</span><span class="p">:</span><span class="n">MR4K2</span><span class="p">:</span><span class="n">ILK</span>
+    <span class="s1">&#39;}</span>
+    <span class="n">ST_MR4K2_FIM_ILK</span> <span class="p">:</span> <span class="n">ST_EXT_ILK</span> <span class="o">:=</span> <span class="p">(</span><span class="n">rPRO_SP</span> <span class="o">:=</span> <span class="mf">8e-9</span><span class="p">);</span>
+<span class="n">END_VAR</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="gvl-rix-vac-fs-devices">
 <h2>GVL_RIX_VAC_FS_DEVICES<a class="headerlink" href="#gvl-rix-vac-fs-devices" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VAR_GLOBAL</span>
@@ -523,6 +545,7 @@
 <span class="n">END_VAR</span>
 <span class="n">PRG_KFE_RIX_VAC</span><span class="p">();</span>
 <span class="n">fbLogHandler</span><span class="p">();</span>
+<span class="n">PRG_RIX_INTF</span><span class="p">();</span>
 
 <span class="n">fbArbiterIO</span><span class="p">(</span><span class="n">i_bVeto</span><span class="o">:=</span>  <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_OUT</span><span class="p">]</span> <span class="n">AND</span> <span class="n">NOT</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_IN</span><span class="p">],</span>
     <span class="n">Arbiter</span><span class="o">:=</span> <span class="n">fbArbiter1</span><span class="p">,</span>
@@ -781,6 +804,38 @@
 <span class="p">);</span>
 <span class="p">(</span><span class="o">*</span><span class="n">FastFaultOuput</span><span class="o">*</span><span class="p">)</span>
 <span class="n">g_FastFaultOutput2</span><span class="o">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">bAutoReset</span><span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
+
+<span class="n">END_PROGRAM</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="prg-rix-intf">
+<h2>PRG_RIX_INTF<a class="headerlink" href="#prg-rix-intf" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROGRAM</span> <span class="n">PRG_RIX_INTF</span>
+<span class="n">VAR</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
+            <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">FIM</span><span class="p">:</span><span class="n">COMBO</span><span class="p">:</span><span class="n">ILK</span>
+            <span class="n">io</span><span class="p">:</span> <span class="n">i</span><span class="p">;</span>
+<span class="s1">&#39;}</span>
+<span class="n">FB_FIM_ILK</span>  <span class="n">AT</span><span class="o">%</span><span class="n">Q</span><span class="o">*</span>   <span class="p">:</span>       <span class="n">BOOL</span><span class="p">;</span>
+<span class="n">END_VAR</span>
+<span class="n">ads_watch_dog</span><span class="p">(</span>
+    <span class="n">sNetId</span> <span class="o">:=</span> <span class="s1">&#39;172.21.140.47.1.1&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">AMS</span> <span class="n">NET</span> <span class="n">ID</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
+    <span class="n">nPort</span> <span class="o">:=</span> <span class="mi">851</span><span class="p">,</span> <span class="o">//</span> <span class="n">ADS</span> <span class="n">port</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
+    <span class="n">sVarName</span> <span class="o">:=</span> <span class="s1">&#39;PRG_ADS_Gauges.ADS_connection_counter&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">Full</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">UDINT</span> <span class="n">provided</span> <span class="n">to</span> <span class="n">the</span> <span class="s1">&#39;iWatchdog&#39;</span> <span class="n">parameter</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">interface</span> <span class="n">functions</span> <span class="n">on</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
+<span class="p">);</span>
+
+<span class="n">FB_MR3K2_FIM_ILK</span><span class="p">(</span>
+    <span class="n">VG</span> <span class="o">:=</span> <span class="n">fb_MR3K2_KBH_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">ILK</span> <span class="o">:=</span> <span class="n">ST_MR3K2_FIM_ILK</span><span class="p">,</span>
+<span class="p">);</span>
+
+<span class="n">FB_MR4K2_FIM_ILK</span><span class="p">(</span>
+    <span class="n">VG</span> <span class="o">:=</span> <span class="n">fb_MR4K2_KBV_PIP_1</span><span class="o">.</span><span class="n">q_IG</span><span class="p">,</span>
+    <span class="n">ILK</span> <span class="o">:=</span> <span class="n">ST_MR4K2_FIM_ILK</span><span class="p">,</span>
+<span class="p">);</span>
+
+<span class="n">FB_FIM_ILK</span> <span class="o">:=</span> <span class="p">(</span> <span class="n">ST_MR3K2_FIM_ILK</span><span class="o">.</span><span class="n">q_xILK_OK_DO</span> <span class="n">AND</span> <span class="n">ST_MR4K2_FIM_ILK</span><span class="o">.</span><span class="n">q_xILK_OK_DO</span> <span class="p">);</span>
 
 <span class="n">END_PROGRAM</span>
 </pre></div>

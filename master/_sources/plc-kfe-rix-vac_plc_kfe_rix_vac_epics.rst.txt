@@ -917,7 +917,7 @@ LCLS_General.ST_PendingEvent
       - | io: input
 
 
-                                                                 
+                                                                  
 LCLS_Vacuum.FB_MKS275
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -3640,7 +3640,7 @@ LCLS_Vacuum.ST_VGC
         | io: input
 
 
-     
+      
 PMPS.FB_Arbiter
 ^^^^^^^^^^^^^^^
 
@@ -13727,7 +13727,7 @@ ST_PMPS_Aperture_IO
         | io: input
 
 
-                            
+                             
 Database Records
 ----------------
 
@@ -22111,6 +22111,84 @@ Database Records
         | field: TWST RUNNING
         | field: ZRST STOPPED
         | io: input
+
+
+    * - PLC:KFE:RIX:FIM:COMBO:ILK_RBV
+      - bi
+      - PRG_RIX_INTF.FB_FIM_ILK
+      - | io: input
+
+
+    * - PLC:KFE:RIX:FIM:MR3K2:ILK:HV_SW
+      - bo
+      - GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlk_sw
+      - | io: output
+
+
+    * - PLC:KFE:RIX:FIM:MR3K2:ILK:HV_SW_RBV
+      - bi
+      - GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlk_sw
+      - | io: output
+
+
+    * - PLC:KFE:RIX:FIM:MR3K2:ILK:ILK_DO_RBV
+      - bi
+      - GVL_RIX_INTF.ST_MR3K2_FIM_ILK.q_xILK_OK_DO
+      - | io: input
+
+
+    * - PLC:KFE:RIX:FIM:MR3K2:ILK:ILK_OK_RBV
+      - bi
+      - GVL_RIX_INTF.ST_MR3K2_FIM_ILK.xIlkOK
+      - | io: input
+
+
+    * - PLC:KFE:RIX:FIM:MR3K2:ILK:PRO_SP
+      - ao
+      - GVL_RIX_INTF.ST_MR3K2_FIM_ILK.rPRO_SP
+      - | io: output
+
+
+    * - PLC:KFE:RIX:FIM:MR3K2:ILK:PRO_SP_RBV
+      - ai
+      - GVL_RIX_INTF.ST_MR3K2_FIM_ILK.rPRO_SP
+      - | io: output
+
+
+    * - PLC:KFE:RIX:FIM:MR4K2:ILK:HV_SW
+      - bo
+      - GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlk_sw
+      - | io: output
+
+
+    * - PLC:KFE:RIX:FIM:MR4K2:ILK:HV_SW_RBV
+      - bi
+      - GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlk_sw
+      - | io: output
+
+
+    * - PLC:KFE:RIX:FIM:MR4K2:ILK:ILK_DO_RBV
+      - bi
+      - GVL_RIX_INTF.ST_MR4K2_FIM_ILK.q_xILK_OK_DO
+      - | io: input
+
+
+    * - PLC:KFE:RIX:FIM:MR4K2:ILK:ILK_OK_RBV
+      - bi
+      - GVL_RIX_INTF.ST_MR4K2_FIM_ILK.xIlkOK
+      - | io: input
+
+
+    * - PLC:KFE:RIX:FIM:MR4K2:ILK:PRO_SP
+      - ao
+      - GVL_RIX_INTF.ST_MR4K2_FIM_ILK.rPRO_SP
+      - | io: output
+
+
+    * - PLC:KFE:RIX:FIM:MR4K2:ILK:PRO_SP_RBV
+      - ai
+      - GVL_RIX_INTF.ST_MR4K2_FIM_ILK.rPRO_SP
+      - | io: output
 
 
     * - PLC:KFE:RIX:VAC:ARB:01:AP:Entry:001:Cohort_RBV

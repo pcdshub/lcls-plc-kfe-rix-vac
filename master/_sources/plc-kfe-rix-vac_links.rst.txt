@@ -199,4 +199,5 @@ Links
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.q_xHVEna_DO, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 52 (EL2794), Channel 4^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.q_xHVEna_DO
         plc_kfe_rix_vac Instance, PlcTask Outputs^GVL_Variables.g_FastFaultOutput1.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_FFO (EL2202), Channel 1^Output
         plc_kfe_rix_vac Instance, PlcTask Outputs^MAIN.fbArbiterIO.q_stRequestedBP, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_PRE, IO Outputs^RequestedBP
+        plc_kfe_rix_vac Instance, PlcTask Outputs^PRG_RIX_INTF.FB_FIM_ILK, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 104 (EL2008), Channel 1^PRG_RIX_INTF.FB_FIM_ILK
         plc_kfe_rix_vac_fs Instance, PlcTask Outputs^GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut, TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^PMPS_FFO (EL2202), Channel 2^Output
