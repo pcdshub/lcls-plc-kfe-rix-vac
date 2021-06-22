@@ -37,7 +37,7 @@ Libraries
     :align: center
 
         LCLS General, SLAC, Unset, Unset
-        LCLS Vacuum, SLAC - LCLS, Unset, 0.0.0
+        LCLS Vacuum, SLAC - LCLS, Unset, 1.7.0
         PMPS, SLAC - LCLS, Unset, 2.0.0
         Tc2_Standard, Beckhoff Automation GmbH, Unset, Unset
         Tc2_System, Beckhoff Automation GmbH, Unset, Unset
@@ -837,13 +837,12 @@ Global_Version
 .. raw:: html
 
    <details>
-       <summary>16 Symbols</summary>
+       <summary>15 Symbols</summary>
 
 .. csv-table::
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        Global_Version.stLibVersion_LCLS_Vacuum, ST_LibVersion, 7516032 (288)
         Global_Version.stLibVersion_Tc2_DataExchange, ST_LibVersion, 637721728 (288)
         Global_Version.stLibVersion_Tc2_EtherCAT, ST_LibVersion, 3154880 (288)
         Global_Version.stLibVersion_Tc2_IoFunctions, ST_LibVersion, 3362976 (288)
