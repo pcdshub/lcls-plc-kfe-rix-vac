@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
   <POU Name="MAIN" Id="{150c95ec-0456-4d2a-9418-59da97b7d368}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -11,6 +11,7 @@ END_VAR
     <Implementation>
       <ST><![CDATA[PRG_KFE_RIX_VAC();
 fbLogHandler();
+PRG_RIX_INTF();
 
 fbArbiterIO(i_bVeto:=  PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_OUT] AND NOT PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stopper.MR1K1_IN],
 	Arbiter:= fbArbiter1,
@@ -37,5 +38,9 @@ ff2_ff1_link_vac(
 									   
 ]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="36" Count="26" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

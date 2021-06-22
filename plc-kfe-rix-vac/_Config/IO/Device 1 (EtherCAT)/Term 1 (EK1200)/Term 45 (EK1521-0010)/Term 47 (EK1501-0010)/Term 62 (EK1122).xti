@@ -1801,7 +1801,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 				</EtherCAT>
 			</Box>
 		</Box>
-		<Box Id="24" Disabled="true" BoxType="9099" BoxFlags="#x00000020">
+		<Box Id="24" BoxType="9099" BoxFlags="#x00000020">
 			<Name>EP3174_06_01</Name>
 			<ImageId>1005</ImageId>
 			<EtherCAT SlaveType="2" PdiType="#x0605" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c664052" RevisionNo="#x00170002" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP3174-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable" Desc="EP3174-0002" PortABoxInfo="#x02000019">
@@ -2017,7 +2017,7 @@ Bit1: Value smaller than Limit2]]></Comment>
 				<CoeProfile ProfileNo="19665801" DisplayName="Analog Input"/>
 			</EtherCAT>
 		</Box>
-		<Box Id="26" Disabled="true" BoxType="9099">
+		<Box Id="26" BoxType="9099">
 			<Name>EP2624_06_02</Name>
 			<ImageId>1006</ImageId>
 			<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0a404052" RevisionNo="#x00130002" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)" Desc="EP2624-0002" PortABoxInfo="#x01000018">

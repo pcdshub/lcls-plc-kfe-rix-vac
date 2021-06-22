@@ -991,8 +991,22 @@
 			<Vars VarGrpType="2" ContextId="1" AreaNo="17">
 				<Name>PlcTask Outputs</Name>
 				<Var>
+					<Name>PRG_RIX_INTF.FB_FIM_ILK</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>MAIN.fbArbiterIO.q_stRequestedBP</Name>
 					<Type GUID="{0C6A4924-E177-45F6-9AB0-6F9DB98D3474}">ST_BeamParams_IO</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RIX_INTF.FB_MR3K2_FIM_ILK.q_xILK_OK_DO</Name>
+					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RIX_INTF.FB_MR4K2_FIM_ILK.q_xILK_OK_DO</Name>
+					<Comment><![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]></Comment>
+					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.q_xHV_DIS</Name>
@@ -1518,6 +1532,9 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^K2S2-DRL-01 (EP2624-0002)">
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.q_xHV_DIS" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 104 (EL2008)">
+				<Link VarA="PlcTask Outputs^PRG_RIX_INTF.FB_FIM_ILK" VarB="Channel 1^PRG_RIX_INTF.FB_FIM_ILK" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Term 63 (EK1100) B950-233-100H1-R02-DRL-02^Term 68 (EL3064)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.i_iPRESS_R" VarB="AI Standard Channel 1^Value"/>
