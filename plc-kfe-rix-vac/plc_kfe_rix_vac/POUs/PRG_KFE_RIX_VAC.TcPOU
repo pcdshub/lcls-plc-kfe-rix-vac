@@ -209,14 +209,10 @@ fb_TV1K2_VFS_Interface(IG:=fb_TV4K2_GFS_1.IG, iq_stValve=> , i_xVAC_FAULT_OK=> )
 //Interface for KFE VAC SP1K1-ZOS-VGC-2
 // Update interlock signals for RIX
 fb_RIX_ILK(
-	VG	:=	fb_PC1K1_ZOS_GCC_1.IG,
+	VG	:=	fb_PC1K1_ZOS_PIP_1.q_IG, //fb_PC1K1_ZOS_GCC_1.IG, 
 	ILK	:=	st_RIX_ILK
 );
 ]]></ST>
     </Implementation>
-    <LineIds Name="PRG_KFE_RIX_VAC">
-      <LineId Id="3" Count="203" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
