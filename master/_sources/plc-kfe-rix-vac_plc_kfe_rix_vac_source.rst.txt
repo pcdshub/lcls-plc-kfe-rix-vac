@@ -632,7 +632,7 @@ PRG_KFE_RIX_VAC
     //Interface for KFE VAC SP1K1-ZOS-VGC-2
     // Update interlock signals for RIX
     fb_RIX_ILK(
-    	VG	:=	fb_PC1K1_ZOS_GCC_1.IG,
+    	VG	:=	fb_PC1K1_ZOS_PIP_1.q_IG, //fb_PC1K1_ZOS_GCC_1.IG, 
     	ILK	:=	st_RIX_ILK
     );
 
