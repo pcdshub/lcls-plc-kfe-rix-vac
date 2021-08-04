@@ -9,7 +9,8 @@ PROJECT_PATH := ../../plc-kfe-rix-vac/plc-kfe-rix-vac.tsproj
 PLC := plc_kfe_rix_vac
 
 PYTMC_OPTS := 
-PREFIX := PLC:KFE:RIX:VAC
+PREFIX := PLC:KFE:RIX:VAC:K2
+IOC := PLC:KFE:RIX:VAC:K2
 
 # With two $$, as in $$(IOCNAME) below, this will be expanded in the
 # environment of st.cmd:
