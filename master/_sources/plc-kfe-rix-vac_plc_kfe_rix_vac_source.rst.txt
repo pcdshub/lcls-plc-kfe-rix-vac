@@ -35,6 +35,10 @@ ST_EXT_ILK
     END_TYPE
 
 
+Related:
+    * `ST_EXT_ILK`_
+
+
 GVLs
 ----
 
@@ -231,6 +235,12 @@ GVL_KFE_RIX_VAC
     END_VAR
 
 
+Related:
+    * `FB_EXT_ILK`_
+    * `GVL_RIX_VAC_FS_DEVICES`_
+    * `ST_EXT_ILK`_
+
+
 GVL_RIX_INTF
 ^^^^^^^^^^^^
 
@@ -253,6 +263,11 @@ GVL_RIX_INTF
     END_VAR
 
 
+Related:
+    * `FB_EXT_ILK`_
+    * `ST_EXT_ILK`_
+
+
 GVL_RIX_VAC_FS_DEVICES
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -261,6 +276,8 @@ GVL_RIX_VAC_FS_DEVICES
     VAR_GLOBAL	
     	fb_TV1K2_VFS_1 : FB_VFS;
     END_VAR
+
+
 
 
 GVL_RIX_VAC_FSV_PMPS
@@ -275,6 +292,8 @@ GVL_RIX_VAC_FSV_PMPS
         {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output'}
         g_FastFaultOutput2  :	FB_HardwareFFOutput:= (i_sNetID:='172.21.42.126.1.1');	//FFO for Fast Shutter Valves upstream of ST1K2_PPS
     END_VAR
+
+
 
 
 GVL_Variables
@@ -320,6 +339,8 @@ GVL_Variables
     END_VAR
 
 
+
+
 POUs
 ----
 
@@ -349,6 +370,10 @@ FB_EXT_ILK
     ILK.q_xILK_OK_DO	:= q_xILK_OK_DO;
 
     END_FUNCTION_BLOCK
+
+
+Related:
+    * `ST_EXT_ILK`_
 
 
 MAIN
@@ -390,6 +415,11 @@ MAIN
         i_xOK := g_FastFaultOutput2.q_xFastFaultOut);
 
     END_PROGRAM
+
+
+Related:
+    * `PRG_KFE_RIX_VAC`_
+    * `PRG_RIX_INTF`_
 
 
 PRG_KFE_RIX_VAC
@@ -609,6 +639,8 @@ PRG_KFE_RIX_VAC
     END_PROGRAM
 
 
+
+
 PRG_KFE_RIX_VAC_FS
 ^^^^^^^^^^^^^^^^^^
 
@@ -629,6 +661,8 @@ PRG_KFE_RIX_VAC_FS
     g_FastFaultOutput2.Execute(bAutoReset:= TRUE);
 
     END_PROGRAM
+
+
 
 
 PRG_RIX_INTF
@@ -663,4 +697,6 @@ PRG_RIX_INTF
     FB_FIM_ILK := ( ST_MR3K2_FIM_ILK.q_xILK_OK_DO AND ST_MR4K2_FIM_ILK.q_xILK_OK_DO );
 
     END_PROGRAM
+
+
 

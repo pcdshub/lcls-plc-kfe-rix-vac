@@ -19,6 +19,8 @@ GVL_RIX_VAC_FS_DEVICES
     END_VAR
 
 
+
+
 GVL_RIX_VAC_FSV_PMPS
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -31,6 +33,8 @@ GVL_RIX_VAC_FSV_PMPS
         {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[PMPS_FFO (EL2202)]^Channel 2^Output'}
         g_FastFaultOutput2  :	FB_HardwareFFOutput;	//FFO for Fast Shutter Valves upstream of ST1L0_XTES
     END_VAR
+
+
 
 
 POUs
@@ -50,6 +54,10 @@ MAIN
     g_FastFaultOutput2.Execute();
 
     END_PROGRAM
+
+
+Related:
+    * `PRG_KFE_RIX_VAC_FS`_
 
 
 PRG_KFE_RIX_VAC_FS
@@ -72,4 +80,6 @@ PRG_KFE_RIX_VAC_FS
     g_FastFaultOutput2.Execute(bAutoReset:= TRUE);
 
     END_PROGRAM
+
+
 
