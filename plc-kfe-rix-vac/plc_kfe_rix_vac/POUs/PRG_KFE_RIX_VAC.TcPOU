@@ -27,6 +27,12 @@ fb_MR3K2_KBH_GPI_1.M_SetBits(30518);
 fb_MR4K2_KBV_GPI_1(PG=>);
 fb_MR4K2_KBV_GPI_1.M_SetBits(30518);
 
+//New Superbee piranis
+fb_TM2K2_ATM_GPI_1(PG=>);
+fb_TM2K2_ATM_GPI_1.M_SetBits(30518);
+fb_PF2K2_WFS_GPI_1(PG=>);
+fb_PF2K2_WFS_GPI_1.M_SetBits(30518);
+
 //beamline dummy gauge
 bm_dummy_gauge.xPRESS_OK := TRUE;
 bm_dummy_gauge.xAT_VAC := TRUE;
