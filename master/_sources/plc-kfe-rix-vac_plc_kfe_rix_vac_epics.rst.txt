@@ -16315,6 +16315,180 @@ Database Records
         | io: input
 
 
+    * - LI4K2:K2A:GPI:1:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - LI4K2:K2A:GPI:1:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - LI4K2:K2A:GPI:1:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - LI4K2:K2A:GPI:1:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.i_xHV_ON
+      - | io: input
+
+
+    * - LI4K2:K2A:GPI:1:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - LI4K2:K2A:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.i_iPRESS_R
+      - | io: input
+
+
+    * - LI4K2:K2A:GPI:1:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - LI4K2:K2A:GPI:1:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - LI4K2:K2A:GPI:1:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST Off
+        | field: TWST OoR
+        | field: ZRST PressInvalid
+        | io: input
+
+
+    * - LI4K2:K2A:GPI:1:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI4K2:K2A:GPI:1:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
     * - MR1K2:SWITCH:GCC:1:AT_VAC_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xAT_VAC
@@ -40598,6 +40772,180 @@ Database Records
         | field: TWST RUNNING
         | field: ZRST STOPPED
         | io: input
+
+
+    * - TM2K2:ATM:GPI:1:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - TM2K2:ATM:GPI:1:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - TM2K2:ATM:GPI:1:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - TM2K2:ATM:GPI:1:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.i_xHV_ON
+      - | io: input
+
+
+    * - TM2K2:ATM:GPI:1:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - TM2K2:ATM:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.i_iPRESS_R
+      - | io: input
+
+
+    * - TM2K2:ATM:GPI:1:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - TM2K2:ATM:GPI:1:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - TM2K2:ATM:GPI:1:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST Off
+        | field: TWST OoR
+        | field: ZRST PressInvalid
+        | io: input
+
+
+    * - TM2K2:ATM:GPI:1:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - TM2K2:ATM:GPI:1:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
 
 
     * - TM2K2:K2B:GCC:1:AT_VAC_RBV
