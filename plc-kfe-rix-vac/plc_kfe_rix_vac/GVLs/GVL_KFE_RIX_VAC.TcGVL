@@ -24,8 +24,9 @@ fb_MR4K2_KBV_GPI_1 : FB_MKS275;
 //New Superbee piranis
 {attribute 'pytmc' := ' pv: TM2K2:ATM:GPI:1 '}
 fb_TM2K2_ATM_GPI_1 : FB_MKS275;
-{attribute 'pytmc' := ' pv: PF2K2:WFS:GPI:1 '}
-fb_PF2K2_WFS_GPI_1 : FB_MKS275;
+
+{attribute 'pytmc' := ' pv: LI4K2:K2A:GPI:1 '}
+fb_LI4K2_K2A_GPI_1 : FB_MKS275;
 
 //MKS275 EP Gauges
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)^AI Standard Channel 2^Value'}

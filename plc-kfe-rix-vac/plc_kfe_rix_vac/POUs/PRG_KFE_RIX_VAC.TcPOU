@@ -30,8 +30,7 @@ fb_MR4K2_KBV_GPI_1.M_SetBits(30518);
 //New Superbee piranis
 fb_TM2K2_ATM_GPI_1(PG=>);
 fb_TM2K2_ATM_GPI_1.M_SetBits(30518);
-fb_PF2K2_WFS_GPI_1(PG=>);
-fb_PF2K2_WFS_GPI_1.M_SetBits(30518);
+fb_LI4K2_K2A_GPI_1(PG=>);
 
 //beamline dummy gauge
 bm_dummy_gauge.xPRESS_OK := TRUE;
@@ -173,8 +172,8 @@ fb_MR4K2_KBV_VGC_2(
                          io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
 	
 fb_LI3K2_K2B_VWC_1( 
-                         //i_stUSG := fb_PA1K2_PIP_1.q_IG, 
-                         //i_stDSG := fb_ST3K2_TERM_PIP_1.q_IG,
+                         i_stUSG := fb_TM2K2_K2B_GCC_1.IG, 
+                         i_stDSG := fb_TM2K2_K2B_GCC_1.IG,
                          i_xDis_DPIlk := FALSE, 
 						 i_xIsAperture := TRUE,
                          i_xEPS_OK := TRUE, 
