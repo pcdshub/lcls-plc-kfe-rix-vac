@@ -19,7 +19,6 @@
 		</System>
 		<Plc>
 			<Project File="plc_kfe_rix_vac.xti"/>
-			<Project File="plc_kfe_rix_vac_fs.xti"/>
 		</Plc>
 		<Io>
 			<Device File="Device 1 (EtherCAT).xti" Id="1"/>
