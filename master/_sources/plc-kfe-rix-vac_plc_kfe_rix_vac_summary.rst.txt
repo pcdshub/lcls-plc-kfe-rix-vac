@@ -524,8 +524,8 @@ GVL_TcUnit
         GVL_TcUnit.CurrentTestNameBeingCalled, STRING(255), 3367488 (2048)
         GVL_TcUnit.CurrentTestSuiteBeingCalled, POINTER TO FB_TestSuite, 629365568 (32)
         GVL_TcUnit.CurrentTestSuiteBeingCalled, POINTER TO FB_TestSuite, 3367456 (32)
-        GVL_TcUnit.IgnoreCurrentTest, BOOL, 3366928 (8)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 629367648 (8)
+        GVL_TcUnit.IgnoreCurrentTest, BOOL, 3366928 (8)
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 3369536 (16)
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 629367664 (16)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 7538624 (621826944)
@@ -861,8 +861,8 @@ Global_Version
         Global_Version.stLibVersion_Tc3_EventLogger, ST_LibVersion, 3364288 (288)
         Global_Version.stLibVersion_Tc3_JsonXml, ST_LibVersion, 3366592 (288)
         Global_Version.stLibVersion_Tc3_Module, ST_LibVersion, 3159712 (288)
-        Global_Version.stLibVersion_TcUnit, ST_LibVersion, 637720544 (288)
         Global_Version.stLibVersion_TcUnit, ST_LibVersion, 7514432 (288)
+        Global_Version.stLibVersion_TcUnit, ST_LibVersion, 637720544 (288)
 
 .. raw:: html
 
