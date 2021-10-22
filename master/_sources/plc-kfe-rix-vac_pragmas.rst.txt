@@ -7,7 +7,6 @@ Pragmas
     :align: center
 
     :ref:`plc_kfe_rix_vac <plc_kfe_rix_vac_overview_pragmas>`, 80, 0
-    :ref:`plc_kfe_rix_vac_fs <plc_kfe_rix_vac_fs_overview_pragmas>`, 2, 0
 
 
 .. _plc_kfe_rix_vac_overview_pragmas:
@@ -17,17 +16,6 @@ plc_kfe_rix_vac
 ^^^^^^^^^^^^^^^
 
 Total pragmas found: 80
-Total linter errors: 0
-
-
-
-.. _plc_kfe_rix_vac_fs_overview_pragmas:
-
-
-plc_kfe_rix_vac_fs
-^^^^^^^^^^^^^^^^^^
-
-Total pragmas found: 2
 Total linter errors: 0
 
 

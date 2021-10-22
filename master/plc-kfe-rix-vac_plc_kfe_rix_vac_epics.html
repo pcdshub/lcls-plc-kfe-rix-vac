@@ -90,18 +90,6 @@
 <li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_source.html#gvls">GVLs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_source.html#pous">POUs</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">plc_kfe_rix_vac_fs</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_summary.html">Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_summary.html#pragmas">Pragmas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_summary.html#libraries">Libraries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_summary.html#symbols">Symbols</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_epics.html">Data Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_epics.html#database-records">Database Records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_source.html">DUTs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_source.html#gvls">GVLs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plc-kfe-rix-vac_plc_kfe_rix_vac_fs_source.html#pous">POUs</a></li>
-</ul>
 
         </div>
       </div>
@@ -1380,7 +1368,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).PG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -1390,7 +1406,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).PG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -1400,7 +1416,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).PG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -1408,7 +1424,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_SW</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).PG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -1418,7 +1434,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).PG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -1428,7 +1444,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).PG.xILKOk</p></td>
 <td><div class="line-block">
@@ -1438,7 +1454,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):LOGGER</p></td>
+<tr class="row-even"><td><p>$(PREFIX):LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).PG.xLog</p></td>
 <td><div class="line-block">
@@ -1448,7 +1464,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).PG.xLog</p></td>
 <td><div class="line-block">
@@ -1458,7 +1474,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>$(SYMBOL).PG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -1466,7 +1482,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).PG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -1476,7 +1492,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).PG.rPRESS</p></td>
 <td><div class="line-block">
@@ -1488,7 +1504,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRO_SP</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).PG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -1501,7 +1517,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).PG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -1514,7 +1530,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):SP_HYS</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).PG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -1527,7 +1543,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).PG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -1540,7 +1556,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):STATE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>$(SYMBOL).PG.eState</p></td>
 <td><div class="line-block">
@@ -1549,14 +1565,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):VAC_SP</p></td>
+<tr class="row-even"><td><p>$(PREFIX):VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).PG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -1569,7 +1585,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).PG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -1612,7 +1628,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -1622,7 +1666,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -1632,7 +1676,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -1640,7 +1684,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_SW</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -1650,7 +1694,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -1660,7 +1704,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -1670,7 +1714,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):LOGGER</p></td>
+<tr class="row-even"><td><p>$(PREFIX):LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).IG.xLog</p></td>
 <td><div class="line-block">
@@ -1680,7 +1724,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xLog</p></td>
 <td><div class="line-block">
@@ -1690,7 +1734,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>$(SYMBOL).IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -1698,7 +1742,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -1708,7 +1752,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -1720,7 +1764,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRO_SP</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -1733,7 +1777,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -1746,7 +1790,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):SP_HYS</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -1759,7 +1803,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -1772,7 +1816,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):STATE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>$(SYMBOL).IG.eState</p></td>
 <td><div class="line-block">
@@ -1781,14 +1825,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):VAC_SP</p></td>
+<tr class="row-even"><td><p>$(PREFIX):VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -1801,7 +1845,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -1844,7 +1888,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -1854,7 +1926,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -1864,7 +1936,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -1872,7 +1944,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_SW</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -1882,7 +1954,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -1892,7 +1964,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -1902,7 +1974,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):LOGGER</p></td>
+<tr class="row-even"><td><p>$(PREFIX):LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).IG.xLog</p></td>
 <td><div class="line-block">
@@ -1912,7 +1984,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xLog</p></td>
 <td><div class="line-block">
@@ -1922,7 +1994,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>$(SYMBOL).IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -1930,7 +2002,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -1940,7 +2012,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -1952,7 +2024,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRO_SP</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -1965,7 +2037,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -1978,7 +2050,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):SP_HYS</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -1991,7 +2063,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -2004,7 +2076,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):STATE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>$(SYMBOL).IG.eState</p></td>
 <td><div class="line-block">
@@ -2013,14 +2085,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):VAC_SP</p></td>
+<tr class="row-even"><td><p>$(PREFIX):VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -2033,7 +2105,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -2108,12 +2180,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -2387,12 +2477,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -3430,12 +3538,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -4211,7 +4337,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>$(SYMBOL).xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>$(SYMBOL).xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>$(PREFIX):AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>$(SYMBOL).iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>$(PREFIX):DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -4221,7 +4375,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -4231,7 +4385,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -4239,7 +4393,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):HV_SW</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).xHV_SW</p></td>
 <td><div class="line-block">
@@ -4249,7 +4403,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).xHV_SW</p></td>
 <td><div class="line-block">
@@ -4259,7 +4413,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).xILKOk</p></td>
 <td><div class="line-block">
@@ -4269,7 +4423,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):LOGGER</p></td>
+<tr class="row-even"><td><p>$(PREFIX):LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>$(SYMBOL).xLog</p></td>
 <td><div class="line-block">
@@ -4279,7 +4433,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).xLog</p></td>
 <td><div class="line-block">
@@ -4289,7 +4443,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>$(SYMBOL).i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -4297,7 +4451,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>$(SYMBOL).xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -4307,7 +4461,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRESS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).rPRESS</p></td>
 <td><div class="line-block">
@@ -4319,7 +4473,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):PRO_SP</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).rPRO_SP</p></td>
 <td><div class="line-block">
@@ -4332,7 +4486,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).rPRO_SP</p></td>
 <td><div class="line-block">
@@ -4345,7 +4499,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):SP_HYS</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).rHYS_PR</p></td>
 <td><div class="line-block">
@@ -4358,7 +4512,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>$(PREFIX):SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).rHYS_PR</p></td>
 <td><div class="line-block">
@@ -4371,7 +4525,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):STATE_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>$(SYMBOL).eState</p></td>
 <td><div class="line-block">
@@ -4380,14 +4534,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX):VAC_SP</p></td>
+<tr class="row-even"><td><p>$(PREFIX):VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>$(SYMBOL).rVAC_SP</p></td>
 <td><div class="line-block">
@@ -4400,7 +4554,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>$(PREFIX):VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>$(SYMBOL).rVAC_SP</p></td>
 <td><div class="line-block">
@@ -18571,65 +18725,6 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>$(PREFIX)SafeBeamCnst:Cohort_RBV</p></td>
-<td><p>longin</p></td>
-<td><p>Cohort inc on each arb cycle</p></td>
-<td><div class="line-block">
-<div class="line">archive: 1s monitor</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX)SafeBeamCnst:PhotonEnergyRanges_RBV</p></td>
-<td><p>longin</p></td>
-<td><p>Safe beam constant</p></td>
-<td><div class="line-block">
-<div class="line">archive: 1s monitor</div>
-<div class="line">field: EGU eV</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX)SafeBeamCnst:Rate_RBV</p></td>
-<td><p>longin</p></td>
-<td><p>Safe beam constant</p></td>
-<td><div class="line-block">
-<div class="line">archive: 1s monitor</div>
-<div class="line">field: EGU Hz</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX)SafeBeamCnst:Transmission_RBV</p></td>
-<td><p>ai</p></td>
-<td><p>Safe beam constant</p></td>
-<td><div class="line-block">
-<div class="line">archive: 1s monitor</div>
-<div class="line">field: HOPR 1</div>
-<div class="line">field: LOPR 0</div>
-<div class="line">field: PREC 2</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><p>$(PREFIX)SafeBeamCnst:Valid_RBV</p></td>
-<td><p>bi</p></td>
-<td><p>Safe beam constant</p></td>
-<td><div class="line-block">
-<div class="line">archive: 1s monitor</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><p>$(PREFIX)SafeBeamCnst:Veto_RBV</p></td>
-<td><p>waveform</p></td>
-<td><p>Safe beam constant</p></td>
-<td><div class="line-block">
-<div class="line">archive: 1s monitor</div>
-<div class="line">io: input</div>
-</div>
-</td>
-</tr>
 <tr class="row-odd"><td><p>$(PREFIX)SuccessfulPreemptions_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>PMPS_GVL.SuccessfulPreemption</p></td>
@@ -18648,7 +18743,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -18658,7 +18781,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -18668,7 +18791,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -18676,7 +18799,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -18686,7 +18809,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -18696,7 +18819,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -18706,7 +18829,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -18716,7 +18839,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -18726,7 +18849,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -18734,7 +18857,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -18744,7 +18867,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -18756,7 +18879,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:PRO_SP</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -18769,7 +18892,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -18782,7 +18905,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -18795,7 +18918,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -18808,7 +18931,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -18817,14 +18940,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:VAC_SP</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -18837,7 +18960,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -18850,7 +18973,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:AI_Offset</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:AI_Offset</p></td>
 <td><p>longout</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -18858,7 +18981,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:AI_Offset_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:AI_Offset_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -18866,7 +18989,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:AT_VAC_SP</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:AT_VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -18879,7 +19002,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:AT_VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:AT_VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -18888,6 +19011,16 @@
 <div class="line">field: HOPR 1000</div>
 <div class="line">field: LOPR 0</div>
 <div class="line">field: PREC 2</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
 <div class="line">io: output</div>
 </div>
 </td>
@@ -18898,11 +19031,19 @@
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:ERROR_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:ERROR_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xError</p></td>
 <td><div class="line-block">
@@ -18912,7 +19053,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:FORCE_START</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:FORCE_START</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -18922,7 +19063,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:FORCE_START_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:FORCE_START_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -18932,7 +19073,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:HV_DI_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:HV_DI_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.i_xHV_DI</p></td>
 <td><div class="line-block">
@@ -18942,7 +19083,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:HV_DO_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:HV_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.q_xHVEna_DO</p></td>
 <td><div class="line-block">
@@ -18952,7 +19093,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:HV_SW</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -18962,7 +19103,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -18972,7 +19113,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:ILK_DEVICE_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:ILK_DEVICE_RBV</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.sIlkDeviceName</p></td>
 <td><div class="line-block">
@@ -18980,7 +19121,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xILKOk</p></td>
 <td><div class="line-block">
@@ -18990,7 +19131,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:Inverted</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:Inverted</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -19000,7 +19141,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:Inverted_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:Inverted_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -19010,7 +19151,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:LOGGER</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -19020,7 +19161,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -19030,7 +19171,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:OVRD_ON</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:OVRD_ON</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -19040,7 +19181,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:OVRD_ON_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:OVRD_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -19050,7 +19191,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:PRESS_AI_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.i_iPRESS</p></td>
 <td><div class="line-block">
@@ -19058,7 +19199,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.rPRESS</p></td>
 <td><div class="line-block">
@@ -19070,7 +19211,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -19083,7 +19224,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -19096,7 +19237,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM2K2:PPM:PIP:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>IM2K2:PPM:PIP:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.stPump.eState</p></td>
 <td><div class="line-block">
@@ -19109,12 +19250,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM3K2:PPM:GCC:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>IM3K2:PPM:GCC:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.IG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM3K2:PPM:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>IM3K2:PPM:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM3K2:PPM:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -19288,9 +19457,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -19363,12 +19532,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM3K2:PPM:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-odd"><td><p>IM3K2:PPM:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM3K2:PPM:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>IM3K2:PPM:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM3K2_PPM_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -19590,7 +19777,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -19600,7 +19815,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -19610,7 +19825,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -19618,7 +19833,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -19628,7 +19843,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -19638,7 +19853,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -19648,7 +19863,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -19658,7 +19873,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -19668,7 +19883,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -19676,7 +19891,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -19686,7 +19901,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -19698,7 +19913,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:PRO_SP</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -19711,7 +19926,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -19724,7 +19939,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -19737,7 +19952,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -19750,7 +19965,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -19759,14 +19974,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:VAC_SP</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -19779,7 +19994,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -19792,7 +20007,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:AI_Offset</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:AI_Offset</p></td>
 <td><p>longout</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -19800,7 +20015,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:AI_Offset_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:AI_Offset_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -19808,7 +20023,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:AT_VAC_SP</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:AT_VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -19821,7 +20036,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:AT_VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:AT_VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -19830,6 +20045,16 @@
 <div class="line">field: HOPR 1000</div>
 <div class="line">field: LOPR 0</div>
 <div class="line">field: PREC 2</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
 <div class="line">io: output</div>
 </div>
 </td>
@@ -19840,11 +20065,19 @@
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:ERROR_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:ERROR_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xError</p></td>
 <td><div class="line-block">
@@ -19854,7 +20087,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:FORCE_START</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:FORCE_START</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -19864,7 +20097,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:FORCE_START_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:FORCE_START_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -19874,7 +20107,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:HV_DI_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:HV_DI_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.i_xHV_DI</p></td>
 <td><div class="line-block">
@@ -19884,7 +20117,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:HV_DO_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:HV_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.q_xHVEna_DO</p></td>
 <td><div class="line-block">
@@ -19894,7 +20127,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:HV_SW</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -19904,7 +20137,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -19914,7 +20147,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:ILK_DEVICE_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:ILK_DEVICE_RBV</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.sIlkDeviceName</p></td>
 <td><div class="line-block">
@@ -19922,7 +20155,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xILKOk</p></td>
 <td><div class="line-block">
@@ -19932,7 +20165,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:Inverted</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:Inverted</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -19942,7 +20175,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:Inverted_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:Inverted_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -19952,7 +20185,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:LOGGER</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -19962,7 +20195,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -19972,7 +20205,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:OVRD_ON</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:OVRD_ON</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -19982,7 +20215,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:OVRD_ON_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:OVRD_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -19992,7 +20225,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:PRESS_AI_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.i_iPRESS</p></td>
 <td><div class="line-block">
@@ -20000,7 +20233,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.rPRESS</p></td>
 <td><div class="line-block">
@@ -20012,7 +20245,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -20025,7 +20258,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -20038,7 +20271,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM4K2:PPM:PIP:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>IM4K2:PPM:PIP:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM4K2_PPM_PIP_1.stPump.eState</p></td>
 <td><div class="line-block">
@@ -20051,12 +20284,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM5K2:PPM:GCC:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>IM5K2:PPM:GCC:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.IG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM5K2:PPM:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>IM5K2:PPM:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM5K2:PPM:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -20230,9 +20491,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -20305,12 +20566,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM5K2:PPM:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-odd"><td><p>IM5K2:PPM:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM5K2:PPM:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>IM5K2:PPM:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -20532,7 +20811,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -20542,7 +20849,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -20552,7 +20859,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -20560,7 +20867,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -20570,7 +20877,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -20580,7 +20887,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -20590,7 +20897,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -20600,7 +20907,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -20610,7 +20917,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -20618,7 +20925,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -20628,7 +20935,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -20640,7 +20947,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:PRO_SP</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -20653,7 +20960,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -20666,7 +20973,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -20679,7 +20986,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -20692,7 +20999,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -20701,14 +21008,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:VAC_SP</p></td>
+<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -20721,7 +21028,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>IM6K2:PPM:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>IM6K2:PPM:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_IM6K2_PPM_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -20734,7 +21041,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:AI_Offset</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:AI_Offset</p></td>
 <td><p>longout</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -20742,7 +21049,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:AI_Offset_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:AI_Offset_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -20750,7 +21057,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:AT_VAC_SP</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:AT_VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -20763,7 +21070,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:AT_VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:AT_VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -20772,6 +21079,16 @@
 <div class="line">field: HOPR 1000</div>
 <div class="line">field: LOPR 0</div>
 <div class="line">field: PREC 2</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
 <div class="line">io: output</div>
 </div>
 </td>
@@ -20782,11 +21099,19 @@
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:ERROR_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:ERROR_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xError</p></td>
 <td><div class="line-block">
@@ -20796,7 +21121,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:FORCE_START</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:FORCE_START</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -20806,7 +21131,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:FORCE_START_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:FORCE_START_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -20816,7 +21141,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:HV_DI_RBV</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:HV_DI_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.i_xHV_DI</p></td>
 <td><div class="line-block">
@@ -20826,7 +21151,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:HV_DO_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:HV_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.q_xHVEna_DO</p></td>
 <td><div class="line-block">
@@ -20836,7 +21161,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:HV_SW</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -20846,7 +21171,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -20856,7 +21181,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:ILK_DEVICE_RBV</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:ILK_DEVICE_RBV</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.sIlkDeviceName</p></td>
 <td><div class="line-block">
@@ -20864,7 +21189,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xILKOk</p></td>
 <td><div class="line-block">
@@ -20874,7 +21199,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:Inverted</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:Inverted</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -20884,7 +21209,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:Inverted_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:Inverted_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -20894,7 +21219,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:LOGGER</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -20904,7 +21229,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -20914,7 +21239,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:OVRD_ON</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:OVRD_ON</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -20924,7 +21249,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:OVRD_ON_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:OVRD_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -20934,7 +21259,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:PRESS_AI_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.i_iPRESS</p></td>
 <td><div class="line-block">
@@ -20942,7 +21267,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.rPRESS</p></td>
 <td><div class="line-block">
@@ -20954,7 +21279,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -20967,7 +21292,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -20980,7 +21305,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI2K2:K2A:PIP:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>LI2K2:K2A:PIP:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.stPump.eState</p></td>
 <td><div class="line-block">
@@ -20993,7 +21318,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ALM_RST</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ALM_RST</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.pv_xAlmRst</p></td>
 <td><div class="line-block">
@@ -21001,7 +21326,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ALM_RST_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ALM_RST_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.pv_xAlmRst</p></td>
 <td><div class="line-block">
@@ -21009,7 +21334,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:AT_VAC_HYS</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:AT_VAC_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.rAT_VAC_HYS</p></td>
 <td><div class="line-block">
@@ -21022,7 +21347,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:AT_VAC_HYS_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:AT_VAC_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.rAT_VAC_HYS</p></td>
 <td><div class="line-block">
@@ -21035,7 +21360,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xAT_VAC</p></td>
 <td><div class="line-block">
@@ -21045,7 +21370,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:AT_VAC_SP</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:AT_VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.rAT_VAC_SP</p></td>
 <td><div class="line-block">
@@ -21058,7 +21383,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:AT_VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:AT_VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.rAT_VAC_SP</p></td>
 <td><div class="line-block">
@@ -21071,7 +21396,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:CLS_DI_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:CLS_DI_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.i_xClsLS</p></td>
 <td><div class="line-block">
@@ -21081,7 +21406,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:Dis_DPIlk</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:Dis_DPIlk</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xDis_DPIlk</p></td>
 <td><div class="line-block">
@@ -21089,7 +21414,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:Dis_DPIlk_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:Dis_DPIlk_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xDis_DPIlk</p></td>
 <td><div class="line-block">
@@ -21097,7 +21422,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:DP_OK_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:DP_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xDP_OK</p></td>
 <td><div class="line-block">
@@ -21107,7 +21432,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:EPS_OK</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:EPS_OK</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xEPS_OK</p></td>
 <td><div class="line-block">
@@ -21115,7 +21440,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:EPS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:EPS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xEPS_OK</p></td>
 <td><div class="line-block">
@@ -21123,7 +21448,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ERR_DifPres_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ERR_DifPres_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xERR_DifPres</p></td>
 <td><div class="line-block">
@@ -21133,7 +21458,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ERR_Ext_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ERR_Ext_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xERR_ExtFault</p></td>
 <td><div class="line-block">
@@ -21143,7 +21468,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ERR_SP_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ERR_SP_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xERR_SP</p></td>
 <td><div class="line-block">
@@ -21153,7 +21478,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ErrMsg</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ErrMsg</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.sErrorMessage</p></td>
 <td><div class="line-block">
@@ -21161,7 +21486,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ErrMsg_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ErrMsg_RBV</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.sErrorMessage</p></td>
 <td><div class="line-block">
@@ -21169,7 +21494,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ERROR</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ERROR</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.bErrorPresent</p></td>
 <td><div class="line-block">
@@ -21179,7 +21504,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ERROR_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ERROR_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.bErrorPresent</p></td>
 <td><div class="line-block">
@@ -21189,7 +21514,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:EXT_ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:EXT_ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xEXT_OK</p></td>
 <td><div class="line-block">
@@ -21199,7 +21524,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:FF_Reset</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:FF_Reset</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xReset</p></td>
 <td><div class="line-block">
@@ -21207,7 +21532,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:FF_Reset_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:FF_Reset_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.i_xReset</p></td>
 <td><div class="line-block">
@@ -21215,7 +21540,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:FORCE_OPN</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:FORCE_OPN</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.pv_xOvrdOpn</p></td>
 <td><div class="line-block">
@@ -21225,7 +21550,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:FORCE_OPN_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:FORCE_OPN_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.pv_xOvrdOpn</p></td>
 <td><div class="line-block">
@@ -21235,7 +21560,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:HYST_PERC</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:HYST_PERC</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.rHYST_PERC</p></td>
 <td><div class="line-block">
@@ -21244,7 +21569,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:HYST_PERC_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:HYST_PERC_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.rHYST_PERC</p></td>
 <td><div class="line-block">
@@ -21253,7 +21578,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ILK_DEVICE_DS_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ILK_DEVICE_DS_RBV</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.sIlkDSDeviceName</p></td>
 <td><div class="line-block">
@@ -21261,7 +21586,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:ILK_DEVICE_US_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:ILK_DEVICE_US_RBV</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.sIlkUSDeviceName</p></td>
 <td><div class="line-block">
@@ -21269,7 +21594,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xLog</p></td>
 <td><div class="line-block">
@@ -21279,7 +21604,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xLog</p></td>
 <td><div class="line-block">
@@ -21289,7 +21614,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:MPS_FAULT_OK</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:MPS_FAULT_OK</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.xMPS_OK</p></td>
 <td><div class="line-block">
@@ -21299,7 +21624,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:MPS_FAULT_OK_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:MPS_FAULT_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.xMPS_OK</p></td>
 <td><div class="line-block">
@@ -21309,7 +21634,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:MPS_OK</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:MPS_OK</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.xPMPS_OK</p></td>
 <td><div class="line-block">
@@ -21317,7 +21642,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:MPS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:MPS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.xPMPS_OK</p></td>
 <td><div class="line-block">
@@ -21325,7 +21650,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:OPN_DI_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:OPN_DI_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.i_xOpnLS</p></td>
 <td><div class="line-block">
@@ -21335,7 +21660,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:OPN_DO_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:OPN_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.q_xOPN_DO</p></td>
 <td><div class="line-block">
@@ -21345,7 +21670,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:OPN_OK_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:OPN_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xOPN_OK</p></td>
 <td><div class="line-block">
@@ -21355,7 +21680,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:OPN_SW</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:OPN_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.pv_xOPN_SW</p></td>
 <td><div class="line-block">
@@ -21365,7 +21690,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:OPN_SW_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:OPN_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.pv_xOPN_SW</p></td>
 <td><div class="line-block">
@@ -21375,7 +21700,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:OVRD_ON</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:OVRD_ON</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -21385,7 +21710,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:OVRD_ON_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:OVRD_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -21395,7 +21720,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:POS_STATE_RBV</p></td>
+<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:POS_STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.eState</p></td>
 <td><div class="line-block">
@@ -21409,7 +21734,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>LI3K2:K2B:VWC:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>LI3K2:K2B:VWC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI3K2_K2B_VWC_1.iq_stValve.eVGC_State</p></td>
 <td><div class="line-block">
@@ -21427,12 +21752,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>LI4K2:K2A:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>LI4K2:K2A:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>LI4K2:K2A:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>LI4K2:K2A:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>LI4K2:K2A:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_LI4K2_K2A_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -21606,9 +21959,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -21649,7 +22002,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -21659,7 +22040,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -21669,7 +22050,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -21677,7 +22058,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:HV_SW</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -21687,7 +22068,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -21697,7 +22078,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -21707,7 +22088,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:LOGGER</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -21717,7 +22098,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -21727,7 +22108,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -21735,7 +22116,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -21745,7 +22126,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -21757,7 +22138,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:PRO_SP</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -21770,7 +22151,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -21783,7 +22164,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -21796,7 +22177,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -21809,7 +22190,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -21818,14 +22199,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:VAC_SP</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -21838,7 +22219,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -21851,12 +22232,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR1K2:SWITCH:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR1K2:SWITCH:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -22030,9 +22439,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -22105,12 +22514,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR1K2:SWITCH:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR1K2:SWITCH:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR1K2:SWITCH:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR1K2_SWITCH_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -23200,7 +23627,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -23210,7 +23665,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -23220,7 +23675,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -23228,7 +23683,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -23238,7 +23693,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -23248,7 +23703,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -23258,7 +23713,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -23268,7 +23723,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -23278,7 +23733,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -23286,7 +23741,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -23296,7 +23751,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -23308,7 +23763,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:PRO_SP</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -23321,7 +23776,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -23334,7 +23789,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -23347,7 +23802,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -23360,7 +23815,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -23369,14 +23824,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:VAC_SP</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -23389,7 +23844,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -23402,12 +23857,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR2K2:FLAT:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR2K2:FLAT:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR2K2:FLAT:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -23581,9 +24064,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -23656,12 +24139,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR2K2:FLAT:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>MR2K2:FLAT:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR2K2:FLAT:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR2K2:FLAT:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR2K2_FLAT_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -24751,7 +25252,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -24761,7 +25290,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -24771,7 +25300,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -24779,7 +25308,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:HV_SW</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -24789,7 +25318,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -24799,7 +25328,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -24809,7 +25338,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:LOGGER</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -24819,7 +25348,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -24829,7 +25358,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -24837,7 +25366,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -24847,7 +25376,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -24859,7 +25388,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:PRO_SP</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -24872,7 +25401,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -24885,7 +25414,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -24898,7 +25427,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -24911,7 +25440,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -24920,14 +25449,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:VAC_SP</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -24940,7 +25469,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-even"><td><p>MR3K2:KBH:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -24953,12 +25482,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR3K2:KBH:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR3K2:KBH:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR3K2:KBH:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR3K2:KBH:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -25132,9 +25689,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -25207,12 +25764,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR3K2:KBH:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-odd"><td><p>MR3K2:KBH:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR3K2:KBH:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR3K2:KBH:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR3K2_KBH_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -26302,7 +26877,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -26312,7 +26915,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -26322,7 +26925,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -26330,7 +26933,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -26340,7 +26943,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -26350,7 +26953,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -26360,7 +26963,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -26370,7 +26973,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -26380,7 +26983,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -26388,7 +26991,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -26398,7 +27001,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -26410,7 +27013,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:PRO_SP</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -26423,7 +27026,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -26436,7 +27039,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -26449,7 +27052,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -26462,7 +27065,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -26471,14 +27074,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:VAC_SP</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -26491,7 +27094,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>MR4K2:KBV:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -26504,12 +27107,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>MR4K2:KBV:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR4K2:KBV:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR4K2:KBV:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR4K2:KBV:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -26683,9 +27314,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -26758,12 +27389,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>MR4K2:KBV:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>MR4K2:KBV:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>MR4K2:KBV:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>MR4K2:KBV:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_MR4K2_KBV_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -27885,12 +28534,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PA1K2:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-odd"><td><p>PA1K2:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PA1K2_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>PA1K2:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PA1K2_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PA1K2:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PA1K2_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -28112,7 +28779,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -28122,7 +28817,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -28132,7 +28827,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -28140,7 +28835,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -28150,7 +28845,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -28160,7 +28855,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:ILK:HV_SW</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:ILK:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.st_RIX_ILK.xIlk_sw</p></td>
 <td><div class="line-block">
@@ -28168,7 +28863,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:ILK:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:ILK:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.st_RIX_ILK.xIlk_sw</p></td>
 <td><div class="line-block">
@@ -28176,7 +28871,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:ILK:ILK_DO_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:ILK:ILK_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.st_RIX_ILK.q_xILK_OK_DO</p></td>
 <td><div class="line-block">
@@ -28184,7 +28879,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:ILK:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:ILK:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.st_RIX_ILK.xIlkOK</p></td>
 <td><div class="line-block">
@@ -28192,7 +28887,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:ILK:PRO_SP</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:ILK:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.st_RIX_ILK.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -28200,7 +28895,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:ILK:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:ILK:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.st_RIX_ILK.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -28208,7 +28903,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -28218,7 +28913,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -28228,7 +28923,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -28238,7 +28933,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -28246,7 +28941,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -28256,7 +28951,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -28268,7 +28963,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:PRO_SP</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -28281,7 +28976,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -28294,7 +28989,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -28307,7 +29002,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -28320,7 +29015,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -28329,14 +29024,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:VAC_SP</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -28349,7 +29044,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -28362,12 +29057,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>PC1K1:ZOS:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>PC1K1:ZOS:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PC1K1:ZOS:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -28541,9 +29264,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -28616,12 +29339,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>PC1K1:ZOS:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>PC1K1:ZOS:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>PC1K1:ZOS:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>PC1K1:ZOS:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -50733,7 +51474,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -50743,7 +51512,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -50753,7 +51522,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -50761,7 +51530,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -50771,7 +51540,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -50781,7 +51550,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -50791,7 +51560,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:LOGGER</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -50801,7 +51570,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -50811,7 +51580,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -50819,7 +51588,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -50829,7 +51598,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -50841,7 +51610,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:PRO_SP</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -50854,7 +51623,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -50867,7 +51636,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -50880,7 +51649,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -50893,7 +51662,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -50902,14 +51671,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:VAC_SP</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -50922,7 +51691,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -50935,12 +51704,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>SL1K2:EXIT:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>SL1K2:EXIT:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>SL1K2:EXIT:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -51114,9 +51911,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -51189,12 +51986,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>SL1K2:EXIT:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>SL1K2:EXIT:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>SL1K2:EXIT:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>SL1K2:EXIT:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -51850,7 +52665,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -51860,7 +52703,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -51870,7 +52713,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -51878,7 +52721,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:HV_SW</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -51888,7 +52731,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -51898,7 +52741,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -51908,7 +52751,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:LOGGER</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -51918,7 +52761,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -51928,7 +52771,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -51936,7 +52779,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -51946,7 +52789,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -51958,7 +52801,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:PRO_SP</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -51971,7 +52814,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -51984,7 +52827,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -51997,7 +52840,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -52010,7 +52853,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -52019,14 +52862,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:VAC_SP</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -52039,7 +52882,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-even"><td><p>ST1K2:PPS:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -52052,12 +52895,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST1K2:PPS:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>ST1K2:PPS:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ST1K2:PPS:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>ST1K2:PPS:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -52231,9 +53102,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -52306,12 +53177,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ST1K2:PPS:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-odd"><td><p>ST1K2:PPS:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>ST1K2:PPS:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ST1K2:PPS:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -52999,12 +53888,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>ST3K2:TERM:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-even"><td><p>ST3K2:TERM:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ST3K2:TERM:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>ST3K2:TERM:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -53226,7 +54133,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -53236,7 +54171,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -53246,7 +54181,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:HV_ON_RBV</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -53254,7 +54189,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:HV_SW</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -53264,7 +54199,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -53274,7 +54209,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xILKOk</p></td>
 <td><div class="line-block">
@@ -53284,7 +54219,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:LOGGER</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xLog</p></td>
 <td><div class="line-block">
@@ -53294,7 +54229,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:LOGGER_RBV</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xLog</p></td>
 <td><div class="line-block">
@@ -53304,7 +54239,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:PRESS_AI_RBV</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -53312,7 +54247,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:PRESS_OK_RBV</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -53322,7 +54257,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rPRESS</p></td>
 <td><div class="line-block">
@@ -53334,7 +54269,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:PRO_SP</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -53347,7 +54282,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:PRO_SP_RBV</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -53360,7 +54295,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -53373,7 +54308,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -53386,7 +54321,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.eState</p></td>
 <td><div class="line-block">
@@ -53395,14 +54330,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:VAC_SP</p></td>
+<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -53415,7 +54350,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TM2K2:ATM:GPI:1:VAC_SP_RBV</p></td>
+<tr class="row-even"><td><p>TM2K2:ATM:GPI:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.PG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -53428,12 +54363,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TM2K2:K2B:GCC:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>TM2K2:K2B:GCC:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.IG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TM2K2:K2B:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TM2K2:K2B:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TM2K2:K2B:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TM2K2_K2B_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -53607,9 +54570,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -53650,7 +54613,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -53660,7 +54651,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -53670,7 +54661,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:HV_ON_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -53678,7 +54669,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:HV_SW</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -53688,7 +54679,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -53698,7 +54689,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -53708,7 +54699,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:LOGGER</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -53718,7 +54709,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:LOGGER_RBV</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -53728,7 +54719,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:PRESS_AI_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -53736,7 +54727,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:PRESS_OK_RBV</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -53746,7 +54737,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -53758,7 +54749,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:PRO_SP</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -53771,7 +54762,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:PRO_SP_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -53784,7 +54775,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -53797,7 +54788,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -53810,7 +54801,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -53819,14 +54810,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:VAC_SP</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -53839,7 +54830,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:GCC:1:VAC_SP_RBV</p></td>
+<tr class="row-even"><td><p>TV1K1:PLEG:GCC:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GCC_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -53852,12 +54843,40 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV1K1:PLEG:GPI:1:AT_VAC_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GPI:1:AT_VAC_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.PG.xAT_VAC</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TV1K1:PLEG:GPI:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV1K1:PLEG:GPI:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.PG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TV1K1:PLEG:GPI:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_GPI_1.PG.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -54031,9 +55050,9 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
@@ -54106,12 +55125,30 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV1K1:PLEG:PIP:1:Auto_On_RBV</p></td>
+<tr class="row-odd"><td><p>TV1K1:PLEG:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TV1K1:PLEG:PIP:1:Auto_On_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.xAutoOn</p></td>
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV1K1:PLEG:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV1K1_PLEG_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
@@ -54623,7 +55660,35 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:DISC_ACTIVE_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:Auto_On_RBV</p></td>
+<td><p>bi</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>TV4K2:GFS:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.iAutoOnTimer</p></td>
+<td><div class="line-block">
+<div class="line">io: input</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:DISC_ACTIVE_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.i_xDisc_Active</p></td>
 <td><div class="line-block">
@@ -54633,7 +55698,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:HV_DIS_DO_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:HV_DIS_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.q_xHV_DIS</p></td>
 <td><div class="line-block">
@@ -54643,7 +55708,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:HV_ON_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:HV_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.i_xHV_ON</p></td>
 <td><div class="line-block">
@@ -54651,7 +55716,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:HV_SW</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -54661,7 +55726,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:HV_SW_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xHV_SW</p></td>
 <td><div class="line-block">
@@ -54671,7 +55736,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xILKOk</p></td>
 <td><div class="line-block">
@@ -54681,7 +55746,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:LOGGER</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -54691,7 +55756,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:LOGGER_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xLog</p></td>
 <td><div class="line-block">
@@ -54701,7 +55766,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:PRESS_AI_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:PRESS_AI_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.i_iPRESS_R</p></td>
 <td><div class="line-block">
@@ -54709,7 +55774,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:PRESS_OK_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:PRESS_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.xPRESS_OK</p></td>
 <td><div class="line-block">
@@ -54719,7 +55784,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:PRESS_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.rPRESS</p></td>
 <td><div class="line-block">
@@ -54731,7 +55796,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:PRO_SP</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:PRO_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -54744,7 +55809,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:PRO_SP_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:PRO_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.rPRO_SP</p></td>
 <td><div class="line-block">
@@ -54757,7 +55822,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:SP_HYS</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -54770,7 +55835,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:SP_HYS_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -54783,7 +55848,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:STATE_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.eState</p></td>
 <td><div class="line-block">
@@ -54792,14 +55857,14 @@
 <div class="line">field: ONST GaugeDisconnected</div>
 <div class="line">field: SVST ValidLo</div>
 <div class="line">field: SXST ValidHi</div>
-<div class="line">field: THST Off</div>
+<div class="line">field: THST PressInvalid</div>
 <div class="line">field: TWST OoR</div>
-<div class="line">field: ZRST PressInvalid</div>
+<div class="line">field: ZRST Off</div>
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:GFS:1:VAC_SP</p></td>
+<tr class="row-odd"><td><p>TV4K2:GFS:1:VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -54812,7 +55877,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:GFS:1:VAC_SP_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:GFS:1:VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_GFS_1.IG.rVAC_SP</p></td>
 <td><div class="line-block">
@@ -54825,7 +55890,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:AI_Offset</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:AI_Offset</p></td>
 <td><p>longout</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -54833,7 +55898,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:AI_Offset_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:AI_Offset_RBV</p></td>
 <td><p>longin</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.iOffset</p></td>
 <td><div class="line-block">
@@ -54841,7 +55906,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:AT_VAC_SP</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:AT_VAC_SP</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -54854,7 +55919,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:AT_VAC_SP_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:AT_VAC_SP_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.rHVEna_SP</p></td>
 <td><div class="line-block">
@@ -54863,6 +55928,16 @@
 <div class="line">field: HOPR 1000</div>
 <div class="line">field: LOPR 0</div>
 <div class="line">field: PREC 2</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:Auto_On</p></td>
+<td><p>bo</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xAutoOn</p></td>
+<td><div class="line-block">
+<div class="line">field: ONAM TRUE</div>
+<div class="line">field: ZNAM FALSE</div>
 <div class="line">io: output</div>
 </div>
 </td>
@@ -54873,11 +55948,19 @@
 <td><div class="line-block">
 <div class="line">field: ONAM TRUE</div>
 <div class="line">field: ZNAM FALSE</div>
+<div class="line">io: output</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:AutoOn_timer_RBV</p></td>
+<td><p>longin</p></td>
+<td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.iAutoOnTimer</p></td>
+<td><div class="line-block">
 <div class="line">io: input</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:ERROR_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:ERROR_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xError</p></td>
 <td><div class="line-block">
@@ -54887,7 +55970,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:FORCE_START</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:FORCE_START</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -54897,7 +55980,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:FORCE_START_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:FORCE_START_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.pv_xOvrdStart</p></td>
 <td><div class="line-block">
@@ -54907,7 +55990,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:HV_DI_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:HV_DI_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.i_xHV_DI</p></td>
 <td><div class="line-block">
@@ -54917,7 +56000,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:HV_DO_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:HV_DO_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.q_xHVEna_DO</p></td>
 <td><div class="line-block">
@@ -54927,7 +56010,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:HV_SW</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:HV_SW</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -54937,7 +56020,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:HV_SW_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:HV_SW_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xHVEna_SW</p></td>
 <td><div class="line-block">
@@ -54947,7 +56030,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:ILK_DEVICE_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:ILK_DEVICE_RBV</p></td>
 <td><p>waveform</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.sIlkDeviceName</p></td>
 <td><div class="line-block">
@@ -54955,7 +56038,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:ILK_OK_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:ILK_OK_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xILKOk</p></td>
 <td><div class="line-block">
@@ -54965,7 +56048,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:Inverted</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:Inverted</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -54975,7 +56058,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:Inverted_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:Inverted_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.bOutputInverted</p></td>
 <td><div class="line-block">
@@ -54985,7 +56068,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:LOGGER</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:LOGGER</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -54995,7 +56078,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:LOGGER_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:LOGGER_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xLog</p></td>
 <td><div class="line-block">
@@ -55005,7 +56088,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:OVRD_ON</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:OVRD_ON</p></td>
 <td><p>bo</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -55015,7 +56098,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:OVRD_ON_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:OVRD_ON_RBV</p></td>
 <td><p>bi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.xOverrideMode</p></td>
 <td><div class="line-block">
@@ -55025,7 +56108,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:PRESS_AI_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:PRESS_AI_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.i_iPRESS</p></td>
 <td><div class="line-block">
@@ -55033,7 +56116,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:PRESS_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:PRESS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.rPRESS</p></td>
 <td><div class="line-block">
@@ -55045,7 +56128,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:SP_HYS</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:SP_HYS</p></td>
 <td><p>ao</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -55058,7 +56141,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>TV4K2:PIP:1:SP_HYS_RBV</p></td>
+<tr class="row-even"><td><p>TV4K2:PIP:1:SP_HYS_RBV</p></td>
 <td><p>ai</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.rHYS_PR</p></td>
 <td><div class="line-block">
@@ -55071,7 +56154,7 @@
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p>TV4K2:PIP:1:STATE_RBV</p></td>
+<tr class="row-odd"><td><p>TV4K2:PIP:1:STATE_RBV</p></td>
 <td><p>mbbi</p></td>
 <td><p>GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.stPump.eState</p></td>
 <td><div class="line-block">
