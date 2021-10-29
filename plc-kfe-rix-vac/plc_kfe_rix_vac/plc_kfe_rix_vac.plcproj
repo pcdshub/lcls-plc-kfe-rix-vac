@@ -155,11 +155,6 @@
       <Resolution>TcUnit, 1.0.0.0 (www.tcunit.org)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="plc_kfe_rix_vac.tmc">
-      <SubType>Content</SubType>
-    </None>
-  </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
