@@ -526,14 +526,14 @@ GVL_TcUnit
         GVL_TcUnit.CurrentTestSuiteBeingCalled, POINTER TO FB_TestSuite, 3367456 (32)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 629367648 (8)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 3366928 (8)
-        GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 3369536 (16)
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 629367664 (16)
+        GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 3369536 (16)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 7538624 (621826944)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 3366944 (512)
-        GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 3369568 (16000)
         GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 629367680 (32000)
-        GVL_TcUnit.TestSuiteIsRegistered, BOOL, 7538608 (8)
+        GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 3369568 (16000)
         GVL_TcUnit.TestSuiteIsRegistered, BOOL, 3362904 (8)
+        GVL_TcUnit.TestSuiteIsRegistered, BOOL, 7538608 (8)
 
 .. raw:: html
 

@@ -351,6 +351,266 @@ POUs
 ----
 
 
+CheckBounds
+^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckBounds : DINT
+    VAR_INPUT
+    	index, lower, upper: DINT;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF  index < lower THEN
+    	CheckBounds := lower;
+    ELSIF  index > upper THEN
+    	CheckBounds := upper;
+    ELSE  
+    	CheckBounds := index;
+    END_IF
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckDivDInt
+^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckDivDInt : DINT
+    VAR_INPUT
+    	divisor:DINT;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF divisor = 0 THEN
+    	CheckDivDInt:=1;
+    ELSE
+    	CheckDivDInt:=divisor;
+    END_IF;
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckDivLInt
+^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckDivLInt : LINT
+    VAR_INPUT
+    	divisor:LINT;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF divisor = 0 THEN
+    	CheckDivLInt:=1;
+    ELSE
+    	CheckDivLInt:=divisor;
+    END_IF;
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckDivLReal
+^^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckDivLReal : LREAL
+    VAR_INPUT
+    	divisor:LREAL;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF divisor = 0 THEN
+    	CheckDivLReal:=1;
+    ELSE
+    	CheckDivLReal:=divisor;
+    END_IF;
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckDivReal
+^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckDivReal : REAL
+    VAR_INPUT
+    	divisor:REAL;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF divisor = 0 THEN
+    	CheckDivReal:=1;
+    ELSE
+    	CheckDivReal:=divisor;
+    END_IF;
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckLRangeSigned
+^^^^^^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckLRangeSigned : LINT
+    VAR_INPUT
+    	value, lower, upper: LINT;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF (value < lower) THEN
+    	CheckLRangeSigned := lower;
+    ELSIF(value > upper) THEN
+    	CheckLRangeSigned := upper;
+    ELSE
+    	CheckLRangeSigned := value;
+    END_IF
+
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckLRangeUnsigned
+^^^^^^^^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckLRangeUnsigned : ULINT
+    VAR_INPUT
+    	value, lower, upper: ULINT;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF (value < lower) THEN
+    	CheckLRangeUnsigned := lower;
+    ELSIF(value > upper) THEN
+    	CheckLRangeUnsigned := upper;
+    ELSE
+    	CheckLRangeUnsigned := value;
+    END_IF
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckPointer
+^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckPointer : POINTER TO BYTE
+    VAR_INPUT 
+    	ptToTest : POINTER TO BYTE; // Destination address of the pointer
+    	iSize : DINT;		        // Size of the type the pointer points to. (e.g: 20 for POINTER TO ARRAY [0..9] OF INT) 
+    	iGran : DINT;		        // Granularity of the pointer access. This is the size of the biggest non-structured data type in the type the pointer points to. (e.g: 2 for POINTER TO ARRAY [0..9] OF INT)
+    	bWrite: BOOL;		        // Indicates read or write Access. TRUE = write access.
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF ptToTest=0 THEN
+        ADSLOGSTR(ADSLOG_MSGTYPE_ERROR OR ADSLOG_MSGTYPE_STRING,'CheckPointer failed due to invalid address.','');
+    ELSIF iSize<=0 THEN
+        ADSLOGSTR(ADSLOG_MSGTYPE_ERROR OR ADSLOG_MSGTYPE_STRING,'CheckPointer failed due to invalid size.','');
+    ELSIF iGran<=0 THEN
+        ADSLOGSTR(ADSLOG_MSGTYPE_ERROR OR ADSLOG_MSGTYPE_STRING,'CheckPointer failed due to invalid granularity.','');
+    // -> Please note that the following memory area check is time consuming:
+    //ELSIF F_CheckMemoryArea(pData:=ptToTest,nSize:=DINT_TO_UDINT(iSize)) = E_TcMemoryArea.Unknown THEN
+    //    ADSLOGSTR(ADSLOG_MSGTYPE_ERROR OR ADSLOG_MSGTYPE_STRING,'CheckPointer failed due to unknown memory area.','');
+    END_IF
+    CheckPointer := ptToTest;
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckRangeSigned
+^^^^^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckRangeSigned : DINT
+    VAR_INPUT
+    	value, lower, upper: DINT;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF (value < lower) THEN
+    	CheckRangeSigned := lower;
+    ELSIF(value > upper) THEN
+    	CheckRangeSigned := upper;
+    ELSE
+    	CheckRangeSigned := value;
+    END_IF
+    {flow}
+
+    END_FUNCTION
+
+
+
+
+CheckRangeUnsigned
+^^^^^^^^^^^^^^^^^^
+
+::
+
+    // Implicitly generated code : DO NOT EDIT
+    FUNCTION CheckRangeUnsigned : UDINT
+    VAR_INPUT
+    	value, lower, upper: UDINT;
+    END_VAR
+    // Implicitly generated code : Only an Implementation suggestion
+    {noflow}
+    IF (value < lower) THEN
+    	CheckRangeUnsigned := lower;
+    ELSIF(value > upper) THEN
+    	CheckRangeUnsigned := upper;
+    ELSE
+    	CheckRangeUnsigned := value;
+    END_IF
+    {flow}
+
+    END_FUNCTION
+
+
+
+
 FB_EXT_ILK
 ^^^^^^^^^^
 
@@ -592,7 +852,7 @@ PRG_KFE_RIX_VAC
 
     fb_MR4K2_KBV_VGC_2( 
                              i_stUSG := fb_MR4K2_KBV_PIP_1.q_IG, 
-                             i_stDSG := fb_IM4K2_PPM_PIP_1.q_IG,
+                             i_stDSG := fb_IM5K2_PPM_GCC_1.IG,
                              i_xDis_DPIlk := FALSE, 
                              i_xEPS_OK := TRUE, 
                              i_xPMPS_OK := TRUE, 
