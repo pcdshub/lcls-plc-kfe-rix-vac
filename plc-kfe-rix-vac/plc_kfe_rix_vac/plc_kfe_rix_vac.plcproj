@@ -16,6 +16,10 @@
     <Implicit_KindOfTask>{9e12cc24-a57e-40ec-8aa1-10cdade75bfc}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{9b49bd69-39c1-480f-98a8-0813796a5c95}</Implicit_Jitter_Distribution>
     <LibraryReferences>{f17a0c62-4149-458f-bafa-f5c585962ebc}</LibraryReferences>
+    <Company>SLAC</Company>
+    <Released>false</Released>
+    <ProjectVersion>0.0.0</ProjectVersion>
+    <Title>plc-kfe-rix-vac</Title>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CheckBounds.TcPOU">
@@ -154,6 +158,11 @@
     <PlaceholderResolution Include="TcUnit">
       <Resolution>TcUnit, 1.0.0.0 (www.tcunit.org)</Resolution>
     </PlaceholderResolution>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plc_kfe_rix_vac.tmc">
+      <SubType>Content</SubType>
+    </None>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
