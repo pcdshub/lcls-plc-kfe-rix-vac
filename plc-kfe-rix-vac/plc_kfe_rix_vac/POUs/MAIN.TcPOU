@@ -30,17 +30,16 @@ fb_vetoArbiter(bVeto:= PMPS_GVL.stCurrentBeamParameters.aVetoDevices[PMPS.K_Stop
                 HigherAuthority := fbArbiter1,
 				LowerAuthority := fbArbiter2,
                 FFO := g_FastFaultOutput2);
- 
+
 									   
 ff2_ff1_link_vac(
 	io_fbFFHWO := g_FastFaultOutput1,
     i_xOK := g_FastFaultOutput2.q_xFastFaultOut);
+
 									   
-]]></ST>
+//Code for Removing arbitration 
+fbArbiter1.AddRequest(nReqID := 42, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');		
+fbArbiter2.AddRequest(nReqID := 43, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="36" Count="26" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
