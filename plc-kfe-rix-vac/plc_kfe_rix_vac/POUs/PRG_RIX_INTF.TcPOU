@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="PRG_RIX_INTF" Id="{32fc03a0-ba61-472e-aa53-eabdb188c9c7}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_RIX_INTF
 VAR
@@ -14,7 +14,7 @@ END_VAR
       <ST><![CDATA[ads_watch_dog(
 	sNetId := '172.21.140.47.1.1', // AMS NET ID of the PLC reading from this PLC
 	nPort := 851, // ADS port of the PLC reading from this PLC
-	sVarName := 'PRG_ADS_Gauges.ADS_connection_counter', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
+	sVarName := 'PRG_ADS_Interfaces.ads_watch_dog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
 );
 
 FB_MR3K2_FIM_ILK(
@@ -31,18 +31,5 @@ FB_FIM_ILK := ( ST_MR3K2_FIM_ILK.q_xILK_OK_DO AND ST_MR4K2_FIM_ILK.q_xILK_OK_DO 
 
 ]]></ST>
     </Implementation>
-    <LineIds Name="PRG_RIX_INTF">
-      <LineId Id="10" Count="3" />
-      <LineId Id="5" Count="0" />
-      <LineId Id="15" Count="2" />
-      <LineId Id="24" Count="1" />
-      <LineId Id="30" Count="0" />
-      <LineId Id="27" Count="2" />
-      <LineId Id="26" Count="0" />
-      <LineId Id="37" Count="0" />
-      <LineId Id="36" Count="0" />
-      <LineId Id="32" Count="0" />
-      <LineId Id="31" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
