@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <GVL Name="GVL_KFE_RIX_VAC" Id="{d38b3a8d-c2e8-4a67-9aeb-873e21370c76}">
     <Declaration><![CDATA[VAR_GLOBAL
 
@@ -149,8 +149,6 @@ fb_TV4K2_PIP_1 : FB_PIP_GAMMA;
 fb_IM5K2_PPM_PIP_1 : FB_PIP_GAMMA;
 {attribute 'pytmc' := ' pv: PA1K2:PIP:1 '}
 fb_PA1K2_PIP_1 : FB_PIP_GAMMA;
-{attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
-fb_ST3K2_TERM_PIP_1 : FB_PIP_GAMMA;
 
 
 //SIP PIP NexTORR Pumps
@@ -162,6 +160,9 @@ fb_IM3K2_PPM_PIP_1 : FB_PIP_SIP;
 fb_IM4K2_PPM_PIP_1 : FB_PIP_SIP;
 {attribute 'pytmc' := ' pv: LI2K2:K2A:PIP:1 '}
 fb_LI2K2_K2A_PIP_1 : FB_PIP_SIP;
+{attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
+fb_ST3K2_TERM_PIP_1 : FB_PIP_SIP;
+
 
 //VFS
 
