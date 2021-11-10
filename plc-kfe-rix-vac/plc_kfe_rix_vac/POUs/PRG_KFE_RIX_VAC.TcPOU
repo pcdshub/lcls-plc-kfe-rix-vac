@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="PRG_KFE_RIX_VAC" Id="{7118719b-3077-4104-9acc-cffb49d6edd3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM PRG_KFE_RIX_VAC
 VAR
@@ -196,13 +196,13 @@ fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GPI_1.PG, i_xOverrideMode := xSyste
 fb_TV4K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM5K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_PA1K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
-fb_ST3K2_TERM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
 //SIP Pumps
 fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM3K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM4K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_LI2K2_K2A_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_ST3K2_TERM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
 //Fast shutter Valve Interface
 vfs_dummy_gauge.xPRESS_OK := TRUE;

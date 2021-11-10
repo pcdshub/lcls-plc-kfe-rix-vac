@@ -740,6 +740,9 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<CoeProfile ProfileNo="19665801"/>
 				</EtherCAT>
 			</Box>
+			<Box File="Term 204 (EL9011).xti" Id="214">
+				<EtherCAT PortABoxInfo="#x0100003c"/>
+			</Box>
 		</Box>
 		<Box Id="23" BoxType="9099">
 			<Name>EK1100_04_00</Name>
@@ -1349,6 +1352,9 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<CoeProfile ProfileNo="19665801"/>
 				</EtherCAT>
 			</Box>
+			<Box File="Term 205 (EL9011).xti" Id="215">
+				<EtherCAT PortABoxInfo="#x01000056"/>
+			</Box>
 		</Box>
 		<Box Id="25" BoxType="9099">
 			<Name>EK1100_05_00</Name>
@@ -1799,6 +1805,9 @@ Bit1: Value smaller than Limit2]]></Comment>
 					<CoeProfile ProfileNo="19665801"/>
 					<CoeProfile ProfileNo="19665801"/>
 				</EtherCAT>
+			</Box>
+			<Box File="Term 206 (EL9011).xti" Id="216">
+				<EtherCAT PortABoxInfo="#x0100005f"/>
 			</Box>
 		</Box>
 		<Box Id="24" BoxType="9099" BoxFlags="#x00000020">
