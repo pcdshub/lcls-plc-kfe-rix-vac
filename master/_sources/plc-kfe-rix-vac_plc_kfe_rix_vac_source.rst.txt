@@ -196,8 +196,6 @@ GVL_KFE_RIX_VAC
     fb_IM5K2_PPM_PIP_1 : FB_PIP_GAMMA;
     {attribute 'pytmc' := ' pv: PA1K2:PIP:1 '}
     fb_PA1K2_PIP_1 : FB_PIP_GAMMA;
-    {attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
-    fb_ST3K2_TERM_PIP_1 : FB_PIP_GAMMA;
 
 
     //SIP PIP NexTORR Pumps
@@ -209,6 +207,9 @@ GVL_KFE_RIX_VAC
     fb_IM4K2_PPM_PIP_1 : FB_PIP_SIP;
     {attribute 'pytmc' := ' pv: LI2K2:K2A:PIP:1 '}
     fb_LI2K2_K2A_PIP_1 : FB_PIP_SIP;
+    {attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
+    fb_ST3K2_TERM_PIP_1 : FB_PIP_SIP;
+
 
     //VFS
 
@@ -674,11 +675,16 @@ MAIN
                     HigherAuthority := fbArbiter1,
     				LowerAuthority := fbArbiter2,
                     FFO := g_FastFaultOutput2);
-     
+
     									   
     ff2_ff1_link_vac(
     	io_fbFFHWO := g_FastFaultOutput1,
         i_xOK := g_FastFaultOutput2.q_xFastFaultOut);
+
+    									   
+    //Code for Removing arbitration 
+    //fbArbiter1.AddRequest(nReqID := 42, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');		
+    //fbArbiter2.AddRequest(nReqID := 43, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');
 
     END_PROGRAM
 
@@ -885,13 +891,13 @@ PRG_KFE_RIX_VAC
     fb_TV4K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
     fb_IM5K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
     fb_PA1K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
-    fb_ST3K2_TERM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
     //SIP Pumps
     fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
     fb_IM3K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
     fb_IM4K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
     fb_LI2K2_K2A_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+    fb_ST3K2_TERM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 
     //Fast shutter Valve Interface
     vfs_dummy_gauge.xPRESS_OK := TRUE;
@@ -952,7 +958,7 @@ PRG_RIX_INTF
     ads_watch_dog(
     	sNetId := '172.21.140.47.1.1', // AMS NET ID of the PLC reading from this PLC
     	nPort := 851, // ADS port of the PLC reading from this PLC
-    	sVarName := 'PRG_ADS_Gauges.ADS_connection_counter', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
+    	sVarName := 'PRG_ADS_Interfaces.i_iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
     );
 
     FB_MR3K2_FIM_ILK(

@@ -298,8 +298,6 @@
 <span class="n">fb_IM5K2_PPM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: PA1K2:PIP:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_PA1K2_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
-<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: ST3K2:TERM:PIP:1 &#39;</span><span class="p">}</span>
-<span class="n">fb_ST3K2_TERM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_GAMMA</span><span class="p">;</span>
 
 
 <span class="o">//</span><span class="n">SIP</span> <span class="n">PIP</span> <span class="n">NexTORR</span> <span class="n">Pumps</span>
@@ -311,6 +309,9 @@
 <span class="n">fb_IM4K2_PPM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_SIP</span><span class="p">;</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: LI2K2:K2A:PIP:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_LI2K2_K2A_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_SIP</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: ST3K2:TERM:PIP:1 &#39;</span><span class="p">}</span>
+<span class="n">fb_ST3K2_TERM_PIP_1</span> <span class="p">:</span> <span class="n">FB_PIP_SIP</span><span class="p">;</span>
+
 
 <span class="o">//</span><span class="n">VFS</span>
 
@@ -729,6 +730,11 @@
     <span class="n">io_fbFFHWO</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput1</span><span class="p">,</span>
     <span class="n">i_xOK</span> <span class="o">:=</span> <span class="n">g_FastFaultOutput2</span><span class="o">.</span><span class="n">q_xFastFaultOut</span><span class="p">);</span>
 
+
+<span class="o">//</span><span class="n">Code</span> <span class="k">for</span> <span class="n">Removing</span> <span class="n">arbitration</span>
+<span class="o">//</span><span class="n">fbArbiter1</span><span class="o">.</span><span class="n">AddRequest</span><span class="p">(</span><span class="n">nReqID</span> <span class="o">:=</span> <span class="mi">42</span><span class="p">,</span> <span class="n">stReqBp</span> <span class="o">:=</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">cstFullBeam</span><span class="p">,</span> <span class="n">sDevName</span> <span class="o">:=</span> <span class="s1">&#39;plc-rix-vac&#39;</span><span class="p">);</span>
+<span class="o">//</span><span class="n">fbArbiter2</span><span class="o">.</span><span class="n">AddRequest</span><span class="p">(</span><span class="n">nReqID</span> <span class="o">:=</span> <span class="mi">43</span><span class="p">,</span> <span class="n">stReqBp</span> <span class="o">:=</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">cstFullBeam</span><span class="p">,</span> <span class="n">sDevName</span> <span class="o">:=</span> <span class="s1">&#39;plc-rix-vac&#39;</span><span class="p">);</span>
+
 <span class="n">END_PROGRAM</span>
 </pre></div>
 </div>
@@ -934,13 +940,13 @@
 <span class="n">fb_TV4K2_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 <span class="n">fb_IM5K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 <span class="n">fb_PA1K2_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
-<span class="n">fb_ST3K2_TERM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 
 <span class="o">//</span><span class="n">SIP</span> <span class="n">Pumps</span>
 <span class="n">fb_IM2K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 <span class="n">fb_IM3K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 <span class="n">fb_IM4K2_PPM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 <span class="n">fb_LI2K2_K2A_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
+<span class="n">fb_ST3K2_TERM_PIP_1</span><span class="p">(</span><span class="n">i_stGauge</span> <span class="o">:=</span> <span class="n">bm_dummy_gauge</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode2</span><span class="p">);</span>
 
 <span class="o">//</span><span class="n">Fast</span> <span class="n">shutter</span> <span class="n">Valve</span> <span class="n">Interface</span>
 <span class="n">vfs_dummy_gauge</span><span class="o">.</span><span class="n">xPRESS_OK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">;</span>
@@ -993,7 +999,7 @@
 <span class="n">ads_watch_dog</span><span class="p">(</span>
     <span class="n">sNetId</span> <span class="o">:=</span> <span class="s1">&#39;172.21.140.47.1.1&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">AMS</span> <span class="n">NET</span> <span class="n">ID</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
     <span class="n">nPort</span> <span class="o">:=</span> <span class="mi">851</span><span class="p">,</span> <span class="o">//</span> <span class="n">ADS</span> <span class="n">port</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
-    <span class="n">sVarName</span> <span class="o">:=</span> <span class="s1">&#39;PRG_ADS_Gauges.ADS_connection_counter&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">Full</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">UDINT</span> <span class="n">provided</span> <span class="n">to</span> <span class="n">the</span> <span class="s1">&#39;iWatchdog&#39;</span> <span class="n">parameter</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">interface</span> <span class="n">functions</span> <span class="n">on</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
+    <span class="n">sVarName</span> <span class="o">:=</span> <span class="s1">&#39;PRG_ADS_Interfaces.i_iWatchdog&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">Full</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">UDINT</span> <span class="n">provided</span> <span class="n">to</span> <span class="n">the</span> <span class="s1">&#39;iWatchdog&#39;</span> <span class="n">parameter</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">interface</span> <span class="n">functions</span> <span class="n">on</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
 <span class="p">);</span>
 
 <span class="n">FB_MR3K2_FIM_ILK</span><span class="p">(</span>
