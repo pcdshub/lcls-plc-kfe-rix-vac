@@ -540,12 +540,12 @@ GVL_TcUnit
         GVL_TcUnit.CurrentTestSuiteBeingCalled, POINTER TO FB_TestSuite, 4391168 (32)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 630383616 (8)
         GVL_TcUnit.IgnoreCurrentTest, BOOL, 4390640 (8)
-        GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 4393248 (16)
         GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 630383632 (16)
+        GVL_TcUnit.NumberOfInitializedTestSuites, UINT, 4393248 (16)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 8554592 (621826944)
         GVL_TcUnit.TcUnitRunner, FB_TcUnitRunner, 4390656 (512)
-        GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 4393280 (16000)
         GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 630383648 (32000)
+        GVL_TcUnit.TestSuiteAddresses, POINTER TO FB_TestSuite, 4393280 (16000)
         GVL_TcUnit.TestSuiteIsRegistered, BOOL, 8554576 (8)
         GVL_TcUnit.TestSuiteIsRegistered, BOOL, 4385880 (8)
 
@@ -874,8 +874,8 @@ Global_Version
         Global_Version.stLibVersion_Tc3_EventLogger, ST_LibVersion, 4388000 (288)
         Global_Version.stLibVersion_Tc3_JsonXml, ST_LibVersion, 4390304 (288)
         Global_Version.stLibVersion_Tc3_Module, ST_LibVersion, 4183424 (288)
-        Global_Version.stLibVersion_TcUnit, ST_LibVersion, 638736512 (288)
         Global_Version.stLibVersion_TcUnit, ST_LibVersion, 8538144 (288)
+        Global_Version.stLibVersion_TcUnit, ST_LibVersion, 638736512 (288)
 
 .. raw:: html
 
@@ -1021,7 +1021,7 @@ TC_EVENTS
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        TC_EVENTS.LCLSGeneralEventClass, LCLSGeneralEventClass, 652509888 (960)
+        TC_EVENTS.LCLSGeneralEventClass, LCLSGeneralEventClass, 652508864 (960)
 
 
 TC_EVENT_CLASSES
@@ -1031,12 +1031,12 @@ TC_EVENT_CLASSES
     :header: Symbol, Type, Offset/Size
     :align: center
 
-        TC_EVENT_CLASSES.LCLSGeneralEventClass, GUID, 652490304 (128)
-        TC_EVENT_CLASSES.TcGeneralAdsEventClass, GUID, 652490048 (128)
-        TC_EVENT_CLASSES.TcRouterEventClass, GUID, 652490560 (128)
-        TC_EVENT_CLASSES.TcRTimeEventClass, GUID, 652490688 (128)
-        TC_EVENT_CLASSES.TcSystemEventClass, GUID, 652490432 (128)
-        TC_EVENT_CLASSES.Win32EventClass, GUID, 652490176 (128)
+        TC_EVENT_CLASSES.LCLSGeneralEventClass, GUID, 652529664 (128)
+        TC_EVENT_CLASSES.TcGeneralAdsEventClass, GUID, 652529408 (128)
+        TC_EVENT_CLASSES.TcRouterEventClass, GUID, 652529920 (128)
+        TC_EVENT_CLASSES.TcRTimeEventClass, GUID, 652530048 (128)
+        TC_EVENT_CLASSES.TcSystemEventClass, GUID, 652529792 (128)
+        TC_EVENT_CLASSES.Win32EventClass, GUID, 652529536 (128)
 
 
 TwinCAT_SystemInfoVarList

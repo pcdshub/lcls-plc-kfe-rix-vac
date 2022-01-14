@@ -3187,7 +3187,7 @@ PDO Channel 1 (Index #x1600, Flags #x0011, SyncMan 0)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "Output", "", , "#x7000", "BIT"
+        "GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.q_xHVEna_DO", "", , "#x7000", "BIT"
 
 
 
@@ -3197,7 +3197,7 @@ PDO Channel 2 (Index #x1601, Flags #x0011, SyncMan 0)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.q_xHVEna_DO", "", , "#x7010", "BIT"
+        "Output", "", , "#x7010", "BIT"
 
 
 
@@ -3207,7 +3207,7 @@ PDO Channel 3 (Index #x1602, Flags #x0011, SyncMan 0)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.q_xHVEna_DO", "", , "#x7020", "BIT"
+        "Output", "", , "#x7020", "BIT"
 
 
 
@@ -3269,7 +3269,7 @@ PDO AI Standard Channel 1 (Index #x1a00, Flags #x0010, SyncMan 3)
         "Status__", "", , "", "ARRAY [0..5] OF BIT"
         "Status__TxPDO State", "TRUE when this TxPDO is not valid", , "#x6000", "BIT"
         "Status__TxPDO Toggle", "Bit toggles everytime when new value available", , "#x6000", "BIT"
-        "Value", "", , "#x6000", "INT"
+        "GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_iPRESS", "", , "#x6000", "INT"
 
 
 
@@ -3298,7 +3298,7 @@ PDO AI Standard Channel 2 (Index #x1a02, Flags #x0010, SyncMan 3)
         "Status__", "", , "", "ARRAY [0..5] OF BIT"
         "Status__TxPDO State", "TRUE when this TxPDO is not valid", , "#x6010", "BIT"
         "Status__TxPDO Toggle", "Bit toggles everytime when new value available", , "#x6010", "BIT"
-        "GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_iPRESS", "", , "#x6010", "INT"
+        "Value", "", , "#x6010", "INT"
 
 
 
@@ -3327,7 +3327,7 @@ PDO AI Standard Channel 3 (Index #x1a04, Flags #x0010, SyncMan 3)
         "Status__", "", , "", "ARRAY [0..5] OF BIT"
         "Status__TxPDO State", "TRUE when this TxPDO is not valid", , "#x6020", "BIT"
         "Status__TxPDO Toggle", "Bit toggles everytime when new value available", , "#x6020", "BIT"
-        "GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.i_iPRESS", "", , "#x6020", "INT"
+        "Value", "", , "#x6020", "INT"
 
 
 
@@ -3400,7 +3400,7 @@ PDO Channel 1 (Index #x1a00, Flags #x0011, SyncMan 0)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "Input", "", , "#x6000", "BIT"
+        "GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_xSP_DI", "", , "#x6000", "BIT"
 
 
 
@@ -3410,7 +3410,7 @@ PDO Channel 2 (Index #x1a01, Flags #x0011, SyncMan 0)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_xSP_DI", "", , "#x6010", "BIT"
+        "Input", "", , "#x6010", "BIT"
 
 
 
@@ -3420,7 +3420,7 @@ PDO Channel 3 (Index #x1a02, Flags #x0011, SyncMan 0)
     :header: Name, Comment, BitLen, Index, Type
     :align: center
 
-        "GVL_KFE_RIX_VAC.fb_ST3K2_TERM_PIP_1.i_xSP_DI", "", , "#x6020", "BIT"
+        "Input", "", , "#x6020", "BIT"
 
 
 

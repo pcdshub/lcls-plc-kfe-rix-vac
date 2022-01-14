@@ -683,8 +683,8 @@ MAIN
 
     									   
     //Code for Removing arbitration 
-    //fbArbiter1.AddRequest(nReqID := 42, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');		
-    //fbArbiter2.AddRequest(nReqID := 43, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');
+    fbArbiter1.AddRequest(nReqID := 42, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');		
+    fbArbiter2.AddRequest(nReqID := 43, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');
 
     END_PROGRAM
 
