@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{150c95ec-0456-4d2a-9418-59da97b7d368}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -38,8 +38,8 @@ ff2_ff1_link_vac(
 
 									   
 //Code for Removing arbitration 
-//fbArbiter1.AddRequest(nReqID := 42, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');		
-//fbArbiter2.AddRequest(nReqID := 43, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');]]></ST>
+fbArbiter1.AddRequest(nReqID := 42, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');		
+fbArbiter2.AddRequest(nReqID := 43, stReqBp := PMPS_GVL.cstFullBeam, sDevName := 'plc-rix-vac');]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
