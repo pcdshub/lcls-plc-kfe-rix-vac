@@ -856,7 +856,8 @@ PRG_KFE_RIX_VAC
                              i_xOverrideMode := xSystemOverrideMode2, 
                              io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
 
-    fb_MR4K2_KBV_VGC_2( 
+    fb_MR4K2_KBV_VGC_2(
+                             i_sDevName:='MR4K2_KBV_VGC_1', 
                              i_stUSG := fb_MR4K2_KBV_PIP_1.q_IG, 
                              i_stDSG := fb_IM5K2_PPM_GCC_1.IG,
                              i_xDis_DPIlk := FALSE, 
@@ -902,7 +903,7 @@ PRG_KFE_RIX_VAC
     //Fast shutter Valve Interface
     vfs_dummy_gauge.xPRESS_OK := TRUE;
     vfs_dummy_gauge.rPRESS := 0.0000001;
-    fb_TV1K2_VFS_Interface(IG:=fb_TV4K2_GFS_1.IG, iq_stValve=> , i_xVAC_FAULT_OK=> );
+    fb_TV1K2_VFS_Interface(IG:=fb_TV4K2_GFS_1.IG, iq_stValve=> , Veto_Valve:=fb_MR4K2_KBV_VGC_2.iq_stValve, i_xVAC_FAULT_OK=> );
     //TV1K2_VFS_Interface(IG:= fb_TV4K2_GFS_1.IG);
 
 
@@ -929,9 +930,10 @@ PRG_KFE_RIX_VAC_FS
     //Fast Shutter Valve
 
     fb_TV1K2_VFS_1(
+        i_xVeto_Enable:=True,
     	i_xPMPS_OK:= TRUE, 
     	i_xExt_OK:= TRUE, 
-    	i_sDevName:= 'TV1K2:VFS:1',
+    	i_sDevName:= 'TV1K2:VFS:1',	 
     	io_fbFFHWO:= g_FastFaultOutput2
     );
     (*FastFaultOuput*)	
