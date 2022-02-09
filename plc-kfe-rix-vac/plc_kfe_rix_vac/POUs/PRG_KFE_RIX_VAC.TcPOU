@@ -162,7 +162,7 @@ fb_MR4K2_KBV_VGC_1(
                          io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
 
 fb_MR4K2_KBV_VGC_2(
-                         i_sDevName:='MR4K2_KBV_VGC_1', 
+                         i_sDevName:='MR4K2_KBV_VGC_2', 
                          i_stUSG := fb_MR4K2_KBV_PIP_1.q_IG, 
                          i_stDSG := fb_IM5K2_PPM_GCC_1.IG,
                          i_xDis_DPIlk := FALSE, 
