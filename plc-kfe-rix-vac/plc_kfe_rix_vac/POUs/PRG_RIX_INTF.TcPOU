@@ -17,6 +17,12 @@ END_VAR
 	sVarName := 'PRG_ADS_Interfaces.i_iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
 );
 
+ads_watch_dog_qrix(
+	sNetId := '172.21.140.43.1.1', // AMS NET ID of the PLC reading from this PLC
+	nPort := 851, // ADS port of the PLC reading from this PLC
+	sVarName := 'PRG_SampleChamber.iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
+);
+
 FB_MR3K2_FIM_ILK(
 	VG := fb_MR3K2_KBH_PIP_1.q_IG,
 	ILK := ST_MR3K2_FIM_ILK,
