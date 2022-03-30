@@ -255,7 +255,7 @@ GVL_RIX_INTF
 
     VAR_GLOBAL
     	ads_watch_dog : FB_ADS_WATCHDOG;
-    	
+    	ads_watch_dog_qrix : FB_ADS_WATCHDOG;
     	
     	FB_MR3K2_FIM_ILK : FB_EXT_ILK;
     	{attribute 'pytmc' := '
@@ -961,6 +961,12 @@ PRG_RIX_INTF
     	sNetId := '172.21.140.47.1.1', // AMS NET ID of the PLC reading from this PLC
     	nPort := 851, // ADS port of the PLC reading from this PLC
     	sVarName := 'PRG_ADS_Interfaces.i_iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
+    );
+
+    ads_watch_dog_qrix(
+    	sNetId := '172.21.140.43.1.1', // AMS NET ID of the PLC reading from this PLC
+    	nPort := 851, // ADS port of the PLC reading from this PLC
+    	sVarName := 'PRG_SampleChamber.iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
     );
 
     FB_MR3K2_FIM_ILK(

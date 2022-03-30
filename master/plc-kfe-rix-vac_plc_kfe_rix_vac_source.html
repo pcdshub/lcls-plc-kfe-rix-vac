@@ -357,7 +357,7 @@
 <h2>GVL_RIX_INTF<a class="headerlink" href="#gvl-rix-intf" title="Permalink to this headline"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VAR_GLOBAL</span>
     <span class="n">ads_watch_dog</span> <span class="p">:</span> <span class="n">FB_ADS_WATCHDOG</span><span class="p">;</span>
-
+    <span class="n">ads_watch_dog_qrix</span> <span class="p">:</span> <span class="n">FB_ADS_WATCHDOG</span><span class="p">;</span>
 
     <span class="n">FB_MR3K2_FIM_ILK</span> <span class="p">:</span> <span class="n">FB_EXT_ILK</span><span class="p">;</span>
     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
@@ -1002,6 +1002,12 @@
     <span class="n">sNetId</span> <span class="o">:=</span> <span class="s1">&#39;172.21.140.47.1.1&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">AMS</span> <span class="n">NET</span> <span class="n">ID</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
     <span class="n">nPort</span> <span class="o">:=</span> <span class="mi">851</span><span class="p">,</span> <span class="o">//</span> <span class="n">ADS</span> <span class="n">port</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
     <span class="n">sVarName</span> <span class="o">:=</span> <span class="s1">&#39;PRG_ADS_Interfaces.i_iWatchdog&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">Full</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">UDINT</span> <span class="n">provided</span> <span class="n">to</span> <span class="n">the</span> <span class="s1">&#39;iWatchdog&#39;</span> <span class="n">parameter</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">interface</span> <span class="n">functions</span> <span class="n">on</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
+<span class="p">);</span>
+
+<span class="n">ads_watch_dog_qrix</span><span class="p">(</span>
+    <span class="n">sNetId</span> <span class="o">:=</span> <span class="s1">&#39;172.21.140.43.1.1&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">AMS</span> <span class="n">NET</span> <span class="n">ID</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
+    <span class="n">nPort</span> <span class="o">:=</span> <span class="mi">851</span><span class="p">,</span> <span class="o">//</span> <span class="n">ADS</span> <span class="n">port</span> <span class="n">of</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
+    <span class="n">sVarName</span> <span class="o">:=</span> <span class="s1">&#39;PRG_SampleChamber.iWatchdog&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">Full</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">UDINT</span> <span class="n">provided</span> <span class="n">to</span> <span class="n">the</span> <span class="s1">&#39;iWatchdog&#39;</span> <span class="n">parameter</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">interface</span> <span class="n">functions</span> <span class="n">on</span> <span class="n">the</span> <span class="n">PLC</span> <span class="n">reading</span> <span class="kn">from</span> <span class="nn">this</span> <span class="n">PLC</span>
 <span class="p">);</span>
 
 <span class="n">FB_MR3K2_FIM_ILK</span><span class="p">(</span>
