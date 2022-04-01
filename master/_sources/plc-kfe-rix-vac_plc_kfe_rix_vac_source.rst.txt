@@ -930,7 +930,7 @@ PRG_KFE_RIX_VAC_FS
     //Fast Shutter Valve
 
     fb_TV1K2_VFS_1(
-        i_xVeto_Enable:=True,
+        i_xVeto_Enable:=False,
     	i_xPMPS_OK:= TRUE, 
     	i_xExt_OK:= TRUE, 
     	i_sDevName:= 'TV1K2:VFS:1',	 
