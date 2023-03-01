@@ -3,7 +3,142 @@ Data Types
 ----------
 
 
-        
+    
+FB_PRO_ADS
+^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ALARM_RBV
+      - bi
+      - $(SYMBOL).st_pro.i_xAlarm
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):AT_SPD_RBV
+      - bi
+      - $(SYMBOL).st_pro.xAtSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BPStart_RBV
+      - bi
+      - $(SYMBOL).st_pro.q_xBPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BPStatus_RBV
+      - bi
+      - $(SYMBOL).st_pro.i_xBPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ERROR_RBV
+      - bi
+      - $(SYMBOL).st_pro.xErr
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).st_pro.xIlkOK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):MPStart_RBV
+      - bi
+      - $(SYMBOL).st_pro.q_xMPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):MPStatus_RBV
+      - bi
+      - $(SYMBOL).st_pro.i_xMPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):REMOTE_RBV
+      - bi
+      - $(SYMBOL).st_pro.i_xRemote
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).st_pro.q_xRunDo
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).st_pro.pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).st_pro.pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).st_pro.eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - $(PREFIX):WARN_DI_RBV
+      - bi
+      - $(SYMBOL).st_pro.i_xWarning
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):WARN_RBV
+      - bi
+      - $(SYMBOL).st_pro.xWrn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+     
 LCLS_General.FB_Listener
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -917,7 +1052,7 @@ LCLS_General.ST_PendingEvent
       - | io: input
 
 
-                                                                   
+                                       
 LCLS_Vacuum.FB_MKS275
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -1336,6 +1471,214 @@ LCLS_Vacuum.FB_MKS422
  
 LCLS_Vacuum.FB_MKS500
 ^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):AT_VAC_RBV
+      - bi
+      - $(SYMBOL).IG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).IG.iAutoOnTimer
+      - | io: input
+
+
+    * - $(PREFIX):DISC_ACTIVE_RBV
+      - bi
+      - $(SYMBOL).IG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - $(PREFIX):HV_DIS_DO_RBV
+      - bi
+      - $(SYMBOL).IG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):HV_ON_RBV
+      - bi
+      - $(SYMBOL).IG.i_xHV_ON
+      - | io: input
+
+
+    * - $(PREFIX):HV_SW
+      - bo
+      - $(SYMBOL).IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):HV_SW_RBV
+      - bi
+      - $(SYMBOL).IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).IG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):PRESS_AI_RBV
+      - longin
+      - $(SYMBOL).IG.i_iPRESS_R
+      - | io: input
+
+
+    * - $(PREFIX):PRESS_OK_RBV
+      - bi
+      - $(SYMBOL).IG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - $(PREFIX):PRESS_RBV
+      - ai
+      - $(SYMBOL).IG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):PRO_SP
+      - ao
+      - $(SYMBOL).IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):PRO_SP_RBV
+      - ai
+      - $(SYMBOL).IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):SP_HYS
+      - ao
+      - $(SYMBOL).IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):SP_HYS_RBV
+      - ai
+      - $(SYMBOL).IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).IG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - $(PREFIX):VAC_SP
+      - ao
+      - $(SYMBOL).IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):VAC_SP_RBV
+      - ai
+      - $(SYMBOL).IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+ 
+LCLS_Vacuum.FB_MX7M
+^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
     :header-rows: 1
@@ -2011,7 +2354,493 @@ LCLS_Vacuum.FB_PIP_SIP
         | io: input
 
 
-    
+ 
+LCLS_Vacuum.FB_PTM_Pfeiffer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ACCEL_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.i_xAccel
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ALARM_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.i_xALARM
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):AT_SPD_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.i_xAtSpd
+      - | field: ONAM AT SPEED
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BP_SP
+      - ao
+      - $(SYMBOL).iq_stPTM.rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):BP_SP_RBV
+      - ai
+      - $(SYMBOL).iq_stPTM.rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):CURR_MON_RBV
+      - ai
+      - $(SYMBOL).iq_stPTM.i_rCurrentMon
+      - | field: EGU "A"
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):ErrorCode_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_iErrorCode
+      - | io: input
+
+
+    * - $(PREFIX):FAULT_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.i_xFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.xExtRunOk
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - $(PREFIX):IP_SP
+      - ao
+      - $(SYMBOL).iq_stPTM.rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):IP_SP_RBV
+      - ai
+      - $(SYMBOL).iq_stPTM.rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - $(PREFIX):Power_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_uiPowerPctRbk
+      - | io: input
+
+
+    * - $(PREFIX):PWR_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_diPwr
+      - | io: input
+
+
+    * - $(PREFIX):RESET_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.q_xReset
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RST_SW
+      - bo
+      - $(SYMBOL).iq_stPTM.xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):RST_SW_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.q_RunDO
+      - | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).iq_stPTM.xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED
+      - longout
+      - $(SYMBOL).iq_stPTM.i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED_MODE
+      - bo
+      - $(SYMBOL).iq_stPTM.q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED_MODE_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - $(PREFIX):SPEED_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_diCurSpd
+      - | field: EGU "Hz"
+        | io: input
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).iq_stPTM.eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - $(PREFIX):TEMP_MON_RBV
+      - ai
+      - $(SYMBOL).iq_stPTM.i_rTempMon
+      - | field: EGU "C"
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):TempBearing_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_diBrngTemp
+      - | io: input
+
+
+    * - $(PREFIX):TempElec_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_diElecTemp
+      - | io: input
+
+
+    * - $(PREFIX):TempFault_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.i_xTempFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):TempMotor_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_diMtrTemp
+      - | io: input
+
+
+    * - $(PREFIX):TempPump_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_diBtmTemp
+      - | io: input
+
+
+    * - $(PREFIX):WARN_RBV
+      - bi
+      - $(SYMBOL).iq_stPTM.i_xWarn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):WarningCode_RBV
+      - longin
+      - $(SYMBOL).iq_stPTM.i_iWarningCode
+      - | io: input
+
+
+  
+LCLS_Vacuum.FB_TGPI_ADS
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):AT_VAC_RBV
+      - bi
+      - $(SYMBOL).IG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):Auto_On
+      - bo
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):Auto_On_RBV
+      - bi
+      - $(SYMBOL).IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):AutoOn_timer_RBV
+      - longin
+      - $(SYMBOL).IG.iAutoOnTimer
+      - | io: input
+
+
+    * - $(PREFIX):DISC_ACTIVE_RBV
+      - bi
+      - $(SYMBOL).IG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - $(PREFIX):HV_DIS_DO_RBV
+      - bi
+      - $(SYMBOL).IG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):HV_ON_RBV
+      - bi
+      - $(SYMBOL).IG.i_xHV_ON
+      - | io: input
+
+
+    * - $(PREFIX):HV_SW
+      - bo
+      - $(SYMBOL).IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):HV_SW_RBV
+      - bi
+      - $(SYMBOL).IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).IG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):PRESS_AI_RBV
+      - longin
+      - $(SYMBOL).IG.i_iPRESS_R
+      - | io: input
+
+
+    * - $(PREFIX):PRESS_OK_RBV
+      - bi
+      - $(SYMBOL).IG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - $(PREFIX):PRESS_RBV
+      - ai
+      - $(SYMBOL).IG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):PRO_SP
+      - ao
+      - $(SYMBOL).IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):PRO_SP_RBV
+      - ai
+      - $(SYMBOL).IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):SP_HYS
+      - ao
+      - $(SYMBOL).IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):SP_HYS_RBV
+      - ai
+      - $(SYMBOL).IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).IG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - $(PREFIX):VAC_SP
+      - ao
+      - $(SYMBOL).IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):VAC_SP_RBV
+      - ai
+      - $(SYMBOL).IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+   
 LCLS_Vacuum.FB_VFS_Interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2613,7 +3442,610 @@ LCLS_Vacuum.FB_VGC
         | io: input
 
 
+ 
+LCLS_Vacuum.FB_VRC
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ALM_RST
+      - bo
+      - $(SYMBOL).iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - $(PREFIX):ALM_RST_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - $(PREFIX):CLS_DI_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):CLS_OK_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xCLS_OK
+      - | io: input
+
+
+    * - $(PREFIX):ErrMsg
+      - waveform
+      - $(SYMBOL).iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - $(PREFIX):ErrMsg_RBV
+      - waveform
+      - $(SYMBOL).iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - $(PREFIX):ERROR
+      - bo
+      - $(SYMBOL).iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - $(PREFIX):ERROR_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - $(PREFIX):EXT_ILK_OK_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):FORCE_OPN
+      - bo
+      - $(SYMBOL).iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):FORCE_OPN_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):OPN_DI_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):OPN_DO_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):OPN_OK_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - $(PREFIX):OPN_SW
+      - bo
+      - $(SYMBOL).iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OPN_SW_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON
+      - bo
+      - $(SYMBOL).iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):POS_STATE_RBV
+      - mbbi
+      - $(SYMBOL).iq_stValve.eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).iq_stValve.eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
                                         
+LCLS_Vacuum.ST_EbaraDryPump
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ALARM_RBV
+      - bi
+      - $(SYMBOL).i_xAlarm
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):AT_SPD_RBV
+      - bi
+      - $(SYMBOL).xAtSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BPStart_RBV
+      - bi
+      - $(SYMBOL).q_xBPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BPStatus_RBV
+      - bi
+      - $(SYMBOL).i_xBPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ERROR_RBV
+      - bi
+      - $(SYMBOL).xErr
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).xIlkOK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):MPStart_RBV
+      - bi
+      - $(SYMBOL).q_xMPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):MPStatus_RBV
+      - bi
+      - $(SYMBOL).i_xMPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):REMOTE_RBV
+      - bi
+      - $(SYMBOL).i_xRemote
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).q_xRunDo
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - $(PREFIX):WARN_DI_RBV
+      - bi
+      - $(SYMBOL).i_xWarning
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):WARN_RBV
+      - bi
+      - $(SYMBOL).xWrn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+ 
+LCLS_Vacuum.ST_PfeifferPTM
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ACCEL_RBV
+      - bi
+      - $(SYMBOL).i_xAccel
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ALARM_RBV
+      - bi
+      - $(SYMBOL).i_xALARM
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):AT_SPD_RBV
+      - bi
+      - $(SYMBOL).i_xAtSpd
+      - | field: ONAM AT SPEED
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BP_SP
+      - ao
+      - $(SYMBOL).rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):BP_SP_RBV
+      - ai
+      - $(SYMBOL).rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):CURR_MON_RBV
+      - ai
+      - $(SYMBOL).i_rCurrentMon
+      - | field: EGU "A"
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):ErrorCode_RBV
+      - longin
+      - $(SYMBOL).i_iErrorCode
+      - | io: input
+
+
+    * - $(PREFIX):FAULT_RBV
+      - bi
+      - $(SYMBOL).i_xFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).xExtRunOk
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - $(PREFIX):IP_SP
+      - ao
+      - $(SYMBOL).rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):IP_SP_RBV
+      - ai
+      - $(SYMBOL).rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - $(PREFIX):Power_RBV
+      - longin
+      - $(SYMBOL).i_uiPowerPctRbk
+      - | io: input
+
+
+    * - $(PREFIX):PWR_RBV
+      - longin
+      - $(SYMBOL).i_diPwr
+      - | io: input
+
+
+    * - $(PREFIX):RESET_RBV
+      - bi
+      - $(SYMBOL).q_xReset
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RST_SW
+      - bo
+      - $(SYMBOL).xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):RST_SW_RBV
+      - bi
+      - $(SYMBOL).xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).q_RunDO
+      - | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED
+      - longout
+      - $(SYMBOL).i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED_MODE
+      - bo
+      - $(SYMBOL).q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED_MODE_RBV
+      - bi
+      - $(SYMBOL).q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):SET_SPEED_RBV
+      - longin
+      - $(SYMBOL).i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - $(PREFIX):SPEED_RBV
+      - longin
+      - $(SYMBOL).i_diCurSpd
+      - | field: EGU "Hz"
+        | io: input
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - $(PREFIX):TEMP_MON_RBV
+      - ai
+      - $(SYMBOL).i_rTempMon
+      - | field: EGU "C"
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):TempBearing_RBV
+      - longin
+      - $(SYMBOL).i_diBrngTemp
+      - | io: input
+
+
+    * - $(PREFIX):TempElec_RBV
+      - longin
+      - $(SYMBOL).i_diElecTemp
+      - | io: input
+
+
+    * - $(PREFIX):TempFault_RBV
+      - bi
+      - $(SYMBOL).i_xTempFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):TempMotor_RBV
+      - longin
+      - $(SYMBOL).i_diMtrTemp
+      - | io: input
+
+
+    * - $(PREFIX):TempPump_RBV
+      - longin
+      - $(SYMBOL).i_diBtmTemp
+      - | io: input
+
+
+    * - $(PREFIX):WARN_RBV
+      - bi
+      - $(SYMBOL).i_xWarn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):WarningCode_RBV
+      - longin
+      - $(SYMBOL).i_iWarningCode
+      - | io: input
+
+
+ 
 LCLS_Vacuum.ST_PIP
 ^^^^^^^^^^^^^^^^^^
 
@@ -2845,6 +4277,269 @@ LCLS_Vacuum.ST_PIP
         | field: THST FAULT
         | field: TWST RUNNING
         | field: ZRST STOPPED
+        | io: input
+
+
+ 
+LCLS_Vacuum.ST_PTM
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ACCEL_RBV
+      - bi
+      - $(SYMBOL).i_xAccel
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ALARM_RBV
+      - bi
+      - $(SYMBOL).i_xALARM
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):AT_SPD_RBV
+      - bi
+      - $(SYMBOL).i_xAtSpd
+      - | field: ONAM AT SPEED
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BP_SP
+      - ao
+      - $(SYMBOL).rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):BP_SP_RBV
+      - ai
+      - $(SYMBOL).rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):CURR_MON_RBV
+      - ai
+      - $(SYMBOL).i_rCurrentMon
+      - | field: EGU "A"
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):FAULT_RBV
+      - bi
+      - $(SYMBOL).i_xFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).xExtRunOk
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - $(PREFIX):IP_SP
+      - ao
+      - $(SYMBOL).rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):IP_SP_RBV
+      - ai
+      - $(SYMBOL).rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - $(PREFIX):RST_SW
+      - bo
+      - $(SYMBOL).xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):RST_SW_RBV
+      - bi
+      - $(SYMBOL).xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).q_RunDO
+      - | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - $(PREFIX):SPEED_RBV
+      - longin
+      - $(SYMBOL).i_diCurSpd
+      - | field: EGU "Hz"
+        | io: input
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - $(PREFIX):TEMP_MON_RBV
+      - ai
+      - $(SYMBOL).i_rTempMon
+      - | field: EGU "C"
+        | field: PREC 2
+        | io: input
+
+
+    * - $(PREFIX):WARN_RBV
+      - bi
+      - $(SYMBOL).i_xWarn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+ 
+LCLS_Vacuum.ST_RoughPump
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):AT_SPD_RBV
+      - bi
+      - $(SYMBOL).xAtSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ERROR_RBV
+      - bi
+      - $(SYMBOL).xErr
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).xIlkOK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).q_xRunDo
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - $(PREFIX):WARN_RBV
+      - bi
+      - $(SYMBOL).xWrn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
         | io: input
 
 
@@ -3768,6 +5463,416 @@ LCLS_Vacuum.ST_VGC
         | field: TWST Differential Pressure
         | field: ZRST Vented
         | io: input
+
+
+ 
+LCLS_Vacuum.ST_VRC
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ALM_RST
+      - bo
+      - $(SYMBOL).pv_xAlmRst
+      - | io: output
+
+
+    * - $(PREFIX):ALM_RST_RBV
+      - bi
+      - $(SYMBOL).pv_xAlmRst
+      - | io: output
+
+
+    * - $(PREFIX):CLS_DI_RBV
+      - bi
+      - $(SYMBOL).i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):CLS_OK_RBV
+      - bi
+      - $(SYMBOL).xCLS_OK
+      - | io: input
+
+
+    * - $(PREFIX):ErrMsg
+      - waveform
+      - $(SYMBOL).sErrorMessage
+      - | io: output
+
+
+    * - $(PREFIX):ErrMsg_RBV
+      - waveform
+      - $(SYMBOL).sErrorMessage
+      - | io: output
+
+
+    * - $(PREFIX):ERROR
+      - bo
+      - $(SYMBOL).bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - $(PREFIX):ERROR_RBV
+      - bi
+      - $(SYMBOL).bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - $(PREFIX):EXT_ILK_OK_RBV
+      - bi
+      - $(SYMBOL).xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):FORCE_OPN
+      - bo
+      - $(SYMBOL).pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):FORCE_OPN_RBV
+      - bi
+      - $(SYMBOL).pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):LOGGER
+      - bo
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):LOGGER_RBV
+      - bi
+      - $(SYMBOL).xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - $(PREFIX):OPN_DI_RBV
+      - bi
+      - $(SYMBOL).i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):OPN_DO_RBV
+      - bi
+      - $(SYMBOL).q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):OPN_OK_RBV
+      - bi
+      - $(SYMBOL).xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - $(PREFIX):OPN_SW
+      - bo
+      - $(SYMBOL).pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OPN_SW_RBV
+      - bi
+      - $(SYMBOL).pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON
+      - bo
+      - $(SYMBOL).xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON_RBV
+      - bi
+      - $(SYMBOL).xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):POS_STATE_RBV
+      - mbbi
+      - $(SYMBOL).eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
+    
+LCLS_Vacuum_Serial.ST_PfeifferControl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ADDR
+      - longout
+      - $(SYMBOL).iSerialAddress
+      - | io: output
+
+
+    * - $(PREFIX):ADDR_RBV
+      - longin
+      - $(SYMBOL).iSerialAddress
+      - | io: output
+
+
+    * - $(PREFIX):COMM_EN
+      - bo
+      - $(SYMBOL).xEnableComm
+      - | io: output
+
+
+    * - $(PREFIX):COMM_EN_RBV
+      - bi
+      - $(SYMBOL).xEnableComm
+      - | io: output
+
+
+    * - $(PREFIX):ERR_RST
+      - bo
+      - $(SYMBOL).xErrorAck_009
+      - | io: output
+
+
+    * - $(PREFIX):ERR_RST_RBV
+      - bi
+      - $(SYMBOL).xErrorAck_009
+      - | io: output
+
+
+    * - $(PREFIX):EXT_ILK_OK_RBV
+      - bi
+      - $(SYMBOL).xPumpingStation_010
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).xIlk
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).xMotorPump_023
+      - | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).xRunSW
+      - | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).xRunSW
+      - | io: output
+
+
+    * - $(PREFIX):SetPumpSpeed_RBV
+      - longin
+      - $(SYMBOL).iSetRotationSpeed_707
+      - | io: input
+
+
+ 
+LCLS_Vacuum_Serial.ST_PfeifferStatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):DriveCurrent_RBV
+      - ai
+      - $(SYMBOL).lrDriveCurrent_310
+      - | io: input
+
+
+    * - $(PREFIX):DrivePower_RBV
+      - longin
+      - $(SYMBOL).diDrivePower_316
+      - | io: input
+
+
+    * - $(PREFIX):ErrorCode_RBV
+      - longin
+      - $(SYMBOL).iErrorCode_303
+      - | io: input
+
+
+    * - $(PREFIX):ErrorMessage_RBV
+      - waveform
+      - $(SYMBOL).sErrorCode_303
+      - | io: input
+
+
+    * - $(PREFIX):ExcessPumpTemp_RBV
+      - bi
+      - $(SYMBOL).xExcessTempPump_305
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):GasMode_RBV
+      - longin
+      - $(SYMBOL).iGasMode_027
+      - | io: input
+
+
+    * - $(PREFIX):Power_RBV
+      - longin
+      - $(SYMBOL).uiPowerPct_708
+      - | io: input
+
+
+    * - $(PREFIX):PumpAccelerating_RBV
+      - bi
+      - $(SYMBOL).xPumpAccelerating_307
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):PumpingStation_RBV
+      - bi
+      - $(SYMBOL).xPumpingStation_010
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - $(PREFIX):PumpingStation_RBV
+      - bi
+      - $(SYMBOL).xMotorPump_023
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):PumpSpeed_RBV
+      - longin
+      - $(SYMBOL).diActiveRotationSpeed_309
+      - | io: input
+
+
+    * - $(PREFIX):TempBearing_RBV
+      - longin
+      - $(SYMBOL).diTempBearng_342
+      - | io: input
+
+
+    * - $(PREFIX):TempElect_RBV
+      - longin
+      - $(SYMBOL).diTempElec_326
+      - | io: input
+
+
+    * - $(PREFIX):TempMotor_RBV
+      - longin
+      - $(SYMBOL).diTempMotor_346
+      - | io: input
+
+
+    * - $(PREFIX):TempPump_RBV
+      - longin
+      - $(SYMBOL).diTempPmpBot_330
+      - | io: input
+
+
+    * - $(PREFIX):Timeout_RBV
+      - bi
+      - $(SYMBOL).xTimeout
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):TotationSpeedAttn_RBV
+      - bi
+      - $(SYMBOL).xRotationSpeedAttn_306
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):WarningCode_RBV
+      - longin
+      - $(SYMBOL).iWarningCode_303
+      - | io: input
 
 
       
@@ -18372,7 +20477,7 @@ ST_PMPS_Aperture_IO
         | io: input
 
 
-                             
+                                                                         
 Database Records
 ----------------
 
@@ -19837,6 +21942,202 @@ Database Records
         | io: input
 
 
+    * - IM5K2:PPM:GPI:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - IM5K2:PPM:GPI:1:AutoOn_timer_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.iAutoOnTimer
+      - | io: input
+
+
+    * - IM5K2:PPM:GPI:1:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.i_iPRESS_R
+      - | io: input
+
+
+    * - IM5K2:PPM:GPI:1:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - IM5K2:PPM:GPI:1:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.i_xHV_ON
+      - | io: input
+
+
+    * - IM5K2:PPM:GPI:1:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - IM5K2:PPM:GPI:1:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - IM5K2:PPM:GPI:1:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - IM5K2:PPM:GPI:1:Auto_On_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:Auto_On
+      - bo
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - IM5K2:PPM:GPI:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - IM5K2:PPM:GPI:1:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_GPI_1.PG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
     * - IM5K2:PPM:PIP:1:Inverted_RBV
       - bi
       - GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.stPump.bOutputInverted
@@ -20477,6 +22778,352 @@ Database Records
       - | field: ONAM Override ON
         | field: ZNAM Override OFF
         | io: output
+
+
+    * - LI2K2:K2A:VWC:1:Dis_DPIlk_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.i_xDis_DPIlk
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:Dis_DPIlk
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.i_xDis_DPIlk
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:EPS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.i_xEPS_OK
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:EPS_OK
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.i_xEPS_OK
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:FF_Reset_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.i_xReset
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:FF_Reset
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.i_xReset
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:ERROR
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:POS_STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - LI2K2:K2A:VWC:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:CLS_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:OPN_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:ALM_RST_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:ALM_RST
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:OPN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:OPN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:FORCE_OPN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:FORCE_OPN
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:OPN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:AT_VAC_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.rAT_VAC_HYS
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:AT_VAC_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.rAT_VAC_HYS
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:AT_VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.rAT_VAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:AT_VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.rAT_VAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:HYST_PERC_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.rHYST_PERC
+      - | autosave_pass1: VAL DESC
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:HYST_PERC
+      - ao
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.rHYST_PERC
+      - | autosave_pass1: VAL DESC
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:ErrMsg_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:ErrMsg
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:ILK_DEVICE_DS_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.sIlkDSDeviceName
+      - | io: input
+
+
+    * - LI2K2:K2A:VWC:1:ILK_DEVICE_US_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.sIlkUSDeviceName
+      - | io: input
+
+
+    * - LI2K2:K2A:VWC:1:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xAT_VAC
+      - | field: ONAM AT VAC
+        | field: ZNAM NOT AT VAC
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:DP_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xDP_OK
+      - | field: ONAM DP OK
+        | field: ZNAM DP NOT OK
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:ERR_DifPres_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xERR_DifPres
+      - | field: ONAM Diffrential error present
+        | field: ZNAM NO ERROR
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:ERR_Ext_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xERR_ExtFault
+      - | field: ONAM External error present
+        | field: ZNAM NO ERROR
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:ERR_SP_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xERR_SP
+      - | field: ONAM Setpoint error present
+        | field: ZNAM NO ERROR
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:EXT_ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:OPN_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - LI2K2:K2A:VWC:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:MPS_FAULT_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.xMPS_OK
+      - | field: ONAM MPS OK
+        | field: ZNAM MPS FAULT
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:MPS_FAULT_OK
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.xMPS_OK
+      - | field: ONAM MPS OK
+        | field: ZNAM MPS FAULT
+        | io: output
+
+
+    * - LI2K2:K2A:VWC:1:MPS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.xPMPS_OK
+      - | io: output
+
+
+    * - LI2K2:K2A:VWC:1:MPS_OK
+      - bo
+      - GVL_KFE_RIX_VAC.fb_LI2K2_K2A_VWC_1.xPMPS_OK
+      - | io: output
 
 
     * - LI3K2:K2B:VWC:1:Dis_DPIlk_RBV
@@ -28046,6 +30693,2603 @@ Database Records
       - bo
       - GVL_KFE_RIX_VAC.fb_SL1K2_EXIT_VGC_1.xPMPS_OK
       - | io: output
+
+
+    * - SP1K2:PAX:GCC:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:1:AutoOn_timer_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.iAutoOnTimer
+      - | io: input
+
+
+    * - SP1K2:PAX:GCC:1:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.i_iPRESS_R
+      - | io: input
+
+
+    * - SP1K2:PAX:GCC:1:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:1:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.i_xHV_ON
+      - | io: input
+
+
+    * - SP1K2:PAX:GCC:1:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:1:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:1:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:1:Auto_On_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:Auto_On
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:1:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.IG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:2:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:2:AutoOn_timer_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.iAutoOnTimer
+      - | io: input
+
+
+    * - SP1K2:PAX:GCC:2:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.i_iPRESS_R
+      - | io: input
+
+
+    * - SP1K2:PAX:GCC:2:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:2:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.i_xHV_ON
+      - | io: input
+
+
+    * - SP1K2:PAX:GCC:2:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:2:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:2:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:2:Auto_On_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:Auto_On
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:GCC:2:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GCC:2:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.IG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:1:AutoOn_timer_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.iAutoOnTimer
+      - | io: input
+
+
+    * - SP1K2:PAX:GPI:1:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.i_iPRESS_R
+      - | io: input
+
+
+    * - SP1K2:PAX:GPI:1:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:1:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.i_xHV_ON
+      - | io: input
+
+
+    * - SP1K2:PAX:GPI:1:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:1:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:1:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:1:Auto_On_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:Auto_On
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:1:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.PG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:2:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:2:AutoOn_timer_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.iAutoOnTimer
+      - | io: input
+
+
+    * - SP1K2:PAX:GPI:2:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.i_iPRESS_R
+      - | io: input
+
+
+    * - SP1K2:PAX:GPI:2:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:2:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.i_xHV_ON
+      - | io: input
+
+
+    * - SP1K2:PAX:GPI:2:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:2:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:2:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:2:Auto_On_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:Auto_On
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:GPI:2:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:GPI:2:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.PG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - SP1K2:PAX:PIP:1:Inverted_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.bOutputInverted
+      - | field: ONAM INVERTED
+        | field: ZNAM NORMAL
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:Inverted
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.bOutputInverted
+      - | field: ONAM INVERTED
+        | field: ZNAM NORMAL
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - SP1K2:PAX:PIP:1:AutoOn_timer_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.iAutoOnTimer
+      - | io: input
+
+
+    * - SP1K2:PAX:PIP:1:AI_Offset_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.iOffset
+      - | io: output
+
+
+    * - SP1K2:PAX:PIP:1:AI_Offset
+      - longout
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.iOffset
+      - | io: output
+
+
+    * - SP1K2:PAX:PIP:1:PRESS_AI_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.i_iPRESS
+      - | io: input
+
+
+    * - SP1K2:PAX:PIP:1:HV_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.i_xHV_DI
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PIP:1:FORCE_START_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.pv_xOvrdStart
+      - | field: ONAM FORCE START
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:FORCE_START
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.pv_xOvrdStart
+      - | field: ONAM FORCE START
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:HV_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.q_xHVEna_DO
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - SP1K2:PAX:PIP:1:AT_VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.rHVEna_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:AT_VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.rHVEna_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:PIP:1:ILK_DEVICE_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.sIlkDeviceName
+      - | io: input
+
+
+    * - SP1K2:PAX:PIP:1:Auto_On_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:Auto_On
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xError
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PIP:1:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xHVEna_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xHVEna_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:PIP:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:PIP:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.stPump.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:SET_SPEED_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:SET_SPEED
+      - longout
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:TempBearing_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_diBrngTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:TempPump_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_diBtmTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:SPEED_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_diCurSpd
+      - | field: EGU "Hz"
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:TempElec_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_diElecTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:TempMotor_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_diMtrTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:PWR_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_diPwr
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:ErrorCode_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_iErrorCode
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:WarningCode_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_iWarningCode
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:CURR_MON_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_rCurrentMon
+      - | field: EGU "A"
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:TEMP_MON_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_rTempMon
+      - | field: EGU "C"
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:Power_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_uiPowerPctRbk
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:ALARM_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_xALARM
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:ACCEL_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_xAccel
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:AT_SPD_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_xAtSpd
+      - | field: ONAM AT SPEED
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:FAULT_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_xFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:TempFault_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_xTempFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:WARN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.i_xWarn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:RUN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.q_RunDO
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:1:SET_SPEED_MODE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:SET_SPEED_MODE
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:RESET_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.q_xReset
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:BP_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:BP_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:IP_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:IP_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.xExtRunOk
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:1:RST_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:RST_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:RUN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:1:RUN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_01.iq_stPTM.xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:SET_SPEED_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:SET_SPEED
+      - longout
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_dSetSpd
+      - | field: EGU "Hz"
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:TempBearing_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_diBrngTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:TempPump_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_diBtmTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:SPEED_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_diCurSpd
+      - | field: EGU "Hz"
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:TempElec_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_diElecTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:TempMotor_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_diMtrTemp
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:PWR_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_diPwr
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:ErrorCode_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_iErrorCode
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:WarningCode_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_iWarningCode
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:CURR_MON_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_rCurrentMon
+      - | field: EGU "A"
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:TEMP_MON_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_rTempMon
+      - | field: EGU "C"
+        | field: PREC 2
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:Power_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_uiPowerPctRbk
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:ALARM_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_xALARM
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:ACCEL_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_xAccel
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:AT_SPD_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_xAtSpd
+      - | field: ONAM AT SPEED
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:FAULT_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_xFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:TempFault_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_xTempFault
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:WARN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.i_xWarn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:RUN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.q_RunDO
+      - | io: input
+
+
+    * - SP1K2:PAX:PTM:2:SET_SPEED_MODE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:SET_SPEED_MODE
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.q_bSetSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:RESET_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.q_xReset
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:BP_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:BP_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.rBackingPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:IP_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:IP_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.rInletPressureSP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.xExtRunOk
+      - | field: ONAM ILK OK
+        | field: ZNAM ILK ACTIVE
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - SP1K2:PAX:PTM:2:RST_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:RST_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.xResetSW
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:RUN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - SP1K2:PAX:PTM:2:RUN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PTM_02.iq_stPTM.xRunSW
+      - | field: ONAM RUN
+        | field: ZNAM STOP
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:Dis_DPIlk_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xDis_DPIlk
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:Dis_DPIlk
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xDis_DPIlk
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:EPS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xEPS_OK
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:EPS_OK
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xEPS_OK
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:FF_Reset_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xReset
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:FF_Reset
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xReset
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:ERROR
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:POS_STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - SP1K2:PAX:VGC:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:CLS_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:OPN_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:ALM_RST_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:ALM_RST
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:OPN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:OPN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:FORCE_OPN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:FORCE_OPN
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:OPN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:AT_VAC_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.rAT_VAC_HYS
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:AT_VAC_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.rAT_VAC_HYS
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:AT_VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.rAT_VAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:AT_VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.rAT_VAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:HYST_PERC_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.rHYST_PERC
+      - | autosave_pass1: VAL DESC
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:HYST_PERC
+      - ao
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.rHYST_PERC
+      - | autosave_pass1: VAL DESC
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:ErrMsg_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:ErrMsg
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:ILK_DEVICE_DS_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.sIlkDSDeviceName
+      - | io: input
+
+
+    * - SP1K2:PAX:VGC:1:ILK_DEVICE_US_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.sIlkUSDeviceName
+      - | io: input
+
+
+    * - SP1K2:PAX:VGC:1:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xAT_VAC
+      - | field: ONAM AT VAC
+        | field: ZNAM NOT AT VAC
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:DP_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xDP_OK
+      - | field: ONAM DP OK
+        | field: ZNAM DP NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:ERR_DifPres_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xERR_DifPres
+      - | field: ONAM Diffrential error present
+        | field: ZNAM NO ERROR
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:ERR_Ext_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xERR_ExtFault
+      - | field: ONAM External error present
+        | field: ZNAM NO ERROR
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:ERR_SP_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xERR_SP
+      - | field: ONAM Setpoint error present
+        | field: ZNAM NO ERROR
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:EXT_ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:OPN_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VGC:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:MPS_FAULT_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.xMPS_OK
+      - | field: ONAM MPS OK
+        | field: ZNAM MPS FAULT
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:MPS_FAULT_OK
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.xMPS_OK
+      - | field: ONAM MPS OK
+        | field: ZNAM MPS FAULT
+        | io: output
+
+
+    * - SP1K2:PAX:VGC:1:MPS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.xPMPS_OK
+      - | io: output
+
+
+    * - SP1K2:PAX:VGC:1:MPS_OK
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.xPMPS_OK
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:1:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:ERROR
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:POS_STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - SP1K2:PAX:VRC:1:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:1:CLS_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:1:OPN_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:1:ALM_RST_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:1:ALM_RST
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:1:OPN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:OPN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:FORCE_OPN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:FORCE_OPN
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:OPN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:1:ErrMsg_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:1:ErrMsg
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:1:CLS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.xCLS_OK
+      - | io: input
+
+
+    * - SP1K2:PAX:VRC:1:EXT_ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:1:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:OPN_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:1:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:1:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:ERROR
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:POS_STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - SP1K2:PAX:VRC:2:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:2:CLS_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:2:OPN_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:2:ALM_RST_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:2:ALM_RST
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:2:OPN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:OPN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:FORCE_OPN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:FORCE_OPN
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:OPN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:2:ErrMsg_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:2:ErrMsg
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:2:CLS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.xCLS_OK
+      - | io: input
+
+
+    * - SP1K2:PAX:VRC:2:EXT_ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:2:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:OPN_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:2:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:2:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:ERROR
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:POS_STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - SP1K2:PAX:VRC:4:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:4:CLS_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:4:OPN_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:4:ALM_RST_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:4:ALM_RST
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:4:OPN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:OPN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:FORCE_OPN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:FORCE_OPN
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:OPN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:4:ErrMsg_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:4:ErrMsg
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRC:4:CLS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.xCLS_OK
+      - | io: input
+
+
+    * - SP1K2:PAX:VRC:4:EXT_ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:4:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:OPN_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRC:4:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRC:4:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:ERROR
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.bErrorPresent
+      - | field: ONAM ERROR PRESENT
+        | field: ZNAM NO ERROR
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:POS_STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.eState
+      - | field: FRST OPEN_F
+        | field: ONST CLOSED
+        | field: THST INVALID
+        | field: TWST MOVING
+        | field: ZRST OPEN
+        | io: input
+        | type: mbbi
+
+
+    * - SP1K2:PAX:VRM:3:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.eVGC_State
+      - | field: EIST Close Timeout
+        | field: FRST Ext Fault
+        | field: FVST AT Vacuum
+        | field: NIST Open Timeout
+        | field: ONST At Vacuum
+        | field: SVST Vacuum Fault
+        | field: SXST Triggered
+        | field: THST Lost Vacuum
+        | field: TWST Differential Pressure
+        | field: ZRST Vented
+        | io: input
+
+
+    * - SP1K2:PAX:VRM:3:CLS_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.i_xClsLS
+      - | field: ONAM CLOSE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRM:3:OPN_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.i_xOpnLS
+      - | field: ONAM OPEN
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRM:3:ALM_RST_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRM:3:ALM_RST
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.pv_xAlmRst
+      - | io: output
+
+
+    * - SP1K2:PAX:VRM:3:OPN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:OPN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:FORCE_OPN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:FORCE_OPN
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.pv_xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:OPN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.q_xOPN_DO
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - SP1K2:PAX:VRM:3:ErrMsg_RBV
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRM:3:ErrMsg
+      - waveform
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.sErrorMessage
+      - | io: output
+
+
+    * - SP1K2:PAX:VRM:3:CLS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.xCLS_OK
+      - | io: input
+
+
+    * - SP1K2:PAX:VRM:3:EXT_ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.xEXT_OK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRM:3:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:OPN_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - SP1K2:PAX:VRM:3:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - SP1K2:PAX:VRM:3:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRM_3.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
 
 
     * - ST1K2:PPS:GCC:1:STATE_RBV

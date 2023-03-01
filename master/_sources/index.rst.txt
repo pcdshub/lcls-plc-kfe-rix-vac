@@ -7,6 +7,7 @@ lcls-plc-kfe-rix-vac
 
     plc-kfe-rix-vac_pragmas
     plc-kfe-rix-vac_nc
+    plc-kfe-rix-vac_ethercat
     plc-kfe-rix-vac_boxes
     plc-kfe-rix-vac_links
 
