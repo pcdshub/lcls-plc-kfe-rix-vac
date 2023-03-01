@@ -2156,8 +2156,8 @@ Term 32 (EK1122)
    </details>
 
 
-B940-008-K0S15-PNL-03 FS
-^^^^^^^^^^^^^^^^^^^^^^^^
+Term 33 (EK1100)
+^^^^^^^^^^^^^^^^
 
 
 .. raw:: html
@@ -2169,7 +2169,7 @@ B940-008-K0S15-PNL-03 FS
     :header: Name, Data
     :align: center
 
-    Name, B940-008-K0S15-PNL-03 FS
+    Name, Term 33 (EK1100)
     ID, 33
 
 
