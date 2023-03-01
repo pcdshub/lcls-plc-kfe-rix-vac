@@ -39,7 +39,7 @@ Libraries
         LCLS General, SLAC, Unset, 2.6.0
         LCLS Vacuum, SLAC - LCLS, Unset, 2.1.0
         LCLSVacuumSerialDriverLib, SLAC - LCLS, , 1.2.2
-        PMPS, SLAC - LCLS, Unset, 3.0.13
+        PMPS, SLAC - LCLS, Unset, 3.0.14
         SysDir, System, , 3.5.12.0
         SysFile, System, , 3.5.9.0
         Tc2_DataExchange, Beckhoff Automation GmbH, , 3.3.5.0
