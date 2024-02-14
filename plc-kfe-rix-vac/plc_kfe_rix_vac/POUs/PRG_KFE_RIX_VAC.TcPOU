@@ -66,6 +66,10 @@ fb_IM5K2_PPM_GCC_1.M_SetBits(30518);
 fb_TM2K2_K2B_GCC_1(PG := bm_dummy_gauge, bEP := False);
 fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
 fb_IM6K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := TRUE);
+fb_SP1K2_PAX_GCC_1(PG := fb_SP1K2_PAX_GPI_1.PG, bEP := False);
+fb_SP1K2_PAX_GCC_1.M_SetBits(30518);
+//fb_SP1K2_PAX_GCC_2(PG := fb_SP1K2_PAX_GPI_2, bEP := False);
+//fb_SP1K2_PAX_GCC_2.M_SetBits(30518);
 
 //MKS422
 fb_TV4K2_GFS_1(PG := bm_dummy_gauge); 
@@ -102,7 +106,7 @@ fb_SL1K2_EXIT_VGC_1(
                          io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1);						 
 
 fb_ST1K2_PPS_VGC_1(
-	                     i_stUSG := fb_SL1K2_EXIT_PIP_1.q_IG, 
+	                     i_stUSG := fb_SP1K2_PAX_PIP_1.q_IG, 
                          i_stDSG := fb_ST1K2_PPS_PIP_1.q_IG,
                          i_xDis_DPIlk := FALSE, 
                          i_xEPS_OK := TRUE, 
@@ -181,7 +185,17 @@ fb_LI3K2_K2B_VWC_1(
                          i_xPMPS_OK := TRUE, 
                          i_xExt_OK := TRUE, 
                          i_xOverrideMode := xSystemOverrideMode2, 
-                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);			 
+                         io_fbFFHWO := g_FastFaultOutput2, fbArbiter := fbArbiter2);
+
+fb_SP1K2_PAX_VGC_1(
+	                     i_stUSG := fb_SL1K2_EXIT_PIP_1.q_IG, 
+                         i_stDSG := fb_SP1K2_PAX_PIP_1.q_IG,
+                         i_xDis_DPIlk := FALSE, 
+                         i_xEPS_OK := TRUE, 
+                         i_xPMPS_OK := TRUE, 
+                         i_xExt_OK := TRUE, 
+                         i_xOverrideMode := xSystemOverrideMode1, 
+                         io_fbFFHWO := g_FastFaultOutput1, fbArbiter := fbArbiter1);			 
 					 
 
 // PIP_Gamma Pumps
@@ -197,6 +211,7 @@ fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GPI_1.PG, i_xOverrideMode := xSyste
 fb_TV4K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM5K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_PA1K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
+fb_SP1K2_PAX_PIP_1(i_stGauge := fb_SP1K2_PAX_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);
 
 //SIP Pumps
 fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
