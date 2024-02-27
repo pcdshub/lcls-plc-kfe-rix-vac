@@ -72,8 +72,8 @@ fb_TM2K2_K2B_GCC_1 : FB_MKS500;
 fb_SP1K2_PAX_GCC_1 : FB_MKS500;
 
 //New Televac gauge
-//{attribute 'pytmc' := ' pv: SP1K2:PAX:GCC:2 '}
-//fb_SP1K2_PAX_GCC_2 : FB_MX7M;
+{attribute 'pytmc' := ' pv: SP1K2:PAX:GCC:2 '}
+fb_SP1K2_PAX_GCC_2 : FB_MX7M;
 
 //MKS500 EP Gauges
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)^AI Standard Channel 1^Value;	
@@ -129,6 +129,19 @@ fb_ST1K2_PPS_VGC_1 : FB_VGC;
 {attribute 'pytmc' := ' pv: SP1K2:PAX:VGC:1 '}
 fb_SP1K2_PAX_VGC_1 : FB_VGC;
 
+
+//SP1K2 VRCs
+{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:1 '}
+fb_SP1K2_PAX_VRC_1 : FB_VRC;
+{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:2 '}
+fb_SP1K2_PAX_VRC_2 : FB_VRC;
+{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:3 '}
+fb_SP1K2_PAX_VRC_3 : FB_VRC;
+{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:4 '}
+fb_SP1K2_PAX_VRC_4 : FB_VRC;
+{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:5 '}
+fb_SP1K2_PAX_VRC_5 : FB_VRC;
+
 // PIP_Gamma Pumps
 
 {attribute 'pytmc' := ' pv: PC1K1:ZOS:PIP:1 '}
@@ -162,7 +175,11 @@ fb_TV4K2_PIP_1 : FB_PIP_GAMMA;
 fb_IM5K2_PPM_PIP_1 : FB_PIP_GAMMA;
 {attribute 'pytmc' := ' pv: PA1K2:PIP:1 '}
 fb_PA1K2_PIP_1 : FB_PIP_GAMMA;
+
 {attribute 'pytmc' := ' pv: SP1K2:PAX:PIP:1 '}
+{attribute 'TcLinkTo' := 	'.i_iPRESS		:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 53 (EL3064)^AI Standard Channel 2^Value ;
+                               .q_xHVEna_DO 	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 52 (EL2794)^Channel 2^Output ;
+                               .i_xSP_DI		:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 54 (EL1004)^Channel 2^Input '}
 fb_SP1K2_PAX_PIP_1 : FB_PIP_GAMMA;
 
 //SIP PIP NexTORR Pumps

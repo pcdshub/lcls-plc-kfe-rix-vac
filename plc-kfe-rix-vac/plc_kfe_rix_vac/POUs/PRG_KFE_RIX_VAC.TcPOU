@@ -211,7 +211,7 @@ fb_MR4K2_KBV_PIP_1(i_stGauge := fb_MR4K2_KBV_GPI_1.PG, i_xOverrideMode := xSyste
 fb_TV4K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_IM5K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
 fb_PA1K2_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);
-fb_SP1K2_PAX_PIP_1(i_stGauge := fb_SP1K2_PAX_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);
+fb_SP1K2_PAX_PIP_1(i_stGauge := fb_ST1K2_PPS_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);  //change interlock to SP1K2 GPI once connected 
 
 //SIP Pumps
 fb_IM2K2_PPM_PIP_1(i_stGauge := bm_dummy_gauge, i_xOverrideMode := xSystemOverrideMode2);

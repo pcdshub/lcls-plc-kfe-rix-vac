@@ -741,6 +741,20 @@
 					<Type>INT</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_1.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GPI_2.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_TM2K2_ATM_GPI_1.i_iPRESS_R</Name>
 					<Comment>
 						<![CDATA[ input Pressure // Link to analog Input]]>
@@ -1014,6 +1028,34 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ Controls and I/Os]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.i_xHV_ON</Name>
+					<Comment>
+						<![CDATA[  True when High Voltage is on  // 'TcLinkTo' (EL1124) ^Input]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.i_xDisc_Active</Name>
+					<Comment>
+						<![CDATA[ Discharge Current Active // 'TcLinkTo' (EL1124) ^Input]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[Pressure reading // 'TcLinkTo' (EL3174-0002 or EP3174-0002)^Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.i_iPRESS_R</Name>
 					<Comment>
 						<![CDATA[ Controls and I/Os]]>
@@ -1184,6 +1226,72 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_3.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_3.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_5.i_xOpnLS</Name>
+					<Comment>
+						<![CDATA[IO]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_5.i_xClsLS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PC1K1_ZOS_PIP_1.i_iPRESS</Name>
 					<Type>INT</Type>
 				</Var>
@@ -1305,6 +1413,17 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.i_iPRESS</Name>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.i_xSP_DI</Name>
+					<Comment>
+						<![CDATA[ NO contact //function of relay set on the QPC to HV output state]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_IM2K2_PPM_PIP_1.i_iPRESS</Name>
 					<Type>INT</Type>
 				</Var>
@@ -1403,10 +1522,6 @@
 			</Vars>
 			<Vars VarGrpType="2">
 				<Name>PlcTask Outputs</Name>
-				<Var>
-					<Name>PRG_RIX_INTF.FB_FIM_ILK</Name>
-					<Type>BOOL</Type>
-				</Var>
 				<Var>
 					<Name>MAIN.fbArbiterIO.q_stRequestedBP</Name>
 					<Type GUID="{292CD354-C7C0-4A61-AAD0-1C85DD69646B}">ST_BeamParams_IO</Type>
@@ -1538,6 +1653,10 @@
 					</SubVar>
 				</Var>
 				<Var>
+					<Name>PRG_RIX_INTF.FB_FIM_ILK</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_RIX_INTF.FB_MR3K2_FIM_ILK.q_xILK_OK_DO</Name>
 					<Comment>
 						<![CDATA[ Send the signal to indicate that the interlock pressure has been met.]]>
@@ -1636,6 +1755,20 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_1.q_xHV_DIS</Name>
+					<Comment>
+						<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_GCC_2.q_xHV_DIS</Name>
+					<Comment>
+						<![CDATA[Enable High Voltage when True // 'TcLinkTo' (EL2624 or EP2624-0002)^Output]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_GCC_1.q_xHV_DIS</Name>
 					<Comment>
 						<![CDATA[ Enable High Voltage when True // 'TcLinkTo' (EP2624) ^Output]]>
@@ -1698,6 +1831,30 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_1.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_2.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_3.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_4.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VRC_5.q_xOPN_DO</Name>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
@@ -1772,6 +1929,13 @@
 				</Var>
 				<Var>
 					<Name>GVL_KFE_RIX_VAC.fb_PA1K2_PIP_1.q_xHVEna_DO</Name>
+					<Comment>
+						<![CDATA[ Enable High Voltage when TRUE]]>
+					</Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.q_xHVEna_DO</Name>
 					<Comment>
 						<![CDATA[ Enable High Voltage when TRUE]]>
 					</Comment>
@@ -2008,14 +2172,17 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 52 (EL2794)">
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.q_xHVEna_DO" VarB="Channel 1^GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.q_xHVEna_DO"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.q_xHVEna_DO" VarB="Channel 2^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.q_xHVEna_DO" VarB="Channel 4^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.q_xHVEna_DO"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 53 (EL3064)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_iPRESS" VarB="AI Standard Channel 1^GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_iPRESS"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.i_iPRESS" VarB="AI Standard Channel 2^Value" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.i_iPRESS" VarB="AI Standard Channel 4^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.i_iPRESS"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 54 (EL1004)">
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_xSP_DI" VarB="Channel 1^GVL_KFE_RIX_VAC.fb_IM5K2_PPM_PIP_1.i_xSP_DI"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP1K2_PAX_PIP_1.i_xSP_DI" VarB="Channel 2^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.i_xSP_DI" VarB="Channel 4^GVL_KFE_RIX_VAC.fb_TV4K2_PIP_1.i_xSP_DI"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 56 (EL2794)">
@@ -2034,8 +2201,11 @@
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.q_xHVEna_DO" VarB="Channel 4^GVL_KFE_RIX_VAC.fb_LI2K2_K2A_PIP_1.q_xHVEna_DO"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)">
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xClsLS" VarB="Channel 6^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.i_xOpnLS" VarB="Channel 5^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.i_xClsLS" VarB="Channel 2^Input" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.i_xOpnLS" VarB="Channel 1^Input" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_SP1K2_PAX_VGC_1.q_xOPN_DO" VarB="Channel 16^Output" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_VGC_1.q_xOPN_DO" VarB="Channel 11^Output" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 111 (EP3174-0002)">
