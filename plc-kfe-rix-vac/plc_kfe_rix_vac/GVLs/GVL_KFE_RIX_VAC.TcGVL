@@ -125,7 +125,7 @@ fb_LI3K2_K2B_VWC_1 : FB_VGC;
 fb_ST1K2_PPS_VGC_1 : FB_VGC;
 {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 5^Input;
 								 .i_xClsLS	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 6^Input;
-								.q_xOPN_DO	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 16^Output'}
+								.q_xOPN_DO	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 15^Output'}
 {attribute 'pytmc' := ' pv: SP1K2:PAX:VGC:1 '}
 fb_SP1K2_PAX_VGC_1 : FB_VGC;
 
