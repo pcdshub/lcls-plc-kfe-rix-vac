@@ -26,6 +26,10 @@ fb_MR3K2_KBH_GPI_1(PG=>);
 fb_MR3K2_KBH_GPI_1.M_SetBits(30518);
 fb_MR4K2_KBV_GPI_1(PG=>);
 fb_MR4K2_KBV_GPI_1.M_SetBits(30518);
+fb_SP1K2_PAX_GPI_1(PG=>);
+fb_SP1K2_PAX_GPI_1.M_SetBits(30518);
+fb_SP1K2_PAX_GPI_2(PG=>);
+fb_SP1K2_PAX_GPI_2.M_SetBits(30518);
 
 //New Superbee piranis
 fb_TM2K2_ATM_GPI_1(PG=>);
@@ -68,8 +72,8 @@ fb_TM2K2_K2B_GCC_1.M_SetBits(30518);
 fb_IM6K2_PPM_GCC_1(PG := bm_dummy_gauge, bEP := TRUE);
 fb_SP1K2_PAX_GCC_1(PG := fb_SP1K2_PAX_GPI_1.PG, bEP := False);
 fb_SP1K2_PAX_GCC_1.M_SetBits(30518);
-//fb_SP1K2_PAX_GCC_2(PG := fb_SP1K2_PAX_GPI_2, bEP := False);
-//fb_SP1K2_PAX_GCC_2.M_SetBits(30518);
+fb_SP1K2_PAX_GCC_2(PG := fb_SP1K2_PAX_GPI_2.PG);
+fb_SP1K2_PAX_GCC_2.M_SetBits(30518);
 
 //MKS422
 fb_TV4K2_GFS_1(PG := bm_dummy_gauge); 

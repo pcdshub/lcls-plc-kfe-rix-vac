@@ -20,8 +20,10 @@ fb_MR2K2_FLAT_GPI_1 : FB_MKS275;
 fb_MR3K2_KBH_GPI_1 : FB_MKS275;
 {attribute 'pytmc' := ' pv: MR4K2:KBV:GPI:1 '}
 fb_MR4K2_KBV_GPI_1 : FB_MKS275;
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 1^Value'}
 {attribute 'pytmc' := ' pv:SP1K2:PAX:GPI:1 '}
 fb_SP1K2_PAX_GPI_1 : FB_MKS275;
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 3^Value'}
 {attribute 'pytmc' := ' pv:SP1K2:PAX:GPI:2 '}
 fb_SP1K2_PAX_GPI_2 : FB_MKS275;
 
@@ -68,10 +70,16 @@ fb_IM4K2_PPM_GCC_1 : FB_MKS500;
 fb_IM5K2_PPM_GCC_1 : FB_MKS500;
 {attribute 'pytmc' := ' pv: TM2K2:K2B:GCC:1 '}
 fb_TM2K2_K2B_GCC_1 : FB_MKS500;
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 2^Value;
+								 .i_xHV_ON	    :=	TIIB[Term 172 (EL1124)]^Channel 1^Input;
+								 .i_xDisc_Active:=	TIIB[Term 172 (EL1124)]^Channel 2^Input;								 
+								 .q_xHV_DIS		:= 	TIIB[Term 167 (EL2624)]^Channel 2^Output'}
 {attribute 'pytmc' := ' pv: SP1K2:PAX:GCC:1 '}
 fb_SP1K2_PAX_GCC_1 : FB_MKS500;
 
 //New Televac gauge
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 4^Value;
+							  .q_xHV_DIS		:= 	TIIB[Term 167 (EL2624)]^Channel 1^Output'}
 {attribute 'pytmc' := ' pv: SP1K2:PAX:GCC:2 '}
 fb_SP1K2_PAX_GCC_2 : FB_MX7M;
 
@@ -132,14 +140,29 @@ fb_SP1K2_PAX_VGC_1 : FB_VGC;
 
 //SP1K2 VRCs
 {attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:1 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		 :=	TIIB[Term 157 (EL1004)]^Channel 1^Input;
+								 .i_xClsLS	 := TIIB[Term 157 (EL1004)]^Channel 2^Input ;
+								 .q_xOPN_DO  := TIIB[Term 158 (EL2004)]^Channel 1^Output'}
 fb_SP1K2_PAX_VRC_1 : FB_VRC;
 {attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:2 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 157 (EL1004)]^Channel 3^Input;
+								 .i_xClsLS		:= TIIB[Term 157 (EL1004)]^Channel 4^Input ;
+								 .q_xOPN_DO	:= TIIB[Term 158 (EL2004)]^Channel 2^Output'}
 fb_SP1K2_PAX_VRC_2 : FB_VRC;
 {attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:3 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 159 (EL1004)]^Channel 1^Input;
+								 .i_xClsLS		:= TIIB[Term 159 (EL1004)]^Channel 2^Input ;
+								 .q_xOPN_DO	:= TIIB[Term 158 (EL2004)]^Channel 3^Output'}
 fb_SP1K2_PAX_VRC_3 : FB_VRC;
 {attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:4 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 169 (EL1004)]^Channel 1^Input;
+								 .i_xClsLS		:= TIIB[Term 169 (EL1004)]^Channel 2^Input ;
+								 .q_xOPN_DO	:= TIIB[Term 168 (EL2004)]^Channel 1^Output'}
 fb_SP1K2_PAX_VRC_4 : FB_VRC;
 {attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:5 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 169 (EL1004)]^Channel 3^Input;
+								 .i_xClsLS		:= TIIB[Term 169 (EL1004)]^Channel 4^Input ;
+								 .q_xOPN_DO	:= TIIB[Term 168 (EL2004)]^Channel 2^Output'}
 fb_SP1K2_PAX_VRC_5 : FB_VRC;
 
 // PIP_Gamma Pumps
@@ -152,15 +175,15 @@ fb_PC1K1_ZOS_PIP_1 : FB_PIP_GAMMA;
 fb_MR1K2_SWITCH_PIP_1 : FB_PIP_GAMMA;
 {attribute 'pytmc' := ' pv: TV1K1:PLEG:PIP:1 '}
 fb_TV1K1_PLEG_PIP_1 : FB_PIP_GAMMA;
-{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^B950_233_R02 (E3) (EL3064)^AI Standard Channel 1^Value;
-								 .i_xSP_DI		:=  TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^B950_233_R02 (E4) (EL1004)^Channel 1^Input;
-								 .q_xHVEna_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^B950_233_R02 (E2) (EL2794)^Channel 1^Output'}
+{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[B950_233_R02 (E3) (EL3064)]^AI Standard Channel 1^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.i_iPRESS;
+								 .i_xSP_DI		:=  TIIB[B950_233_R02 (E4) (EL1004)]^Channel 1^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.i_xSP_DI;
+								 .q_xHVEna_DO	:= TIIB[B950_233_R02 (E2) (EL2794)]^Channel 1^GVL_KFE_RIX_VAC.fb_ST1K2_PPS_PIP_1.q_xHVEna_DO'}
 {attribute 'pytmc' := ' pv: ST1K2:PPS:PIP:1 '}
 fb_ST1K2_PPS_PIP_1 : FB_PIP_GAMMA;
 
-{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL3064)^AI Standard Channel 1^Value;
-								 .i_xSP_DI		:=  TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 8 (EL1004)^Channel 1^Input;
-								 .q_xHVEna_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 6 (EL2794)^Channel 1^Output'}
+{attribute 'TcLinkTo' := 	'.i_iPRESS		:=	TIIB[Term 7 (EL3064)]^AI Standard Channel 1^Value;
+								 .i_xSP_DI		:=  TIIB[Term 8 (EL1004)]^Channel 1^Input;
+								 .q_xHVEna_DO	:= TIIB[Term 6 (EL2794)]^Channel 1^Output'}
 {attribute 'pytmc' := ' pv: SL1K2:EXIT:PIP:1 '}
 fb_SL1K2_EXIT_PIP_1 : FB_PIP_GAMMA;
 {attribute 'pytmc' := ' pv: MR2K2:FLAT:PIP:1 '}
@@ -194,6 +217,25 @@ fb_LI2K2_K2A_PIP_1 : FB_PIP_SIP;
 {attribute 'pytmc' := ' pv: ST3K2:TERM:PIP:1 '}
 fb_ST3K2_TERM_PIP_1 : FB_PIP_SIP;
 
+
+//PAX Turbo pumps (Pfeiffer turbo pumps TC400 *)
+
+{attribute 'pytmc' := ' pv: SP1K2:PAX:PTM:1 '}
+{attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[Term 160 (EL1004)]^Channel 1^Input ;
+                               .i_xRemote 	      := TIIB[Term 160 (EL1004)]^Channel 2^Input ;
+                               .i_xFaultNC		  := TIIB[Term 160 (EL1004)]^Channel 3^Input;
+                               .q_RunDO           := TIIB[Term 161 (EL2004)]^Channel 1^Output;
+							   .q_xRemote         := TIIB[Term 161 (EL2004)]^Channel 2^Output ;
+                               .q_PumpingStation  := TIIB[Term 161 (EL2004)]^Channel 3^Output'}
+fb_SP1K2_PAX_PTM_01 : FB_PTM_Pfeiffer;
+{attribute 'pytmc' := ' pv: SP1K2:PAX:PTM:2 '}
+{attribute 'TcLinkTo' := 	'.i_xAtSpd		      := TIIB[Term 163 (EL1004)]^Channel 1^Input ;
+                               .i_xRemote 	      := TIIB[Term 163 (EL1004)]^Channel 2^Input ;
+                               .i_xFaultNC		  := TIIB[Term 163 (EL1004)]^Channel 3^Input;
+                               .q_RunDO           := TIIB[Term 165 (EL2004)]^Channel 1^Output;
+							   .q_xRemote         := TIIB[Term 165 (EL2004)]^Channel 2^Output ;
+                               .q_PumpingStation  := TIIB[Term 165 (EL2004)]^Channel 3^Output'}
+fb_SP1K2_PAX_PTM_02 : FB_PTM_Pfeiffer;
 
 //VFS
 
