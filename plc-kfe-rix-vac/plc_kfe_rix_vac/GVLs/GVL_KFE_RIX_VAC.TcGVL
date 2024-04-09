@@ -26,6 +26,9 @@ fb_SP1K2_PAX_GPI_1 : FB_MKS275;
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 3^Value'}
 {attribute 'pytmc' := ' pv:SP1K2:PAX:GPI:2 '}
 fb_SP1K2_PAX_GPI_2 : FB_MKS275;
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^EK1100_05_00^EL3174_05_11^AI Standard Channel 1^Value'}
+{attribute 'pytmc' := ' pv:IM5K2:PPM:GPI:1 '}
+fb_IM5K2_PPM_GPI_1 : FB_MKS275;
 
 //New Superbee piranis
 {attribute 'pytmc' := ' pv: TM2K2:ATM:GPI:1 '}
@@ -123,7 +126,11 @@ fb_MR4K2_KBV_VGC_1 : FB_VGC;
 fb_MR4K2_KBV_VGC_2 : FB_VGC;
 {attribute 'pytmc' := ' pv: LI3K2:K2B:VWC:1 '}
 fb_LI3K2_K2B_VWC_1 : FB_VGC;
-
+{attribute 'TcLinkTo' := 	'.i_xOpnLS		 :=	TIIB[EL1004_05_01]^Channel 3^Input;
+								 .i_xClsLS	 := TIIB[EL1004_05_01]^Channel 4^Input ;
+								 .q_xOPN_DO  := TIIB[EL2004_05_02]^Channel 2^Output'}
+{attribute 'pytmc' := ' pv: LI2K2:K2A:VWC:1 '}
+fb_LI2K2_K2A_VWC_1 : FB_VGC;
 
 // VGC EP Valves
 {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^Box 110 (EP2338-0002)^Channel 1^Input;
