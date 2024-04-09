@@ -6,21 +6,21 @@
 (* The variable values are read via ADS using the symbol name*)
 FUNCTION_BLOCK FB_PRO_ADS Extends FB_ADS
 VAR_INPUT
-	sNetId : String; //NetID of the Destination PLC controller
-	nPort : uint; // port number
-	sVarName : string;// the variable name of the declared gauge function block.
-	iWatchdog:UDINT;//The watchdog variable name written to by the remote plc
+    sNetId : String; //NetID of the Destination PLC controller
+    nPort : uint; // port number
+    sVarName : string;// the variable name of the declared gauge function block.
+    iWatchdog:UDINT;//The watchdog variable name written to by the remote plc
 END_VAR
 VAR_OUTPUT
-	{attribute 'pytmc' := 'pv:'}
-	st_pro : ST_EbaraDryPump;
-	bError: BOOL;
+    {attribute 'pytmc' := 'pv:'}
+    st_pro : ST_EbaraDryPump;
+    bError: BOOL;
 END_VAR
 VAR
-	fb_CheckWatchdog: FB_CheckWatchdog;
-	fb_Read_PRO: FB_ReadAdsSymByName;
-	ftReset: F_TRIG;
-	xFirstPass: BOOL:= true;
+    fb_CheckWatchdog: FB_CheckWatchdog;
+    fb_Read_PRO: FB_ReadAdsSymByName;
+    ftReset: F_TRIG;
+    xFirstPass: BOOL:= true;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -28,30 +28,30 @@ END_VAR
 xFirstPass := false;
 (*calling ADS read function*)
 
-//IG.xPRESS_OK := false;	
+//IG.xPRESS_OK := false;
 
 fb_Read_PRO(
-	bRead:=ftReset.Q , 
-	sNetId:= sNetId, 
-	nPort:= nPort, 
-	sVarName:= CONCAT(sVarName,'.stPump'), 
-	nDestAddr:= ADR(st_pro), 
-	nLen:= SIZEOF(ST_EbaraDryPump), 
-	tTimeout:= , 
-	eComMode:=eAdsComModeFastCom , 
-	bBusy=> , 
-	bError=> , 
-	nErrorId=> );	
-	
+    bRead:=ftReset.Q ,
+    sNetId:= sNetId,
+    nPort:= nPort,
+    sVarName:= CONCAT(sVarName,'.stPump'),
+    nDestAddr:= ADR(st_pro),
+    nLen:= SIZEOF(ST_EbaraDryPump),
+    tTimeout:= ,
+    eComMode:=eAdsComModeFastCom ,
+    bBusy=> ,
+    bError=> ,
+    nErrorId=> );
+
 
 (*Error*)
 fb_CheckWatchdog(
-	bEnable:= TRUE, 
-	tWatchdogTime:= T#900ms, 
-	nCnt:= iWatchdog , 
-	bWatchdog=> , 
-	nLastCnt=> );
-	
+    bEnable:= TRUE,
+    tWatchdogTime:= T#900ms,
+    nCnt:= iWatchdog ,
+    bWatchdog=> ,
+    nLastCnt=> );
+
 bError:= fb_Read_PRO.bError OR fb_CheckWatchdog.bWatchdog;
 tErrorPresent(CLK:=bError);
 
@@ -59,7 +59,7 @@ IF (fb_Read_PRO.bError OR fb_CheckWatchdog.bWatchdog) THEN
 st_pro.i_xAlarm:= TRUE;
 END_IF;
 
-	]]></ST>
+    ]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -4,33 +4,33 @@
     <Declaration><![CDATA[PROGRAM PRG_RIX_INTF
 VAR
 {attribute 'pytmc' := '
-    	pv: PLC:KFE:RIX:FIM:COMBO:ILK
-		io: i;
+        pv: PLC:KFE:RIX:FIM:COMBO:ILK
+        io: i;
 '}
 FB_FIM_ILK	AT%Q*	:	BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[ads_watch_dog(
-	sNetId := '172.21.140.47.1.1', // AMS NET ID of the PLC reading from this PLC
-	nPort := 851, // ADS port of the PLC reading from this PLC
-	sVarName := 'PRG_ADS_Interfaces.i_iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
+    sNetId := '172.21.140.47.1.1', // AMS NET ID of the PLC reading from this PLC
+    nPort := 851, // ADS port of the PLC reading from this PLC
+    sVarName := 'PRG_ADS_Interfaces.i_iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC
 );
 
 ads_watch_dog_qrix(
-	sNetId := '172.21.140.43.1.1', // AMS NET ID of the PLC reading from this PLC
-	nPort := 851, // ADS port of the PLC reading from this PLC
-	sVarName := 'PRG_SampleChamber.iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC 
+    sNetId := '172.21.140.43.1.1', // AMS NET ID of the PLC reading from this PLC
+    nPort := 851, // ADS port of the PLC reading from this PLC
+    sVarName := 'PRG_SampleChamber.iWatchdog', // Full name of the UDINT provided to the 'iWatchdog' parameter in the interface functions on the PLC reading from this PLC
 );
 
 FB_MR3K2_FIM_ILK(
-	VG := fb_MR3K2_KBH_PIP_1.q_IG,
-	ILK := ST_MR3K2_FIM_ILK,
+    VG := fb_MR3K2_KBH_PIP_1.q_IG,
+    ILK := ST_MR3K2_FIM_ILK,
 );
 
 FB_MR4K2_FIM_ILK(
-	VG := fb_MR4K2_KBV_PIP_1.q_IG,
-	ILK := ST_MR4K2_FIM_ILK,
+    VG := fb_MR4K2_KBV_PIP_1.q_IG,
+    ILK := ST_MR4K2_FIM_ILK,
 );
 
 FB_FIM_ILK := ( ST_MR3K2_FIM_ILK.q_xILK_OK_DO AND ST_MR4K2_FIM_ILK.q_xILK_OK_DO );
