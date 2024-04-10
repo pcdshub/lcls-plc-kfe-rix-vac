@@ -1585,10 +1585,6 @@
 			<Vars VarGrpType="2">
 				<Name>PlcTask Outputs</Name>
 				<Var>
-					<Name>PRG_RIX_INTF.FB_FIM_ILK</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
 					<Name>MAIN.fbArbiterIO.q_stRequestedBP</Name>
 					<Type GUID="{292CD354-C7C0-4A61-AAD0-1C85DD69646B}">ST_BeamParams_IO</Type>
 					<SubVar>
@@ -1717,6 +1713,10 @@
 							<![CDATA[ Cohort index. Identifies which cohort this BP set was included in arbitration]]>
 						</Comment>
 					</SubVar>
+				</Var>
+				<Var>
+					<Name>PRG_RIX_INTF.FB_FIM_ILK</Name>
+					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>GVL_RIX_INTF.FB_MR3K2_FIM_ILK.q_xILK_OK_DO</Name>
