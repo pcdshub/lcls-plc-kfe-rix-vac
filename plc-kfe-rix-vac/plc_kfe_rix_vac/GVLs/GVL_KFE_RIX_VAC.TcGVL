@@ -21,13 +21,13 @@ fb_MR3K2_KBH_GPI_1 : FB_MKS275;
 {attribute 'pytmc' := ' pv: MR4K2:KBV:GPI:1 '}
 fb_MR4K2_KBV_GPI_1 : FB_MKS275;
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 1^Value'}
-{attribute 'pytmc' := ' pv:SP1K2:PAX:GPI:1 '}
+{attribute 'pytmc' := ' pv: SP1K2:PAX:GPI:1 '}
 fb_SP1K2_PAX_GPI_1 : FB_MKS275;
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIIB[Term 170 (EL3174-0002)]^AI Standard Channel 3^Value'}
-{attribute 'pytmc' := ' pv:SP1K2:PAX:GPI:2 '}
+{attribute 'pytmc' := ' pv: SP1K2:PAX:GPI:2 '}
 fb_SP1K2_PAX_GPI_2 : FB_MKS275;
 {attribute 'TcLinkTo' := 	'.i_iPRESS_R	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^EK1100_05_00^EL3174_05_11^AI Standard Channel 1^Value'}
-{attribute 'pytmc' := ' pv:IM5K2:PPM:GPI:1 '}
+{attribute 'pytmc' := ' pv: IM5K2:PPM:GPI:1 '}
 fb_IM5K2_PPM_GPI_1 : FB_MKS275;
 
 //New Superbee piranis
