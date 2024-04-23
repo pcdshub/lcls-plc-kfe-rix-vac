@@ -115,6 +115,10 @@
       <DefaultResolution>LCLS Vacuum, * (SLAC - LCLS)</DefaultResolution>
       <Namespace>LCLS_Vacuum</Namespace>
     </PlaceholderReference>
+    <PlaceholderReference Include="LCLSVacuumSerialDriverLib">
+      <DefaultResolution>LCLSVacuumSerialDriverLib, * (SLAC)</DefaultResolution>
+      <Namespace>LCLS_Vacuum_Serial</Namespace>
+    </PlaceholderReference>
     <PlaceholderReference Include="PMPS">
       <DefaultResolution>PMPS, * (SLAC - LCLS)</DefaultResolution>
       <Namespace>PMPS</Namespace>
@@ -122,6 +126,10 @@
     <PlaceholderReference Include="Tc2_DataExchange">
       <DefaultResolution>Tc2_DataExchange, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_DataExchange</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_SerialCom">
+      <DefaultResolution>Tc2_SerialCom, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_SerialCom</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -182,7 +190,7 @@
       <Resolution>Tc2_ModbusSrv, 3.3.2.0 (Beckhoff Automation GmbH)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc2_SerialCom">
-      <Resolution>Tc2_SerialCom, 3.3.7.0 (Beckhoff Automation GmbH)</Resolution>
+      <Resolution>Tc2_SerialCom, 3.3.10.0 (Beckhoff Automation GmbH)</Resolution>
     </PlaceholderResolution>
     <PlaceholderResolution Include="Tc2_Standard">
       <Resolution>Tc2_Standard, 3.3.3.0 (Beckhoff Automation GmbH)</Resolution>
