@@ -271,7 +271,7 @@ fb_SP1K2_PAX_PTM_01(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_4.M_IsOpen()
                 AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_01.iq_stPTM,BackingGauge:=qRIXS_ROUGH_GPI_02.IG, InletGauge:=fb_SP1K2_PAX_GPI_1.PG, ScrollPump:= qRIXS_PRO_01.st_pro) );
 
 fb_SP1K2_PAX_PTM_02(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_4.M_IsOpen()
-                AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_02.iq_stPTM,BackingGauge:=qRIXS_ROUGH_GPI_02.IG, InletGauge:=fb_SP1K2_PAX_GPI_2.PG, ScrollPump:= qRIXS_PRO_01.st_pro) );				
+                AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_02.iq_stPTM,BackingGauge:=qRIXS_ROUGH_GPI_02.IG, InletGauge:=fb_SP1K2_PAX_GPI_2.PG, ScrollPump:= qRIXS_PRO_01.st_pro) );
 
 
 (*********SERIAL COMMUNICATION**********)
@@ -287,7 +287,7 @@ fbPfeifferCom_SP1K2_PAX_PTM_01(astPfeifferControl:= stPfeiffer_CTRL_SP1K2_PAX_PT
                               SerialTXBuffer:= SerialTXBuffer_SP1K2_PAX_PTM_01);
 (*Copy Status Pv's into the PTM structure*)
 fb_SP1K2_PAX_PTM_01.M_Serial_IO(st_Pfeiffer_RBK:= stPfeiffer_RBK_SP1K2_PAX_PTM_01[1],
-                            st_Pfeiffer_CTRL:= stPfeiffer_CTRL_SP1K2_PAX_PTM_01[1]);			
+                            st_Pfeiffer_CTRL:= stPfeiffer_CTRL_SP1K2_PAX_PTM_01[1]);
 
 //SP1K2_PAX_PTM_02
 (*Assign adresses to the pfeiffer controllers connected to this serial terminal*)
@@ -301,7 +301,7 @@ fbPfeifferCom_SP1K2_PAX_PTM_02(astPfeifferControl:= stPfeiffer_CTRL_SP1K2_PAX_PT
 (*Copy Status Pv's into the PTM structure*)
 fb_SP1K2_PAX_PTM_02.M_Serial_IO(st_Pfeiffer_RBK:= stPfeiffer_RBK_SP1K2_PAX_PTM_02[1],
                             st_Pfeiffer_CTRL:= stPfeiffer_CTRL_SP1K2_PAX_PTM_02[1]);
-				
+
 // PIP_Gamma Pumps
 
 fb_PC1K1_ZOS_PIP_1(i_stGauge := fb_PC1K1_ZOS_GPI_1.PG, i_xOverrideMode := xSystemOverrideMode1);

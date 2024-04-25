@@ -271,7 +271,7 @@ fb_TV1K2_VFS_Interface : FB_VFS_Interface;
     {attribute 'TcLinkTo' := 	'.q_xILK_OK_DO	:= TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 11 (EL2794)^Channel 1^Output '}
 
     fb_RIX_ILK			:	FB_EXT_ILK;
-	
+
 
 (*Pfeiffer serial*)
 stPfeiffer_CTRL_SP1K2_PAX_PTM_01     : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferControl;
@@ -281,7 +281,7 @@ fbPfeifferCom_SP1K2_PAX_PTM_01       : FB_PFEIFFER_COM;
 stPfeiffer_CTRL_SP1K2_PAX_PTM_02     : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferControl;
 stPfeiffer_RBK_SP1K2_PAX_PTM_02      : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferStatus;
 fbPfeifferCom_SP1K2_PAX_PTM_02       : FB_PFEIFFER_COM;
-	
+
 
 END_VAR]]></Declaration>
   </GVL>

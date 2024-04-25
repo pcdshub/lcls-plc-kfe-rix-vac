@@ -8,11 +8,11 @@ VAR_GLOBAL
     SerialTXBuffer_SP1K2_PAX_PTM_01     : ComBuffer;
     SerialRXBuffer_SP1K2_PAX_PTM_02     : ComBuffer;
     SerialTXBuffer_SP1K2_PAX_PTM_02     : ComBuffer;
-    
+
     //Serial Terminal
     fbSerialLineControl_SP1K2_PAX_PTM_01     : SerialLineControl;
     fbSerialLineControl_SP1K2_PAX_PTM_02     : SerialLineControl;
-    
+
 
     //SERIAL IO
     {attribute	'TcLinkTo'	:=	'.Status:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Status;
@@ -119,7 +119,7 @@ VAR_GLOBAL
     '}
     stComOut_SP1K2_PAX_PTM_02 AT %Q* : EL6outData22B;
 
-   
+
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
