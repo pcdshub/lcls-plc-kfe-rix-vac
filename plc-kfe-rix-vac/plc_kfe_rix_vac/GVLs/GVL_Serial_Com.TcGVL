@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_Serial_Com" Id="{43dac701-90fd-47c7-88d3-17fd6c1cd813}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+VAR_GLOBAL
+    //COMM FUNCTION
+    SerialRXBuffer_SP1K2_PAX_PTM_01     : ComBuffer;
+    SerialTXBuffer_SP1K2_PAX_PTM_01     : ComBuffer;
+    SerialRXBuffer_SP1K2_PAX_PTM_02     : ComBuffer;
+    SerialTXBuffer_SP1K2_PAX_PTM_02     : ComBuffer;
+    
+    //Serial Terminal
+    fbSerialLineControl_SP1K2_PAX_PTM_01     : SerialLineControl;
+    fbSerialLineControl_SP1K2_PAX_PTM_02     : SerialLineControl;
+    
+
+    //SERIAL IO
+    {attribute	'TcLinkTo'	:=	'.Status:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Status;
+                                 .D[0]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 0;
+                                 .D[1]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 1;
+                                 .D[2]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 2;
+                                 .D[3]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 3;
+                                 .D[4]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 4;
+                                 .D[5]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 5;
+                                 .D[6]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 6;
+                                 .D[7]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 7;
+                                 .D[8]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 8;
+                                 .D[9]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 9;
+                                 .D[10]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 10;
+                                 .D[11]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 11;
+                                 .D[12]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 12;
+                                 .D[13]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 13;
+                                 .D[14]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 14;
+                                 .D[15]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 15;
+                                 .D[16]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 16;
+                                 .D[17]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 17;
+                                 .D[18]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 18;
+                                 .D[19]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 19;
+                                 .D[20]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 20;
+                                 .D[21]:=TIIB[Term 162 (EL6021)]^COM TxPDO-Map Inputs^Data In 21
+    '}
+    stComIn_SP1K2_PAX_PTM_01 AT %I* : EL6inData22B;
+
+    {attribute 'TcLinkTo'	:=	'.Ctrl:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Ctrl;
+                                 .D[0]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 0;
+                                 .D[1]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 1;
+                                 .D[2]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 2;
+                                 .D[3]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 3;
+                                 .D[4]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 4;
+                                 .D[5]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 5;
+                                 .D[6]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 6;
+                                 .D[7]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 7;
+                                 .D[8]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 8;
+                                 .D[9]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 9;
+                                 .D[10]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 10;
+                                 .D[11]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 11;
+                                 .D[12]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 12;
+                                 .D[13]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 13;
+                                 .D[14]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 14;
+                                 .D[15]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 15;
+                                 .D[16]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 16;
+                                 .D[17]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 17;
+                                 .D[18]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 18;
+                                 .D[19]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 19;
+                                 .D[20]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 20;
+                                 .D[21]:=TIIB[Term 162 (EL6021)]^COM RxPDO-Map Outputs^Data Out 21
+    '}
+    stComOut_SP1K2_PAX_PTM_01 AT %Q* : EL6outData22B;
+
+    {attribute	'TcLinkTo'	:=	'.Status:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Status;
+                                 .D[0]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 0;
+                                 .D[1]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 1;
+                                 .D[2]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 2;
+                                 .D[3]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 3;
+                                 .D[4]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 4;
+                                 .D[5]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 5;
+                                 .D[6]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 6;
+                                 .D[7]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 7;
+                                 .D[8]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 8;
+                                 .D[9]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 9;
+                                 .D[10]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 10;
+                                 .D[11]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 11;
+                                 .D[12]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 12;
+                                 .D[13]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 13;
+                                 .D[14]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 14;
+                                 .D[15]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 15;
+                                 .D[16]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 16;
+                                 .D[17]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 17;
+                                 .D[18]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 18;
+                                 .D[19]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 19;
+                                 .D[20]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 20;
+                                 .D[21]:=TIIB[Term 166 (EL6021)]^COM TxPDO-Map Inputs^Data In 21
+    '}
+    stComIn_SP1K2_PAX_PTM_02 AT %I* : EL6inData22B;
+
+    {attribute 'TcLinkTo'	:=	'.Ctrl:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Ctrl;
+                                 .D[0]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 0;
+                                 .D[1]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 1;
+                                 .D[2]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 2;
+                                 .D[3]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 3;
+                                 .D[4]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 4;
+                                 .D[5]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 5;
+                                 .D[6]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 6;
+                                 .D[7]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 7;
+                                 .D[8]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 8;
+                                 .D[9]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 9;
+                                 .D[10]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 10;
+                                 .D[11]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 11;
+                                 .D[12]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 12;
+                                 .D[13]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 13;
+                                 .D[14]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 14;
+                                 .D[15]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 15;
+                                 .D[16]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 16;
+                                 .D[17]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 17;
+                                 .D[18]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 18;
+                                 .D[19]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 19;
+                                 .D[20]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 20;
+                                 .D[21]:=TIIB[Term 166 (EL6021)]^COM RxPDO-Map Outputs^Data Out 21
+    '}
+    stComOut_SP1K2_PAX_PTM_02 AT %Q* : EL6outData22B;
+
+   
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

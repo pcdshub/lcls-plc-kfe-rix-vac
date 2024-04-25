@@ -74,6 +74,10 @@
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
+    <Compile Include="GVLs\GVL_Serial_Com.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="GVLs\GVL_Variables.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
@@ -90,6 +94,9 @@
     <Compile Include="POUs\FB_EXT_ILK.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\PRG_COM.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\PRG_RIX_INTF.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -97,6 +104,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_KFE_RIX_VAC_FS.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serial_COM.TcTTO">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

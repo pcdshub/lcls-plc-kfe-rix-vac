@@ -259,19 +259,48 @@ fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             iq_stValve =>);
 
 //Manual Valve, only readback
-//fb_SP1K2_PAX_VRC_3
+fb_SP1K2_PAX_VRC_3(i_xOverrideMode:=xSystemOverrideMode1,
+            iq_stValve =>);
 
 // backing PAX chamber
 fb_SP1K2_PAX_VRC_4(i_xExtILK_OK :=  qRIXS_PRO_01.st_pro.eState = E_PumpState.pumpRUNNING, i_xOverrideMode := xSystemOverrideMode1, iq_stValve =>)	;
 
 
 //PAX Turbo Pumps (PTM) ILK
-fb_SP1K2_PAX_PTM_01(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_1.M_IsOpen()
+fb_SP1K2_PAX_PTM_01(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_4.M_IsOpen()
                 AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_01.iq_stPTM,BackingGauge:=qRIXS_ROUGH_GPI_02.IG, InletGauge:=fb_SP1K2_PAX_GPI_1.PG, ScrollPump:= qRIXS_PRO_01.st_pro) );
 
-fb_SP1K2_PAX_PTM_02(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_2.M_IsOpen()
+fb_SP1K2_PAX_PTM_02(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_4.M_IsOpen()
                 AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_02.iq_stPTM,BackingGauge:=qRIXS_ROUGH_GPI_02.IG, InletGauge:=fb_SP1K2_PAX_GPI_2.PG, ScrollPump:= qRIXS_PRO_01.st_pro) );				
-			
+
+
+(*********SERIAL COMMUNICATION**********)
+(*Pfeiffer pumps*)
+//SP1K2_PAX_PTM_01
+(*Assign adresses to the pfeiffer controllers connected to this serial terminal*)
+stPfeiffer_CTRL_SP1K2_PAX_PTM_01[1].iSerialAddress:= 1;
+stPfeiffer_CTRL_SP1K2_PAX_PTM_01[1].xEnableComm:= TRUE;
+(*Instanitate the Function block for serial communication with Pfeiffer*)
+fbPfeifferCom_SP1K2_PAX_PTM_01(astPfeifferControl:= stPfeiffer_CTRL_SP1K2_PAX_PTM_01,
+                              astPfeifferStatus:= stPfeiffer_RBK_SP1K2_PAX_PTM_01,
+                              SerialRXBuffer:= SerialRXBuffer_SP1K2_PAX_PTM_01,
+                              SerialTXBuffer:= SerialTXBuffer_SP1K2_PAX_PTM_01);
+(*Copy Status Pv's into the PTM structure*)
+fb_SP1K2_PAX_PTM_01.M_Serial_IO(st_Pfeiffer_RBK:= stPfeiffer_RBK_SP1K2_PAX_PTM_01[1],
+                            st_Pfeiffer_CTRL:= stPfeiffer_CTRL_SP1K2_PAX_PTM_01[1]);			
+
+//SP1K2_PAX_PTM_02
+(*Assign adresses to the pfeiffer controllers connected to this serial terminal*)
+stPfeiffer_CTRL_SP1K2_PAX_PTM_02[1].iSerialAddress:= 1;
+stPfeiffer_CTRL_SP1K2_PAX_PTM_02[1].xEnableComm:= TRUE;
+(*Instanitate the Function block for serial communication with Pfeiffer*)
+fbPfeifferCom_SP1K2_PAX_PTM_02(astPfeifferControl:= stPfeiffer_CTRL_SP1K2_PAX_PTM_02,
+                              astPfeifferStatus:= stPfeiffer_RBK_SP1K2_PAX_PTM_02,
+                              SerialRXBuffer:= SerialRXBuffer_SP1K2_PAX_PTM_02,
+                              SerialTXBuffer:= SerialTXBuffer_SP1K2_PAX_PTM_02);
+(*Copy Status Pv's into the PTM structure*)
+fb_SP1K2_PAX_PTM_02.M_Serial_IO(st_Pfeiffer_RBK:= stPfeiffer_RBK_SP1K2_PAX_PTM_02[1],
+                            st_Pfeiffer_CTRL:= stPfeiffer_CTRL_SP1K2_PAX_PTM_02[1]);
 				
 // PIP_Gamma Pumps
 
