@@ -161,7 +161,7 @@ fb_SP1K2_PAX_VRC_2 : FB_VRC;
                                  .i_xClsLS		:= TIIB[Term 159 (EL1004)]^Channel 2^Input ;
                                  .q_xOPN_DO	:= TIIB[Term 158 (EL2004)]^Channel 3^Output'}
 fb_SP1K2_PAX_VRM_3 : FB_VRC; 
-{attribute 'pytmc' := ' pv: SP1K2:PAX:VRM:4 '}
+{attribute 'pytmc' := ' pv: SP1K2:PAX:VRC:4 '}
 {attribute 'TcLinkTo' := 	'.i_xOpnLS		:=	TIIB[Term 169 (EL1004)]^Channel 1^Input;
                                  .i_xClsLS		:= TIIB[Term 169 (EL1004)]^Channel 2^Input ;
                                  .q_xOPN_DO	:= TIIB[Term 168 (EL2004)]^Channel 1^Output'}
