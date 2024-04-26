@@ -259,7 +259,8 @@ fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             iq_stValve =>);
 
 //Manual Valve, only readback
-fb_SP1K2_PAX_VRC_3(i_xOverrideMode:=xSystemOverrideMode1,
+fb_SP1K2_PAX_VRM_3(i_xExtILK_OK:=TRUE,
+            i_xOverrideMode:=xSystemOverrideMode1,
             iq_stValve =>);
 
 // backing PAX chamber
