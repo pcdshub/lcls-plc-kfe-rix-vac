@@ -1,0 +1,30 @@
+lcls-plc-kfe-rix-vac
+--------------------
+
+.. toctree::
+    :maxdepth: 2
+    :caption: plc-kfe-rix-vac
+
+    plc-kfe-rix-vac_pragmas
+    plc-kfe-rix-vac_nc
+    plc-kfe-rix-vac_ethercat
+    plc-kfe-rix-vac_boxes
+    plc-kfe-rix-vac_links
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: plc_kfe_rix_vac
+
+    plc-kfe-rix-vac_plc_kfe_rix_vac_summary
+    plc-kfe-rix-vac_plc_kfe_rix_vac_epics
+    plc-kfe-rix-vac_plc_kfe_rix_vac_source
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
