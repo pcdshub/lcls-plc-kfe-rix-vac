@@ -19,23 +19,7 @@ bSP1K2_PAX_VRC_5_ILK : BOOL := FALSE;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[//ADS interfaces
-qRIXS_ROUGH_GPI_02(
-    sNetId:= '172.21.140.43.1.1',
-    nPort:= 851,
-    sVarName:= 'GVL_Devices.qRIXS_ROUGH_GPI_02',
-    iWatchdog:= iWatchdog ,
-    IG=> ,
-    bError=> );
-qRIXS_PRO_01(
-    sNetId:= '172.21.140.43.1.1',
-    nPort:= 851,
-    sVarName:= 'GVL_Devices.qRIXS_PRO_01',
-    iWatchdog:= iWatchdog ,
-    st_pro=> ,
-    bError=> );
-
-
+      <ST><![CDATA[
 // MKS275 Gauges
 
 fb_PC1K1_ZOS_GPI_1(PG=>);
