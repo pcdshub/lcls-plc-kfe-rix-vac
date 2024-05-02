@@ -16,7 +16,7 @@ RIXS_PRO_01(i_stBPGauge := RIXS_ROUGH_GPI_01.PG, i_xVlvOpn := TRUE, i_xExtIlkOK 
 
 
 if( RIXS_PRO_01.stPump.eState = pumpSTARTING ) OR ( RIXS_PRO_01.stPump.eState = pumpRUNNING )
- THEN RIXS_ROUGH_VRO_01.M_Open(TRUE); 
+ THEN RIXS_ROUGH_VRO_01.M_Open(TRUE);
 END_IF
 RIXS_ROUGH_VRO_01(i_xExtILK_OK:= (RIXS_PRO_01.stPump.eState = pumpRUNNING  OR  RIXS_PRO_01.stPump.eState = pumpSTARTING ), i_xOverrideMode:= , iq_stValve=> );
 ]]></ST>
