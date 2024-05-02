@@ -106,6 +106,9 @@
     <Compile Include="POUs\PRG_KFE_RIX_VAC_FS.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\PRG_Roughing.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Serial_COM.TcTTO">
       <SubType>Code</SubType>
     </Compile>

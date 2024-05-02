@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_Roughing" Id="{9373ef9e-5e95-4b75-81c2-b0e4a1795889}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_Roughing
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Roughing devices
+//MKS 275 Gauges
+RIXS_ROUGH_GPI_01.M_SetBits(30518);
+RIXS_ROUGH_GPI_01();			// Roughing guage near pro
+
+
+RIXS_PRO_01(i_stBPGauge := RIXS_ROUGH_GPI_01.PG, i_xVlvOpn := TRUE, i_xExtIlkOK := TRUE);
+
+
+if( RIXS_PRO_01.stPump.eState = pumpSTARTING ) OR ( RIXS_PRO_01.stPump.eState = pumpRUNNING )
+ THEN RIXS_ROUGH_VRO_01.M_Open(TRUE); 
+END_IF
+RIXS_ROUGH_VRO_01(i_xExtILK_OK:= (RIXS_PRO_01.stPump.eState = pumpRUNNING  OR  RIXS_PRO_01.stPump.eState = pumpSTARTING ), i_xOverrideMode:= , iq_stValve=> );
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

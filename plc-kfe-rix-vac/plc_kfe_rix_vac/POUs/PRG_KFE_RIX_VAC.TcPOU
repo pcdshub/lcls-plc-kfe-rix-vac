@@ -244,16 +244,16 @@ fb_LI2K2_K2A_VWC_1(
 //PAX VRCs
 bSP1K2_PAX_VRC_1_ILK := F_TurboGateValve_Protection_ILK(i_Turbo:=fb_SP1K2_PAX_PTM_01.iq_stPtm,
                                                i_stISG:=fb_SP1K2_PAX_GPI_1.PG,
-                                               i_stBSG:=qRIXS_ROUGH_GPI_02.IG,
-                                                 ScrollPump:=qRIXS_PRO_01.st_pro);
+                                               i_stBSG:=RIXS_ROUGH_GPI_01.PG,
+                                                 ScrollPump:=RIXS_PRO_01.stPump);
 fb_SP1K2_PAX_VRC_1(i_xExtILK_OK:=bSP1K2_PAX_VRC_1_ILK,
             i_xOverrideMode:=xSystemOverrideMode1,
             iq_stValve =>);
 
 bSP1K2_PAX_VRC_2_ILK := F_TurboGateValve_Protection_ILK(i_Turbo:=fb_SP1K2_PAX_PTM_02.iq_stPtm,
                                                i_stISG:=fb_SP1K2_PAX_GPI_2.PG,
-                                               i_stBSG:=qRIXS_ROUGH_GPI_02.IG,
-                                                 ScrollPump:=qRIXS_PRO_01.st_pro);
+                                               i_stBSG:=RIXS_ROUGH_GPI_01.PG,
+                                                 ScrollPump:=RIXS_PRO_01.stPump);
 fb_SP1K2_PAX_VRC_2(i_xExtILK_OK:=bSP1K2_PAX_VRC_2_ILK,
             i_xOverrideMode:=xSystemOverrideMode1,
             iq_stValve =>);
@@ -269,10 +269,10 @@ fb_SP1K2_PAX_VRC_4(i_xExtILK_OK :=  qRIXS_PRO_01.st_pro.eState = E_PumpState.pum
 
 //PAX Turbo Pumps (PTM) ILK
 fb_SP1K2_PAX_PTM_01(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_4.M_IsOpen()
-                AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_01.iq_stPTM,BackingGauge:=qRIXS_ROUGH_GPI_02.IG, InletGauge:=fb_SP1K2_PAX_GPI_1.PG, ScrollPump:= qRIXS_PRO_01.st_pro) );
+                AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_01.iq_stPTM,BackingGauge:=RIXS_ROUGH_GPI_01.PG, InletGauge:=fb_SP1K2_PAX_GPI_1.PG, ScrollPump:= RIXS_PRO_01.stPump) );
 
 fb_SP1K2_PAX_PTM_02(i_xExtIlkOK:= fb_SP1K2_PAX_VRC_4.M_IsOpen()
-                AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_02.iq_stPTM,BackingGauge:=qRIXS_ROUGH_GPI_02.IG, InletGauge:=fb_SP1K2_PAX_GPI_2.PG, ScrollPump:= qRIXS_PRO_01.st_pro) );
+                AND F_TurboExtILKLogic_2(Turbo:=fb_SP1K2_PAX_PTM_02.iq_stPTM,BackingGauge:=RIXS_ROUGH_GPI_01.PG, InletGauge:=fb_SP1K2_PAX_GPI_2.PG, ScrollPump:= RIXS_PRO_01.stPump) );
 
 
 (*********SERIAL COMMUNICATION**********)
