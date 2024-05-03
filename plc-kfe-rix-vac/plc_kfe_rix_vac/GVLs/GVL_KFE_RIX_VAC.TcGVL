@@ -30,6 +30,7 @@ fb_SP1K2_PAX_GPI_2 : FB_MKS275;
 {attribute 'pytmc' := ' pv: IM5K2:PPM:GPI:1 '}
 fb_IM5K2_PPM_GPI_1 : FB_MKS275;
 
+
 //New Superbee piranis
 {attribute 'pytmc' := ' pv: TM2K2:ATM:GPI:1 '}
 fb_TM2K2_ATM_GPI_1 : FB_MKS275;
@@ -283,6 +284,25 @@ stPfeiffer_CTRL_SP1K2_PAX_PTM_02     : ARRAY[1..gcMaxPfeifferPumps] OF ST_Pfeiff
 stPfeiffer_RBK_SP1K2_PAX_PTM_02      : ARRAY[1..gcMaxPfeifferPumps] OF ST_PfeifferStatus;
 fbPfeifferCom_SP1K2_PAX_PTM_02       : FB_PFEIFFER_COM;
 
+//// Connected to B950-310-WALL-W-DRL-02 (Mechanical Room )
+{attribute 'pytmc' := ' pv: RIXS:PRO:01 '}
+{attribute 'TcLinkTo' := '.q_xMPStart := TIIB[EL2794_03_03]^Channel 1^Output;
+                          .q_xBPStart := TIIB[EL2794_03_03]^Channel 2^Output;
+                          .i_xMPStatus := TIIB[EL1088_03_01]^Channel 1^Input;
+                          .i_xBPStatus := TIIB[EL1088_03_01]^Channel 2^Input;
+                          .i_xWarning := TIIB[EL1088_03_01]^Channel 3^Input;
+                          .i_xAlarmOK := TIIB[EL1088_03_01]^Channel 4^Input;
+                          .i_xRemote := TIIB (EL1088_03_01]^Channel 5^Input
+'}
+RIXS_PRO_01 : FB_EbaraDryPump;
+{attribute 'pytmc' := ' pv: RIXS:ROUGH:GPI:01 '}
+{attribute 'TcLinkTo' := 	'.i_iPRESS_R	:=	TIIB[EL3174-0002_03_07]^AI Standard Channel 4^Value'}
+RIXS_ROUGH_GPI_01 : FB_MKS275;
+
+//VRO
+{attribute 'pytmc' := ' pv: RIXS:ROUGH:VRO:01 '}
+{attribute 'TcLinkTo' := 	'.q_xOPN_DO	:=	TIIB[EL2212_03_04]^DOX Control Channel 1^Control^Output'}
+RIXS_ROUGH_VRO_01 : FB_VVC;
 
 END_VAR]]></Declaration>
   </GVL>
