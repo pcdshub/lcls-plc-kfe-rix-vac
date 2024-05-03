@@ -93,6 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#prg-kfe-rix-vac">PRG_KFE_RIX_VAC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prg-kfe-rix-vac-fs">PRG_KFE_RIX_VAC_FS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#prg-rix-intf">PRG_RIX_INTF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prg-roughing">PRG_Roughing</a></li>
 </ul>
 </li>
 </ul>
@@ -191,6 +192,7 @@
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>    <span class="s1">&#39;.i_iPRESS_R    := TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 45 (EK1521-0010)^Term 47 (EK1501-0010)^Term 62 (EK1122)^EK1100_05_00^EL3174_05_11^AI Standard Channel 1^Value&#39;</span><span class="p">}</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: IM5K2:PPM:GPI:1 &#39;</span><span class="p">}</span>
 <span class="n">fb_IM5K2_PPM_GPI_1</span> <span class="p">:</span> <span class="n">FB_MKS275</span><span class="p">;</span>
+
 
 <span class="o">//</span><span class="n">New</span> <span class="n">Superbee</span> <span class="n">piranis</span>
 <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: TM2K2:ATM:GPI:1 &#39;</span><span class="p">}</span>
@@ -445,6 +447,25 @@
 <span class="n">stPfeiffer_RBK_SP1K2_PAX_PTM_02</span>      <span class="p">:</span> <span class="n">ARRAY</span><span class="p">[</span><span class="mf">1.</span><span class="o">.</span><span class="n">gcMaxPfeifferPumps</span><span class="p">]</span> <span class="n">OF</span> <span class="n">ST_PfeifferStatus</span><span class="p">;</span>
 <span class="n">fbPfeifferCom_SP1K2_PAX_PTM_02</span>       <span class="p">:</span> <span class="n">FB_PFEIFFER_COM</span><span class="p">;</span>
 
+<span class="o">////</span> <span class="n">Connected</span> <span class="n">to</span> <span class="n">B950</span><span class="o">-</span><span class="mi">310</span><span class="o">-</span><span class="n">WALL</span><span class="o">-</span><span class="n">W</span><span class="o">-</span><span class="n">DRL</span><span class="o">-</span><span class="mi">02</span> <span class="p">(</span><span class="n">Mechanical</span> <span class="n">Room</span> <span class="p">)</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: RIXS:PRO:01 &#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span> <span class="s1">&#39;.q_xMPStart := TIIB[EL2794_03_03]^Channel 1^Output;</span>
+                          <span class="o">.</span><span class="n">q_xBPStart</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">EL2794_03_03</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Output</span><span class="p">;</span>
+                          <span class="o">.</span><span class="n">i_xMPStatus</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">EL1088_03_01</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">1</span><span class="o">^</span><span class="n">Input</span><span class="p">;</span>
+                          <span class="o">.</span><span class="n">i_xBPStatus</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">EL1088_03_01</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">2</span><span class="o">^</span><span class="n">Input</span><span class="p">;</span>
+                          <span class="o">.</span><span class="n">i_xWarning</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">EL1088_03_01</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">3</span><span class="o">^</span><span class="n">Input</span><span class="p">;</span>
+                          <span class="o">.</span><span class="n">i_xAlarmOK</span> <span class="o">:=</span> <span class="n">TIIB</span><span class="p">[</span><span class="n">EL1088_03_01</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">4</span><span class="o">^</span><span class="n">Input</span><span class="p">;</span>
+                          <span class="o">.</span><span class="n">i_xRemote</span> <span class="o">:=</span> <span class="n">TIIB</span> <span class="p">(</span><span class="n">EL1088_03_01</span><span class="p">]</span><span class="o">^</span><span class="n">Channel</span> <span class="mi">5</span><span class="o">^</span><span class="n">Input</span>
+<span class="s1">&#39;}</span>
+<span class="n">RIXS_PRO_01</span> <span class="p">:</span> <span class="n">FB_EbaraDryPump</span><span class="p">;</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: RIXS:ROUGH:GPI:01 &#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>    <span class="s1">&#39;.i_iPRESS_R    :=      TIIB[EL3174-0002_03_07]^AI Standard Channel 4^Value&#39;</span><span class="p">}</span>
+<span class="n">RIXS_ROUGH_GPI_01</span> <span class="p">:</span> <span class="n">FB_MKS275</span><span class="p">;</span>
+
+<span class="o">//</span><span class="n">VRO</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39; pv: RIXS:ROUGH:VRO:01 &#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;TcLinkTo&#39;</span> <span class="o">:=</span>    <span class="s1">&#39;.q_xOPN_DO     :=      TIIB[EL2212_03_04]^DOX Control Channel 1^Control^Output&#39;</span><span class="p">}</span>
+<span class="n">RIXS_ROUGH_VRO_01</span> <span class="p">:</span> <span class="n">FB_VVC</span><span class="p">;</span>
 
 <span class="n">END_VAR</span>
 </pre></div>
@@ -468,12 +489,12 @@
     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
         <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">FIM</span><span class="p">:</span><span class="n">MR3K2</span><span class="p">:</span><span class="n">ILK</span>
     <span class="s1">&#39;}</span>
-    <span class="n">ST_MR3K2_FIM_ILK</span> <span class="p">:</span> <span class="n">ST_EXT_ILK</span> <span class="o">:=</span> <span class="p">(</span><span class="n">rPRO_SP</span> <span class="o">:=</span> <span class="mf">8e-9</span><span class="p">);</span>
+    <span class="n">ST_MR3K2_FIM_ILK</span> <span class="p">:</span> <span class="n">ST_EXT_ILK</span> <span class="o">:=</span> <span class="p">(</span><span class="n">rPRO_SP</span> <span class="o">:=</span> <span class="mf">2e-7</span><span class="p">);</span>
     <span class="n">FB_MR4K2_FIM_ILK</span> <span class="p">:</span> <span class="n">FB_EXT_ILK</span><span class="p">;</span>
     <span class="p">{</span><span class="n">attribute</span> <span class="s1">&#39;pytmc&#39;</span> <span class="o">:=</span> <span class="s1">&#39;</span>
         <span class="n">pv</span><span class="p">:</span> <span class="n">PLC</span><span class="p">:</span><span class="n">KFE</span><span class="p">:</span><span class="n">RIX</span><span class="p">:</span><span class="n">FIM</span><span class="p">:</span><span class="n">MR4K2</span><span class="p">:</span><span class="n">ILK</span>
     <span class="s1">&#39;}</span>
-    <span class="n">ST_MR4K2_FIM_ILK</span> <span class="p">:</span> <span class="n">ST_EXT_ILK</span> <span class="o">:=</span> <span class="p">(</span><span class="n">rPRO_SP</span> <span class="o">:=</span> <span class="mf">8e-9</span><span class="p">);</span>
+    <span class="n">ST_MR4K2_FIM_ILK</span> <span class="p">:</span> <span class="n">ST_EXT_ILK</span> <span class="o">:=</span> <span class="p">(</span><span class="n">rPRO_SP</span> <span class="o">:=</span> <span class="mf">2e-7</span><span class="p">);</span>
 <span class="n">END_VAR</span>
 </pre></div>
 </div>
@@ -998,6 +1019,7 @@
 <span class="n">PRG_KFE_RIX_VAC</span><span class="p">();</span>
 <span class="n">fbLogHandler</span><span class="p">();</span>
 <span class="n">PRG_RIX_INTF</span><span class="p">();</span>
+<span class="n">PRG_Roughing</span><span class="p">();</span>
 
 <span class="n">fbArbiterIO</span><span class="p">(</span><span class="n">i_bVeto</span><span class="o">:=</span>  <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_OUT</span><span class="p">]</span> <span class="n">AND</span> <span class="n">NOT</span> <span class="n">PMPS_GVL</span><span class="o">.</span><span class="n">stCurrentBeamParameters</span><span class="o">.</span><span class="n">aVetoDevices</span><span class="p">[</span><span class="n">PMPS</span><span class="o">.</span><span class="n">K_Stopper</span><span class="o">.</span><span class="n">MR1K1_IN</span><span class="p">],</span>
     <span class="n">Arbiter</span><span class="o">:=</span> <span class="n">fbArbiter1</span><span class="p">,</span>
@@ -1034,6 +1056,7 @@
 <dt>Related:</dt><dd><ul class="simple">
 <li><p><a class="reference internal" href="#prg-kfe-rix-vac">PRG_KFE_RIX_VAC</a></p></li>
 <li><p><a class="reference internal" href="#prg-rix-intf">PRG_RIX_INTF</a></p></li>
+<li><p><a class="reference internal" href="#prg-roughing">PRG_Roughing</a></p></li>
 </ul>
 </dd>
 </dl>
@@ -1087,23 +1110,6 @@
 <span class="n">bSP1K2_PAX_VRC_5_ILK</span> <span class="p">:</span> <span class="n">BOOL</span> <span class="o">:=</span> <span class="n">FALSE</span><span class="p">;</span>
 
 <span class="n">END_VAR</span>
-<span class="o">//</span><span class="n">ADS</span> <span class="n">interfaces</span>
-<span class="n">qRIXS_ROUGH_GPI_02</span><span class="p">(</span>
-    <span class="n">sNetId</span><span class="o">:=</span> <span class="s1">&#39;172.21.140.43.1.1&#39;</span><span class="p">,</span>
-    <span class="n">nPort</span><span class="o">:=</span> <span class="mi">851</span><span class="p">,</span>
-    <span class="n">sVarName</span><span class="o">:=</span> <span class="s1">&#39;GVL_Devices.qRIXS_ROUGH_GPI_02&#39;</span><span class="p">,</span>
-    <span class="n">iWatchdog</span><span class="o">:=</span> <span class="n">iWatchdog</span> <span class="p">,</span>
-    <span class="n">IG</span><span class="o">=&gt;</span> <span class="p">,</span>
-    <span class="n">bError</span><span class="o">=&gt;</span> <span class="p">);</span>
-<span class="n">qRIXS_PRO_01</span><span class="p">(</span>
-    <span class="n">sNetId</span><span class="o">:=</span> <span class="s1">&#39;172.21.140.43.1.1&#39;</span><span class="p">,</span>
-    <span class="n">nPort</span><span class="o">:=</span> <span class="mi">851</span><span class="p">,</span>
-    <span class="n">sVarName</span><span class="o">:=</span> <span class="s1">&#39;GVL_Devices.qRIXS_PRO_01&#39;</span><span class="p">,</span>
-    <span class="n">iWatchdog</span><span class="o">:=</span> <span class="n">iWatchdog</span> <span class="p">,</span>
-    <span class="n">st_pro</span><span class="o">=&gt;</span> <span class="p">,</span>
-    <span class="n">bError</span><span class="o">=&gt;</span> <span class="p">);</span>
-
-
 <span class="o">//</span> <span class="n">MKS275</span> <span class="n">Gauges</span>
 
 <span class="n">fb_PC1K1_ZOS_GPI_1</span><span class="p">(</span><span class="n">PG</span><span class="o">=&gt;</span><span class="p">);</span>
@@ -1312,16 +1318,16 @@
 <span class="o">//</span><span class="n">PAX</span> <span class="n">VRCs</span>
 <span class="n">bSP1K2_PAX_VRC_1_ILK</span> <span class="o">:=</span> <span class="n">F_TurboGateValve_Protection_ILK</span><span class="p">(</span><span class="n">i_Turbo</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_PTM_01</span><span class="o">.</span><span class="n">iq_stPtm</span><span class="p">,</span>
                                                <span class="n">i_stISG</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span>
-                                               <span class="n">i_stBSG</span><span class="o">:=</span><span class="n">qRIXS_ROUGH_GPI_02</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span>
-                                                 <span class="n">ScrollPump</span><span class="o">:=</span><span class="n">qRIXS_PRO_01</span><span class="o">.</span><span class="n">st_pro</span><span class="p">);</span>
+                                               <span class="n">i_stBSG</span><span class="o">:=</span><span class="n">RIXS_ROUGH_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span>
+                                                 <span class="n">ScrollPump</span><span class="o">:=</span><span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="p">);</span>
 <span class="n">fb_SP1K2_PAX_VRC_1</span><span class="p">(</span><span class="n">i_xExtILK_OK</span><span class="o">:=</span><span class="n">bSP1K2_PAX_VRC_1_ILK</span><span class="p">,</span>
             <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode1</span><span class="p">,</span>
             <span class="n">iq_stValve</span> <span class="o">=&gt;</span><span class="p">);</span>
 
 <span class="n">bSP1K2_PAX_VRC_2_ILK</span> <span class="o">:=</span> <span class="n">F_TurboGateValve_Protection_ILK</span><span class="p">(</span><span class="n">i_Turbo</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_PTM_02</span><span class="o">.</span><span class="n">iq_stPtm</span><span class="p">,</span>
                                                <span class="n">i_stISG</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_GPI_2</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span>
-                                               <span class="n">i_stBSG</span><span class="o">:=</span><span class="n">qRIXS_ROUGH_GPI_02</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span>
-                                                 <span class="n">ScrollPump</span><span class="o">:=</span><span class="n">qRIXS_PRO_01</span><span class="o">.</span><span class="n">st_pro</span><span class="p">);</span>
+                                               <span class="n">i_stBSG</span><span class="o">:=</span><span class="n">RIXS_ROUGH_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span>
+                                                 <span class="n">ScrollPump</span><span class="o">:=</span><span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="p">);</span>
 <span class="n">fb_SP1K2_PAX_VRC_2</span><span class="p">(</span><span class="n">i_xExtILK_OK</span><span class="o">:=</span><span class="n">bSP1K2_PAX_VRC_2_ILK</span><span class="p">,</span>
             <span class="n">i_xOverrideMode</span><span class="o">:=</span><span class="n">xSystemOverrideMode1</span><span class="p">,</span>
             <span class="n">iq_stValve</span> <span class="o">=&gt;</span><span class="p">);</span>
@@ -1332,15 +1338,15 @@
             <span class="n">iq_stValve</span> <span class="o">=&gt;</span><span class="p">);</span>
 
 <span class="o">//</span> <span class="n">backing</span> <span class="n">PAX</span> <span class="n">chamber</span>
-<span class="n">fb_SP1K2_PAX_VRC_4</span><span class="p">(</span><span class="n">i_xExtILK_OK</span> <span class="o">:=</span>  <span class="n">qRIXS_PRO_01</span><span class="o">.</span><span class="n">st_pro</span><span class="o">.</span><span class="n">eState</span> <span class="o">=</span> <span class="n">E_PumpState</span><span class="o">.</span><span class="n">pumpRUNNING</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">,</span> <span class="n">iq_stValve</span> <span class="o">=&gt;</span><span class="p">)</span>   <span class="p">;</span>
+<span class="n">fb_SP1K2_PAX_VRC_4</span><span class="p">(</span><span class="n">i_xExtILK_OK</span> <span class="o">:=</span>  <span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="o">.</span><span class="n">eState</span> <span class="o">=</span> <span class="n">E_PumpState</span><span class="o">.</span><span class="n">pumpRUNNING</span><span class="p">,</span> <span class="n">i_xOverrideMode</span> <span class="o">:=</span> <span class="n">xSystemOverrideMode1</span><span class="p">,</span> <span class="n">iq_stValve</span> <span class="o">=&gt;</span><span class="p">)</span>    <span class="p">;</span>
 
 
 <span class="o">//</span><span class="n">PAX</span> <span class="n">Turbo</span> <span class="n">Pumps</span> <span class="p">(</span><span class="n">PTM</span><span class="p">)</span> <span class="n">ILK</span>
 <span class="n">fb_SP1K2_PAX_PTM_01</span><span class="p">(</span><span class="n">i_xExtIlkOK</span><span class="o">:=</span> <span class="n">fb_SP1K2_PAX_VRC_4</span><span class="o">.</span><span class="n">M_IsOpen</span><span class="p">()</span>
-                <span class="n">AND</span> <span class="n">F_TurboExtILKLogic_2</span><span class="p">(</span><span class="n">Turbo</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_PTM_01</span><span class="o">.</span><span class="n">iq_stPTM</span><span class="p">,</span><span class="n">BackingGauge</span><span class="o">:=</span><span class="n">qRIXS_ROUGH_GPI_02</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span> <span class="n">InletGauge</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">ScrollPump</span><span class="o">:=</span> <span class="n">qRIXS_PRO_01</span><span class="o">.</span><span class="n">st_pro</span><span class="p">)</span> <span class="p">);</span>
+                <span class="n">AND</span> <span class="n">F_TurboExtILKLogic_2</span><span class="p">(</span><span class="n">Turbo</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_PTM_01</span><span class="o">.</span><span class="n">iq_stPTM</span><span class="p">,</span><span class="n">BackingGauge</span><span class="o">:=</span><span class="n">RIXS_ROUGH_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">InletGauge</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_GPI_1</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">ScrollPump</span><span class="o">:=</span> <span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="p">)</span> <span class="p">);</span>
 
 <span class="n">fb_SP1K2_PAX_PTM_02</span><span class="p">(</span><span class="n">i_xExtIlkOK</span><span class="o">:=</span> <span class="n">fb_SP1K2_PAX_VRC_4</span><span class="o">.</span><span class="n">M_IsOpen</span><span class="p">()</span>
-                <span class="n">AND</span> <span class="n">F_TurboExtILKLogic_2</span><span class="p">(</span><span class="n">Turbo</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_PTM_02</span><span class="o">.</span><span class="n">iq_stPTM</span><span class="p">,</span><span class="n">BackingGauge</span><span class="o">:=</span><span class="n">qRIXS_ROUGH_GPI_02</span><span class="o">.</span><span class="n">IG</span><span class="p">,</span> <span class="n">InletGauge</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_GPI_2</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">ScrollPump</span><span class="o">:=</span> <span class="n">qRIXS_PRO_01</span><span class="o">.</span><span class="n">st_pro</span><span class="p">)</span> <span class="p">);</span>
+                <span class="n">AND</span> <span class="n">F_TurboExtILKLogic_2</span><span class="p">(</span><span class="n">Turbo</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_PTM_02</span><span class="o">.</span><span class="n">iq_stPTM</span><span class="p">,</span><span class="n">BackingGauge</span><span class="o">:=</span><span class="n">RIXS_ROUGH_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">InletGauge</span><span class="o">:=</span><span class="n">fb_SP1K2_PAX_GPI_2</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">ScrollPump</span><span class="o">:=</span> <span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="p">)</span> <span class="p">);</span>
 
 
 <span class="p">(</span><span class="o">*********</span><span class="n">SERIAL</span> <span class="n">COMMUNICATION</span><span class="o">**********</span><span class="p">)</span>
@@ -1471,6 +1477,29 @@
 <span class="p">);</span>
 
 <span class="n">FB_FIM_ILK</span> <span class="o">:=</span> <span class="p">(</span> <span class="n">ST_MR3K2_FIM_ILK</span><span class="o">.</span><span class="n">q_xILK_OK_DO</span> <span class="n">AND</span> <span class="n">ST_MR4K2_FIM_ILK</span><span class="o">.</span><span class="n">q_xILK_OK_DO</span> <span class="p">);</span>
+
+<span class="n">END_PROGRAM</span>
+</pre></div>
+</div>
+</section>
+<section id="prg-roughing">
+<h2>PRG_Roughing<a class="headerlink" href="#prg-roughing" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROGRAM</span> <span class="n">PRG_Roughing</span>
+<span class="n">VAR</span>
+<span class="n">END_VAR</span>
+<span class="o">//</span> <span class="n">Roughing</span> <span class="n">devices</span>
+<span class="o">//</span><span class="n">MKS</span> <span class="mi">275</span> <span class="n">Gauges</span>
+<span class="n">RIXS_ROUGH_GPI_01</span><span class="o">.</span><span class="n">M_SetBits</span><span class="p">(</span><span class="mi">30518</span><span class="p">);</span>
+<span class="n">RIXS_ROUGH_GPI_01</span><span class="p">();</span>                        <span class="o">//</span> <span class="n">Roughing</span> <span class="n">guage</span> <span class="n">near</span> <span class="n">pro</span>
+
+
+<span class="n">RIXS_PRO_01</span><span class="p">(</span><span class="n">i_stBPGauge</span> <span class="o">:=</span> <span class="n">RIXS_ROUGH_GPI_01</span><span class="o">.</span><span class="n">PG</span><span class="p">,</span> <span class="n">i_xVlvOpn</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">i_xExtIlkOK</span> <span class="o">:=</span> <span class="n">TRUE</span><span class="p">);</span>
+
+
+<span class="k">if</span><span class="p">(</span> <span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="o">.</span><span class="n">eState</span> <span class="o">=</span> <span class="n">pumpSTARTING</span> <span class="p">)</span> <span class="n">OR</span> <span class="p">(</span> <span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="o">.</span><span class="n">eState</span> <span class="o">=</span> <span class="n">pumpRUNNING</span> <span class="p">)</span>
+ <span class="n">THEN</span> <span class="n">RIXS_ROUGH_VRO_01</span><span class="o">.</span><span class="n">M_Open</span><span class="p">(</span><span class="n">TRUE</span><span class="p">);</span>
+<span class="n">END_IF</span>
+<span class="n">RIXS_ROUGH_VRO_01</span><span class="p">(</span><span class="n">i_xExtILK_OK</span><span class="o">:=</span> <span class="p">(</span><span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="o">.</span><span class="n">eState</span> <span class="o">=</span> <span class="n">pumpRUNNING</span>  <span class="n">OR</span>  <span class="n">RIXS_PRO_01</span><span class="o">.</span><span class="n">stPump</span><span class="o">.</span><span class="n">eState</span> <span class="o">=</span> <span class="n">pumpSTARTING</span> <span class="p">),</span> <span class="n">i_xOverrideMode</span><span class="o">:=</span> <span class="p">,</span> <span class="n">iq_stValve</span><span class="o">=&gt;</span> <span class="p">);</span>
 
 <span class="n">END_PROGRAM</span>
 </pre></div>

@@ -1052,7 +1052,142 @@ LCLS_General.ST_PendingEvent
       - | io: input
 
 
-                                       
+                                      
+LCLS_Vacuum.FB_EbaraDryPump
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):ALARM_RBV
+      - bi
+      - $(SYMBOL).stPump.i_xAlarm
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):AT_SPD_RBV
+      - bi
+      - $(SYMBOL).stPump.xAtSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BPStart_RBV
+      - bi
+      - $(SYMBOL).stPump.q_xBPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):BPStatus_RBV
+      - bi
+      - $(SYMBOL).stPump.i_xBPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ERROR_RBV
+      - bi
+      - $(SYMBOL).stPump.xErr
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):ILK_OK_RBV
+      - bi
+      - $(SYMBOL).stPump.xIlkOK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - $(PREFIX):MPStart_RBV
+      - bi
+      - $(SYMBOL).stPump.q_xMPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):MPStatus_RBV
+      - bi
+      - $(SYMBOL).stPump.i_xMPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):REMOTE_RBV
+      - bi
+      - $(SYMBOL).stPump.i_xRemote
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RUN_DO_RBV
+      - bi
+      - $(SYMBOL).stPump.q_xRunDo
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):RUN_SW
+      - bo
+      - $(SYMBOL).stPump.pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):RUN_SW_RBV
+      - bi
+      - $(SYMBOL).stPump.pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - $(PREFIX):STATE_RBV
+      - mbbi
+      - $(SYMBOL).stPump.eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - $(PREFIX):WARN_DI_RBV
+      - bi
+      - $(SYMBOL).stPump.i_xWarning
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - $(PREFIX):WARN_RBV
+      - bi
+      - $(SYMBOL).stPump.xWrn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+  
 LCLS_Vacuum.FB_MKS275
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -3632,6 +3767,82 @@ LCLS_Vacuum.FB_VRC
         | io: input
 
 
+ 
+LCLS_Vacuum.FB_VVC
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):FORCE_OPN
+      - bo
+      - $(SYMBOL).iq_stValve.xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):FORCE_OPN_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):OPN_DO_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.q_xOPN_DO
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: input
+
+
+    * - $(PREFIX):OPN_OK_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - $(PREFIX):OPN_SW
+      - bo
+      - $(SYMBOL).iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OPN_SW_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON
+      - bo
+      - $(SYMBOL).iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON_RBV
+      - bi
+      - $(SYMBOL).iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
                                         
 LCLS_Vacuum.ST_EbaraDryPump
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -5653,6 +5864,82 @@ LCLS_Vacuum.ST_VRC
         | field: TWST Differential Pressure
         | field: ZRST Vented
         | io: input
+
+
+ 
+LCLS_Vacuum.ST_VVC
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - Record
+      - Type
+      - Description
+      - Pragma
+    * - $(PREFIX):FORCE_OPN
+      - bo
+      - $(SYMBOL).xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):FORCE_OPN_RBV
+      - bi
+      - $(SYMBOL).xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - $(PREFIX):OPN_DO_RBV
+      - bi
+      - $(SYMBOL).q_xOPN_DO
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: input
+
+
+    * - $(PREFIX):OPN_OK_RBV
+      - bi
+      - $(SYMBOL).xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - $(PREFIX):OPN_SW
+      - bo
+      - $(SYMBOL).pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OPN_SW_RBV
+      - bi
+      - $(SYMBOL).pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON
+      - bo
+      - $(SYMBOL).xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - $(PREFIX):OVRD_ON_RBV
+      - bi
+      - $(SYMBOL).xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
 
 
     
@@ -20369,7 +20656,7 @@ ST_EXT_ILK
       - | io: output
 
 
-  
+   
 ST_LoggingEventInfo
 ^^^^^^^^^^^^^^^^^^^
 
@@ -20477,7 +20764,7 @@ ST_PMPS_Aperture_IO
         | io: input
 
 
-                                                                         
+                                                                              
 Database Records
 ----------------
 
@@ -20489,6 +20776,389 @@ Database Records
       - Type
       - Description
       - Pragma
+    * - RIXS:PRO:01:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.eState
+      - | field: FRST STOPPING
+        | field: ONST STARTING
+        | field: THST FAULT
+        | field: TWST RUNNING
+        | field: ZRST STOPPED
+        | io: input
+
+
+    * - RIXS:PRO:01:ALARM_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.i_xAlarm
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:BPStatus_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.i_xBPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:MPStatus_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.i_xMPStatus
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:REMOTE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.i_xRemote
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:WARN_DI_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.i_xWarning
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:RUN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - RIXS:PRO:01:RUN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.pv_xRunSW
+      - | field: ONAM Start
+        | field: ZNAM Stop
+        | io: output
+
+
+    * - RIXS:PRO:01:BPStart_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.q_xBPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:MPStart_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.q_xMPStart
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:RUN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.q_xRunDo
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:AT_SPD_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.xAtSpd
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:ERROR_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.xErr
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:PRO:01:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.xIlkOK
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - RIXS:PRO:01:WARN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_PRO_01.stPump.xWrn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:STATE_RBV
+      - mbbi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.eState
+      - | field: FRST Starting
+        | field: FVST Valid
+        | field: ONST GaugeDisconnected
+        | field: SVST ValidLo
+        | field: SXST ValidHi
+        | field: THST PressInvalid
+        | field: TWST OoR
+        | field: ZRST Off
+        | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:AutoOn_timer_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.iAutoOnTimer
+      - | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:PRESS_AI_RBV
+      - longin
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.i_iPRESS_R
+      - | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:DISC_ACTIVE_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.i_xDisc_Active
+      - | field: ONAM DISC ACTIVE
+        | field: ZNAM NO DISC
+        | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:HV_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.i_xHV_ON
+      - | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:HV_DIS_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.q_xHV_DIS
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:SP_HYS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:SP_HYS
+      - ao
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.rHYS_PR
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:PRESS_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.rPRESS
+      - | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:PRO_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:PRO_SP
+      - ao
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.rPRO_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:VAC_SP_RBV
+      - ai
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:VAC_SP
+      - ao
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.rVAC_SP
+      - | autosave_pass1: VAL DESC
+        | field: EGU "TORR"
+        | field: HOPR 1000
+        | field: LOPR 0
+        | field: PREC 2
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:AT_VAC_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xAT_VAC
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:Auto_On_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:Auto_On
+      - bo
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xAutoOn
+      - | field: ONAM TRUE
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:HV_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:HV_SW
+      - bo
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xHV_SW
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:ILK_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xILKOk
+      - | field: ONAM OK
+        | field: ZNAM NOT OK
+        | io: input
+
+
+    * - RIXS:ROUGH:GPI:01:LOGGER_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:LOGGER
+      - bo
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xLog
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: output
+
+
+    * - RIXS:ROUGH:GPI:01:PRESS_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_GPI_01.PG.xPRESS_OK
+      - | field: ONAM ON
+        | field: ZNAM OFF
+        | io: input
+
+
+    * - RIXS:ROUGH:VRO:01:OPN_SW_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - RIXS:ROUGH:VRO:01:OPN_SW
+      - bo
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.pv_xOPN_SW
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: output
+
+
+    * - RIXS:ROUGH:VRO:01:OPN_DO_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.q_xOPN_DO
+      - | field: ONAM OPEN
+        | field: ZNAM CLOSE
+        | io: input
+
+
+    * - RIXS:ROUGH:VRO:01:OPN_OK_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.xOPN_OK
+      - | field: ONAM OPN ILK OK
+        | field: ZNAM OPN ILK NOT OK
+        | io: input
+
+
+    * - RIXS:ROUGH:VRO:01:OVRD_ON_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - RIXS:ROUGH:VRO:01:OVRD_ON
+      - bo
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.xOverrideMode
+      - | field: ONAM Override ON
+        | field: ZNAM Override OFF
+        | io: output
+
+
+    * - RIXS:ROUGH:VRO:01:FORCE_OPN_RBV
+      - bi
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
+    * - RIXS:ROUGH:VRO:01:FORCE_OPN
+      - bo
+      - GVL_KFE_RIX_VAC.RIXS_ROUGH_VRO_01.iq_stValve.xOvrdOpn
+      - | field: ONAM FORCE OPEN
+        | field: ZNAM FALSE
+        | io: output
+
+
     * - IM2K2:PPM:GCC:1:STATE_RBV
       - mbbi
       - GVL_KFE_RIX_VAC.fb_IM2K2_PPM_GCC_1.IG.eState
