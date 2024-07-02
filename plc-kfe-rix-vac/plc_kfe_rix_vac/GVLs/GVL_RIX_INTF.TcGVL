@@ -9,12 +9,12 @@
     {attribute 'pytmc' := '
         pv: PLC:KFE:RIX:FIM:MR3K2:ILK
     '}
-    ST_MR3K2_FIM_ILK : ST_EXT_ILK := (rPRO_SP := 1e-8);
+    ST_MR3K2_FIM_ILK : ST_EXT_ILK := (rPRO_SP := 2e-7);
     FB_MR4K2_FIM_ILK : FB_EXT_ILK;
     {attribute 'pytmc' := '
         pv: PLC:KFE:RIX:FIM:MR4K2:ILK
     '}
-    ST_MR4K2_FIM_ILK : ST_EXT_ILK := (rPRO_SP := 1e-8);
+    ST_MR4K2_FIM_ILK : ST_EXT_ILK := (rPRO_SP := 2e-7);
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
