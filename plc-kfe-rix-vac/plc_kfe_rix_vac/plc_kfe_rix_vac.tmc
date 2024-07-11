@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{A721345C-CAE3-DB59-F089-866DEC29F05C}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{E4E889B0-91E4-4BC3-E07A-EE733895FFEC}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="Tc2_Utilities">E_HashPrefixTypes</Name>
@@ -11744,480 +11744,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
       </SubItem>
     </DataType>
     <DataType>
-      <Name Namespace="LCLS_Vacuum">FB_ADS</Name>
-      <BitSize>81728</BitSize>
-      <SubItem>
-        <Name>fbLogger</Name>
-        <Type Namespace="LCLS_General">FB_LogMessage</Type>
-        <BitSize>81600</BitSize>
-        <BitOffs>64</BitOffs>
-        <Default>
-          <SubItem>
-            <Name>.eSubsystem</Name>
-            <Value>4</Value>
-          </SubItem>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>tErrorPresent</Name>
-        <Type Namespace="Tc2_Standard">R_TRIG</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>81664</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="LCLS_Vacuum">E_PumpState</Name>
-      <BitSize>16</BitSize>
-      <BaseType>INT</BaseType>
-      <EnumInfo>
-        <Text>pumpSTOPPED</Text>
-        <Enum>0</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>pumpSTARTING</Text>
-        <Enum>1</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>pumpRUNNING</Text>
-        <Enum>2</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>pumpFAULT</Text>
-        <Enum>3</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>pumpSTOPPING</Text>
-        <Enum>4</Enum>
-      </EnumInfo>
-    </DataType>
-    <DataType>
-      <Name Namespace="LCLS_Vacuum">ST_RoughPump</Name>
-      <BitSize>96</BitSize>
-      <SubItem>
-        <Name>pv_xRunSW</Name>
-        <Type>BOOL</Type>
-        <Comment>epics/ software control switch</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>0</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: RUN_SW;
-	field: ZNAM Stop; 
-	field: ONAM Start;
-	io: io;
-	</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>q_xRunDo</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>8</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: RUN_DO;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i
-	</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>xIlkOK</Name>
-        <Type>BOOL</Type>
-        <Comment>Interlock bit, true means OK to run</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>16</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: ILK_OK;
-	field: ZNAM NOT OK ;
-	field: ONAM OK ;
-	io: i
-	</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>xExtIlk</Name>
-        <Type>BOOL</Type>
-        <Comment>External interlock, this is where the logic goes</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>24</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>xAtSpd</Name>
-        <Type>BOOL</Type>
-        <Comment>Pump at speed setpoint</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>32</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: AT_SPD;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i
-	</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>xWrn</Name>
-        <Type>BOOL</Type>
-        <Comment>Pump warning</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>40</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: WARN;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i
-	</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>iWrn</Name>
-        <Type>BOOL</Type>
-        <Comment>Warning state/code</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>48</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>xErr</Name>
-        <Type>BOOL</Type>
-        <Comment>Error summary</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>56</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: ERROR;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i
-	</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>iErr</Name>
-        <Type>BOOL</Type>
-        <Comment>Error state/code</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>64</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>eState</Name>
-        <Type Namespace="LCLS_Vacuum">E_PumpState</Type>
-        <Comment>State</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>80</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-	pv: STATE;
-	field: ZRST STOPPED;
-	field: ONST STARTING;
-	field: TWST RUNNING;
-	field: THST FAULT;
-	field: FRST STOPPING;
-	io: i;
-	</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-    </DataType>
-    <DataType>
-      <Name Namespace="LCLS_Vacuum">ST_EbaraDryPump</Name>
-      <BitSize>448</BitSize>
-      <ExtendsType Namespace="LCLS_Vacuum">ST_RoughPump</ExtendsType>
-      <SubItem>
-        <Name>q_xMPStart</Name>
-        <Type>BOOL</Type>
-        <Comment>Main Pump start</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>96</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: MPStart;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i;
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>q_xBPStart</Name>
-        <Type>BOOL</Type>
-        <Comment> Booster Pump start (this can be started by the pump automatically)</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>104</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: BPStart;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i;
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>xBPIlk</Name>
-        <Type>BOOL</Type>
-        <Comment>Booster pump interlock</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>112</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>rBPIlkSP</Name>
-        <Type>REAL</Type>
-        <Comment>Booster pump pressure setpoint</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>128</BitOffs>
-        <Default>
-          <Value>30</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>tonBP</Name>
-        <Type Namespace="Tc2_Standard">TON</Type>
-        <Comment>Timer for pressure and valve stability</Comment>
-        <BitSize>224</BitSize>
-        <BitOffs>160</BitOffs>
-        <Default>
-          <SubItem>
-            <Name>.PT</Name>
-            <Value>5000</Value>
-          </SubItem>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>i_xMPStatus</Name>
-        <Type>BOOL</Type>
-        <Comment>MP status</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>384</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: MPStatus;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i;
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>i_xBPStatus</Name>
-        <Type>BOOL</Type>
-        <Comment>BP status</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>392</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: BPStatus;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i;
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>i_xWarning</Name>
-        <Type>BOOL</Type>
-        <Comment>Warning status</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>400</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: WARN_DI;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i;
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>i_xAlarm</Name>
-        <Type>BOOL</Type>
-        <Comment>Alarm, maps to error</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>408</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: ALARM;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i;
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>i_xRemote</Name>
-        <Type>BOOL</Type>
-        <Comment>Remote control status</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>416</BitOffs>
-        <Properties>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-    pv: REMOTE;
-	field: ZNAM FALSE; 
-	field: ONAM TRUE;
-	io: i;
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-    </DataType>
-    <DataType>
-      <Name Namespace="Tc2_DataExchange">FB_CheckWatchdog</Name>
-      <BitSize>448</BitSize>
-      <SubItem>
-        <Name>bEnable</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>32</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>tWatchdogTime</Name>
-        <Type>TIME</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>64</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nCnt</Name>
-        <Type>UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>96</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bWatchdog</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>128</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nLastCnt</Name>
-        <Type>UDINT</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>160</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>timerWatchdog</Name>
-        <Type Namespace="Tc2_Standard">TON</Type>
-        <BitSize>224</BitSize>
-        <BitOffs>192</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>bFirstCycle</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>416</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="Tc2_DataExchange">E_AdsComMode</Name>
-      <BitSize>16</BitSize>
-      <BaseType>INT</BaseType>
-      <EnumInfo>
-        <Text>eAdsComModeSecureCom</Text>
-        <Enum>0</Enum>
-      </EnumInfo>
-      <EnumInfo>
-        <Text>eAdsComModeFastCom</Text>
-        <Enum>1</Enum>
-      </EnumInfo>
-    </DataType>
-    <DataType>
       <Name Namespace="Tc2_System">ADSRDWRT</Name>
       <Comment> ADS read/write command. </Comment>
       <BitSize>1408</BitSize>
@@ -12406,375 +11932,6 @@ These features aren't disabled, they just aren't used, think child/parent classe
         </Property>
         <Property>
           <Name>hide_all_locals</Name>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="Tc2_DataExchange">FB_ReadAdsSymByName</Name>
-      <Comment> The function block enables reading of any value from another controller using the symbol name.</Comment>
-      <BitSize>8768</BitSize>
-      <SubItem>
-        <Name>bRead</Name>
-        <Type>BOOL</Type>
-        <Comment> The function block reads the content of the variables sVarName of the selected ADS devices and writes it to the variable to which the pointer nDestAddr points.</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>32</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>sNetId</Name>
-        <Type Namespace="Tc2_System">T_AmsNetID</Type>
-        <Comment> AMS-NetId of the ADS device from which the value is to be read.</Comment>
-        <BitSize>192</BitSize>
-        <BitOffs>40</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nPort</Name>
-        <Type Namespace="Tc2_System">T_AmsPort</Type>
-        <Comment> AMS Port number of the ADS device from which the value is to be read.</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>240</BitOffs>
-        <Default>
-          <Value>851</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>sVarName</Name>
-        <Type>STRING(255)</Type>
-        <Comment> Symbol name of the variable to be read on the selected ADS device.</Comment>
-        <BitSize>2048</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nDestAddr</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000018}">PVOID</Type>
-        <Comment> Address of the variable into which the read value is written.</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>2304</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nLen</Name>
-        <Type>UDINT</Type>
-        <Comment> Length of the variable to be read in bytes.</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>2336</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>tTimeout</Name>
-        <Type>TIME</Type>
-        <Comment> Time until processing is aborted.</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>2368</BitOffs>
-        <Default>
-          <Value>5000</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>eComMode</Name>
-        <Type Namespace="Tc2_DataExchange">E_AdsComMode</Type>
-        <Comment> Enum used to specify whether the handle of the PLC variable is released again after each read procedure.</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>2400</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bClearOnError</Name>
-        <Type>BOOL</Type>
-        <Comment> If TRUE buffer "nDestAddr" will be cleared if an error occurs.</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>2416</BitOffs>
-        <Default>
-          <Value>1</Value>
-        </Default>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bBusy</Name>
-        <Type>BOOL</Type>
-        <Comment> The transmission is active.</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>2424</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bError</Name>
-        <Type>BOOL</Type>
-        <Comment> An error occurred during the transmission.</Comment>
-        <BitSize>8</BitSize>
-        <BitOffs>2432</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nErrorId</Name>
-        <Type>UDINT</Type>
-        <Comment> ADS error number if an error has occurred.</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>2464</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>sVarName_Int</Name>
-        <Type>STRING(255)</Type>
-        <BitSize>2048</BitSize>
-        <BitOffs>2496</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>sNetId_Int</Name>
-        <Type Namespace="Tc2_System">T_AmsNetID</Type>
-        <BitSize>192</BitSize>
-        <BitOffs>4544</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>nPort_Int</Name>
-        <Type Namespace="Tc2_System">T_AmsPort</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>4736</BitOffs>
-        <Default>
-          <Value>801</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>fbGetHandle</Name>
-        <Type Namespace="Tc2_System">ADSRDWRT</Type>
-        <BitSize>1408</BitSize>
-        <BitOffs>4768</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>fbReleaseHandle</Name>
-        <Type Namespace="Tc2_System">ADSWRITE</Type>
-        <BitSize>1216</BitSize>
-        <BitOffs>6176</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>fbReadByHandle</Name>
-        <Type Namespace="Tc2_System">ADSREAD</Type>
-        <BitSize>1248</BitSize>
-        <BitOffs>7392</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>trigRead</Name>
-        <Type Namespace="Tc2_Standard">R_TRIG</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>8640</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>iStep</Name>
-        <Type>INT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>8704</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-      </SubItem>
-      <SubItem>
-        <Name>iNextStep</Name>
-        <Type>INT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>8720</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>nSymbolHandle</Name>
-        <Type>DWORD</Type>
-        <BitSize>32</BitSize>
-        <BitOffs>8736</BitOffs>
-        <Default>
-          <Value>0</Value>
-        </Default>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name>FB_PRO_ADS</Name>
-      <Comment> This function block is created for interface devices between different PLC
- Not all the Variables in the original structure is required, just few signals 
- The variable values are read via ADS using the symbol name</Comment>
-      <BitSize>92928</BitSize>
-      <ExtendsType Namespace="LCLS_Vacuum">FB_ADS</ExtendsType>
-      <SubItem>
-        <Name>sNetId</Name>
-        <Type>STRING(80)</Type>
-        <Comment>NetID of the Destination PLC controller</Comment>
-        <BitSize>648</BitSize>
-        <BitOffs>81728</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>nPort</Name>
-        <Type>UINT</Type>
-        <Comment> port number</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>82384</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>sVarName</Name>
-        <Type>STRING(80)</Type>
-        <Comment> the variable name of the declared gauge function block.</Comment>
-        <BitSize>648</BitSize>
-        <BitOffs>82400</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>iWatchdog</Name>
-        <Type>UDINT</Type>
-        <Comment>The watchdog variable name written to by the remote plc</Comment>
-        <BitSize>32</BitSize>
-        <BitOffs>83072</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>st_pro</Name>
-        <Type Namespace="LCLS_Vacuum">ST_EbaraDryPump</Type>
-        <BitSize>448</BitSize>
-        <BitOffs>83104</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>pv:</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bError</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>83552</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fb_CheckWatchdog</Name>
-        <Type Namespace="Tc2_DataExchange">FB_CheckWatchdog</Type>
-        <BitSize>448</BitSize>
-        <BitOffs>83584</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>fb_Read_PRO</Name>
-        <Type Namespace="Tc2_DataExchange">FB_ReadAdsSymByName</Type>
-        <BitSize>8768</BitSize>
-        <BitOffs>84032</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>ftReset</Name>
-        <Type Namespace="Tc2_Standard">F_TRIG</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>92800</BitOffs>
-      </SubItem>
-      <SubItem>
-        <Name>xFirstPass</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>92864</BitOffs>
-        <Default>
-          <Value>1</Value>
-        </Default>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
         </Property>
       </Properties>
     </DataType>
@@ -16443,6 +15600,31 @@ interlocking logic outside this function block.
           <Name>no_check</Name>
         </Property>
       </Properties>
+    </DataType>
+    <DataType>
+      <Name Namespace="LCLS_Vacuum">E_PumpState</Name>
+      <BitSize>16</BitSize>
+      <BaseType>INT</BaseType>
+      <EnumInfo>
+        <Text>pumpSTOPPED</Text>
+        <Enum>0</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>pumpSTARTING</Text>
+        <Enum>1</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>pumpRUNNING</Text>
+        <Enum>2</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>pumpFAULT</Text>
+        <Enum>3</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>pumpSTOPPING</Text>
+        <Enum>4</Enum>
+      </EnumInfo>
     </DataType>
     <DataType>
       <Name Namespace="LCLS_Vacuum">FB_Pump</Name>
@@ -20604,6 +19786,320 @@ for FAST shutter control</Comment>
           <Value>FunctionBlock</Value>
         </Property>
       </Properties>
+    </DataType>
+    <DataType>
+      <Name Namespace="LCLS_Vacuum">ST_RoughPump</Name>
+      <BitSize>96</BitSize>
+      <SubItem>
+        <Name>pv_xRunSW</Name>
+        <Type>BOOL</Type>
+        <Comment>epics/ software control switch</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>0</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: RUN_SW;
+	field: ZNAM Stop; 
+	field: ONAM Start;
+	io: io;
+	</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>q_xRunDo</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>8</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: RUN_DO;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i
+	</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>xIlkOK</Name>
+        <Type>BOOL</Type>
+        <Comment>Interlock bit, true means OK to run</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>16</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: ILK_OK;
+	field: ZNAM NOT OK ;
+	field: ONAM OK ;
+	io: i
+	</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>xExtIlk</Name>
+        <Type>BOOL</Type>
+        <Comment>External interlock, this is where the logic goes</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>24</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>xAtSpd</Name>
+        <Type>BOOL</Type>
+        <Comment>Pump at speed setpoint</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>32</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: AT_SPD;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i
+	</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>xWrn</Name>
+        <Type>BOOL</Type>
+        <Comment>Pump warning</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>40</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: WARN;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i
+	</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>iWrn</Name>
+        <Type>BOOL</Type>
+        <Comment>Warning state/code</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>48</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>xErr</Name>
+        <Type>BOOL</Type>
+        <Comment>Error summary</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>56</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: ERROR;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i
+	</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>iErr</Name>
+        <Type>BOOL</Type>
+        <Comment>Error state/code</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>64</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>eState</Name>
+        <Type Namespace="LCLS_Vacuum">E_PumpState</Type>
+        <Comment>State</Comment>
+        <BitSize>16</BitSize>
+        <BitOffs>80</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+	pv: STATE;
+	field: ZRST STOPPED;
+	field: ONST STARTING;
+	field: TWST RUNNING;
+	field: THST FAULT;
+	field: FRST STOPPING;
+	io: i;
+	</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+    </DataType>
+    <DataType>
+      <Name Namespace="LCLS_Vacuum">ST_EbaraDryPump</Name>
+      <BitSize>448</BitSize>
+      <ExtendsType Namespace="LCLS_Vacuum">ST_RoughPump</ExtendsType>
+      <SubItem>
+        <Name>q_xMPStart</Name>
+        <Type>BOOL</Type>
+        <Comment>Main Pump start</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>96</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: MPStart;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i;
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>q_xBPStart</Name>
+        <Type>BOOL</Type>
+        <Comment> Booster Pump start (this can be started by the pump automatically)</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>104</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: BPStart;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i;
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>xBPIlk</Name>
+        <Type>BOOL</Type>
+        <Comment>Booster pump interlock</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>112</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>rBPIlkSP</Name>
+        <Type>REAL</Type>
+        <Comment>Booster pump pressure setpoint</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>128</BitOffs>
+        <Default>
+          <Value>30</Value>
+        </Default>
+      </SubItem>
+      <SubItem>
+        <Name>tonBP</Name>
+        <Type Namespace="Tc2_Standard">TON</Type>
+        <Comment>Timer for pressure and valve stability</Comment>
+        <BitSize>224</BitSize>
+        <BitOffs>160</BitOffs>
+        <Default>
+          <SubItem>
+            <Name>.PT</Name>
+            <Value>5000</Value>
+          </SubItem>
+        </Default>
+      </SubItem>
+      <SubItem>
+        <Name>i_xMPStatus</Name>
+        <Type>BOOL</Type>
+        <Comment>MP status</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>384</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: MPStatus;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i;
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>i_xBPStatus</Name>
+        <Type>BOOL</Type>
+        <Comment>BP status</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>392</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: BPStatus;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i;
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>i_xWarning</Name>
+        <Type>BOOL</Type>
+        <Comment>Warning status</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>400</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: WARN_DI;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i;
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>i_xAlarm</Name>
+        <Type>BOOL</Type>
+        <Comment>Alarm, maps to error</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>408</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: ALARM;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i;
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>i_xRemote</Name>
+        <Type>BOOL</Type>
+        <Comment>Remote control status</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>416</BitOffs>
+        <Properties>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+    pv: REMOTE;
+	field: ZNAM FALSE; 
+	field: ONAM TRUE;
+	io: i;
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
     </DataType>
     <DataType>
       <Name Namespace="LCLS_Vacuum">FB_EbaraDryPump</Name>
@@ -28772,11 +28268,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_BOOL</Name>
@@ -28909,11 +28400,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -29073,11 +28559,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>GetNumberOfSuccessfulTests</Name>
@@ -29184,11 +28665,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -29322,11 +28798,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -29792,11 +29263,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -30541,11 +30007,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_TIME</Name>
@@ -30924,11 +30385,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_INT</Name>
@@ -31020,11 +30476,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -31152,11 +30603,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_LWORD</Name>
@@ -31258,11 +30704,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -31567,11 +31008,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AreAllTestsFinished</Name>
@@ -31736,11 +31172,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -31925,11 +31356,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_LREAL</Name>
@@ -32027,11 +31453,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -32896,7 +32317,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </Method>
     </DataType>
     <DataType>
-      <Name>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite)</Name>
+      <Name>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite)</Name>
       <BitSize>16</BitSize>
       <BaseType>UINT</BaseType>
       <Properties>
@@ -32907,6 +32328,21 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         <Property>
           <Name>UpperBorder</Name>
           <Value>100</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Name>
+      <BitSize>16</BitSize>
+      <BaseType>UINT</BaseType>
+      <Properties>
+        <Property>
+          <Name>LowerBorder</Name>
+          <Value>1</Value>
+        </Property>
+        <Property>
+          <Name>UpperBorder</Name>
+          <Value>1000</Value>
         </Property>
       </Properties>
     </DataType>
@@ -32927,7 +32363,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </SubItem>
       <SubItem>
         <Name>PrintingTestSuiteResultNumber</Name>
-        <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
+        <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
         <BitSize>16</BitSize>
         <BitOffs>96</BitOffs>
       </SubItem>
@@ -32965,12 +32401,12 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>TestsInTestSuiteCounter</Name>
-          <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite)</Type>
+          <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite)</Type>
           <BitSize>16</BitSize>
         </Local>
         <Local>
           <Name>MaxNumberOfTestsToPrint</Name>
-          <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite)</Type>
+          <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite)</Type>
           <BitSize>16</BitSize>
         </Local>
         <Local>
@@ -33801,7 +33237,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </SubItem>
       <SubItem>
         <Name>WritingTestSuiteResultNumber</Name>
-        <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
+        <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
         <BitSize>16</BitSize>
         <BitOffs>530208</BitOffs>
       </SubItem>
@@ -34181,21 +33617,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         <Property>
           <Name>PouType</Name>
           <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestsForEachTestSuite)</Name>
-      <BitSize>16</BitSize>
-      <BaseType>UINT</BaseType>
-      <Properties>
-        <Property>
-          <Name>LowerBorder</Name>
-          <Value>1</Value>
-        </Property>
-        <Property>
-          <Name>UpperBorder</Name>
-          <Value>100</Value>
         </Property>
       </Properties>
     </DataType>
@@ -35634,11 +35055,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>FindTestSuiteInstancePath</Name>
@@ -35754,7 +35170,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>NumberOfTestsToAnalyse</Name>
-          <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
+          <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
           <BitSize>16</BitSize>
         </Local>
         <Local>
@@ -35897,11 +35313,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_BYTE</Name>
@@ -36003,11 +35414,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -36167,11 +35573,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_LTIME</Name>
@@ -36294,11 +35695,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -36440,11 +35836,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -37206,11 +36597,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>SetHasStartedRunning</Name>
@@ -37259,7 +36645,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>NumberOfTestsToAnalyse</Name>
-          <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
+          <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
           <BitSize>16</BitSize>
         </Local>
       </Method>
@@ -37371,11 +36757,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>GetHasStartedRunning</Name>
@@ -37478,11 +36859,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -37637,11 +37013,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_DINT</Name>
@@ -37767,11 +37138,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertEquals_STRING</Name>
@@ -37840,7 +37206,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>NumberOfTestsToAnalyse</Name>
-          <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
+          <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
           <BitSize>16</BitSize>
         </Local>
       </Method>
@@ -37944,11 +37310,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -38234,11 +37595,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>CalculateAndSetNumberOfAssertsForTest</Name>
@@ -38289,7 +37645,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>NumberOfTestsToAnalyse</Name>
-          <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
+          <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
           <BitSize>16</BitSize>
         </Local>
       </Method>
@@ -38648,7 +38004,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>NumberOfTestsToAnalyse</Name>
-          <Type>UINT (UINT#1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
+          <Type>UINT (1..GVL_Param_TcUnit.MaxNumberOfTestSuites)</Type>
           <BitSize>16</BitSize>
         </Local>
       </Method>
@@ -39032,11 +38388,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
-        <Local>
-          <Name>__Index__0</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
       </Method>
       <Method>
         <Name>AssertArrayEquals_UDINT</Name>
@@ -39128,11 +38479,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
         </Local>
         <Local>
           <Name>ActualsIndex</Name>
-          <Type>DINT</Type>
-          <BitSize>32</BitSize>
-        </Local>
-        <Local>
-          <Name>__Index__0</Name>
           <Type>DINT</Type>
           <BitSize>32</BitSize>
         </Local>
@@ -41269,6 +40615,389 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       </Properties>
     </DataType>
     <DataType>
+      <Name Namespace="LCLS_Vacuum">FB_ADS</Name>
+      <BitSize>81728</BitSize>
+      <SubItem>
+        <Name>fbLogger</Name>
+        <Type Namespace="LCLS_General">FB_LogMessage</Type>
+        <BitSize>81600</BitSize>
+        <BitOffs>64</BitOffs>
+        <Default>
+          <SubItem>
+            <Name>.eSubsystem</Name>
+            <Value>4</Value>
+          </SubItem>
+        </Default>
+      </SubItem>
+      <SubItem>
+        <Name>tErrorPresent</Name>
+        <Type Namespace="Tc2_Standard">R_TRIG</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>81664</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name Namespace="Tc2_DataExchange">FB_CheckWatchdog</Name>
+      <BitSize>448</BitSize>
+      <SubItem>
+        <Name>bEnable</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>32</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>tWatchdogTime</Name>
+        <Type>TIME</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>64</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nCnt</Name>
+        <Type>UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>96</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bWatchdog</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>128</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nLastCnt</Name>
+        <Type>UDINT</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>160</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>timerWatchdog</Name>
+        <Type Namespace="Tc2_Standard">TON</Type>
+        <BitSize>224</BitSize>
+        <BitOffs>192</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>bFirstCycle</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>416</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name Namespace="Tc2_DataExchange">E_AdsComMode</Name>
+      <BitSize>16</BitSize>
+      <BaseType>INT</BaseType>
+      <EnumInfo>
+        <Text>eAdsComModeSecureCom</Text>
+        <Enum>0</Enum>
+      </EnumInfo>
+      <EnumInfo>
+        <Text>eAdsComModeFastCom</Text>
+        <Enum>1</Enum>
+      </EnumInfo>
+    </DataType>
+    <DataType>
+      <Name Namespace="Tc2_DataExchange">FB_ReadAdsSymByName</Name>
+      <Comment> The function block enables reading of any value from another controller using the symbol name.</Comment>
+      <BitSize>8768</BitSize>
+      <SubItem>
+        <Name>bRead</Name>
+        <Type>BOOL</Type>
+        <Comment> The function block reads the content of the variables sVarName of the selected ADS devices and writes it to the variable to which the pointer nDestAddr points.</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>32</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>sNetId</Name>
+        <Type Namespace="Tc2_System">T_AmsNetID</Type>
+        <Comment> AMS-NetId of the ADS device from which the value is to be read.</Comment>
+        <BitSize>192</BitSize>
+        <BitOffs>40</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nPort</Name>
+        <Type Namespace="Tc2_System">T_AmsPort</Type>
+        <Comment> AMS Port number of the ADS device from which the value is to be read.</Comment>
+        <BitSize>16</BitSize>
+        <BitOffs>240</BitOffs>
+        <Default>
+          <Value>851</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>sVarName</Name>
+        <Type>STRING(255)</Type>
+        <Comment> Symbol name of the variable to be read on the selected ADS device.</Comment>
+        <BitSize>2048</BitSize>
+        <BitOffs>256</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nDestAddr</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000018}">PVOID</Type>
+        <Comment> Address of the variable into which the read value is written.</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>2304</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nLen</Name>
+        <Type>UDINT</Type>
+        <Comment> Length of the variable to be read in bytes.</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>2336</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>tTimeout</Name>
+        <Type>TIME</Type>
+        <Comment> Time until processing is aborted.</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>2368</BitOffs>
+        <Default>
+          <Value>5000</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>eComMode</Name>
+        <Type Namespace="Tc2_DataExchange">E_AdsComMode</Type>
+        <Comment> Enum used to specify whether the handle of the PLC variable is released again after each read procedure.</Comment>
+        <BitSize>16</BitSize>
+        <BitOffs>2400</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bClearOnError</Name>
+        <Type>BOOL</Type>
+        <Comment> If TRUE buffer "nDestAddr" will be cleared if an error occurs.</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>2416</BitOffs>
+        <Default>
+          <Value>1</Value>
+        </Default>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bBusy</Name>
+        <Type>BOOL</Type>
+        <Comment> The transmission is active.</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>2424</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bError</Name>
+        <Type>BOOL</Type>
+        <Comment> An error occurred during the transmission.</Comment>
+        <BitSize>8</BitSize>
+        <BitOffs>2432</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nErrorId</Name>
+        <Type>UDINT</Type>
+        <Comment> ADS error number if an error has occurred.</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>2464</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>sVarName_Int</Name>
+        <Type>STRING(255)</Type>
+        <BitSize>2048</BitSize>
+        <BitOffs>2496</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>sNetId_Int</Name>
+        <Type Namespace="Tc2_System">T_AmsNetID</Type>
+        <BitSize>192</BitSize>
+        <BitOffs>4544</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>nPort_Int</Name>
+        <Type Namespace="Tc2_System">T_AmsPort</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>4736</BitOffs>
+        <Default>
+          <Value>801</Value>
+        </Default>
+      </SubItem>
+      <SubItem>
+        <Name>fbGetHandle</Name>
+        <Type Namespace="Tc2_System">ADSRDWRT</Type>
+        <BitSize>1408</BitSize>
+        <BitOffs>4768</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>fbReleaseHandle</Name>
+        <Type Namespace="Tc2_System">ADSWRITE</Type>
+        <BitSize>1216</BitSize>
+        <BitOffs>6176</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>fbReadByHandle</Name>
+        <Type Namespace="Tc2_System">ADSREAD</Type>
+        <BitSize>1248</BitSize>
+        <BitOffs>7392</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>trigRead</Name>
+        <Type Namespace="Tc2_Standard">R_TRIG</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>8640</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>iStep</Name>
+        <Type>INT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>8704</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+      </SubItem>
+      <SubItem>
+        <Name>iNextStep</Name>
+        <Type>INT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>8720</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>nSymbolHandle</Name>
+        <Type>DWORD</Type>
+        <BitSize>32</BitSize>
+        <BitOffs>8736</BitOffs>
+        <Default>
+          <Value>0</Value>
+        </Default>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
       <Name Namespace="LCLS_Vacuum">FB_TGPI_ADS</Name>
       <Comment> This function block is created for interface devices between different PLC
  Not all the Variables in the original structure is required, just few signals 
@@ -41385,6 +41114,127 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
       <Action>
         <Name>ACT_Logger</Name>
       </Action>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name>FB_PRO_ADS</Name>
+      <Comment> This function block is created for interface devices between different PLC
+ Not all the Variables in the original structure is required, just few signals 
+ The variable values are read via ADS using the symbol name</Comment>
+      <BitSize>92928</BitSize>
+      <ExtendsType Namespace="LCLS_Vacuum">FB_ADS</ExtendsType>
+      <SubItem>
+        <Name>sNetId</Name>
+        <Type>STRING(80)</Type>
+        <Comment>NetID of the Destination PLC controller</Comment>
+        <BitSize>648</BitSize>
+        <BitOffs>81728</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>nPort</Name>
+        <Type>UINT</Type>
+        <Comment> port number</Comment>
+        <BitSize>16</BitSize>
+        <BitOffs>82384</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>sVarName</Name>
+        <Type>STRING(80)</Type>
+        <Comment> the variable name of the declared gauge function block.</Comment>
+        <BitSize>648</BitSize>
+        <BitOffs>82400</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>iWatchdog</Name>
+        <Type>UDINT</Type>
+        <Comment>The watchdog variable name written to by the remote plc</Comment>
+        <BitSize>32</BitSize>
+        <BitOffs>83072</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>st_pro</Name>
+        <Type Namespace="LCLS_Vacuum">ST_EbaraDryPump</Type>
+        <BitSize>448</BitSize>
+        <BitOffs>83104</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>pv:</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bError</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>83552</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fb_CheckWatchdog</Name>
+        <Type Namespace="Tc2_DataExchange">FB_CheckWatchdog</Type>
+        <BitSize>448</BitSize>
+        <BitOffs>83584</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>fb_Read_PRO</Name>
+        <Type Namespace="Tc2_DataExchange">FB_ReadAdsSymByName</Type>
+        <BitSize>8768</BitSize>
+        <BitOffs>84032</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>ftReset</Name>
+        <Type Namespace="Tc2_Standard">F_TRIG</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>92800</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>xFirstPass</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>92864</BitOffs>
+        <Default>
+          <Value>1</Value>
+        </Default>
+      </SubItem>
       <Properties>
         <Property>
           <Name>PouType</Name>
@@ -42714,7 +42564,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
           <Name>FSTask Inputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>GVL_RIX_VAC_FS_DEVICES.fb_TV1K2_VFS_1.i_xOpnLS</Name>
             <Comment>IO</Comment>
@@ -42858,7 +42708,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
           <Name>FSTask Outputs</Name>
           <ContextId>0</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>GVL_RIX_VAC_FSV_PMPS.g_FastFaultOutput2.q_xFastFaultOut</Name>
             <BitSize>8</BitSize>
@@ -43010,7 +42860,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <AreaNo AreaType="Internal" CreateSymbols="true">3</AreaNo>
           <Name>FSTask Internal</Name>
           <ContextId>0</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>GVL_Logger.bTrickleTripped</Name>
             <Comment> Global trickle trip flag</Comment>
@@ -44017,14 +43867,14 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>655987232</BitOffs>
+            <BitOffs>655986080</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">4</AreaNo>
           <Name>FSTask Retains</Name>
           <ContextId>0</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.AccumulatedFF</Name>
             <Comment> Any time a FF occurs</Comment>
@@ -44049,7 +43899,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <AreaNo AreaType="InputDst" CreateSymbols="true">16</AreaNo>
           <Name>PlcTask Inputs</Name>
           <ContextId>1</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>MAIN.fbArbiterIO.i_stCurrentBP</Name>
             <BitSize>1760</BitSize>
@@ -46061,7 +45911,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">17</AreaNo>
           <Name>PlcTask Outputs</Name>
           <ContextId>1</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>MAIN.fbArbiterIO.q_stRequestedBP</Name>
             <BitSize>1760</BitSize>
@@ -47072,7 +46922,7 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
           <AreaNo AreaType="Internal" CreateSymbols="true">19</AreaNo>
           <Name>PlcTask Internal</Name>
           <ContextId>1</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>GVL_Logger.iLogPort</Name>
             <BitSize>16</BitSize>
@@ -47781,12 +47631,6 @@ in the event of errors/ warnings. Provides interlocking interface.</Comment>
               <Value>0</Value>
             </Default>
             <BitOffs>639018848</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>PRG_KFE_RIX_VAC.qRIXS_PRO_01</Name>
-            <BitSize>92928</BitSize>
-            <BaseType>FB_PRO_ADS</BaseType>
-            <BitOffs>639112384</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_Variables.xSystemOverrideMode1</Name>
@@ -49527,7 +49371,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>655967264</BitOffs>
+            <BitOffs>656011232</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.Win32EventClass</Name>
@@ -49596,7 +49440,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>655967392</BitOffs>
+            <BitOffs>656011360</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.LCLSGeneralEventClass</Name>
@@ -49665,7 +49509,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>655967520</BitOffs>
+            <BitOffs>656011488</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcSystemEventClass</Name>
@@ -49734,7 +49578,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>655967648</BitOffs>
+            <BitOffs>656011616</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcRouterEventClass</Name>
@@ -49803,7 +49647,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>655967776</BitOffs>
+            <BitOffs>656011744</BitOffs>
           </Symbol>
           <Symbol>
             <Name>TC_EVENT_CLASSES.TcRTimeEventClass</Name>
@@ -49872,14 +49716,14 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>655967904</BitOffs>
+            <BitOffs>656011872</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="InputDst" CreateSymbols="true">32</AreaNo>
           <Name>Serial_COM Inputs</Name>
           <ContextId>2</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>LCLS_General.DefaultGlobals.stSys.I_EcatMaster1</Name>
             <Comment> AMS Net ID used for FB_EcatDiag, among others </Comment>
@@ -50004,7 +49848,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">33</AreaNo>
           <Name>Serial_COM Outputs</Name>
           <ContextId>2</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>GVL_Serial_Com.stComOut_SP1K2_PAX_PTM_01</Name>
             <BitSize>192</BitSize>
@@ -50094,7 +49938,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
           <AreaNo AreaType="Internal" CreateSymbols="true">35</AreaNo>
           <Name>Serial_COM Internal</Name>
           <ContextId>2</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>DefaultGlobals.stSys</Name>
             <Comment>Included for you</Comment>
@@ -57388,6 +57232,12 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
             <BitOffs>639018880</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>PRG_KFE_RIX_VAC.qRIXS_PRO_01</Name>
+            <BitSize>92928</BitSize>
+            <BaseType>FB_PRO_ADS</BaseType>
+            <BitOffs>639112384</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>Constants.bLittleEndian</Name>
             <Comment> Does the target support an FPU</Comment>
             <BitSize>8</BitSize>
@@ -57695,7 +57545,7 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
           <AreaNo AreaType="RetainSrc" CreateSymbols="true">36</AreaNo>
           <Name>Serial_COM Retains</Name>
           <ContextId>2</ContextId>
-          <ByteSize>82903040</ByteSize>
+          <ByteSize>82968576</ByteSize>
           <Symbol>
             <Name>PMPS_GVL.SuccessfulPreemption</Name>
             <Comment> Any time BPTM applies a new BP request which is confirmed</Comment>
@@ -57756,15 +57606,15 @@ fb_PC1K1_ZOS_PIP_2 : FB_PIP_GAMMA;</Comment>
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2024-07-02T10:19:33</Value>
+          <Value>2024-07-11T10:08:29</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
-          <Value>811008</Value>
+          <Value>745472</Value>
         </Property>
         <Property>
           <Name>GlobalDataSize</Name>
-          <Value>81575936</Value>
+          <Value>81522688</Value>
         </Property>
       </Properties>
     </Module>

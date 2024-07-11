@@ -248,7 +248,7 @@ fb_SP1K2_PAX_VRM_3(i_xExtILK_OK:=TRUE,
             iq_stValve =>);
 
 // backing PAX chamber
-fb_SP1K2_PAX_VRC_4(i_xExtILK_OK :=  qRIXS_PRO_01.st_pro.eState = E_PumpState.pumpRUNNING, i_xOverrideMode := xSystemOverrideMode1, iq_stValve =>)	;
+fb_SP1K2_PAX_VRC_4(i_xExtILK_OK :=  RIXS_PRO_01.stPump.eState = E_PumpState.pumpRUNNING, i_xOverrideMode := xSystemOverrideMode1, iq_stValve =>)	;
 
 
 //PAX Turbo Pumps (PTM) ILK
