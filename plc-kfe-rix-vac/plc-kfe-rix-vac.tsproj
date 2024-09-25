@@ -3,17 +3,17 @@
 	<Project ProjectGUID="{A76770E1-FA93-44DF-9CF6-84EEBF521977}" TargetNetId="172.21.140.69.1.1" Target64Bit="true" RelativeTargetNetId="true" RelativeIpAddresses="true" ShowHideConfigurations="#x106">
 		<System>
 			<Licenses CacheOrCheckLicensesOnStartup="true">
-				<Target BkhfOrder="00928689">
+				<Target BkhfOrder="01390249">
 					<ManualSelect>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</ManualSelect>
 					<ManualSelect>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</ManualSelect>
 					<ManualSelect>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</ManualSelect>
 					<ManualSelect>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</ManualSelect>
-					<TargetSelect TargetId="2">{66689887-CCBD-452C-AC9A-039D997C6E66}</TargetSelect>
 					<TargetSelect TargetId="2">{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</TargetSelect>
+					<TargetSelect TargetId="2">{66689887-CCBD-452C-AC9A-039D997C6E66}</TargetSelect>
 					<TargetSelect TargetId="2">{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</TargetSelect>
 					<TargetSelect TargetId="2">{6952449D-F68C-49A2-ADE4-8639D85B33A4}</TargetSelect>
 					<TargetSelect TargetId="2">{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</TargetSelect>
-					<LicenseDevice DongleHardwareId="2" DongleDevice="#x03020002" DongleSystemId="{E06E3DA6-2693-51CB-501C-909CE69C082B}"/>
+					<LicenseDevice DongleHardwareId="2" DongleDevice="#x03020002" DongleLevel="50" DongleSystemId="{11AF83CA-4992-E664-F9B2-84D9EEA8E861}"/>
 				</Target>
 			</Licenses>
 			<Tasks>
