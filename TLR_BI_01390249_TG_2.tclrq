@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
+	<TargetInfo>
+		<TcTargetDesc>
+			<TargetType>TC/BSD-OS</TargetType>
+			<TargetVersion>
+				<Version>3</Version>
+				<Revision>1</Revision>
+				<Build>4026</Build>
+			</TargetVersion>
+			<TargetFeatures>
+				<NetId>172.21.140.69.1.1</NetId>
+			</TargetFeatures>
+			<Hardware>
+				<Model>CX5240-0185</Model>
+				<SerialNo>000tjw3p</SerialNo>
+				<CPUVersion>2.9</CPUVersion>
+				<Date>26.3.24</Date>
+				<CPUArchitecture>9</CPUArchitecture>
+			</Hardware>
+			<OsImage>
+				<ImageDevice>CX5240-0185</ImageDevice>
+				<ImageVersion>14.1.2.0,2</ImageVersion>
+				<OsName>TwinCAT/BSD</OsName>
+				<OsVersion>14.1</OsVersion>
+			</OsImage>
+		</TcTargetDesc>
+	</TargetInfo>
+	<LicenseInfo>
+		<SystemId Level="50">{11AF83CA-4992-E664-F9B2-84D9EEA8E861}</SystemId>
+		<PurchaseOrder><![CDATA[01390249]]></PurchaseOrder>
+		<IssueTime>2024-09-24T18:48:00</IssueTime>
+		<License>
+			<LicenseId>{66689887-CCBD-452C-AC9A-039D997C6E66}</LicenseId>
+			<Name>TC3 PLC</Name>
+			<OrderNo>TC1200</OrderNo>
+		</License>
+		<License ManuallyAdded="true">
+			<LicenseId>{BCA6EE0A-9CE1-4D3F-98CA-413ABC0D94FD}</LicenseId>
+			<Name>TC3 Serial-Communication</Name>
+			<OrderNo>TF6340</OrderNo>
+		</License>
+		<License ManuallyAdded="true">
+			<LicenseId>{3EBB9639-5FF3-42B6-8847-35C70DC013C8}</LicenseId>
+			<Name>TC3 TCP/IP</Name>
+			<OrderNo>TF6310</OrderNo>
+		</License>
+		<License ManuallyAdded="true">
+			<LicenseId>{6952449D-F68C-49A2-ADE4-8639D85B33A4}</LicenseId>
+			<Name>TC3 Modbus-TCP</Name>
+			<OrderNo>TF6250</OrderNo>
+		</License>
+		<License ManuallyAdded="true">
+			<LicenseId>{E008E3C8-6BD9-491C-B673-DC45CC7AA4F1}</LicenseId>
+			<Name>TC3 JSON Data Interface</Name>
+			<OrderNo>TF6020</OrderNo>
+		</License>
+	</LicenseInfo>
+</TcLicenseInfo>
